@@ -1,0 +1,174 @@
+{
+ "nome": "Aldeia das Tamareiras",
+ "moeda": "brasas",
+ "spawns": {
+  "oeste": [
+   1,
+   14
+  ],
+  "lar_1": [
+   6,
+   11
+  ],
+  "lar_2": [
+   14,
+   11
+  ],
+  "lar_3": [
+   26,
+   11
+  ]
+ },
+ "npcs": [
+  {
+   "id": "lar_x_salma",
+   "pos": [
+    22,
+    16
+   ]
+  },
+  {
+   "id": "lar_x_badu",
+   "pos": [
+    32,
+    10
+   ]
+  },
+  {
+   "id": "lar_x_zuleica",
+   "pos": [
+    9,
+    16
+   ]
+  },
+  {
+   "id": "lar_x_safira",
+   "pos": [
+    28,
+    16
+   ]
+  },
+  {
+   "id": "lar_x_tico",
+   "pos": [
+    14,
+    18
+   ],
+   "vagar": true
+  },
+  {
+   "id": "lar_x_nadador_canal",
+   "nada": true,
+   "pos": [
+    8,
+    20
+   ],
+   "vagar": true
+  }
+ ],
+ "inimigos": [
+  {
+   "tipo": "hiena",
+   "qtd": 3,
+   "area": [
+    2,
+    22,
+    36,
+    6
+   ],
+   "se": {
+    "quest": "x_hienas",
+    "estado": "ativa"
+   }
+  }
+ ],
+ "placas": [
+  {
+   "pos": [
+    2,
+    12
+   ],
+   "texto": "Aldeia das Tamareiras. As tâmaras mais doces do deserto."
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    0,
+    14,
+    1,
+    2
+   ],
+   "mapa": "estrada_caravanas",
+   "spawn": "aldeia",
+   "nivel": 15
+  },
+  {
+   "area": [
+    6,
+    10,
+    1,
+    1
+   ],
+   "mapa": "lar_aldeia_tamareiras_1",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    14,
+    10,
+    1,
+    1
+   ],
+   "mapa": "lar_aldeia_tamareiras_2",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    26,
+    10,
+    1,
+    1
+   ],
+   "mapa": "lar_aldeia_tamareiras_3",
+   "spawn": "porta"
+  }
+ ],
+ "renascer": [
+  "aldeia_tamareiras",
+  "oeste"
+ ],
+ "layout": [
+  "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT",
+  "T,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,*,,,,,*,,,,,,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,*,,,,,,,,,,,,,,,,,,,,,,,,,,,T",
+  "T,*,,,,,,,*,,,,,,,,::,,,,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,,,,,,,,::,,,,*,,,,,,,,,,,,,T",
+  "T,,*,*,,,,,,,,*,,,,::,*,,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,,,,,,,,::,,,,,,,,,,,,,,,,,,T",
+  "T,,RRRRRRR,,RRRRRR,::,,RRRRRRR,,,,,,,,,T",
+  "T,,RRRRRRR,,RRRRRR,::,,RRRRRRR,,,,,,,,,T",
+  "T,,HJHDHJH,,HHDHJH,::,,HJHDHJH,,,,,,,,,T",
+  "T,,,,*:*,,,,,*:*,,,::,,,,*:*,,,SSS,KK,,T",
+  "T,,,T,:,T,,,T,:,TT,::,T,T,:,T,,,,,,,,,,T",
+  "T,,,,,:,,,,,,,:,,,,::,,,,,:,,,,,,,,,,,,T",
+  ":::::::::::::::::::::::::::::::::::::::T",
+  ":::::::::::::::::::::::::::::::::::::::T",
+  "T,,,,,,,,,,,,,,,,T,::,,,,,,,,,,,,,,,,,,T",
+  "T,,,TWWW,,h,T,,,TWW::,,,T,,,,,,,T,,,T,,T",
+  "T,,,,WWW,,,,,,,,WWW::,,,,,,,,,,,,,,,,,,T",
+  "T,,,,,WWW,,,,,,,WW,::,,,,,,,,,,,,,,WWWWT",
+  "T,,,,,,WWWWW,,,,,,W==W,,,,,WW,,,,,WWWWWT",
+  "T,,,,,,,WWW,,,,,,,,::,,,,,,,WWWWWWW,,WWT",
+  "T,,,,,,,,,,,,,,,,,,::,,,,,,,,,WWWW,,,,,T",
+  "T,,,T,,T,,T,,T,,T,,::,,,,T,,T,,T,,T,,,,T",
+  "T,,,,,,,,,,,,,,,,T,::,T,,,,,,,,,,,,,,,,T",
+  "T,,,T,,T,,T,,T,,T,,::,,,,T,,T,,T,,T,,,,T",
+  "T,,,,,,,,,,,,,,,,,,::,,,,,,,,,,,,,,,,,,T",
+  "T,,,T,,T,,T,,T,,T,,,,,,,,T,,T,,T,,T,,,,T",
+  "T,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,T",
+  "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+ ],
+ "organico": true
+}

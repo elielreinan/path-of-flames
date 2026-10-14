@@ -1,0 +1,852 @@
+{
+ "escorpiao": {
+  "arquivo": "escorpiao.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   15,
+   28
+  ]
+ },
+ "escorpiao_negro": {
+  "arquivo": "escorpiao_negro.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   16,
+   28
+  ]
+ },
+ "escorpiao_cristal": {
+  "arquivo": "escorpiao_cristal.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   15,
+   28
+  ]
+ },
+ "cobra": {
+  "arquivo": "cobra.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   14,
+   27
+  ]
+ },
+ "serpentinha": {
+  "arquivo": "serpentinha.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   14,
+   27
+  ]
+ },
+ "calango": {
+  "arquivo": "calango.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   16,
+   28
+  ]
+ },
+ "morcego": {
+  "arquivo": "morcego.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   16,
+   28
+  ]
+ },
+ "hiena": {
+  "arquivo": "hiena.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   14,
+   28
+  ]
+ },
+ "sapo": {
+  "arquivo": "sapo.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   16,
+   28
+  ]
+ },
+ "caranguejo": {
+  "arquivo": "caranguejo.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   16,
+   28
+  ]
+ },
+ "lobo_metal": {
+  "arquivo": "lobo_metal.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   14,
+   28
+  ]
+ },
+ "aguia": {
+  "arquivo": "aguia.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   16,
+   28
+  ]
+ },
+ "sombra": {
+  "arquivo": "sombra.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   16,
+   28
+  ]
+ },
+ "fantasma": {
+  "arquivo": "fantasma.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ]
+  },
+  "pe": [
+   16,
+   28
+  ]
+ },
+ "boneco_treino": {
+  "arquivo": "boneco_treino.png",
+  "tipo": "inimigo",
+  "frame": [
+   32,
+   32
+  ],
+  "anims": {
+   "parado": [
+    0,
+    1,
+    1
+   ],
+   "dano": [
+    1,
+    3,
+    10
+   ],
+   "quebrado": [
+    2,
+    1,
+    1
+   ]
+  },
+  "pe": [
+   16,
+   28
+  ]
+ },
+ "rainha_escorpiao": {
+  "arquivo": "rainha_escorpiao.png",
+  "tipo": "chefe",
+  "frame": [
+   64,
+   64
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ],
+   "especial": [
+    5,
+    6,
+    10
+   ]
+  },
+  "pe": [
+   29,
+   55
+  ]
+ },
+ "serpente_oasis": {
+  "arquivo": "serpente_oasis.png",
+  "tipo": "chefe",
+  "frame": [
+   64,
+   64
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ],
+   "especial": [
+    5,
+    6,
+    10
+   ]
+  },
+  "pe": [
+   25,
+   55
+  ]
+ },
+ "grifo_ferro": {
+  "arquivo": "grifo_ferro.png",
+  "tipo": "chefe",
+  "frame": [
+   64,
+   64
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ],
+   "especial": [
+    5,
+    6,
+    10
+   ]
+  },
+  "pe": [
+   33,
+   58
+  ]
+ },
+ "golem_vidro": {
+  "arquivo": "golem_vidro.png",
+  "tipo": "chefe",
+  "frame": [
+   64,
+   64
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "ataque": [
+    2,
+    4,
+    12
+   ],
+   "dano": [
+    3,
+    2,
+    8
+   ],
+   "morrer": [
+    4,
+    5,
+    8
+   ],
+   "especial": [
+    5,
+    6,
+    10
+   ]
+  },
+  "pe": [
+   33,
+   58
+  ]
+ },
+ "montaria_camelo": {
+  "arquivo": "montaria_camelo.png",
+  "tipo": "montaria",
+  "frame": [
+   48,
+   48
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "correr": [
+    2,
+    6,
+    14
+   ]
+  },
+  "pe": [
+   23,
+   43
+  ],
+  "sela": [
+   19,
+   12
+  ]
+ },
+ "montaria_hiena": {
+  "arquivo": "montaria_hiena.png",
+  "tipo": "montaria",
+  "frame": [
+   48,
+   48
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "correr": [
+    2,
+    6,
+    14
+   ]
+  },
+  "pe": [
+   21,
+   42
+  ],
+  "sela": [
+   20,
+   23
+  ]
+ },
+ "montaria_lobo_metal": {
+  "arquivo": "montaria_lobo_metal.png",
+  "tipo": "montaria",
+  "frame": [
+   48,
+   48
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ],
+   "andar": [
+    1,
+    6,
+    10
+   ],
+   "correr": [
+    2,
+    6,
+    14
+   ]
+  },
+  "pe": [
+   21,
+   43
+  ],
+  "sela": [
+   18,
+   22
+  ]
+ }
+}

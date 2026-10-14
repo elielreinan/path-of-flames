@@ -1,0 +1,966 @@
+{
+ "intro_samira": {
+  "linhas": [
+   {
+    "s": "Samira",
+    "t": "Ifrit! Acorde, dorminhoco. Hoje é o seu aniversário de dezoito anos!"
+   },
+   {
+    "s": "Ifrit",
+    "t": "Mãe... já é de manhã?"
+   },
+   {
+    "s": "Samira",
+    "t": "Já passou da manhã! Seu pai dizia que um guardião acorda antes do sol."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Meu pai também saiu antes do sol há três anos e nunca voltou."
+   },
+   {
+    "s": "Samira",
+    "t": "...Eu sei, filho. Eu também sinto falta dele todos os dias."
+   },
+   {
+    "s": "Samira",
+    "t": "O Ancião Harun mandou chamar você. Disse que é importante. Ele está na praça, perto da Chama Sagrada."
+   },
+   {
+    "s": "Samira",
+    "t": "Antes de ir, pegue o que está no baú perto da janela. E coma alguma coisa!"
+   }
+  ],
+  "acoes": [
+   {
+    "flag": "intro_visto"
+   },
+   {
+    "quest_iniciar": "q1_harun"
+   }
+  ]
+ },
+ "samira_vai_harun": {
+  "linhas": [
+   {
+    "s": "Samira",
+    "t": "O Ancião está esperando na praça, ao norte daqui. Vá logo, Ifrit!"
+   }
+  ]
+ },
+ "samira_padrao": {
+  "linhas": [
+   {
+    "s": "Samira",
+    "t": "Cuide-se lá fora. A vila anda estranha desde que a chama começou a enfraquecer."
+   }
+  ]
+ },
+ "samira_pocoes": {
+  "linhas": [
+   {
+    "s": "Samira",
+    "t": "O Ancião me contou sobre a Rainha Escorpião... Você vai mesmo entrar naquele covil?"
+   },
+   {
+    "s": "Ifrit",
+    "t": "Alguém precisa ir, mãe."
+   },
+   {
+    "s": "Samira",
+    "t": "Você fala igualzinho ao seu pai. Tome, leve estas poções. Eu mesma preparei."
+   },
+   {
+    "s": "Samira",
+    "t": "E volte inteiro, entendeu?"
+   }
+  ],
+  "acoes": [
+   {
+    "flag": "samira_pocoes"
+   },
+   {
+    "dar_item": "pocao_pequena",
+    "qtd": 3
+   }
+  ]
+ },
+ "samira_despedida": {
+  "linhas": [
+   {
+    "s": "Samira",
+    "t": "Então chegou a hora... Venha aqui, filho."
+   }
+  ],
+  "acoes": [
+   {
+    "cutscene": "despedida"
+   }
+  ]
+ },
+ "samira_despedida_2": {
+  "linhas": [
+   {
+    "s": "Samira",
+    "t": "Quando seu pai partiu, ele deixou isto comigo. É o amuleto dele."
+   },
+   {
+    "s": "Samira",
+    "t": "Ele dizia que o amuleto sempre encontra o caminho de volta para casa."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Mãe, eu vou encontrar o pai. Eu prometo."
+   },
+   {
+    "s": "Samira",
+    "t": "Eu sei que vai. Agora vá. Nadia espera você em Miraj, e o caminho é longo."
+   },
+   {
+    "s": "Samira",
+    "t": "A porta desta casa estará sempre aberta. Volte quando precisar descansar."
+   }
+  ]
+ },
+ "samira_volta": {
+  "linhas": [
+   {
+    "s": "Samira",
+    "t": "Filho! Que bom ver você. Deite um pouco, vou cuidar dos seus machucados."
+   }
+  ],
+  "acoes": [
+   {
+    "curar": true
+   },
+   {
+    "salvar": true
+   }
+  ]
+ },
+ "harun_prova": {
+  "linhas": [
+   {
+    "s": "Ancião Harun",
+    "t": "Ifrit, filho de Kadir. Você cresceu."
+   },
+   {
+    "s": "Ifrit",
+    "t": "O senhor mandou me chamar, Ancião?"
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Olhe para a Chama Sagrada. Há séculos ela protege Areia Rubra. Agora mal ilumina a praça."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Desde que ela começou a enfraquecer, os escorpiões das dunas ficaram agressivos. Já atacaram duas caravanas."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Seu pai era o guardião das chamas. Se você quer seguir o caminho dele, precisa provar sua coragem."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Vá às Dunas Rubras, a leste da vila, e derrote cinco escorpiões. Depois volte aqui."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Pode deixar, Ancião.",
+    "acoes": [
+     {
+      "quest_iniciar": "q1_prova"
+     }
+    ],
+    "ir": "harun_prova_aceita"
+   },
+   {
+    "t": "Por que eu?",
+    "ir": "harun_prova_porque"
+   }
+  ]
+ },
+ "harun_prova_porque": {
+  "linhas": [
+   {
+    "s": "Ancião Harun",
+    "t": "Porque o sangue de Kadir corre nas suas veias. E porque eu vi você treinando com aquela espada de madeira todas as manhãs."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Ninguém treina tanto sem um motivo."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_iniciar": "q1_prova"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Tudo bem, eu vou.",
+    "ir": "harun_prova_aceita"
+   }
+  ]
+ },
+ "harun_prova_aceita": {
+  "linhas": [
+   {
+    "s": "Ancião Harun",
+    "t": "Tariq, o ferreiro, vende espadas melhores no mercado. E Zaida tem poções. Prepare-se bem."
+   }
+  ]
+ },
+ "harun_prova_lembrete": {
+  "linhas": [
+   {
+    "s": "Ancião Harun",
+    "t": "As Dunas Rubras ficam a leste, depois do mercado. Derrote os escorpiões e volte."
+   }
+  ]
+ },
+ "harun_prova_fim": {
+  "linhas": [
+   {
+    "s": "Ancião Harun",
+    "t": "Você voltou, e com cheiro de batalha. Muito bem."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Agora posso contar a verdade. Na noite em que a chama enfraqueceu, um fragmento dela foi roubado."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "A Rainha Escorpião levou o fragmento para o covil, no nordeste das dunas."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Tome este pergaminho. Seu pai o deixou comigo para o dia em que você estivesse pronto."
+   },
+   {
+    "s": "",
+    "t": "Ifrit aprendeu a magia BOLA DE FOGO! Use o botão FOGO (ou a tecla K)."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Recupere o fragmento, Ifrit. Sem ele, a chama vai se apagar."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "q1_prova"
+   },
+   {
+    "quest_iniciar": "q1_rainha"
+   }
+  ]
+ },
+ "harun_rainha_lembrete": {
+  "linhas": [
+   {
+    "s": "Ancião Harun",
+    "t": "O covil da Rainha fica no nordeste das Dunas Rubras. Sua mãe quer ver você antes; ela anda preocupada."
+   }
+  ]
+ },
+ "harun_rainha_fim": {
+  "linhas": [
+   {
+    "s": "Ancião Harun",
+    "t": "Ifrit! Esse brilho... Você conseguiu!"
+   }
+  ],
+  "acoes": [
+   {
+    "cutscene": "revelacao_zahrak"
+   }
+  ]
+ },
+ "harun_revelacao": {
+  "linhas": [
+   {
+    "s": "Ifrit",
+    "t": "Encontrei o fragmento no covil. E também isto: uma carta do meu pai."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "\"Zahrak está vindo. Procure Nadia em Miraj.\" Então Kadir está vivo... ou estava, quando escreveu isso."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Quem é Zahrak?"
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Zahrak, o Rei Cinzento. Um feiticeiro que quer apagar as Sete Chamas Sagradas de Zahra."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Cada cidade do reino guarda uma chama. Se todas se apagarem, o mundo cairá numa noite eterna, e ele governará sobre as cinzas."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Seu pai partiu para impedi-lo. Agora o destino chama você."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Vá até o Oásis de Miraj, ao norte, e procure Nadia. Mas antes, despeça-se de sua mãe."
+   },
+   {
+    "s": "Ancião Harun",
+    "t": "Vou mandar Selim abrir o portão norte assim que você estiver pronto."
+   }
+  ]
+ },
+ "harun_despedida_lembrete": {
+  "linhas": [
+   {
+    "s": "Ancião Harun",
+    "t": "Samira espera você em casa. Ninguém deve partir sem se despedir de quem ama."
+   }
+  ]
+ },
+ "harun_padrao": {
+  "linhas": [
+   {
+    "s": "Ancião Harun",
+    "t": "A chama brilha forte de novo, graças a você. Que ela ilumine seu caminho, Ifrit."
+   }
+  ]
+ },
+ "chama_areia_fraca": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada tremula, fraca. Dá para sentir que algo está faltando nela."
+   }
+  ]
+ },
+ "chama_areia_forte": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada arde forte e quente. Sua luz alcança cada canto da vila."
+   }
+  ],
+  "acoes": [
+   {
+    "curar": true
+   }
+  ]
+ },
+ "tariq_loja": {
+  "linhas": [
+   {
+    "s": "Tariq, o Ferreiro",
+    "t": "Bem-vindo à forja! Uma lâmina boa vale mais que mil promessas."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Ver espadas",
+    "acoes": [
+     {
+      "loja": "ferreiro_areia"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "tariq_carapacas_pedido": {
+  "linhas": [
+   {
+    "s": "Tariq, o Ferreiro",
+    "t": "Ei, garoto! Você tem caçado escorpiões, não tem? Dá pra ver pelos arranhões."
+   },
+   {
+    "s": "Tariq, o Ferreiro",
+    "t": "As carapaças deles dão ótimos escudos. Me traga três, e eu forjo uma espada de bronze só pra você."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Combinado!",
+    "acoes": [
+     {
+      "quest_iniciar": "s3_carapacas"
+     }
+    ]
+   },
+   {
+    "t": "Agora não",
+    "ir": "tariq_loja"
+   }
+  ]
+ },
+ "tariq_carapacas_fim": {
+  "linhas": [
+   {
+    "s": "Tariq, o Ferreiro",
+    "t": "Três carapaças, inteirinhas! Espere um pouco..."
+   },
+   {
+    "s": "",
+    "t": "*clang* *clang* *tsssss*"
+   },
+   {
+    "s": "Tariq, o Ferreiro",
+    "t": "Pronto! Uma Espada de Bronze. Não esqueça de equipar na sua bolsa."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s3_carapacas"
+   }
+  ]
+ },
+ "zaida_loja": {
+  "linhas": [
+   {
+    "s": "Zaida, a Mercadora",
+    "t": "Tâmaras frescas, pão quentinho e poções! Tudo que um aventureiro precisa."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Comprar ou vender",
+    "acoes": [
+     {
+      "loja": "mercado_areia"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "faruk_cambio": {
+  "linhas": [
+   {
+    "s": "Faruk, o Cambista",
+    "t": "Cada região de Zahra tem sua moeda: Brasas no sul, Pérolas na costa e Coroas no norte."
+   },
+   {
+    "s": "Faruk, o Cambista",
+    "t": "As lojas só aceitam a moeda local. Eu troco qualquer uma, por uma pequena taxa, claro."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Trocar moedas",
+    "acoes": [
+     {
+      "cambio": true
+     }
+    ]
+   },
+   {
+    "t": "Quanto vale cada uma?",
+    "ir": "faruk_valores"
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "faruk_valores": {
+  "linhas": [
+   {
+    "s": "Faruk, o Cambista",
+    "t": "Uma Pérola vale três Brasas. Uma Coroa vale cinco Brasas. Eu fico com dez por cento de cada troca."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Trocar moedas",
+    "acoes": [
+     {
+      "cambio": true
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "kiko_pedido": {
+  "linhas": [
+   {
+    "s": "Kiko",
+    "t": "Ifrit! Ifrit! A Mimi sumiu!"
+   },
+   {
+    "s": "Ifrit",
+    "t": "Calma, Kiko. Quem é Mimi?"
+   },
+   {
+    "s": "Kiko",
+    "t": "Minha gata! Ela é laranja e muito fofa. Acho que foi beber água no oásis das Dunas Rubras."
+   },
+   {
+    "s": "Kiko",
+    "t": "Mas lá tem escorpião... Você pode procurar ela?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Eu encontro a Mimi.",
+    "acoes": [
+     {
+      "quest_iniciar": "s1_gato"
+     }
+    ]
+   },
+   {
+    "t": "Agora não posso."
+   }
+  ]
+ },
+ "kiko_lembrete": {
+  "linhas": [
+   {
+    "s": "Kiko",
+    "t": "A Mimi gosta de água. Procura perto do laguinho das dunas, por favor!"
+   }
+  ]
+ },
+ "kiko_fim": {
+  "linhas": [
+   {
+    "s": "Kiko",
+    "t": "MIMI! Você achou ela! Obrigado, obrigado, obrigado!"
+   },
+   {
+    "s": "Kiko",
+    "t": "Toma, são minhas tâmaras favoritas. E umas brasas que eu estava guardando."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s1_gato"
+   }
+  ]
+ },
+ "kiko_feliz": {
+  "linhas": [
+   {
+    "s": "Kiko",
+    "t": "Quando eu crescer, quero ser um herói igual você, Ifrit!"
+   }
+  ]
+ },
+ "mimi_encontrada": {
+  "linhas": [
+   {
+    "s": "Mimi",
+    "t": "Miau!"
+   },
+   {
+    "s": "",
+    "t": "Mimi esfrega a cabeça na sua perna e pula para dentro da sua bolsa. Hora de voltar para o Kiko."
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "mimi"
+   }
+  ]
+ },
+ "mimi_casa": {
+  "linhas": [
+   {
+    "s": "Mimi",
+    "t": "Purrr..."
+   }
+  ]
+ },
+ "noor_pedido": {
+  "linhas": [
+   {
+    "s": "Vó Noor",
+    "t": "Ah, o filho da Samira. Chegue mais perto, meus olhos já não são os mesmos."
+   },
+   {
+    "s": "Vó Noor",
+    "t": "Com a chama fraca, muita gente da vila anda doente. Preciso de ervas do deserto para os remédios."
+   },
+   {
+    "s": "Vó Noor",
+    "t": "São florzinhas roxas que crescem nas Dunas Rubras. Me traga cinco, querido."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Claro, Vó Noor.",
+    "acoes": [
+     {
+      "quest_iniciar": "s2_ervas"
+     }
+    ]
+   },
+   {
+    "t": "Talvez depois."
+   }
+  ]
+ },
+ "noor_lembrete": {
+  "linhas": [
+   {
+    "s": "Vó Noor",
+    "t": "Florzinhas roxas, querido. Elas se escondem entre as pedras das dunas."
+   }
+  ]
+ },
+ "noor_fim": {
+  "linhas": [
+   {
+    "s": "Vó Noor",
+    "t": "Que cheiro bom! São perfeitas."
+   },
+   {
+    "s": "Vó Noor",
+    "t": "Fiz algumas poções a mais. Leve, você vai precisar mais do que eu."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s2_ervas"
+   }
+  ]
+ },
+ "noor_padrao": {
+  "linhas": [
+   {
+    "s": "Vó Noor",
+    "t": "Seu pai também vinha aqui roubar meus biscoitos quando era pequeno. Hehe."
+   }
+  ]
+ },
+ "selim_fechado": {
+  "linhas": [
+   {
+    "s": "Guarda Selim",
+    "t": "O portão norte fica fechado até o Ancião mandar abrir. Muitos bandidos na estrada."
+   }
+  ]
+ },
+ "selim_aberto": {
+  "linhas": [
+   {
+    "s": "Guarda Selim",
+    "t": "O caminho está livre, Ifrit. Que a chama guie seus passos até Miraj."
+   }
+  ]
+ },
+ "selim_bandidos_pedido": {
+  "linhas": [
+   {
+    "s": "Guarda Selim",
+    "t": "Antes de ir... posso pedir um favor?"
+   },
+   {
+    "s": "Guarda Selim",
+    "t": "Uma quadrilha de bandidos ataca as caravanas na Estrada das Caravanas. Eu não posso sair do portão."
+   },
+   {
+    "s": "Guarda Selim",
+    "t": "Se você derrotar uns quatro deles, as caravanas vão voltar a passar."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Pode contar comigo.",
+    "acoes": [
+     {
+      "quest_iniciar": "s4_bandidos"
+     }
+    ]
+   },
+   {
+    "t": "Vou pensar."
+   }
+  ]
+ },
+ "selim_bandidos_fim": {
+  "linhas": [
+   {
+    "s": "Guarda Selim",
+    "t": "As caravanas chegaram sem um arranhão! Os mercadores estão falando de você."
+   },
+   {
+    "s": "Guarda Selim",
+    "t": "Aqui, o pagamento que eles deixaram. Você mereceu."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s4_bandidos"
+   }
+  ]
+ },
+ "amir_lenda": {
+  "linhas": [
+   {
+    "s": "Amir, o Bardo",
+    "t": "♪ Sete chamas no deserto, sete cidades a brilhar... ♪"
+   },
+   {
+    "s": "Amir, o Bardo",
+    "t": "Conhece a lenda? Dizem que, se as sete chamas se apagarem, o sol nunca mais vai nascer em Zahra."
+   },
+   {
+    "s": "Amir, o Bardo",
+    "t": "Bobagem de velho, eu acho. Mas a nossa chama anda tão fraquinha..."
+   }
+  ]
+ },
+ "amir_depois": {
+  "linhas": [
+   {
+    "s": "Amir, o Bardo",
+    "t": "Estou compondo uma canção sobre você! \"Ifrit, o herói da Areia Rubra\". Que tal?"
+   }
+  ]
+ },
+ "hassan_padrao": {
+  "linhas": [
+   {
+    "s": "Hassan",
+    "t": "Bom dia, Ifrit. Você viu a Layla por aí? ...Não que eu esteja procurando, claro."
+   }
+  ]
+ },
+ "hassan_carta": {
+  "linhas": [
+   {
+    "s": "Ifrit",
+    "t": "Hassan, a Layla pediu para eu entregar isto."
+   },
+   {
+    "s": "Hassan",
+    "t": "Uma carta? Da Layla? Para MIM?"
+   },
+   {
+    "s": "",
+    "t": "Hassan lê a carta. Ele fica vermelho como um tomate."
+   },
+   {
+    "s": "Hassan",
+    "t": "Diga a ela... diga que eu também! Não, espera. Diga que eu vou passar lá hoje à noite!"
+   }
+  ],
+  "acoes": [
+   {
+    "remover_item": "carta_layla"
+   },
+   {
+    "flag": "carta_entregue"
+   }
+  ]
+ },
+ "hassan_feliz": {
+  "linhas": [
+   {
+    "s": "Hassan",
+    "t": "Eu e a Layla vamos passear no oásis no fim de semana. Obrigado, Ifrit!"
+   }
+  ]
+ },
+ "layla_padrao": {
+  "linhas": [
+   {
+    "s": "Layla",
+    "t": "Ai, Ifrit, que dia lindo, não acha?"
+   }
+  ]
+ },
+ "layla_pedido": {
+  "linhas": [
+   {
+    "s": "Layla",
+    "t": "Ifrit... posso pedir uma coisa? É meio vergonhoso."
+   },
+   {
+    "s": "Layla",
+    "t": "Escrevi uma carta para o Hassan, mas não tenho coragem de entregar. Você leva para mim?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Eu entrego.",
+    "acoes": [
+     {
+      "quest_iniciar": "s5_carta"
+     },
+     {
+      "dar_item": "carta_layla"
+     }
+    ]
+   },
+   {
+    "t": "Entregue você mesma!"
+   }
+  ]
+ },
+ "layla_lembrete": {
+  "linhas": [
+   {
+    "s": "Layla",
+    "t": "A casa do Hassan fica no nordeste da vila. Ai, que nervoso!"
+   }
+  ]
+ },
+ "layla_fim": {
+  "linhas": [
+   {
+    "s": "Layla",
+    "t": "Ele disse que vem hoje à noite?! Ai, obrigada, Ifrit! Leve esses pães, fiz agora."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s5_carta"
+   }
+  ]
+ },
+ "carta_kadir_leitura": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A carta está amassada e manchada de areia. A letra é do seu pai."
+   },
+   {
+    "s": "Kadir (carta)",
+    "t": "\"Se alguém encontrar isto: Zahrak está vindo. Ele quer as Sete Chamas.\""
+   },
+   {
+    "s": "Kadir (carta)",
+    "t": "\"Procure Nadia em Miraj. Ela sabe o que fazer. Diga a Samira que eu a amo. K.\""
+   },
+   {
+    "s": "Ifrit",
+    "t": "Pai... você esteve aqui."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Preciso levar o fragmento ao Ancião Harun."
+   }
+  ]
+ },
+ "rainha_bolsa": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Entre os ossos do ninho há uma bolsa de couro pesada, com o selo das caravanas de Areia Rubra."
+   },
+   {
+    "s": "",
+    "t": "Dentro, umas sessenta Brasas: tudo o que os escorpiões arrancaram das caravanas atacadas."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Guardar para devolver aos mercadores.",
+    "acoes": [
+     {
+      "flag": "bolsa_caravana_devolvida"
+     },
+     {
+      "honra": 4
+     }
+    ],
+    "ir": "rainha_bolsa_devolver"
+   },
+   {
+    "t": "Ficar com as Brasas. Ninguém vai saber.",
+    "acoes": [
+     {
+      "flag": "bolsa_caravana_roubada"
+     },
+     {
+      "moeda": "brasas",
+      "qtd": 60
+     },
+     {
+      "honra": -8
+     }
+    ],
+    "ir": "rainha_bolsa_ficar"
+   }
+  ]
+ },
+ "rainha_bolsa_devolver": {
+  "linhas": [
+   {
+    "s": "Ifrit",
+    "t": "O Guarda Selim sabe de quem é. Vou entregar a ele."
+   }
+  ]
+ },
+ "rainha_bolsa_ficar": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Você esvazia a bolsa e joga o couro com o selo no fundo do ninho."
+   },
+   {
+    "s": "Ifrit",
+    "t": "...Ninguém vai saber."
+   }
+  ]
+ },
+ "selim_bolsa": {
+  "linhas": [
+   {
+    "s": "Ifrit",
+    "t": "Selim, achei isto no covil da Rainha. Tem o selo das caravanas."
+   },
+   {
+    "s": "Guarda Selim",
+    "t": "As economias dos mercadores! Vou devolver cada brasa, pode deixar comigo."
+   },
+   {
+    "s": "Guarda Selim",
+    "t": "Eles iam querer que você ficasse com um pouco. Tome dez Brasas. Você mereceu."
+   }
+  ],
+  "acoes": [
+   {
+    "flag": "selim_bolsa_ok"
+   },
+   {
+    "moeda": "brasas",
+    "qtd": 10
+   }
+  ]
+ },
+ "selim_desonra": {
+  "linhas": [
+   {
+    "s": "Guarda Selim",
+    "t": "Os mercadores andam falando de você, Ifrit. E não são coisas boas."
+   },
+   {
+    "s": "Guarda Selim",
+    "t": "Seu pai era guardião das chamas. Lembre disso antes que seja tarde."
+   }
+  ]
+ },
+ "kiko_desconfiado": {
+  "linhas": [
+   {
+    "s": "Kiko",
+    "t": "Minha mãe disse que eu não devo mais andar com você..."
+   },
+   {
+    "s": "Kiko",
+    "t": "Herói não pega o que é dos outros, né, Ifrit?"
+   }
+  ]
+ }
+}

@@ -1,0 +1,189 @@
+{
+ "nome": "Casa de Otto",
+ "moeda": "coroas",
+ "interior": true,
+ "spawns": {
+  "porta": [
+   7,
+   9
+  ]
+ },
+ "npcs": [
+  {
+   "id": "lar_otto",
+   "pos": [
+    2,
+    5
+   ]
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    7,
+    10,
+    1,
+    1
+   ],
+   "mapa": "cidadela_sal",
+   "spawn": "lar_4"
+  }
+ ],
+ "renascer": [
+  "cidadela_sal",
+  "sul"
+ ],
+ "layout": [
+  "wwwwwwwwwwwwww",
+  "wwwwwwwwwwwwww",
+  "wmfmffmffmfmfw",
+  "wmfffffffmfmfw",
+  "wffffffffffffw",
+  "wffmmffffffffw",
+  "wffffffffffmfw",
+  "wfffffffffwwfw",
+  "wmfffffffffffw",
+  "wmffffffffffmw",
+  "wwwwwwwDwwwwww"
+ ],
+ "decoracao": [
+  {
+   "s": "fogao",
+   "area": [
+    1,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "bacia",
+   "area": [
+    3,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "gaveteiro",
+   "area": [
+    6,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    9,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    11,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "mesa",
+   "area": [
+    3,
+    5,
+    2,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    2,
+    6,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    5,
+    6,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "comoda",
+   "area": [
+    11,
+    6,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "barril_agua",
+   "area": [
+    1,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "tapete_redondo",
+   "area": [
+    5,
+    8,
+    2,
+    2
+   ]
+  },
+  {
+   "s": "caixote",
+   "area": [
+    1,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "jarro",
+   "area": [
+    12,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "janela",
+   "area": [
+    4,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "quadro",
+   "area": [
+    8,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  }
+ ],
+ "tema": "cidadela_sal"
+}

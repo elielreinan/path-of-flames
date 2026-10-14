@@ -1,0 +1,272 @@
+{
+ "nome": "Palácio de Miraj",
+ "moeda": "brasas",
+ "spawns": {
+  "porta": [
+   9,
+   10
+  ]
+ },
+ "npcs": [
+  {
+   "id": "yasmin",
+   "pos": [
+    15,
+    3
+   ]
+  },
+  {
+   "id": "curandeira",
+   "pos": [
+    4,
+    5
+   ]
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    9,
+    11,
+    1,
+    1
+   ],
+   "mapa": "oasis_miraj",
+   "spawn": "palacio"
+  }
+ ],
+ "renascer": [
+  "oasis_miraj",
+  "sul"
+ ],
+ "layout": [
+  "wwwwwwwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwwwwwww",
+  "wmmmffmffffffmfmfmfw",
+  "wffffffffffffffffmfw",
+  "wfmmffffffffffffffmw",
+  "wfmmfffffffffffffffw",
+  "wffffffffffffffffffw",
+  "wmffffffffffffffffmw",
+  "wmfffffffffffffffffw",
+  "wmffffmffffffmffffmw",
+  "wffffffffffffffffffw",
+  "wwwwwwwwwDwwwwwwwwww"
+ ],
+ "organico": true,
+ "decoracao": [
+  {
+   "s": "estante_livros",
+   "area": [
+    1,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    2,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    3,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    6,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "tapete_grande",
+   "area": [
+    7,
+    2,
+    6,
+    8
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    13,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "armario",
+   "area": [
+    15,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    17,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "mesa_grande",
+   "area": [
+    2,
+    4,
+    2,
+    2
+   ]
+  },
+  {
+   "s": "comoda",
+   "area": [
+    18,
+    4,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    1,
+    5,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    1,
+    7,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    18,
+    7,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "jarro_azul",
+   "area": [
+    1,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_flor",
+   "area": [
+    1,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    6,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    13,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_flor",
+   "area": [
+    18,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "janela",
+   "area": [
+    3,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "quadro",
+   "area": [
+    6,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "janela",
+   "area": [
+    9,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "quadro",
+   "area": [
+    13,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "janela",
+   "area": [
+    16,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  }
+ ],
+ "tema": "oasis_miraj"
+}

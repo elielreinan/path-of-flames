@@ -1,0 +1,35 @@
+{
+ "_nota": "Combinações da bolsa: junte o item 'a' com o 'b' para criar 'r'.",
+ "receitas": [
+  {
+   "a": "erva_do_deserto",
+   "b": "erva_do_deserto",
+   "r": "pocao_pequena"
+  },
+  {
+   "a": "pocao_pequena",
+   "b": "erva_do_deserto",
+   "r": "pocao_media"
+  },
+  {
+   "a": "pocao_media",
+   "b": "fragmento_cristal",
+   "r": "pocao_grande"
+  },
+  {
+   "a": "cantil",
+   "b": "erva_do_deserto",
+   "r": "antidoto"
+  },
+  {
+   "a": "pocao_grande",
+   "b": "antidoto",
+   "r": "elixir"
+  },
+  {
+   "a": "pele_cobra",
+   "b": "carapaca_escorpiao",
+   "r": "tunica_couro"
+  }
+ ]
+}

@@ -1,0 +1,461 @@
+{
+ "tamara": {
+  "nome": "Tâmara",
+  "tipo": "consumivel",
+  "cura": 9,
+  "preco": 3,
+  "descricao": "Doce e nutritiva.",
+  "sprite": "res://assets/itens/tamara.png",
+  "pilha": 5
+ },
+ "pao": {
+  "nome": "Pão de Areia Rubra",
+  "tipo": "consumivel",
+  "cura": 15,
+  "preco": 5,
+  "descricao": "Assado no forno de barro da vila.",
+  "sprite": "res://assets/itens/pao.png",
+  "pilha": 5
+ },
+ "pocao_pequena": {
+  "nome": "Poção Pequena",
+  "tipo": "consumivel",
+  "cura": 24,
+  "preco": 10,
+  "descricao": "Um gole amargo que fecha feridas leves.",
+  "sprite": "res://assets/pocao.png",
+  "pilha": 5
+ },
+ "pocao_media": {
+  "nome": "Poção Média",
+  "tipo": "consumivel",
+  "cura": 60,
+  "preco": 30,
+  "descricao": "Preparada pelos alquimistas de Miraj.",
+  "sprite": "res://assets/pocao.png",
+  "pilha": 5
+ },
+ "pocao_grande": {
+  "nome": "Poção Grande",
+  "tipo": "consumivel",
+  "cura": 135,
+  "preco": 80,
+  "descricao": "Brilha em vermelho vivo.",
+  "sprite": "res://assets/pocao.png",
+  "raro": true,
+  "pilha": 5
+ },
+ "elixir": {
+  "nome": "Elixir da Chama",
+  "tipo": "consumivel",
+  "cura": 999,
+  "preco": 250,
+  "descricao": "Restaura toda a vida.",
+  "sprite": "res://assets/pocao.png",
+  "raro": true,
+  "cura_status": true,
+  "pilha": 5
+ },
+ "espada_madeira": {
+  "nome": "Espada de Madeira",
+  "tipo": "arma",
+  "dano": 0,
+  "preco": 5,
+  "descricao": "A espada de treino que seu pai fez.",
+  "sprite": "res://assets/itens/espada_madeira.png",
+  "tam": [
+   1,
+   3
+  ]
+ },
+ "espada_bronze": {
+  "nome": "Espada de Bronze",
+  "tipo": "arma",
+  "dano": 1,
+  "preco": 45,
+  "descricao": "Forjada por Tariq.",
+  "sprite": "res://assets/itens/espada_bronze.png",
+  "tam": [
+   1,
+   3
+  ]
+ },
+ "espada_ferro": {
+  "nome": "Espada de Ferro",
+  "tipo": "arma",
+  "dano": 2,
+  "preco": 120,
+  "descricao": "Pesada e confiável.",
+  "sprite": "res://assets/itens/espada_ferro.png",
+  "tam": [
+   1,
+   3
+  ]
+ },
+ "cimitarra": {
+  "nome": "Cimitarra de Miraj",
+  "tipo": "arma",
+  "dano": 3,
+  "preco": 300,
+  "descricao": "Lâmina curva dos guardas do oásis.",
+  "sprite": "res://assets/itens/cimitarra.png",
+  "tam": [
+   1,
+   3
+  ]
+ },
+ "lamina_coral": {
+  "nome": "Lâmina de Coral",
+  "tipo": "arma",
+  "dano": 4,
+  "preco": 650,
+  "descricao": "Feita de coral endurecido do fundo do mar.",
+  "sprite": "res://assets/itens/lamina_coral.png",
+  "tam": [
+   1,
+   3
+  ]
+ },
+ "espada_vento": {
+  "nome": "Espada do Vento",
+  "tipo": "arma",
+  "dano": 5,
+  "preco": 1100,
+  "descricao": "Assobia ao cortar o ar.",
+  "sprite": "res://assets/itens/espada_vento.png",
+  "tam": [
+   1,
+   3
+  ]
+ },
+ "lamina_qadim": {
+  "nome": "Lâmina de Qadim",
+  "tipo": "arma",
+  "dano": 6,
+  "preco": 1800,
+  "descricao": "Gravada com runas antigas.",
+  "sprite": "res://assets/itens/lamina_qadim.png",
+  "tam": [
+   1,
+   3
+  ]
+ },
+ "espada_sal": {
+  "nome": "Espada da Cidadela",
+  "tipo": "arma",
+  "dano": 7,
+  "preco": 2700,
+  "descricao": "Arma oficial dos generais do norte.",
+  "sprite": "res://assets/itens/espada_sal.png",
+  "tam": [
+   1,
+   3
+  ]
+ },
+ "chama_de_kadir": {
+  "nome": "Chama de Kadir",
+  "tipo": "arma",
+  "dano": 10,
+  "preco": 0,
+  "descricao": "A espada lendária de seu pai. Arde sem queimar quem a empunha.",
+  "vendavel": false,
+  "sprite": "res://assets/itens/chama_de_kadir.png",
+  "tam": [
+   1,
+   3
+  ]
+ },
+ "carapaca_escorpiao": {
+  "nome": "Carapaça de Escorpião",
+  "tipo": "material",
+  "preco": 6,
+  "descricao": "Dura como couro curtido.",
+  "sprite": "res://assets/carapaca.png",
+  "pilha": 10
+ },
+ "pele_cobra": {
+  "nome": "Pele de Cobra",
+  "tipo": "material",
+  "preco": 8,
+  "descricao": "Escamosa e brilhante.",
+  "sprite": "res://assets/itens/pele_cobra.png",
+  "pilha": 10
+ },
+ "asa_morcego": {
+  "nome": "Asa de Morcego",
+  "tipo": "material",
+  "preco": 6,
+  "descricao": "Os alquimistas pagam bem por isso.",
+  "sprite": "res://assets/itens/asa_morcego.png",
+  "pilha": 10
+ },
+ "erva_do_deserto": {
+  "nome": "Erva do Deserto",
+  "tipo": "material",
+  "preco": 4,
+  "descricao": "Flor roxa que nasce entre as pedras.",
+  "sprite": "res://assets/erva.png",
+  "pilha": 10
+ },
+ "lenco_bandido": {
+  "nome": "Lenço de Bandido",
+  "tipo": "material",
+  "preco": 10,
+  "descricao": "Prova de que você enfrentou os bandidos da estrada.",
+  "sprite": "res://assets/itens/lenco_bandido.png",
+  "pilha": 10
+ },
+ "fragmento_chama": {
+  "nome": "Fragmento da Chama",
+  "tipo": "missao",
+  "preco": 0,
+  "descricao": "Um pedaço da Chama Sagrada de Areia Rubra, ainda quente.",
+  "sprite": "res://assets/fragmento.png"
+ },
+ "carta_kadir": {
+  "nome": "Carta de Kadir",
+  "tipo": "missao",
+  "preco": 0,
+  "descricao": "\"Zahrak está vindo. Procure Nadia em Miraj.\" - K.",
+  "sprite": "res://assets/itens/carta.png"
+ },
+ "carta_layla": {
+  "nome": "Carta de Layla",
+  "tipo": "missao",
+  "preco": 0,
+  "descricao": "Perfumada com água de rosas. Para Hassan.",
+  "sprite": "res://assets/itens/carta.png"
+ },
+ "pergaminho_chama": {
+  "nome": "Pergaminho da Chama",
+  "tipo": "chave",
+  "preco": 0,
+  "descricao": "Ensina a lançar bolas de fogo (botão FOGO).",
+  "sprite": "res://assets/itens/pergaminho.png"
+ },
+ "amuleto_kadir": {
+  "nome": "Amuleto de Kadir",
+  "tipo": "chave",
+  "preco": 0,
+  "descricao": "Presente de Samira. Era do seu pai.",
+  "sprite": "res://assets/itens/amuleto.png"
+ },
+ "flor_lotus": {
+  "nome": "Flor de Lótus",
+  "tipo": "missao",
+  "preco": 0,
+  "descricao": "Cresce só na água pura da nascente.",
+  "sprite": "res://assets/lotus.png"
+ },
+ "cantil": {
+  "nome": "Cantil de Água",
+  "tipo": "consumivel",
+  "cura": 12,
+  "preco": 6,
+  "descricao": "Água fresca do oásis.",
+  "sprite": "res://assets/itens/cantil.png",
+  "tam": [
+   1,
+   2
+  ],
+  "pilha": 5
+ },
+ "mapa_tesouro": {
+  "nome": "Mapa do Tesouro",
+  "tipo": "missao",
+  "preco": 0,
+  "descricao": "Um X vermelho marca um ponto perto do Porto Coral.",
+  "sprite": "res://assets/itens/mapa.png"
+ },
+ "peixe": {
+  "nome": "Peixe Fresco",
+  "tipo": "consumivel",
+  "cura": 18,
+  "preco": 6,
+  "descricao": "Ainda está se mexendo.",
+  "sprite": "res://assets/peixe.png",
+  "pilha": 5
+ },
+ "sino_vento": {
+  "nome": "Sino do Vento",
+  "tipo": "missao",
+  "preco": 0,
+  "descricao": "Toca sozinho quando o vento passa.",
+  "sprite": "res://assets/sino.png"
+ },
+ "engrenagem": {
+  "nome": "Engrenagem",
+  "tipo": "material",
+  "preco": 15,
+  "descricao": "Peça de máquina com a marca de Zahrak.",
+  "sprite": "res://assets/engrenagem.png",
+  "pilha": 10
+ },
+ "livro_perdido": {
+  "nome": "Livro Perdido",
+  "tipo": "missao",
+  "preco": 0,
+  "descricao": "Um volume antigo da Grande Biblioteca.",
+  "sprite": "res://assets/livro.png"
+ },
+ "livro_chamas": {
+  "nome": "Livro das Chamas",
+  "tipo": "missao",
+  "preco": 0,
+  "descricao": "Conta como as Sete Chamas foram acesas e como podem ser salvas.",
+  "sprite": "res://assets/livro.png"
+ },
+ "placa_aco": {
+  "nome": "Placa de Aço",
+  "tipo": "material",
+  "preco": 20,
+  "descricao": "Pedaço da armadura dos soldados cinzentos.",
+  "sprite": "res://assets/itens/placa_aco.png",
+  "pilha": 10
+ },
+ "pena_aguia": {
+  "nome": "Pena de Águia",
+  "tipo": "material",
+  "preco": 18,
+  "descricao": "Leve e resistente. Os mercadores pagam bem.",
+  "sprite": "res://assets/pena.png",
+  "pilha": 10
+ },
+ "essencia_sombria": {
+  "nome": "Essência Sombria",
+  "tipo": "material",
+  "preco": 40,
+  "raro": true,
+  "descricao": "Um resto frio da magia de Zahrak.",
+  "sprite": "res://assets/essencia.png",
+  "pilha": 10
+ },
+ "fragmento_cristal": {
+  "nome": "Fragmento de Cristal",
+  "tipo": "material",
+  "preco": 30,
+  "raro": true,
+  "descricao": "Brilha mesmo no escuro.",
+  "sprite": "res://assets/cristal.png",
+  "pilha": 10
+ },
+ "antidoto": {
+  "nome": "Antídoto",
+  "tipo": "consumivel",
+  "preco": 8,
+  "cura_status": true,
+  "descricao": "Tira veneno, queimadura e lentidão.",
+  "sprite": "res://assets/antidoto.png",
+  "pilha": 5
+ },
+ "tunica_couro": {
+  "nome": "Túnica de Couro",
+  "tipo": "armadura",
+  "defesa": 3,
+  "preco": 40,
+  "descricao": "Couro curtido de camelo. Melhor que nada.",
+  "sprite": "res://assets/itens/tunica_couro.png",
+  "tam": [
+   2,
+   2
+  ]
+ },
+ "cota_malha": {
+  "nome": "Cota de Malha",
+  "tipo": "armadura",
+  "defesa": 6,
+  "preco": 150,
+  "descricao": "Anéis de ferro trançados pelos ferreiros de Miraj.",
+  "sprite": "res://assets/itens/cota_malha.png",
+  "tam": [
+   2,
+   2
+  ]
+ },
+ "armadura_coral": {
+  "nome": "Armadura de Coral",
+  "tipo": "armadura",
+  "defesa": 9,
+  "preco": 600,
+  "descricao": "Escamas de coral que não enferrujam com o sal do mar.",
+  "sprite": "res://assets/itens/armadura_coral.png",
+  "tam": [
+   2,
+   2
+  ]
+ },
+ "armadura_vento": {
+  "nome": "Armadura do Vento",
+  "tipo": "armadura",
+  "defesa": 12,
+  "preco": 1000,
+  "descricao": "Leve como uma pena, dura como pedra.",
+  "sprite": "res://assets/itens/armadura_vento.png",
+  "tam": [
+   2,
+   2
+  ]
+ },
+ "armadura_sal": {
+  "nome": "Armadura de Sal",
+  "tipo": "armadura",
+  "defesa": 18,
+  "preco": 2500,
+  "descricao": "Couraça branca dos generais do norte.",
+  "sprite": "res://assets/itens/armadura_sal.png",
+  "tam": [
+   2,
+   2
+  ]
+ },
+ "bolsa_couro": {
+  "nome": "Bolsa de Couro",
+  "tipo": "bolsa",
+  "nivel": 1,
+  "preco": 60,
+  "sprite": "res://assets/itens/bolsa.png",
+  "descricao": "Mais espaço na bolsa: 7 x 4.",
+  "vendavel": false
+ },
+ "bolsa_viajante": {
+  "nome": "Bolsa do Viajante",
+  "tipo": "bolsa",
+  "nivel": 2,
+  "preco": 400,
+  "sprite": "res://assets/itens/bolsa.png",
+  "descricao": "Muito mais espaço na bolsa: 8 x 5.",
+  "vendavel": false
+ },
+ "carne_seca": {
+  "nome": "Carne Seca",
+  "tipo": "consumivel",
+  "cura": 12,
+  "preco": 6,
+  "descricao": "Salgada e dura. Feras famintas não resistem: serve de isca para domar hienas.",
+  "sprite": "res://assets/itens/carne_seca.png",
+  "pilha": 5
+ },
+ "apito_camelo": {
+  "nome": "Camelo Selado",
+  "tipo": "montaria",
+  "montaria": "camelo",
+  "preco": 350,
+  "descricao": "Um camelo com sela e apito. Toque em MONTAR para cavalgar fora das cidades fechadas.",
+  "sprite": "res://assets/itens/apito_camelo.png"
+ },
+ "olho_zazu": {
+  "nome": "Olho de Zazu",
+  "tipo": "chave",
+  "preco": 0,
+  "vendavel": false,
+  "descricao": "Pedra polida que o eremita Zazu te deu. A Fúria das Brasas enche 50% mais rápido.",
+  "sprite": "res://assets/itens/olho_zazu.png"
+ },
+ "livro_raro": {
+  "nome": "Livro Raro",
+  "tipo": "material",
+  "preco": 900,
+  "descricao": "Um volume de capa de ouro da Grande Biblioteca de Qadim. Um colecionador pagaria uma fortuna por ele.",
+  "sprite": "res://assets/livro.png"
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "varek_suborno": {
+  "linhas": [
+   {
+    "s": "General Varek",
+    "t": "Espere, garoto. Antes que você me arraste até Rana..."
+   },
+   {
+    "s": "General Varek",
+    "t": "Rana vai me pendurar na muralha. Tenho um cofre com duzentas Coroas. Metade é sua."
+   },
+   {
+    "s": "General Varek",
+    "t": "Me deixe sumir pela passagem dos fundos. Ninguém precisa saber."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Você vai responder à Capitã Rana.",
+    "acoes": [
+     {
+      "flag": "varek_entregue"
+     },
+     {
+      "honra": 5
+     }
+    ],
+    "ir": "varek_suborno_recusa"
+   },
+   {
+    "t": "Aceitar o ouro e deixar Varek fugir.",
+    "acoes": [
+     {
+      "flag": "varek_fugiu"
+     },
+     {
+      "moeda": "coroas",
+      "qtd": 100
+     },
+     {
+      "honra": -15
+     }
+    ],
+    "ir": "varek_suborno_aceito"
+   }
+  ]
+ },
+ "varek_suborno_recusa": {
+  "linhas": [
+   {
+    "s": "General Varek",
+    "t": "...Você é mesmo filho dele. Tudo bem. Eu vou."
+   },
+   {
+    "s": "",
+    "t": "Varek entrega a espada e caminha à sua frente, de cabeça baixa."
+   }
+  ]
+ },
+ "varek_suborno_aceito": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Varek empurra uma bolsa pesada para as suas mãos e desaparece pela passagem dos fundos."
+   },
+   {
+    "s": "General Varek",
+    "t": "A ponte vai estar aberta. O resto... esqueça que me viu."
+   }
+  ]
+ },
+ "zahrak_proposta": {
+  "linhas": [
+   {
+    "s": "Zahrak",
+    "t": "Espere. Antes de queimarmos uns aos outros... uma proposta, filho de Kadir."
+   },
+   {
+    "s": "Zahrak",
+    "t": "Metade do reino. Metade das chamas. Você nunca mais vai dormir no chão de uma caverna."
+   },
+   {
+    "s": "Zahrak",
+    "t": "Ajoelhe-se ao meu lado e seu pai vive. Recuse, e os dois queimam."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Nunca. As chamas são do povo.",
+    "se": {
+     "sem_flag": "zahrak_recusado"
+    },
+    "acoes": [
+     {
+      "flag": "zahrak_recusado"
+     },
+     {
+      "honra": 5
+     }
+    ],
+    "ir": "zahrak_proposta_recusa"
+   },
+   {
+    "t": "Nunca. As chamas são do povo.",
+    "se": {
+     "flag": "zahrak_recusado"
+    },
+    "ir": "zahrak_proposta_recusa"
+   },
+   {
+    "t": "Fingir que aceita... e atacar pelas costas.",
+    "se": {
+     "sem_flag": "chefe_traido_trono_cinzento"
+    },
+    "acoes": [
+     {
+      "flag": "chefe_traido_trono_cinzento"
+     },
+     {
+      "honra": -12
+     }
+    ],
+    "ir": "zahrak_proposta_traicao"
+   },
+   {
+    "t": "Fingir que aceita... e atacar pelas costas.",
+    "se": {
+     "flag": "chefe_traido_trono_cinzento"
+    },
+    "ir": "zahrak_proposta_traicao"
+   }
+  ]
+ },
+ "zahrak_proposta_recusa": {
+  "linhas": [
+   {
+    "s": "Kadir",
+    "t": "Esse é o meu filho."
+   },
+   {
+    "s": "Zahrak",
+    "t": "Então queimem juntos!"
+   }
+  ]
+ },
+ "zahrak_proposta_traicao": {
+  "linhas": [
+   {
+    "s": "Ifrit",
+    "t": "...Está bem. Eu aceito."
+   },
+   {
+    "s": "",
+    "t": "Zahrak sorri e se vira para o trono. Ifrit ataca pelas costas!"
+   },
+   {
+    "s": "Zahrak",
+    "t": "Argh! Traidor... Você é igual a mim, garoto!"
+   },
+   {
+    "s": "Kadir",
+    "t": "Ifrit... não foi isso que eu te ensinei. Um guardião luta de frente."
+   }
+  ]
+ }
+}

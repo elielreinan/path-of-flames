@@ -1,0 +1,1118 @@
+{
+ "q1_harun": {
+  "titulo": "O chamado do Ancião",
+  "tipo": "principal",
+  "nivel": 1,
+  "capitulo": 1,
+  "descricao": "Samira disse que o Ancião Harun quer ver você na praça da vila.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "harun",
+    "texto": "Fale com o Ancião Harun"
+   }
+  ],
+  "recompensa": {
+   "xp": 5
+  }
+ },
+ "q1_prova": {
+  "titulo": "A prova do Ancião",
+  "tipo": "principal",
+  "nivel": 1,
+  "capitulo": 1,
+  "descricao": "Harun quer que você prove sua coragem derrotando escorpiões nas Dunas Rubras, a leste da vila.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "escorpiao",
+    "qtd": 5,
+    "texto": "Derrote escorpiões nas Dunas Rubras"
+   }
+  ],
+  "entregar_a": "harun",
+  "recompensa": {
+   "xp": 16,
+   "moedas": {
+    "brasas": 20
+   },
+   "itens": {
+    "pergaminho_chama": 1
+   },
+   "flags": [
+    "magia_fogo"
+   ]
+  }
+ },
+ "q1_rainha": {
+  "titulo": "O ninho da Rainha",
+  "tipo": "principal",
+  "nivel": 10,
+  "capitulo": 1,
+  "descricao": "A Rainha Escorpião roubou um fragmento da Chama Sagrada. O covil dela fica no nordeste das Dunas Rubras.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "rainha_escorpiao",
+    "texto": "Derrote a Rainha Escorpião"
+   },
+   {
+    "tipo": "coletar",
+    "alvo": "fragmento_chama",
+    "texto": "Recupere o Fragmento da Chama"
+   }
+  ],
+  "entregar_a": "harun",
+  "recompensa": {
+   "xp": 73,
+   "moedas": {
+    "brasas": 50
+   },
+   "itens": {
+    "pocao_media": 2
+   }
+  }
+ },
+ "q1_despedida": {
+  "titulo": "A despedida",
+  "tipo": "principal",
+  "nivel": 15,
+  "capitulo": 1,
+  "descricao": "Antes de partir para Miraj, volte para casa e se despeça de Samira.",
+  "objetivos": [
+   {
+    "tipo": "flag",
+    "alvo": "despedida_vista",
+    "texto": "Despeça-se de Samira em casa"
+   }
+  ],
+  "recompensa": {
+   "xp": 22,
+   "itens": {
+    "amuleto_kadir": 1
+   },
+   "flags": [
+    "portao_norte_aberto"
+   ]
+  },
+  "proxima": "q2_estrada"
+ },
+ "s1_gato": {
+  "titulo": "O gato do Kiko",
+  "tipo": "secundaria",
+  "nivel": 1,
+  "capitulo": 1,
+  "descricao": "Mimi, a gata do Kiko, fugiu para as Dunas Rubras. Kiko acha que ela foi atrás da água do oásis.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "mimi",
+    "texto": "Encontre Mimi perto do oásis das Dunas"
+   }
+  ],
+  "entregar_a": "kiko",
+  "recompensa": {
+   "xp": 11,
+   "moedas": {
+    "brasas": 10
+   },
+   "itens": {
+    "tamara": 3
+   }
+  }
+ },
+ "s2_ervas": {
+  "titulo": "Ervas da Vó Noor",
+  "tipo": "secundaria",
+  "nivel": 6,
+  "capitulo": 1,
+  "descricao": "Vó Noor precisa de ervas do deserto para preparar remédios para a vila.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "erva_do_deserto",
+    "qtd": 5,
+    "texto": "Colete ervas nas Dunas Rubras"
+   }
+  ],
+  "entregar_a": "noor",
+  "recompensa": {
+   "xp": 22,
+   "moedas": {
+    "brasas": 10
+   },
+   "itens": {
+    "pocao_pequena": 3
+   }
+  }
+ },
+ "s3_carapacas": {
+  "titulo": "Carapaças para a forja",
+  "tipo": "secundaria",
+  "nivel": 10,
+  "capitulo": 1,
+  "descricao": "Tariq quer carapaças de escorpião para reforçar escudos. Em troca, promete uma espada nova.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "carapaca_escorpiao",
+    "qtd": 3,
+    "texto": "Junte carapaças de escorpião"
+   }
+  ],
+  "entregar_a": "tariq",
+  "recompensa": {
+   "xp": 37,
+   "itens": {
+    "espada_bronze": 1
+   }
+  }
+ },
+ "s4_bandidos": {
+  "titulo": "Bandidos na estrada",
+  "tipo": "secundaria",
+  "nivel": 15,
+  "capitulo": 1,
+  "descricao": "Bandidos atacam as caravanas na estrada para Miraj. Selim pediu que você desse um jeito neles.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "bandido",
+    "qtd": 4,
+    "texto": "Derrote bandidos na Estrada das Caravanas"
+   }
+  ],
+  "entregar_a": "selim",
+  "recompensa": {
+   "xp": 68,
+   "moedas": {
+    "brasas": 40
+   },
+   "itens": {
+    "pocao_media": 1
+   }
+  }
+ },
+ "s5_carta": {
+  "titulo": "Palavras de amor",
+  "tipo": "secundaria",
+  "nivel": 1,
+  "capitulo": 1,
+  "descricao": "Layla escreveu uma carta para Hassan, mas tem vergonha de entregar.",
+  "objetivos": [
+   {
+    "tipo": "flag",
+    "alvo": "carta_entregue",
+    "texto": "Entregue a carta a Hassan"
+   }
+  ],
+  "entregar_a": "layla",
+  "recompensa": {
+   "xp": 9,
+   "moedas": {
+    "brasas": 8
+   },
+   "itens": {
+    "pao": 2
+   }
+  }
+ },
+ "q2_estrada": {
+  "titulo": "Rumo a Miraj",
+  "tipo": "principal",
+  "nivel": 18,
+  "capitulo": 2,
+  "descricao": "Siga pela Estrada das Caravanas até o Oásis de Miraj e procure Nadia.",
+  "objetivos": [
+   {
+    "tipo": "ir",
+    "alvo": "oasis_miraj",
+    "texto": "Chegue ao Oásis de Miraj"
+   }
+  ],
+  "recompensa": {
+   "xp": 50
+  },
+  "proxima": "q2_nadia"
+ },
+ "q2_nadia": {
+  "titulo": "A arqueira de Miraj",
+  "tipo": "principal",
+  "nivel": 18,
+  "capitulo": 2,
+  "descricao": "A carta de Kadir pede que você procure Nadia em Miraj.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "nadia",
+    "texto": "Encontre Nadia no pátio do palácio"
+   }
+  ],
+  "recompensa": {
+   "xp": 25
+  }
+ },
+ "q2_yasmin": {
+  "titulo": "A rainha doente",
+  "tipo": "principal",
+  "nivel": 20,
+  "capitulo": 2,
+  "descricao": "Nadia pediu que você visite a Rainha Yasmin no palácio.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "yasmin",
+    "texto": "Fale com a Rainha Yasmin no palácio"
+   }
+  ],
+  "recompensa": {
+   "xp": 27
+  }
+ },
+ "q2_antidoto": {
+  "titulo": "Lótus da nascente",
+  "tipo": "principal",
+  "nivel": 20,
+  "capitulo": 2,
+  "descricao": "A curandeira Salma precisa de flores de lótus da Nascente de Miraj, a oeste da cidade, para fazer um antídoto.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "flor_lotus",
+    "qtd": 3,
+    "texto": "Colete flores de lótus na Nascente"
+   }
+  ],
+  "recompensa": {
+   "xp": 107,
+   "moedas": {
+    "brasas": 30
+   }
+  },
+  "entregar_a": "curandeira"
+ },
+ "q2_serpente": {
+  "titulo": "O veneno da nascente",
+  "tipo": "principal",
+  "nivel": 23,
+  "capitulo": 2,
+  "descricao": "Uma serpente enviada por Zahrak envenena a nascente. Derrote-a no fundo da Nascente de Miraj.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "serpente_oasis",
+    "texto": "Derrote a Serpente do Oásis"
+   }
+  ],
+  "recompensa": {
+   "xp": 233,
+   "moedas": {
+    "brasas": 120
+   },
+   "itens": {
+    "pocao_media": 3
+   },
+   "flags": [
+    "portao_miraj"
+   ]
+  },
+  "entregar_a": "yasmin",
+  "proxima": "q3_estrada"
+ },
+ "s2_caravana": {
+  "titulo": "A caravana perdida",
+  "tipo": "secundaria",
+  "nivel": 18,
+  "capitulo": 2,
+  "descricao": "Jabir, sócio de Rashid, sumiu na Estrada das Caravanas.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "jabir",
+    "texto": "Encontre Jabir na Estrada das Caravanas"
+   }
+  ],
+  "recompensa": {
+   "xp": 75,
+   "moedas": {
+    "brasas": 60
+   },
+   "itens": {
+    "pocao_media": 1
+   }
+  },
+  "entregar_a": "rashid"
+ },
+ "s2_poeta": {
+  "titulo": "Versos de lótus",
+  "tipo": "secundaria",
+  "nivel": 20,
+  "capitulo": 2,
+  "descricao": "Kamal quer duas flores de lótus para presentear sua amada.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "flor_lotus",
+    "qtd": 2,
+    "texto": "Traga flores de lótus para Kamal"
+   }
+  ],
+  "recompensa": {
+   "xp": 80,
+   "moedas": {
+    "brasas": 40
+   }
+  },
+  "entregar_a": "kamal"
+ },
+ "s2_camelos": {
+  "titulo": "Água para os camelos",
+  "tipo": "secundaria",
+  "nivel": 18,
+  "capitulo": 2,
+  "descricao": "Os camelos de Omid não podem beber a água envenenada. Ele precisa de três cantis.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "cantil",
+    "qtd": 3,
+    "texto": "Compre cantis com Fátima e leve a Omid"
+   }
+  ],
+  "recompensa": {
+   "xp": 62,
+   "moedas": {
+    "brasas": 45
+   }
+  },
+  "entregar_a": "cameleiro"
+ },
+ "q3_estrada": {
+  "titulo": "Rumo a Porto Coral",
+  "tipo": "principal",
+  "nivel": 28,
+  "capitulo": 3,
+  "descricao": "Atravesse o Desfiladeiro do Sal até Porto Coral. Lá, a moeda é a Pérola.",
+  "objetivos": [
+   {
+    "tipo": "ir",
+    "alvo": "porto_coral",
+    "texto": "Chegue a Porto Coral"
+   }
+  ],
+  "recompensa": {
+   "xp": 133
+  },
+  "proxima": "q3_murad"
+ },
+ "q3_murad": {
+  "titulo": "O porto bloqueado",
+  "tipo": "principal",
+  "nivel": 28,
+  "capitulo": 3,
+  "descricao": "Fale com o Capitão Murad, chefe da guarda do porto.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "murad",
+    "texto": "Fale com o Capitão Murad na capitania"
+   }
+  ],
+  "recompensa": {
+   "xp": 50
+  }
+ },
+ "q3_bako": {
+  "titulo": "O marujo mais forte",
+  "tipo": "principal",
+  "nivel": 31,
+  "capitulo": 3,
+  "descricao": "Murad disse que Bako, o marujo mais forte do porto, conhece o navio pirata. Ele vive na taverna.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "bako",
+    "texto": "Encontre Bako na taverna"
+   }
+  ],
+  "recompensa": {
+   "xp": 54
+  }
+ },
+ "q3_kraal": {
+  "titulo": "O navio de Kraal",
+  "tipo": "principal",
+  "nivel": 33,
+  "capitulo": 3,
+  "descricao": "Invada o navio pirata pelo cais e derrote o Capitão Kraal.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "kraal",
+    "texto": "Derrote o Capitão Kraal no navio pirata"
+   }
+  ],
+  "recompensa": {
+   "xp": 562,
+   "moedas": {
+    "perolas": 80
+   },
+   "itens": {
+    "pocao_grande": 2
+   },
+   "flags": [
+    "portao_coral"
+   ]
+  },
+  "entregar_a": "murad",
+  "proxima": "q4_estrada"
+ },
+ "s3_tesouro": {
+  "titulo": "O mapa do Velho Zeca",
+  "tipo": "secundaria",
+  "nivel": 28,
+  "capitulo": 3,
+  "descricao": "Zeca perdeu um mapa do tesouro em um baú escondido no Desfiladeiro do Sal.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "mapa_tesouro",
+    "texto": "Encontre o mapa no Desfiladeiro do Sal"
+   }
+  ],
+  "recompensa": {
+   "xp": 167,
+   "moedas": {
+    "perolas": 50
+   },
+   "itens": {
+    "pocao_grande": 1
+   }
+  },
+  "entregar_a": "velho_zeca",
+  "honra_falha": 12
+ },
+ "s3_peixe": {
+  "titulo": "Peixada da Rosa",
+  "tipo": "secundaria",
+  "nivel": 31,
+  "capitulo": 3,
+  "descricao": "Rosa quer quatro peixes frescos para a peixada da taverna. Os caranguejos vivem roubando peixe dos pescadores.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "peixe",
+    "qtd": 4,
+    "texto": "Junte peixes frescos"
+   }
+  ],
+  "recompensa": {
+   "xp": 161,
+   "moedas": {
+    "perolas": 30
+   }
+  },
+  "entregar_a": "taverneiro"
+ },
+ "s3_farol": {
+  "titulo": "A canção do farol",
+  "tipo": "secundaria",
+  "nivel": 31,
+  "capitulo": 3,
+  "descricao": "Tomás ouve uma canção perto das pedras do farol toda noite.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "marina",
+    "texto": "Descubra quem canta perto do farol"
+   }
+  ],
+  "recompensa": {
+   "xp": 143,
+   "moedas": {
+    "perolas": 25
+   }
+  },
+  "entregar_a": "faroleiro"
+ },
+ "q4_estrada": {
+  "titulo": "A trilha do vento",
+  "tipo": "principal",
+  "nivel": 36,
+  "capitulo": 4,
+  "descricao": "Suba a Trilha dos Penhascos até o Vale dos Ventos.",
+  "objetivos": [
+   {
+    "tipo": "ir",
+    "alvo": "vale_ventos",
+    "texto": "Chegue ao Vale dos Ventos"
+   }
+  ],
+  "recompensa": {
+   "xp": 240
+  },
+  "proxima": "q4_sora"
+ },
+ "q4_sora": {
+  "titulo": "A Anciã do vale",
+  "tipo": "principal",
+  "nivel": 36,
+  "capitulo": 4,
+  "descricao": "Procure a Anciã Sora, líder do Vale dos Ventos.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "sora",
+    "texto": "Fale com a Anciã Sora"
+   }
+  ],
+  "recompensa": {
+   "xp": 80
+  }
+ },
+ "q4_lobos": {
+  "titulo": "Lobos de metal",
+  "tipo": "principal",
+  "nivel": 38,
+  "capitulo": 4,
+  "descricao": "Lobos de metal atacam os rebanhos do vale. Eles vêm da Trilha dos Penhascos.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "lobo_metal",
+    "qtd": 6,
+    "texto": "Destrua lobos de metal"
+   }
+  ],
+  "recompensa": {
+   "xp": 417,
+   "moedas": {
+    "perolas": 40
+   }
+  },
+  "entregar_a": "sora"
+ },
+ "q4_fabrica": {
+  "titulo": "A fábrica escondida",
+  "tipo": "principal",
+  "nivel": 41,
+  "capitulo": 4,
+  "descricao": "Bako encontrou rastros de óleo levando ao leste do vale. Siga até a fábrica e destrua o que estiver lá.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "grifo_ferro",
+    "texto": "Destrua o Grifo de Ferro na fábrica"
+   }
+  ],
+  "recompensa": {
+   "xp": 972,
+   "moedas": {
+    "perolas": 120
+   },
+   "itens": {
+    "pocao_grande": 2
+   },
+   "flags": [
+    "portao_vale"
+   ]
+  },
+  "entregar_a": "sora",
+  "proxima": "q5_estrada"
+ },
+ "s4_ovelhas": {
+  "titulo": "Ovelhas fujonas",
+  "tipo": "secundaria",
+  "nivel": 36,
+  "capitulo": 4,
+  "descricao": "Três ovelhas de Pedro fugiram com medo dos lobos e se espalharam pelos cantos do vale.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "ovelha_1",
+    "texto": "Encontre a ovelha do sudoeste"
+   },
+   {
+    "tipo": "falar",
+    "alvo": "ovelha_2",
+    "texto": "Encontre a ovelha do nordeste"
+   },
+   {
+    "tipo": "falar",
+    "alvo": "ovelha_3",
+    "texto": "Encontre a ovelha do sudeste"
+   }
+  ],
+  "recompensa": {
+   "xp": 280,
+   "moedas": {
+    "perolas": 35
+   }
+  },
+  "entregar_a": "pastor"
+ },
+ "s4_sinos": {
+  "titulo": "Os sinos do vento",
+  "tipo": "secundaria",
+  "nivel": 38,
+  "capitulo": 4,
+  "descricao": "Mila perdeu os sinos do vento da estalagem numa tempestade. Eles caíram pela Trilha dos Penhascos.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "sino_vento",
+    "qtd": 3,
+    "texto": "Encontre sinos na Trilha dos Penhascos"
+   }
+  ],
+  "recompensa": {
+   "xp": 292,
+   "moedas": {
+    "perolas": 30
+   },
+   "itens": {
+    "pocao_grande": 1
+   }
+  },
+  "entregar_a": "estalagem_vale"
+ },
+ "s4_engrenagens": {
+  "titulo": "Engrenagens para Tobi",
+  "tipo": "secundaria",
+  "nivel": 38,
+  "capitulo": 4,
+  "descricao": "Tobi quer estudar as engrenagens dos lobos de metal.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "engrenagem",
+    "qtd": 5,
+    "texto": "Junte engrenagens dos lobos de metal"
+   }
+  ],
+  "recompensa": {
+   "xp": 375,
+   "moedas": {
+    "perolas": 50
+   },
+   "itens": {
+    "elixir": 1
+   }
+  },
+  "entregar_a": "tobi"
+ },
+ "q5_estrada": {
+  "titulo": "O Mar de Areia",
+  "tipo": "principal",
+  "nivel": 44,
+  "capitulo": 5,
+  "descricao": "Atravesse o Mar de Areia até as Ruínas de Qadim. No norte, a moeda é a Coroa.",
+  "objetivos": [
+   {
+    "tipo": "ir",
+    "alvo": "ruinas_qadim",
+    "texto": "Chegue às Ruínas de Qadim"
+   }
+  ],
+  "recompensa": {
+   "xp": 467
+  },
+  "proxima": "q5_omar"
+ },
+ "q5_omar": {
+  "titulo": "O velho mago",
+  "tipo": "principal",
+  "nivel": 44,
+  "capitulo": 5,
+  "descricao": "Procure Omar, o mago que conhece a história das chamas.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "omar",
+    "texto": "Encontre Omar nas ruínas"
+   }
+  ],
+  "recompensa": {
+   "xp": 140
+  }
+ },
+ "q5_livro": {
+  "titulo": "O Livro das Chamas",
+  "tipo": "principal",
+  "nivel": 49,
+  "capitulo": 5,
+  "descricao": "O Livro das Chamas está na Grande Biblioteca, ao norte das ruínas, guardado por um golem.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "golem_vidro",
+    "texto": "Derrote o Golem de Vidro"
+   },
+   {
+    "tipo": "coletar",
+    "alvo": "livro_chamas",
+    "qtd": 1,
+    "consumir": false,
+    "texto": "Pegue o Livro das Chamas"
+   }
+  ],
+  "recompensa": {
+   "xp": 1525,
+   "moedas": {
+    "coroas": 80
+   },
+   "itens": {
+    "elixir": 1
+   },
+   "flags": [
+    "portao_qadim",
+    "chama_qadim_restaurada"
+   ]
+  },
+  "proxima": "q6_estrada"
+ },
+ "s5_livros": {
+  "titulo": "Livros perdidos",
+  "tipo": "secundaria",
+  "nivel": 46,
+  "capitulo": 5,
+  "descricao": "O espírito do bibliotecário não descansa enquanto quatro livros estiverem fora do lugar.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "livro_perdido",
+    "qtd": 4,
+    "texto": "Encontre livros perdidos na biblioteca"
+   }
+  ],
+  "recompensa": {
+   "xp": 725,
+   "moedas": {
+    "coroas": 50
+   },
+   "itens": {
+    "elixir": 1
+   }
+  },
+  "entregar_a": "bibliotecario",
+  "honra_falha": 12
+ },
+ "s5_estatuas": {
+  "titulo": "O enigma das estátuas",
+  "tipo": "secundaria",
+  "nivel": 44,
+  "capitulo": 5,
+  "descricao": "Hana quer que você leia as três estátuas antigas espalhadas pelas ruínas.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "estatua_1",
+    "texto": "Leia a estátua do noroeste"
+   },
+   {
+    "tipo": "falar",
+    "alvo": "estatua_2",
+    "texto": "Leia a estátua do sul"
+   },
+   {
+    "tipo": "falar",
+    "alvo": "estatua_3",
+    "texto": "Leia a estátua do sudeste"
+   }
+  ],
+  "recompensa": {
+   "xp": 560,
+   "moedas": {
+    "coroas": 50
+   }
+  },
+  "entregar_a": "arqueologa"
+ },
+ "q6_estrada": {
+  "titulo": "A Estrada do Norte",
+  "tipo": "principal",
+  "nivel": 51,
+  "capitulo": 6,
+  "descricao": "Siga pela Estrada do Norte até a Cidadela de Sal.",
+  "objetivos": [
+   {
+    "tipo": "ir",
+    "alvo": "cidadela_sal",
+    "texto": "Chegue à Cidadela de Sal"
+   }
+  ],
+  "recompensa": {
+   "xp": 788
+  },
+  "proxima": "q6_rana"
+ },
+ "q6_rana": {
+  "titulo": "A capitã rebelde",
+  "tipo": "principal",
+  "nivel": 51,
+  "capitulo": 6,
+  "descricao": "Na cidadela, procure a Capitã Rana, que lidera a resistência.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "rana",
+    "texto": "Fale com a Capitã Rana no quartel-general"
+   }
+  ],
+  "recompensa": {
+   "xp": 210
+  }
+ },
+ "q6_soldados": {
+  "titulo": "Patrulhas cinzentas",
+  "tipo": "principal",
+  "nivel": 54,
+  "capitulo": 6,
+  "descricao": "Soldados leais a Varek patrulham a Estrada do Norte. Derrote-os para enfraquecer o general.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "soldado",
+    "qtd": 6,
+    "texto": "Derrote soldados cinzentos"
+   }
+  ],
+  "recompensa": {
+   "xp": 1100,
+   "moedas": {
+    "coroas": 60
+   }
+  },
+  "entregar_a": "rana"
+ },
+ "q6_varek": {
+  "titulo": "O general traidor",
+  "tipo": "principal",
+  "nivel": 57,
+  "capitulo": 6,
+  "descricao": "Invada o quartel ao norte da cidadela e derrote o General Varek.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "varek",
+    "texto": "Derrote o General Varek no quartel"
+   }
+  ],
+  "recompensa": {
+   "xp": 2300,
+   "moedas": {
+    "coroas": 120
+   },
+   "itens": {
+    "elixir": 2
+   },
+   "flags": [
+    "ponte_aberta"
+   ]
+  },
+  "entregar_a": "rana",
+  "proxima": "q7_ponte"
+ },
+ "s6_desertores": {
+  "titulo": "Os desertores",
+  "tipo": "secundaria",
+  "nivel": 51,
+  "capitulo": 6,
+  "descricao": "Ana quer que você encontre dois soldados que desertaram e estão escondidos na Estrada do Norte.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "desertor_1",
+    "texto": "Encontre o primeiro desertor"
+   },
+   {
+    "tipo": "falar",
+    "alvo": "desertor_2",
+    "texto": "Encontre o segundo desertor"
+   }
+  ],
+  "recompensa": {
+   "xp": 840,
+   "moedas": {
+    "coroas": 50
+   }
+  },
+  "entregar_a": "soldada_ana"
+ },
+ "s6_armadura": {
+  "titulo": "A armadura do herói",
+  "tipo": "secundaria",
+  "nivel": 54,
+  "capitulo": 6,
+  "descricao": "O armeiro quer placas de aço dos soldados cinzentos para forjar algo especial.",
+  "objetivos": [
+   {
+    "tipo": "coletar",
+    "alvo": "placa_aco",
+    "qtd": 4,
+    "texto": "Junte placas de aço"
+   }
+  ],
+  "recompensa": {
+   "xp": 990,
+   "moedas": {
+    "coroas": 70
+   },
+   "itens": {
+    "elixir": 1,
+    "pocao_grande": 2
+   }
+  },
+  "entregar_a": "armeiro"
+ },
+ "q7_ponte": {
+  "titulo": "A Ponte das Cinzas",
+  "tipo": "principal",
+  "nivel": 59,
+  "capitulo": 7,
+  "descricao": "Atravesse a Ponte das Cinzas e invada o Trono Cinzento.",
+  "objetivos": [
+   {
+    "tipo": "ir",
+    "alvo": "trono_cinzento",
+    "texto": "Chegue ao Trono Cinzento"
+   }
+  ],
+  "recompensa": {
+   "xp": 1183
+  },
+  "proxima": "q7_kadir"
+ },
+ "q7_kadir": {
+  "titulo": "Pai",
+  "tipo": "principal",
+  "nivel": 62,
+  "capitulo": 7,
+  "descricao": "Kadir está preso em algum lugar do Trono Cinzento. Encontre a prisão.",
+  "objetivos": [
+   {
+    "tipo": "falar",
+    "alvo": "kadir_preso",
+    "texto": "Liberte Kadir na prisão do castelo"
+   }
+  ],
+  "recompensa": {
+   "xp": 617
+  }
+ },
+ "q7_zahrak": {
+  "titulo": "O Rei Cinzento",
+  "tipo": "principal",
+  "nivel": 64,
+  "capitulo": 7,
+  "descricao": "Com Kadir ao seu lado, enfrente Zahrak no salão do trono.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "zahrak",
+    "texto": "Derrote Zahrak, o Rei Cinzento"
+   }
+  ],
+  "recompensa": {
+   "flags": [
+    "jogo_zerado"
+   ]
+  }
+ },
+ "x_hienas": {
+  "titulo": "Hienas no pomar",
+  "tipo": "secundaria",
+  "nivel": 18,
+  "capitulo": 2,
+  "descricao": "Hienas estão roubando as tâmaras da Aldeia das Tamareiras. Salma pediu ajuda.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "hiena",
+    "qtd": 4,
+    "texto": "Derrote hienas no pomar"
+   }
+  ],
+  "entregar_a": "lar_x_salma",
+  "recompensa": {
+   "xp": 35,
+   "moedas": {
+    "brasas": 50
+   },
+   "itens": {
+    "carne_seca": 3
+   }
+  }
+ },
+ "x_redes": {
+  "titulo": "Redes cortadas",
+  "tipo": "secundaria",
+  "nivel": 31,
+  "capitulo": 3,
+  "descricao": "Caranguejos estão cortando as redes da Vila dos Pescadores. Seu Tomé quer a praia limpa.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "caranguejo",
+    "qtd": 5,
+    "texto": "Derrote caranguejos na praia"
+   }
+  ],
+  "entregar_a": "lar_x_tome",
+  "recompensa": {
+   "xp": 60,
+   "moedas": {
+    "perolas": 30
+   },
+   "itens": {
+    "pocao_grande": 1
+   }
+  }
+ },
+ "x_treino": {
+  "titulo": "Primeiras lições",
+  "tipo": "secundaria",
+  "nivel": 1,
+  "capitulo": 1,
+  "descricao": "Mestre Sadiq quer ver você quebrar três bonecos de treino.",
+  "objetivos": [
+   {
+    "tipo": "matar",
+    "alvo": "boneco_treino",
+    "qtd": 3,
+    "texto": "Quebre bonecos de treino"
+   }
+  ],
+  "entregar_a": "lar_x_sadiq",
+  "recompensa": {
+   "xp": 15,
+   "moedas": {
+    "brasas": 15
+   },
+   "itens": {
+    "pocao_pequena": 2
+   }
+  }
+ },
+ "x_arena": {
+  "titulo": "Campeão do Campo",
+  "tipo": "secundaria",
+  "nivel": 10,
+  "capitulo": 1,
+  "descricao": "Vença o desafio da arena do Campo de Treino.",
+  "objetivos": [
+   {
+    "tipo": "flag",
+    "alvo": "arena_vencida",
+    "qtd": 1,
+    "texto": "Vença as três ondas da arena"
+   }
+  ],
+  "recompensa": {
+   "xp": 30,
+   "itens": {
+    "pocao_media": 2
+   }
+  }
+ }
+}

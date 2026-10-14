@@ -1,0 +1,283 @@
+{
+ "nome": "Casa de Samira",
+ "moeda": "brasas",
+ "spawns": {
+  "inicio": [
+   12,
+   3
+  ],
+  "porta": [
+   7,
+   8
+  ]
+ },
+ "npcs": [
+  {
+   "id": "samira",
+   "pos": [
+    4,
+    4
+   ]
+  },
+  {
+   "id": "kadir_casa",
+   "pos": [
+    9,
+    5
+   ],
+   "se": {
+    "flag": "chefe_zahrak"
+   }
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    7,
+    9,
+    1,
+    1
+   ],
+   "mapa": "areia_rubra",
+   "spawn": "casa_mae"
+  }
+ ],
+ "gatilhos": [
+  {
+   "id": "intro",
+   "area": [
+    10,
+    2,
+    5,
+    3
+   ],
+   "cutscene": "intro",
+   "se": {
+    "sem_flag": "intro_visto"
+   }
+  },
+  {
+   "id": "epilogo",
+   "area": [
+    6,
+    7,
+    3,
+    2
+   ],
+   "cutscene": "epilogo",
+   "se": {
+    "flag": "chefe_zahrak",
+    "sem_flag": "epilogo_visto"
+   }
+  }
+ ],
+ "baus": [
+  {
+   "pos": [
+    14,
+    7
+   ],
+   "itens": {
+    "pao": 2
+   },
+   "moedas": {
+    "brasas": 5
+   }
+  }
+ ],
+ "renascer": [
+  "casa_mae",
+  "inicio"
+ ],
+ "layout": [
+  "wwwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwww",
+  "wmmmfmfffffffmfw",
+  "wmfffffffffffmfw",
+  "wfffffmmfffffmfw",
+  "wfffffmmfffffffw",
+  "wmfffffffffffffw",
+  "wmfffffffffffffw",
+  "wmffffffffffmfmw",
+  "wwwwwwwDwwwwwwww"
+ ],
+ "organico": true,
+ "decoracao": [
+  {
+   "s": "fogao",
+   "area": [
+    1,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    2,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "gaveteiro",
+   "area": [
+    3,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    5,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    13,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "mesa_grande",
+   "area": [
+    6,
+    4,
+    2,
+    2
+   ]
+  },
+  {
+   "s": "comoda",
+   "area": [
+    13,
+    4,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    1,
+    5,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    9,
+    5,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    1,
+    6,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "tapete",
+   "area": [
+    4,
+    6,
+    6,
+    2
+   ]
+  },
+  {
+   "s": "barril_agua",
+   "area": [
+    1,
+    7,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "jarro",
+   "area": [
+    1,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "caixote",
+   "area": [
+    12,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    14,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "janela",
+   "area": [
+    4,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "quadro",
+   "area": [
+    8,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "janela",
+   "area": [
+    11,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "espelho",
+   "area": [
+    14,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  }
+ ],
+ "tema": "areia_rubra"
+}

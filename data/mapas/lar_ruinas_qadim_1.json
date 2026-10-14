@@ -1,0 +1,216 @@
+{
+ "nome": "Casa de Yara",
+ "moeda": "coroas",
+ "interior": true,
+ "spawns": {
+  "porta": [
+   7,
+   9
+  ]
+ },
+ "npcs": [
+  {
+   "id": "lar_yara",
+   "pos": [
+    5,
+    3
+   ]
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    7,
+    10,
+    1,
+    1
+   ],
+   "mapa": "ruinas_qadim",
+   "spawn": "lar_1"
+  }
+ ],
+ "renascer": [
+  "ruinas_qadim",
+  "oeste"
+ ],
+ "layout": [
+  "wwwwwwwwwwwwww",
+  "wwwwwwwwwwwwww",
+  "wmmfmfmfmmwfmw",
+  "wfffffffffwfmw",
+  "wffmfffffffffw",
+  "wffffffffffwww",
+  "wffffffffffffw",
+  "wmfffffffmmffw",
+  "wmfffffffmmffw",
+  "wmffffffffffmw",
+  "wwwwwwwDwwwwww"
+ ],
+ "decoracao": [
+  {
+   "s": "estante_livros",
+   "area": [
+    1,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    2,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    4,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    6,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    8,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    9,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    12,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "mesa",
+   "area": [
+    3,
+    4,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    11,
+    4,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    3,
+    5,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "tapete_redondo",
+   "area": [
+    6,
+    5,
+    2,
+    2
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    1,
+    7,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "mesa_grande",
+   "area": [
+    9,
+    7,
+    2,
+    2
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    1,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    1,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_flor",
+   "area": [
+    12,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "janela",
+   "area": [
+    3,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "janela",
+   "area": [
+    8,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  }
+ ],
+ "tema": "ruinas_qadim"
+}

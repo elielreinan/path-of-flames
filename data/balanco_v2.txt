@@ -1,0 +1,1 @@
+Rebalanceamento 2 aplicado (tools/rebalancear_niveis.py).

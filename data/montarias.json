@@ -1,0 +1,24 @@
+{
+ "camelo": {
+  "nome": "Camelo",
+  "sprite": "res://assets/montaria_camelo.png",
+  "descricao": "Lento para assustar, firme na areia. Vendido no estábulo de Miraj.",
+  "criatura": "montaria_camelo"
+ },
+ "hiena": {
+  "nome": "Hiena Domada",
+  "sprite": "res://assets/montaria_hiena.png",
+  "domar": "hiena",
+  "isca": "carne_seca",
+  "descricao": "Domada com carne seca depois de cansada em luta.",
+  "criatura": "montaria_hiena"
+ },
+ "lobo_metal": {
+  "nome": "Lobo de Metal",
+  "sprite": "res://assets/montaria_lobo.png",
+  "domar": "lobo_metal",
+  "isca": "engrenagem",
+  "descricao": "Domado com uma engrenagem depois de cansado em luta.",
+  "criatura": "montaria_lobo_metal"
+ }
+}

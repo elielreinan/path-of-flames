@@ -1,0 +1,224 @@
+{
+ "nome": "Casa de Lúcia",
+ "moeda": "coroas",
+ "interior": true,
+ "spawns": {
+  "porta": [
+   7,
+   9
+  ]
+ },
+ "npcs": [
+  {
+   "id": "lar_lucia",
+   "pos": [
+    2,
+    7
+   ]
+  },
+  {
+   "id": "lar_davi",
+   "pos": [
+    10,
+    2
+   ]
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    7,
+    10,
+    1,
+    1
+   ],
+   "mapa": "cidadela_sal",
+   "spawn": "lar_2"
+  }
+ ],
+ "renascer": [
+  "cidadela_sal",
+  "sul"
+ ],
+ "layout": [
+  "wwwwwwwwwwwwww",
+  "wwwwwwwwwwwwww",
+  "wmfmwmfmfffmmw",
+  "wmfmwfffffffmw",
+  "wfffwfffffffmw",
+  "wwfwwffmmfffmw",
+  "wffffffmmffffw",
+  "wmfffffffffffw",
+  "wffffffffffmfw",
+  "wmffffffffffmw",
+  "wwwwwwwDwwwwww"
+ ],
+ "decoracao": [
+  {
+   "s": "cama",
+   "area": [
+    1,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    3,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    5,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "gaveteiro",
+   "area": [
+    7,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "comoda",
+   "area": [
+    11,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "fogao",
+   "area": [
+    12,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "bacia",
+   "area": [
+    12,
+    4,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "mesa_grande",
+   "area": [
+    7,
+    5,
+    2,
+    2
+   ]
+  },
+  {
+   "s": "barril_agua",
+   "area": [
+    12,
+    5,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    11,
+    6,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_flor",
+   "area": [
+    1,
+    7,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "tapete",
+   "area": [
+    4,
+    8,
+    2,
+    2
+   ]
+  },
+  {
+   "s": "caixote",
+   "area": [
+    11,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    1,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "jarro",
+   "area": [
+    12,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "janela",
+   "area": [
+    2,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "quadro",
+   "area": [
+    6,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "janela",
+   "area": [
+    9,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  }
+ ],
+ "tema": "cidadela_sal"
+}

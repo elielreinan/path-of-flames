@@ -1,0 +1,197 @@
+{
+ "nome": "Vila dos Pescadores",
+ "moeda": "perolas",
+ "spawns": {
+  "oeste": [
+   1,
+   14
+  ],
+  "lar_1": [
+   6,
+   9
+  ],
+  "lar_2": [
+   17,
+   9
+  ],
+  "lar_3": [
+   29,
+   9
+  ],
+  "lar_4": [
+   37,
+   9
+  ]
+ },
+ "npcs": [
+  {
+   "id": "lar_x_tome",
+   "pos": [
+    29,
+    19
+   ]
+  },
+  {
+   "id": "lar_x_iara",
+   "pos": [
+    11,
+    16
+   ]
+  },
+  {
+   "id": "lar_x_marina",
+   "pos": [
+    36,
+    16
+   ]
+  },
+  {
+   "id": "lar_x_lino",
+   "pos": [
+    19,
+    18
+   ]
+  },
+  {
+   "id": "lar_x_menino_nadador",
+   "nada": true,
+   "pos": [
+    12,
+    25
+   ],
+   "vagar": true
+  },
+  {
+   "id": "lar_x_menina_nadadora",
+   "nada": true,
+   "pos": [
+    22,
+    26
+   ],
+   "vagar": true
+  },
+  {
+   "id": "lar_x_pescador_velho",
+   "pos": [
+    41,
+    19
+   ]
+  }
+ ],
+ "inimigos": [
+  {
+   "tipo": "caranguejo",
+   "qtd": 4,
+   "area": [
+    2,
+    21,
+    26,
+    1
+   ],
+   "se": {
+    "quest": "x_redes",
+    "estado": "ativa"
+   }
+  }
+ ],
+ "placas": [
+  {
+   "pos": [
+    2,
+    12
+   ],
+   "texto": "Vila dos Pescadores. Oeste: Porto Coral."
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    0,
+    14,
+    1,
+    2
+   ],
+   "mapa": "porto_coral",
+   "spawn": "vila"
+  },
+  {
+   "area": [
+    6,
+    8,
+    1,
+    1
+   ],
+   "mapa": "lar_vila_pescadores_1",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    17,
+    8,
+    1,
+    1
+   ],
+   "mapa": "lar_vila_pescadores_2",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    29,
+    8,
+    1,
+    1
+   ],
+   "mapa": "lar_vila_pescadores_3",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    37,
+    8,
+    1,
+    1
+   ],
+   "mapa": "lar_vila_pescadores_4",
+   "spawn": "porta"
+  }
+ ],
+ "renascer": [
+  "vila_pescadores",
+  "oeste"
+ ],
+ "layout": [
+  "############################################",
+  "#..........................................#",
+  "#..........................................#",
+  "#..........................................#",
+  "#..........................................#",
+  "#..........................................#",
+  "#..RRRRRRR....RRRRRRR....RRRRRRRR..RRRRRR..#",
+  "#..RRRRRRR....RRRRRRR....RRRRRRRR..RRRRRR..#",
+  "#..HJHDHJH....HJHDHJH....HJHHDHJH..HHDHJH..#",
+  "#....*:*........*:*.........*:*.....*:*....#",
+  "#.....:..........:...........:.......:.....#",
+  "#...T.:...T.....T:....T......:....T..:..T..#",
+  "#...T.:.T...T..TT:.TT...T..TT:.TT..TT:.TT..#",
+  "#.....:..........:...........:.......:.....#",
+  ":::::::::::::::::::::::::::::::::::::::::::#",
+  ":::::::::::::::::::::::::::::::::::::::::::#",
+  "#..........................................#",
+  "#...T...T.SSS.KK......K.T...T...T.......T..#",
+  "#...T...T...............T.......T...T......#",
+  "#..........................................#",
+  "#.::::::::::::::::::::::::::::::::::::::::.#",
+  "#....WWWWW.................WW.==...........#",
+  "WW..WWWWWWW...............WWWW==W.........WW",
+  "WWWWWWWWWWWWW...WWWWWWWWWWWWWW==WWWWW.....WW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW==WWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW==WWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW==WWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW==WWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW==WWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+ ],
+ "organico": true
+}

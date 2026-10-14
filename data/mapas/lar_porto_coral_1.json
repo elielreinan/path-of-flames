@@ -1,0 +1,217 @@
+{
+ "nome": "Casa de Rafi",
+ "moeda": "perolas",
+ "interior": true,
+ "spawns": {
+  "porta": [
+   7,
+   9
+  ]
+ },
+ "npcs": [
+  {
+   "id": "lar_rafi",
+   "pos": [
+    1,
+    5
+   ]
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    7,
+    10,
+    1,
+    1
+   ],
+   "mapa": "porto_coral",
+   "spawn": "lar_1"
+  }
+ ],
+ "renascer": [
+  "porto_coral",
+  "oeste"
+ ],
+ "layout": [
+  "wwwwwwwwwwwwww",
+  "wwwwwwwwwwwwww",
+  "wmmfmffmwfmffw",
+  "wffffffffffmfw",
+  "wffffffffffmfw",
+  "wffmfffffwwwfw",
+  "wffffffffffffw",
+  "wmfffffffffffw",
+  "wmffffffffffmw",
+  "wmffffffffffmw",
+  "wwwwwwwDwwwwww"
+ ],
+ "decoracao": [
+  {
+   "s": "barril",
+   "area": [
+    1,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "barril_agua",
+   "area": [
+    2,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "caixote",
+   "area": [
+    4,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "estante_livros",
+   "area": [
+    7,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    10,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    11,
+    3,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    1,
+    5,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "mesa",
+   "area": [
+    3,
+    5,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    3,
+    6,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "caixote",
+   "area": [
+    1,
+    7,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "tapete_grande",
+   "area": [
+    5,
+    7,
+    3,
+    2
+   ]
+  },
+  {
+   "s": "caixotes",
+   "area": [
+    1,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "barril",
+   "area": [
+    12,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "jarro_azul",
+   "area": [
+    1,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
+   "area": [
+    12,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "rede",
+   "area": [
+    3,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "janela",
+   "area": [
+    6,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "quadro",
+   "area": [
+    11,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  }
+ ],
+ "tema": "porto_coral"
+}

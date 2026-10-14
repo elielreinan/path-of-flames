@@ -1,0 +1,205 @@
+{
+ "nome": "Grande Biblioteca",
+ "moeda": "coroas",
+ "spawns": {
+  "entrada": [
+   19,
+   33
+  ]
+ },
+ "npcs": [
+  {
+   "id": "bibliotecario",
+   "pos": [
+    20,
+    23
+   ]
+  }
+ ],
+ "inimigos": [
+  {
+   "tipo": "mumia",
+   "qtd": 4,
+   "area": [
+    3,
+    14,
+    34,
+    11
+   ]
+  },
+  {
+   "tipo": "escorpiao_cristal",
+   "qtd": 3,
+   "area": [
+    14,
+    26,
+    12,
+    8
+   ]
+  }
+ ],
+ "chefe": {
+  "tipo": "golem_vidro",
+  "pos": [
+   20,
+   5
+  ],
+  "flag": "chefe_golem",
+  "se": {
+   "flag": "golem_desperto"
+  },
+  "cutscene": "golem_derrotado"
+ },
+ "gatilhos": [
+  {
+   "id": "arena",
+   "area": [
+    18,
+    12,
+    4,
+    1
+   ],
+   "cutscene": "golem_aparece",
+   "se": {
+    "sem_flag": "chefe_golem"
+   },
+   "uma_vez": false
+  }
+ ],
+ "coletaveis": [
+  {
+   "item": "livro_perdido",
+   "pos": [
+    4,
+    15
+   ],
+   "se": {
+    "quest": "s5_livros",
+    "estado": [
+     "ativa",
+     "pronta"
+    ]
+   }
+  },
+  {
+   "item": "livro_perdido",
+   "pos": [
+    35,
+    23
+   ],
+   "se": {
+    "quest": "s5_livros",
+    "estado": [
+     "ativa",
+     "pronta"
+    ]
+   }
+  },
+  {
+   "item": "livro_perdido",
+   "pos": [
+    15,
+    20
+   ],
+   "se": {
+    "quest": "s5_livros",
+    "estado": [
+     "ativa",
+     "pronta"
+    ]
+   }
+  },
+  {
+   "item": "livro_perdido",
+   "pos": [
+    24,
+    17
+   ],
+   "se": {
+    "quest": "s5_livros",
+    "estado": [
+     "ativa",
+     "pronta"
+    ]
+   }
+  }
+ ],
+ "baus": [
+  {
+   "pos": [
+    36,
+    15
+   ],
+   "itens": {
+    "lamina_qadim": 1
+   }
+  },
+  {
+   "pos": [
+    15,
+    33
+   ],
+   "itens": {
+    "elixir": 1
+   },
+   "moedas": {
+    "coroas": 40
+   }
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    19,
+    35,
+    2,
+    1
+   ],
+   "mapa": "ruinas_qadim",
+   "spawn": "norte"
+  }
+ ],
+ "renascer": [
+  "ruinas_qadim",
+  "norte"
+ ],
+ "layout": [
+  "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwww",
+  "wwwwwwwwwwwwwwwwwwffffwwwwwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwwwwwffffwwwwwwwwwwwwwwwwww",
+  "wwwffffffffffffffffffffffffffffffffffwww",
+  "wwwffffffffffffffffffffffffffffffffffwww",
+  "wwwffEEEEEEEEEEffffffffffEEEEEEEEEEffwww",
+  "wwwffffffffffffffffffffffffffffffffffwww",
+  "wwwffffffffffffffffffffffffffffffffffwww",
+  "wwwffEEEEEEEEEEffffffffffEEEEEEEEEEffwww",
+  "wwwffffffffffffffffffffffffffffffffffwww",
+  "wwwffffffffffffffffffffffffffffffffffwww",
+  "wwwffEEEEEEEEEEffffffffffEEEEEEEEEEffwww",
+  "wwwffffffffffffffffffffffffffffffffffwww",
+  "wwwffffffffffffffffffffffffffffffffffwww",
+  "wwwwwwwwwwwwwwwwwffffffwwwwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwffffffffffffwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwffffffffffffwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwfEEEEEEEEEEfwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwffffffffffffwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwffffffffffffwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwffffffffffffwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwffffffffffffwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwffffffffffffwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwffffffffffffwwwwwwwwwwwwww",
+  "wwwwwwwwwwwwwwwwwwwffwwwwwwwwwwwwwwwwwww"
+ ],
+ "organico": true
+}

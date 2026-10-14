@@ -1,0 +1,709 @@
+{
+ "escorpiao": {
+  "nome": "Escorpião",
+  "hp": 5,
+  "dano": 1,
+  "velocidade": 35,
+  "xp": 3,
+  "moedas": [
+   1,
+   2
+  ],
+  "sprite": "res://assets/escorpiao.png",
+  "raio_aggro": 80,
+  "drops": {
+   "carapaca_escorpiao": 0.35
+  },
+  "nivel": 1,
+  "efeito": {
+   "tipo": "veneno",
+   "chance": 0.15
+  },
+  "ia": "cacador",
+  "criatura": "escorpiao",
+  "raio": 8
+ },
+ "cobra": {
+  "nome": "Cobra do Deserto",
+  "hp": 10,
+  "dano": 2,
+  "velocidade": 30,
+  "xp": 8,
+  "moedas": [
+   1,
+   3
+  ],
+  "sprite": "res://assets/cobra.png",
+  "raio_aggro": 70,
+  "drops": {
+   "pele_cobra": 0.3
+  },
+  "nivel": 6,
+  "efeito": {
+   "tipo": "veneno",
+   "chance": 0.35
+  },
+  "ia": "cacador",
+  "foge": true,
+  "criatura": "cobra",
+  "raio": 8
+ },
+ "escorpiao_negro": {
+  "nome": "Escorpião Negro",
+  "hp": 22,
+  "dano": 6,
+  "velocidade": 42,
+  "xp": 16,
+  "moedas": [
+   2,
+   4
+  ],
+  "sprite": "res://assets/escorpiao.png",
+  "drops": {
+   "carapaca_escorpiao": 0.5
+  },
+  "nivel": 10,
+  "efeito": {
+   "tipo": "veneno",
+   "chance": 0.35
+  },
+  "ia": "cacador",
+  "criatura": "escorpiao_negro",
+  "raio": 8
+ },
+ "calango": {
+  "nome": "Calango",
+  "hp": 12,
+  "dano": 2,
+  "velocidade": 40,
+  "xp": 9,
+  "moedas": [
+   1,
+   3
+  ],
+  "sprite": "res://assets/calango.png",
+  "raio": 8,
+  "recuo": 0.6,
+  "raio_aggro": 90,
+  "drops": {
+   "tamara": 0.2
+  },
+  "nivel": 6,
+  "ia": "cacador",
+  "foge": true,
+  "criatura": "calango"
+ },
+ "morcego": {
+  "nome": "Morcego",
+  "hp": 8,
+  "dano": 3,
+  "velocidade": 48,
+  "xp": 7,
+  "moedas": [
+   1,
+   2
+  ],
+  "sprite": "res://assets/morcego.png",
+  "comportamento": "voar",
+  "raio_aggro": 100,
+  "drops": {
+   "asa_morcego": 0.3
+  },
+  "nivel": 10,
+  "criatura": "morcego",
+  "raio": 8
+ },
+ "bandido": {
+  "nome": "Bandido",
+  "hp": 36,
+  "dano": 7,
+  "velocidade": 42,
+  "xp": 30,
+  "moedas": [
+   3,
+   7
+  ],
+  "aparencia": {
+   "cabelo": "capuz",
+   "corpo": "tunica",
+   "cores": {
+    "b": "#5a3c2c",
+    "a": "#2a1a12",
+    "k": "#140c08",
+    "y": "#f0d040",
+    "d": "#3a2a20"
+   }
+  },
+  "drops": {
+   "lenco_bandido": 0.4,
+   "pocao_pequena": 0.1
+  },
+  "nivel": 18,
+  "ia": "atirador",
+  "projetil": "res://assets/flecha.png"
+ },
+ "rainha_escorpiao": {
+  "nome": "Rainha Escorpião",
+  "hp": 764,
+  "dano": 12,
+  "velocidade": 32,
+  "xp": 135,
+  "moedas": [
+   40,
+   50
+  ],
+  "sprite": "res://assets/rainha_escorpiao.png",
+  "raio": 12,
+  "recuo": 0.15,
+  "padroes": [
+   "investida",
+   "invocar",
+   "projeteis"
+  ],
+  "invoca": "escorpiao",
+  "projetil": "res://assets/veneno.png",
+  "nivel": 15,
+  "garantidos": {
+   "pocao_media": 2,
+   "carapaca_escorpiao": 3
+  },
+  "efeito": {
+   "tipo": "veneno",
+   "chance": 0.3
+  },
+  "lema": "Mãe de todos os escorpiões das dunas.",
+  "criatura": "rainha_escorpiao"
+ },
+ "hiena": {
+  "nome": "Hiena",
+  "hp": 41,
+  "dano": 7,
+  "velocidade": 48,
+  "xp": 35,
+  "moedas": [
+   2,
+   5
+  ],
+  "sprite": "res://assets/hiena.png",
+  "raio_aggro": 100,
+  "drops": {
+   "tamara": 0.2,
+   "pele_cobra": 0.15
+  },
+  "nivel": 18,
+  "ia": "matilha",
+  "foge": true,
+  "criatura": "hiena",
+  "raio": 8
+ },
+ "sapo": {
+  "nome": "Sapo Venenoso",
+  "hp": 35,
+  "dano": 7,
+  "velocidade": 30,
+  "xp": 32,
+  "moedas": [
+   2,
+   5
+  ],
+  "sprite": "res://assets/sapo.png",
+  "drops": {
+   "pocao_pequena": 0.1
+  },
+  "nivel": 20,
+  "efeito": {
+   "tipo": "veneno",
+   "chance": 0.5
+  },
+  "ia": "atirador",
+  "projetil": "res://assets/veneno.png",
+  "criatura": "sapo",
+  "raio": 8
+ },
+ "serpentinha": {
+  "nome": "Serpentinha",
+  "hp": 52,
+  "dano": 11,
+  "velocidade": 38,
+  "xp": 47,
+  "moedas": [
+   3,
+   6
+  ],
+  "sprite": "res://assets/cobra.png",
+  "drops": {
+   "pele_cobra": 0.4
+  },
+  "nivel": 23,
+  "efeito": {
+   "tipo": "veneno",
+   "chance": 0.4
+  },
+  "ia": "cacador",
+  "criatura": "serpentinha",
+  "raio": 8
+ },
+ "serpente_oasis": {
+  "nome": "Serpente do Oásis",
+  "hp": 1595,
+  "dano": 20,
+  "velocidade": 34,
+  "xp": 462,
+  "moedas": [
+   80,
+   100
+  ],
+  "sprite": "res://assets/serpente_oasis.png",
+  "raio": 12,
+  "recuo": 0.1,
+  "padroes": [
+   "investida",
+   "projeteis",
+   "invocar"
+  ],
+  "invoca": "serpentinha",
+  "projetil": "res://assets/veneno.png",
+  "nivel": 25,
+  "garantidos": {
+   "pocao_media": 2,
+   "pele_cobra": 3,
+   "elixir": 1
+  },
+  "efeito": {
+   "tipo": "veneno",
+   "chance": 0.4
+  },
+  "lema": "A fera que secou as águas de Miraj.",
+  "criatura": "serpente_oasis"
+ },
+ "caranguejo": {
+  "nome": "Caranguejo",
+  "hp": 77,
+  "dano": 11,
+  "velocidade": 32,
+  "xp": 74,
+  "moedas": [
+   1,
+   3
+  ],
+  "sprite": "res://assets/caranguejo.png",
+  "drops": {
+   "peixe": 0.4
+  },
+  "nivel": 25,
+  "ia": "tanque",
+  "recuo": 0.4,
+  "criatura": "caranguejo",
+  "raio": 8
+ },
+ "pirata": {
+  "nome": "Pirata",
+  "hp": 93,
+  "dano": 14,
+  "velocidade": 44,
+  "xp": 100,
+  "moedas": [
+   2,
+   4
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "tunica",
+   "cores": {
+    "y": "#c02020",
+    "a": "#f0f0f0",
+    "b": "#f0f0f0",
+    "d": "#2a2a5a",
+    "h": "#1a1a1a"
+   }
+  },
+  "drops": {
+   "pocao_media": 0.1,
+   "peixe": 0.2
+  },
+  "nivel": 28,
+  "ia": "atirador",
+  "projetil": "res://assets/flecha.png"
+ },
+ "kraal": {
+  "nome": "Capitão Kraal",
+  "hp": 2925,
+  "dano": 33,
+  "velocidade": 40,
+  "xp": 1125,
+  "moedas": [
+   40,
+   50
+  ],
+  "escala": 2.0,
+  "raio": 10,
+  "recuo": 0.1,
+  "aparencia": {
+   "cabelo": "curto",
+   "barba": true,
+   "corpo": "armadura",
+   "cores": {
+    "h": "#1a1a1a",
+    "y": "#7a1010",
+    "B": "#1a1a1a",
+    "b": "#7a1010",
+    "a": "#e0c040",
+    "d": "#2a2a2a"
+   }
+  },
+  "padroes": [
+   "investida",
+   "invocar",
+   "investida"
+  ],
+  "invoca": "pirata",
+  "nivel": 33,
+  "garantidos": {
+   "pocao_grande": 2,
+   "peixe": 3
+  },
+  "lema": "Capitão pirata, terror do Porto Coral."
+ },
+ "lobo_metal": {
+  "nome": "Lobo de Metal",
+  "hp": 138,
+  "dano": 18,
+  "velocidade": 52,
+  "xp": 150,
+  "moedas": [
+   2,
+   5
+  ],
+  "sprite": "res://assets/lobo_metal.png",
+  "raio_aggro": 110,
+  "drops": {
+   "engrenagem": 0.4
+  },
+  "nivel": 33,
+  "ia": "matilha",
+  "criatura": "lobo_metal",
+  "raio": 8
+ },
+ "aguia": {
+  "nome": "Águia Brava",
+  "hp": 100,
+  "dano": 15,
+  "velocidade": 55,
+  "xp": 135,
+  "moedas": [
+   2,
+   4
+  ],
+  "sprite": "res://assets/aguia.png",
+  "comportamento": "voar",
+  "raio_aggro": 120,
+  "nivel": 33,
+  "drops": {
+   "pena_aguia": 0.4
+  },
+  "criatura": "aguia",
+  "raio": 8
+ },
+ "grifo_ferro": {
+  "nome": "Grifo de Ferro",
+  "hp": 3890,
+  "dano": 42,
+  "velocidade": 42,
+  "xp": 1987,
+  "moedas": [
+   60,
+   80
+  ],
+  "sprite": "res://assets/grifo_ferro.png",
+  "raio": 12,
+  "recuo": 0.1,
+  "padroes": [
+   "investida",
+   "projeteis",
+   "invocar"
+  ],
+  "invoca": "aguia",
+  "projetil": "res://assets/bola_de_fogo.png",
+  "nivel": 41,
+  "garantidos": {
+   "engrenagem": 5,
+   "pocao_grande": 2
+  },
+  "lema": "A máquina alada de Zahrak.",
+  "criatura": "grifo_ferro"
+ },
+ "mumia": {
+  "nome": "Múmia",
+  "hp": 190,
+  "dano": 22,
+  "velocidade": 30,
+  "xp": 256,
+  "moedas": [
+   1,
+   3
+  ],
+  "raio_aggro": 90,
+  "aparencia": {
+   "cabelo": "careca",
+   "corpo": "manto",
+   "cores": {
+    "s": "#d8d0b8",
+    "b": "#d8d0b8",
+    "a": "#a09880",
+    "k": "#e04020",
+    "m": "#a09880",
+    "h": "#c0b8a0",
+    "f": "#a09880"
+   }
+  },
+  "drops": {
+   "pocao_media": 0.15,
+   "elixir": 0.02
+  },
+  "nivel": 41,
+  "efeito": {
+   "tipo": "lentidao",
+   "chance": 0.25
+  },
+  "ia": "tanque",
+  "recuo": 0.4
+ },
+ "escorpiao_cristal": {
+  "nome": "Escorpião de Cristal",
+  "hp": 167,
+  "dano": 22,
+  "velocidade": 44,
+  "xp": 257,
+  "moedas": [
+   1,
+   3
+  ],
+  "sprite": "res://assets/escorpiao.png",
+  "drops": {
+   "carapaca_escorpiao": 0.3,
+   "fragmento_cristal": 0.3
+  },
+  "nivel": 44,
+  "efeito": {
+   "tipo": "veneno",
+   "chance": 0.3
+  },
+  "ia": "cacador",
+  "criatura": "escorpiao_cristal",
+  "raio": 8
+ },
+ "golem_vidro": {
+  "nome": "Golem de Vidro",
+  "hp": 5288,
+  "dano": 47,
+  "velocidade": 28,
+  "xp": 3050,
+  "moedas": [
+   30,
+   40
+  ],
+  "sprite": "res://assets/golem_vidro.png",
+  "raio": 12,
+  "recuo": 0.0,
+  "padroes": [
+   "projeteis",
+   "investida",
+   "projeteis"
+  ],
+  "projetil": "res://assets/veneno.png",
+  "nivel": 49,
+  "garantidos": {
+   "fragmento_cristal": 4,
+   "elixir": 1
+  },
+  "efeito": {
+   "tipo": "lentidao",
+   "chance": 0.3
+  },
+  "lema": "Guardião de cristal das Ruínas de Qadim.",
+  "criatura": "golem_vidro"
+ },
+ "soldado": {
+  "nome": "Soldado Cinzento",
+  "hp": 266,
+  "dano": 26,
+  "velocidade": 44,
+  "xp": 407,
+  "moedas": [
+   2,
+   4
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "armadura",
+   "cores": {
+    "y": "#7a7a7a",
+    "a": "#a0a0a0",
+    "b": "#4a4a4a",
+    "d": "#2a2a2a",
+    "h": "#1a1a1a"
+   }
+  },
+  "drops": {
+   "placa_aco": 0.35,
+   "pocao_media": 0.1
+  },
+  "nivel": 49,
+  "ia": "cacador"
+ },
+ "varek": {
+  "nome": "General Varek",
+  "hp": 6224,
+  "dano": 56,
+  "velocidade": 44,
+  "xp": 4600,
+  "moedas": [
+   60,
+   80
+  ],
+  "escala": 2.0,
+  "raio": 10,
+  "recuo": 0.05,
+  "aparencia": {
+   "cabelo": "curto",
+   "barba": true,
+   "corpo": "armadura",
+   "cores": {
+    "h": "#8a8a8a",
+    "B": "#8a8a8a",
+    "b": "#3a3a4a",
+    "a": "#c0c0c0",
+    "y": "#c02020"
+   }
+  },
+  "padroes": [
+   "investida",
+   "invocar",
+   "projeteis"
+  ],
+  "invoca": "soldado",
+  "projetil": "res://assets/flecha.png",
+  "nivel": 57,
+  "garantidos": {
+   "placa_aco": 4,
+   "elixir": 2
+  },
+  "lema": "General do exército cinzento."
+ },
+ "sombra": {
+  "nome": "Sombra",
+  "hp": 274,
+  "dano": 30,
+  "velocidade": 55,
+  "xp": 546,
+  "moedas": [
+   3,
+   5
+  ],
+  "sprite": "res://assets/sombra.png",
+  "comportamento": "voar",
+  "raio_aggro": 130,
+  "nivel": 57,
+  "drops": {
+   "essencia_sombria": 0.3,
+   "pocao_media": 0.1
+  },
+  "efeito": {
+   "tipo": "lentidao",
+   "chance": 0.4
+  },
+  "criatura": "sombra",
+  "raio": 8
+ },
+ "cavaleiro": {
+  "nome": "Cavaleiro Cinzento",
+  "hp": 367,
+  "dano": 34,
+  "velocidade": 40,
+  "xp": 710,
+  "moedas": [
+   3,
+   6
+  ],
+  "aparencia": {
+   "cabelo": "capuz",
+   "corpo": "armadura",
+   "cores": {
+    "b": "#3a3a3a",
+    "a": "#7a7a7a",
+    "k": "#0a0a0a",
+    "y": "#e03020",
+    "d": "#1a1a1a"
+   }
+  },
+  "drops": {
+   "pocao_grande": 0.15,
+   "elixir": 0.03,
+   "essencia_sombria": 0.2
+  },
+  "nivel": 59,
+  "efeito": {
+   "tipo": "lentidao",
+   "chance": 0.2
+  },
+  "ia": "tanque",
+  "recuo": 0.4
+ },
+ "zahrak": {
+  "nome": "Zahrak, o Rei Cinzento",
+  "hp": 8531,
+  "dano": 69,
+  "velocidade": 40,
+  "xp": 1,
+  "moedas": [
+   0,
+   0
+  ],
+  "escala": 2.2,
+  "raio": 11,
+  "recuo": 0.0,
+  "aparencia": {
+   "cabelo": "capuz",
+   "corpo": "manto",
+   "cores": {
+    "b": "#4a4a4a",
+    "a": "#8a2aa0",
+    "k": "#0a0a0a",
+    "y": "#ff3030"
+   }
+  },
+  "padroes": [
+   "projeteis",
+   "invocar",
+   "investida",
+   "projeteis"
+  ],
+  "invoca": "sombra",
+  "projetil": "res://assets/bola_de_fogo.png",
+  "nivel": 64,
+  "efeito": {
+   "tipo": "queimadura",
+   "chance": 0.3
+  },
+  "lema": "O Rei Cinzento. O fim de tudo."
+ },
+ "boneco_treino": {
+  "nome": "Boneco de Treino",
+  "nivel": 1,
+  "hp": 30,
+  "dano": 0,
+  "velocidade": 0,
+  "ia": "parado",
+  "xp": 0,
+  "moedas": [
+   0,
+   0
+  ],
+  "sprite": "res://assets/boneco.png",
+  "treino": true,
+  "recuo": 0.0,
+  "raio_aggro": 0,
+  "criatura": "boneco_treino",
+  "raio": 8
+ }
+}

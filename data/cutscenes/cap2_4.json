@@ -1,0 +1,313 @@
+{
+ "serpente_aparece": [
+  {
+   "cmd": "camera",
+   "para": [
+    20,
+    6
+   ],
+   "t": 1.0
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "Serpente do Oásis",
+   "t": "Sssshhh... A água é minha agora. O Rei Cinzento prometeu."
+  },
+  {
+   "cmd": "fala",
+   "s": "Serpente do Oásis",
+   "t": "Mais um para o meu veneno!"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "serpente_desperta"
+    },
+    {
+     "invocar_chefe": true
+    }
+   ]
+  }
+ ],
+ "serpente_derrotada": [
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "A Serpente do Oásis se desfaz. A água dos laguinhos começa a clarear."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ifrit",
+   "t": "A nascente está limpa. Preciso contar à Rainha Yasmin."
+  }
+ ],
+ "miraj_vitoria": [
+  {
+   "cmd": "escurecer"
+  },
+  {
+   "cmd": "mapa",
+   "mapa": "oasis_miraj",
+   "spawn": "palacio"
+  },
+  {
+   "cmd": "surgir",
+   "npc": "yasmin",
+   "pos": [
+    24,
+    10
+   ]
+  },
+  {
+   "cmd": "camera",
+   "para": [
+    22,
+    12
+   ],
+   "t": 0.6
+  },
+  {
+   "cmd": "clarear"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Ifrit toca a Chama Sagrada de Miraj com o amuleto de Kadir. Ela volta a arder!"
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "chama_miraj_restaurada"
+    }
+   ]
+  },
+  {
+   "cmd": "dialogo",
+   "id": "yasmin_miraj_fala"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "quest_concluir": "q2_serpente"
+    },
+    {
+     "sumir_npc": "nadia"
+    },
+    {
+     "flag": "nadia_aliada"
+    },
+    {
+     "aliado": "nadia"
+    }
+   ]
+  },
+  {
+   "cmd": "sumir",
+   "npc": "yasmin"
+  },
+  {
+   "cmd": "titulo",
+   "t": "Capítulo 3",
+   "sub": "Porto Coral"
+  }
+ ],
+ "kraal_aparece": [
+  {
+   "cmd": "camera",
+   "para": [
+    28,
+    7
+   ],
+   "t": 1.0
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "Capitão Kraal",
+   "t": "Bako, seu rato de porão! Voltou para morrer?"
+  },
+  {
+   "cmd": "fala",
+   "s": "Bako",
+   "t": "Voltei para afundar o seu navio, Kraal!"
+  },
+  {
+   "cmd": "fala",
+   "s": "Capitão Kraal",
+   "t": "Marujos! Ao ataque!"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "kraal_desperto"
+    },
+    {
+     "invocar_chefe": true
+    }
+   ]
+  }
+ ],
+ "kraal_derrotado": [
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "Capitão Kraal",
+   "t": "Argh... O Rei Cinzento... me pagou em Coroas... ele vai acabar com vocês..."
+  },
+  {
+   "cmd": "fala",
+   "s": "Bako",
+   "t": "Isso foi pelo meu irmão."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ifrit",
+   "t": "Vamos voltar e falar com o Capitão Murad."
+  }
+ ],
+ "coral_vitoria": [
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Ifrit acende a Chama Sagrada de Porto Coral com o amuleto. Os sinos do porto tocam!"
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "chama_coral_restaurada"
+    }
+   ]
+  },
+  {
+   "cmd": "dialogo",
+   "id": "murad_coral_fala"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "quest_concluir": "q3_kraal"
+    }
+   ]
+  },
+  {
+   "cmd": "titulo",
+   "t": "Capítulo 4",
+   "sub": "Vale dos Ventos"
+  }
+ ],
+ "grifo_aparece": [
+  {
+   "cmd": "camera",
+   "para": [
+    20,
+    5
+   ],
+   "t": 1.0
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Engrenagens rangem. Uma sombra gigante se levanta das máquinas."
+  },
+  {
+   "cmd": "fala",
+   "s": "Bako",
+   "t": "Isso é... um pássaro de ferro?!"
+  },
+  {
+   "cmd": "fala",
+   "s": "Nadia",
+   "t": "É um grifo! Cuidado com as asas!"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "grifo_desperto"
+    },
+    {
+     "invocar_chefe": true
+    }
+   ]
+  }
+ ],
+ "grifo_derrotado": [
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "O Grifo de Ferro desaba numa chuva de parafusos."
+  },
+  {
+   "cmd": "dialogo",
+   "id": "grifo_bau"
+  },
+  {
+   "cmd": "fala",
+   "s": "Nadia",
+   "t": "A fábrica parou. Vamos contar à Anciã Sora."
+  }
+ ],
+ "vale_vitoria": [
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Ifrit acende a Chama Sagrada do Vale dos Ventos. Uma brisa quente percorre o vale."
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "chama_vale_restaurada"
+    }
+   ]
+  },
+  {
+   "cmd": "dialogo",
+   "id": "sora_vale_fala"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "quest_concluir": "q4_fabrica"
+    }
+   ]
+  },
+  {
+   "cmd": "titulo",
+   "t": "Capítulo 5",
+   "sub": "Ruínas de Qadim"
+  }
+ ]
+}

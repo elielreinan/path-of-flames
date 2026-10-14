@@ -1,0 +1,1042 @@
+{
+ "chama_qadim_fraca": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Qadim está quase apagada. Uma fumaça cinzenta sobe dela."
+   }
+  ]
+ },
+ "chama_qadim_forte": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Qadim arde forte. Você se sente renovado."
+   }
+  ],
+  "acoes": [
+   {
+    "curar": true
+   }
+  ]
+ },
+ "ferreiro_qadim_loja": {
+  "linhas": [
+   {
+    "s": "Idris, o Ferreiro",
+    "t": "Forjo lâminas com as runas que encontro nas ruínas."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Ver armas",
+    "acoes": [
+     {
+      "loja": "ferreiro_qadim"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "mercador_qadim_loja": {
+  "linhas": [
+   {
+    "s": "Nur, a Alquimista",
+    "t": "Elixires antigos, receitas de mil anos!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Comprar ou vender",
+    "acoes": [
+     {
+      "loja": "mercado_qadim"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "cambista_qadim_cambio": {
+  "linhas": [
+   {
+    "s": "Sahir, o Cambista",
+    "t": "Aqui no norte só circulam Coroas. Brasas e Pérolas eu troco."
+   },
+   {
+    "s": "Sahir, o Cambista",
+    "t": "Aqui a moeda é Coroas. Precisa trocar?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Trocar moedas",
+    "acoes": [
+     {
+      "cambio": true
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "estalagem_qadim_quarto": {
+  "linhas": [
+   {
+    "s": "Hamid, da Estalagem",
+    "t": "Durma entre colunas de mil anos!"
+   },
+   {
+    "s": "Hamid, da Estalagem",
+    "t": "Um quarto custa 3 Coroas. Você acorda novinho em folha!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Descansar (3 Coroas)",
+    "se": {
+     "moeda": {
+      "coroas": 3
+     }
+    },
+    "acoes": [
+     {
+      "pagar": "coroas",
+      "qtd": 3
+     },
+     {
+      "dormir": true
+     },
+     {
+      "salvar": true
+     }
+    ]
+   },
+   {
+    "t": "Não, obrigado"
+   }
+  ]
+ },
+ "estatua_1": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Há uma inscrição gasta na base da estátua:"
+   },
+   {
+    "s": "Estátua antiga",
+    "t": "\"Primeira foi a chama do sul, nascida da areia vermelha.\""
+   }
+  ]
+ },
+ "estatua_2": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Há uma inscrição gasta na base da estátua:"
+   },
+   {
+    "s": "Estátua antiga",
+    "t": "\"Sete chamas, sete cidades, um só fogo dividido para que nenhum rei o tivesse inteiro.\""
+   }
+  ]
+ },
+ "estatua_3": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Há uma inscrição gasta na base da estátua:"
+   },
+   {
+    "s": "Estátua antiga",
+    "t": "\"Quem carregar o sangue do guardião poderá reacender o que foi apagado.\""
+   }
+  ]
+ },
+ "omar_padrao": {
+  "linhas": [
+   {
+    "s": "Omar, o Mago",
+    "t": "Hmm? Visitas? Faz tempo que ninguém vem a Qadim."
+   }
+  ]
+ },
+ "omar_encontro": {
+  "linhas": [
+   {
+    "s": "Omar, o Mago",
+    "t": "Esse amuleto... é de Kadir! Onde você conseguiu isso, rapaz?"
+   },
+   {
+    "s": "Ifrit",
+    "t": "Ele é meu pai. Estou seguindo os passos dele desde Areia Rubra."
+   },
+   {
+    "s": "Omar, o Mago",
+    "t": "Então escute bem. Kadir esteve aqui há três anos. Ele procurava o Livro das Chamas."
+   },
+   {
+    "s": "Omar, o Mago",
+    "t": "Zahrak o capturou na Ponte das Cinzas. Seu pai está vivo, preso no Trono Cinzento, no extremo norte."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Vivo... Ele está vivo!"
+   },
+   {
+    "s": "Omar, o Mago",
+    "t": "Para enfrentar Zahrak, vocês precisam do Livro das Chamas. Ele está na Grande Biblioteca, ao norte, guardado por um golem."
+   },
+   {
+    "s": "Omar, o Mago",
+    "t": "Só eu sei abrir o selo da porta. Então... parece que vou com vocês. Meus joelhos que me perdoem."
+   },
+   {
+    "s": "",
+    "t": "Omar entrou no grupo!"
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "omar"
+   },
+   {
+    "flag": "omar_aliado"
+   },
+   {
+    "aliado": "omar"
+   },
+   {
+    "quest_iniciar": "q5_livro"
+   }
+  ]
+ },
+ "hana_pedido": {
+  "linhas": [
+   {
+    "s": "Dra. Hana, a Arqueóloga",
+    "t": "Você é aventureiro? Perfeito! Preciso de olhos jovens."
+   },
+   {
+    "s": "Dra. Hana, a Arqueóloga",
+    "t": "Há três estátuas nas ruínas com inscrições sobre as Sete Chamas. Leia todas e me conte o que dizem."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Eu leio para você.",
+    "acoes": [
+     {
+      "quest_iniciar": "s5_estatuas"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "hana_lembrete": {
+  "linhas": [
+   {
+    "s": "Dra. Hana, a Arqueóloga",
+    "t": "Uma estátua no noroeste, uma no sul e uma no sudeste. Não pule nenhuma!"
+   }
+  ]
+ },
+ "hana_fim": {
+  "linhas": [
+   {
+    "s": "Dra. Hana, a Arqueóloga",
+    "t": "\"Quem carregar o sangue do guardião poderá reacender o que foi apagado\"... Então é por isso que você consegue acender as chamas!"
+   },
+   {
+    "s": "Dra. Hana, a Arqueóloga",
+    "t": "Isso vai mudar a história de Zahra! Tome, você merece."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s5_estatuas"
+   }
+  ]
+ },
+ "hana_padrao": {
+  "linhas": [
+   {
+    "s": "Dra. Hana, a Arqueóloga",
+    "t": "Cada pedra daqui tem uma história."
+   }
+  ]
+ },
+ "fantasma_pedido": {
+  "linhas": [
+   {
+    "s": "Espírito do Bibliotecário",
+    "t": "Shhhhh! Silêncio na biblioteca!"
+   },
+   {
+    "s": "Espírito do Bibliotecário",
+    "t": "...Ah, você me vê? Há quatro livros fora do lugar. Não consigo descansar com essa bagunça."
+   },
+   {
+    "s": "Espírito do Bibliotecário",
+    "t": "Encontre-os pela biblioteca e traga para mim."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Vou arrumar a bagunça.",
+    "acoes": [
+     {
+      "quest_iniciar": "s5_livros"
+     }
+    ]
+   },
+   {
+    "t": "Fantasmas me dão medo."
+   }
+  ]
+ },
+ "fantasma_lembrete": {
+  "linhas": [
+   {
+    "s": "Espírito do Bibliotecário",
+    "t": "Quatro livros. Eles estão espalhados entre as estantes."
+   }
+  ]
+ },
+ "fantasma_fim": {
+  "linhas": [
+   {
+    "s": "Espírito do Bibliotecário",
+    "t": "Os livros! Coloque-os aqui, na estante. Com cuidado!"
+   },
+   {
+    "s": "",
+    "t": "Um deles tem capa de ouro e ilustrações que parecem se mexer. Um colecionador pagaria uma fortuna por ele."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Devolver os quatro livros.",
+    "ir": "fantasma_fim_honesto"
+   },
+   {
+    "t": "Esconder o livro raro e entregar só três.",
+    "ir": "fantasma_fim_roubo"
+   }
+  ]
+ },
+ "fantasma_padrao": {
+  "linhas": [
+   {
+    "s": "Espírito do Bibliotecário",
+    "t": "Shhhh..."
+   }
+  ]
+ },
+ "perdida_fala": {
+  "linhas": [
+   {
+    "s": "Mercadora Perdida",
+    "t": "Estou andando em círculos há dias! Qadim fica para o leste, não é?"
+   },
+   {
+    "s": "Ifrit",
+    "t": "Siga a trilha para o leste. Tome cuidado com as múmias."
+   },
+   {
+    "s": "Mercadora Perdida",
+    "t": "Múmias?! Ai, mãe..."
+   }
+  ]
+ },
+ "chama_cidadela_fraca": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Cidadela de Sal está quase apagada. Uma fumaça cinzenta sobe dela."
+   }
+  ]
+ },
+ "chama_cidadela_forte": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Cidadela de Sal arde forte. Você se sente renovado."
+   }
+  ],
+  "acoes": [
+   {
+    "curar": true
+   }
+  ]
+ },
+ "ferreiro_cidadela_loja": {
+  "linhas": [
+   {
+    "s": "Bruna, a Armeira",
+    "t": "Equipamento militar! Só o melhor aço do norte."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Ver armas",
+    "acoes": [
+     {
+      "loja": "ferreiro_cidadela"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "mercador_cidadela_loja": {
+  "linhas": [
+   {
+    "s": "Sargento Oto, o Intendente",
+    "t": "Rações e poções para a tropa. E para heróis também."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Comprar ou vender",
+    "acoes": [
+     {
+      "loja": "mercado_cidadela"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "cambista_negro_cambio": {
+  "linhas": [
+   {
+    "s": "Vulto, o Cambista",
+    "t": "Psiu... Troco moedas sem perguntas. A taxa é a mesma, juro."
+   },
+   {
+    "s": "Vulto, o Cambista",
+    "t": "Aqui a moeda é Coroas. Precisa trocar?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Trocar moedas",
+    "acoes": [
+     {
+      "cambio": true
+     }
+    ]
+   },
+   {
+    "t": "Você parece ter outros negócios...",
+    "se": {
+     "sem_flag": "vulto_decidiu"
+    },
+    "ir": "vulto_proposta"
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "estalagem_cidadela_quarto": {
+  "linhas": [
+   {
+    "s": "Dona Clara, da Estalagem",
+    "t": "Até os soldados descansam aqui."
+   },
+   {
+    "s": "Dona Clara, da Estalagem",
+    "t": "Um quarto custa 4 Coroas. Você acorda novinho em folha!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Descansar (4 Coroas)",
+    "se": {
+     "moeda": {
+      "coroas": 4
+     }
+    },
+    "acoes": [
+     {
+      "pagar": "coroas",
+      "qtd": 4
+     },
+     {
+      "dormir": true
+     },
+     {
+      "salvar": true
+     }
+    ]
+   },
+   {
+    "t": "Não, obrigado"
+   }
+  ]
+ },
+ "desertor_1": {
+  "linhas": [
+   {
+    "s": "Soldado Desertor",
+    "t": "Não me mate! Eu fugi do exército de Varek. Não aguentava mais servir ao Rei Cinzento."
+   },
+   {
+    "s": "Ifrit",
+    "t": "A Soldada Ana pediu para avisar: a Capitã Rana aceita vocês de volta."
+   },
+   {
+    "s": "Soldado Desertor",
+    "t": "A Capitã Rana? Então ainda há esperança! Vou para a cidadela agora."
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "desertor_1"
+   }
+  ]
+ },
+ "desertor_2": {
+  "linhas": [
+   {
+    "s": "Soldado Desertor",
+    "t": "Fica longe! ...Você não é um dos cinzentos?"
+   },
+   {
+    "s": "Ifrit",
+    "t": "A Capitã Rana está reunindo quem quer lutar contra Zahrak."
+   },
+   {
+    "s": "Soldado Desertor",
+    "t": "Então eu luto. Obrigado, garoto."
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "desertor_2"
+   }
+  ]
+ },
+ "rana_padrao": {
+  "linhas": [
+   {
+    "s": "Capitã Rana",
+    "t": "Firmes, soldados!"
+   }
+  ]
+ },
+ "rana_soldados": {
+  "linhas": [
+   {
+    "s": "Capitã Rana",
+    "t": "Vocês são os forasteiros que estão reacendendo as chamas? A notícia chegou antes de vocês."
+   },
+   {
+    "s": "Capitã Rana",
+    "t": "O General Varek era o protetor desta cidadela. Há três anos ele se aliou a Zahrak e fechou a Ponte das Cinzas."
+   },
+   {
+    "s": "Bako",
+    "t": "Por que um general trairia o próprio povo?"
+   },
+   {
+    "s": "Capitã Rana",
+    "t": "Medo, talvez. Ou promessas. Os soldados leais a ele patrulham a Estrada do Norte."
+   },
+   {
+    "s": "Capitã Rana",
+    "t": "Derrotem seis deles. Com menos homens, Varek ficará vulnerável."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_iniciar": "q6_soldados"
+   }
+  ]
+ },
+ "rana_soldados_lembrete": {
+  "linhas": [
+   {
+    "s": "Capitã Rana",
+    "t": "As patrulhas estão na Estrada do Norte, ao sul daqui."
+   }
+  ]
+ },
+ "rana_emboscada": {
+  "linhas": [
+   {
+    "s": "Capitã Rana",
+    "t": "Bom trabalho! Varek está quase sem tropas. Agora é a hora de..."
+   }
+  ],
+  "acoes": [
+   {
+    "cutscene": "emboscada"
+   }
+  ]
+ },
+ "rana_varek_lembrete": {
+  "linhas": [
+   {
+    "s": "Capitã Rana",
+    "t": "O quartel fica ao norte, depois do portão. Nadia está segura na enfermaria."
+   }
+  ]
+ },
+ "rana_vitoria": {
+  "linhas": [
+   {
+    "s": "Capitã Rana",
+    "t": "Varek se rendeu! A cidadela é livre de novo!"
+   }
+  ],
+  "acoes": [
+   {
+    "cutscene": "cidadela_vitoria"
+   }
+  ]
+ },
+ "rana_cidadela_fala": {
+  "linhas": [
+   {
+    "s": "Capitã Rana",
+    "t": "Varek abriu a Ponte das Cinzas. Do outro lado fica o Trono Cinzento."
+   },
+   {
+    "s": "Omar, o Mago",
+    "t": "É lá que Zahrak mantém Kadir. E é lá que tudo vai terminar."
+   },
+   {
+    "s": "Capitã Rana",
+    "t": "A cidadela inteira estará torcendo por vocês. Agora vão!"
+   }
+  ]
+ },
+ "nadia_ferida": {
+  "linhas": [
+   {
+    "s": "Nadia",
+    "t": "Não me olhe com essa cara... Uma flecha não vai me parar. Vá atrás do Varek, eu fico bem."
+   }
+  ]
+ },
+ "nadia_volta": {
+  "linhas": [
+   {
+    "s": "Nadia",
+    "t": "Achou que ia enfrentar Zahrak sem mim? A Dona Clara costurou meu braço. Estou pronta!"
+   },
+   {
+    "s": "",
+    "t": "Nadia voltou para o grupo!"
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "nadia_ferida"
+   },
+   {
+    "remover_flag": "nadia_ferida"
+   },
+   {
+    "aliado": "nadia"
+   }
+  ]
+ },
+ "armeiro_pedido": {
+  "linhas": [
+   {
+    "s": "Ferro Velho, o Armeiro",
+    "t": "Esses soldados cinzentos usam um aço especial. Quero estudar."
+   },
+   {
+    "s": "Ferro Velho, o Armeiro",
+    "t": "Traga quatro placas de aço e eu preparo um presente para você."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Trago as placas.",
+    "acoes": [
+     {
+      "quest_iniciar": "s6_armadura"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "armeiro_lembrete": {
+  "linhas": [
+   {
+    "s": "Ferro Velho, o Armeiro",
+    "t": "Quatro placas. Os soldados deixam cair quando caem."
+   }
+  ]
+ },
+ "armeiro_fim": {
+  "linhas": [
+   {
+    "s": "Ferro Velho, o Armeiro",
+    "t": "Aço cinzento derretido com sal... Fiz elixires de têmpera. Bebam antes da batalha final!"
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s6_armadura"
+   }
+  ]
+ },
+ "armeiro_padrao": {
+  "linhas": [
+   {
+    "s": "Ferro Velho, o Armeiro",
+    "t": "Sessenta anos martelando e ainda aprendo."
+   }
+  ]
+ },
+ "ana_pedido": {
+  "linhas": [
+   {
+    "s": "Soldada Ana",
+    "t": "Dois companheiros meus fugiram do exército de Varek e estão escondidos na Estrada do Norte."
+   },
+   {
+    "s": "Soldada Ana",
+    "t": "Se você encontrar, diga que a Capitã Rana aceita os dois de volta."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Vou encontrá-los.",
+    "acoes": [
+     {
+      "quest_iniciar": "s6_desertores"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "ana_lembrete": {
+  "linhas": [
+   {
+    "s": "Soldada Ana",
+    "t": "Eles devem estar fora da estrada, escondidos entre as árvores e pedras."
+   }
+  ]
+ },
+ "ana_fim": {
+  "linhas": [
+   {
+    "s": "Soldada Ana",
+    "t": "Os dois chegaram! Obrigada por trazer meus amigos de volta."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s6_desertores"
+   }
+  ]
+ },
+ "ana_padrao": {
+  "linhas": [
+   {
+    "s": "Soldada Ana",
+    "t": "Pela cidadela!"
+   }
+  ]
+ },
+ "kadir_preso": {
+  "linhas": [
+   {
+    "s": "Kadir",
+    "t": "...Quem está aí?"
+   }
+  ],
+  "acoes": [
+   {
+    "cutscene": "reencontro"
+   }
+  ]
+ },
+ "kadir_reencontro": {
+  "linhas": [
+   {
+    "s": "Ifrit",
+    "t": "Pai... sou eu. Ifrit."
+   },
+   {
+    "s": "Kadir",
+    "t": "Ifrit? Meu filho... Você cresceu tanto. Como chegou até aqui?"
+   },
+   {
+    "s": "Ifrit",
+    "t": "Segui sua carta. Acendi as chamas de Areia Rubra, Miraj, Porto Coral, do Vale, de Qadim e da Cidadela."
+   },
+   {
+    "s": "Kadir",
+    "t": "Seis chamas... Zahrak está furioso, eu ouvi os gritos dele pelos corredores."
+   },
+   {
+    "s": "Kadir",
+    "t": "Ele me prendeu para usar meu sangue e controlar as chamas. Sem mim, ele não consegue apagar a última."
+   },
+   {
+    "s": "Kadir",
+    "t": "Tome, filho. A Chama de Kadir, minha espada. Ela estava escondida nesta cela. Agora ela é sua."
+   },
+   {
+    "s": "",
+    "t": "Ifrit recebeu a Chama de Kadir! Equipe na sua bolsa."
+   },
+   {
+    "s": "Kadir",
+    "t": "Vamos juntos. Pai e filho. Está na hora de acabar com o Rei Cinzento."
+   }
+  ]
+ },
+ "kadir_padrao": {
+  "linhas": [
+   {
+    "s": "Kadir",
+    "t": "Estou com você, filho."
+   }
+  ]
+ },
+ "trono_sem_kadir": {
+  "linhas": [
+   {
+    "s": "Ifrit",
+    "t": "Sinto uma presença terrível lá em cima... Antes, preciso encontrar meu pai. A prisão deve ficar a oeste."
+   }
+  ]
+ },
+ "zahrak_final": {
+  "linhas": [
+   {
+    "s": "Zahrak",
+    "t": "Kadir... e o filhote. Que comovente."
+   },
+   {
+    "s": "Zahrak",
+    "t": "Seis chamas reacesas. Seis! Vocês sabem quanto tempo levei para apagá-las?"
+   },
+   {
+    "s": "Kadir",
+    "t": "As chamas pertencem ao povo de Zahra, não a um rei."
+   },
+   {
+    "s": "Zahrak",
+    "t": "O povo! O povo me esqueceu quando eu era só um guardião como você, Kadir. Agora vão me temer!"
+   },
+   {
+    "s": "Ifrit",
+    "t": "Você era um guardião?"
+   },
+   {
+    "s": "Zahrak",
+    "t": "O primeiro. E serei o último. Venham!"
+   }
+  ]
+ },
+ "epilogo_fala": {
+  "linhas": [
+   {
+    "s": "Samira",
+    "t": "Ifrit! Kadir! Vocês... voltaram. Os dois!"
+   },
+   {
+    "s": "Kadir",
+    "t": "Samira. Desculpe ter demorado tanto."
+   },
+   {
+    "s": "Samira",
+    "t": "Três anos, Kadir! Três anos! ...Venha aqui."
+   },
+   {
+    "s": "",
+    "t": "Samira abraça Kadir e Ifrit ao mesmo tempo."
+   },
+   {
+    "s": "Samira",
+    "t": "Ifrit, a vila inteira está falando de você. Amir já compôs onze canções."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Eu só segui o caminho que o pai começou."
+   },
+   {
+    "s": "Kadir",
+    "t": "Não, filho. Você fez um caminho seu. As Sete Chamas brilham por sua causa."
+   },
+   {
+    "s": "Samira",
+    "t": "Agora chega de aventura por hoje. O jantar está pronto!"
+   }
+  ]
+ },
+ "kadir_casa": {
+  "linhas": [
+   {
+    "s": "Kadir",
+    "t": "É bom estar em casa. Mas se precisar de mim para uma nova aventura, é só chamar."
+   }
+  ]
+ },
+ "fantasma_fim_honesto": {
+  "linhas": [
+   {
+    "s": "Espírito do Bibliotecário",
+    "t": "Tudo em ordem... Finalmente posso descansar. Obrigado, jovem leitor."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s5_livros"
+   },
+   {
+    "sumir_npc": "bibliotecario"
+   }
+  ]
+ },
+ "fantasma_fim_roubo": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Você enfia o livro de capa de ouro na bolsa e entrega os outros três."
+   },
+   {
+    "s": "Espírito do Bibliotecário",
+    "t": "Três...? Falta um. Falta UM! Eu nunca vou descansar!"
+   }
+  ],
+  "acoes": [
+   {
+    "quest_falhar": "s5_livros",
+    "motivo": "O espírito nunca vai descansar."
+   },
+   {
+    "remover_item": "livro_perdido",
+    "qtd": 4
+   },
+   {
+    "dar_item": "livro_raro"
+   }
+  ]
+ },
+ "fantasma_inquieto": {
+  "linhas": [
+   {
+    "s": "Espírito do Bibliotecário",
+    "t": "Falta um... falta um livro... Shhhh... falta um..."
+   }
+  ]
+ },
+ "vulto_proposta": {
+  "linhas": [
+   {
+    "s": "Vulto, o Cambista",
+    "t": "Hehe, olho bom. Tenho um saco de Coroas falsas. Chumbo pintado, mas à luz de vela ninguém percebe."
+   },
+   {
+    "s": "Vulto, o Cambista",
+    "t": "Você passa no mercado e na estalagem, eu fico com metade. Trinta Coroas limpas para você. Fechado?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Não. Isso é roubar o povo da cidadela.",
+    "acoes": [
+     {
+      "flag": "vulto_decidiu"
+     },
+     {
+      "honra": 3
+     }
+    ],
+    "ir": "vulto_recusa"
+   },
+   {
+    "t": "Fechado. Passe o saco.",
+    "acoes": [
+     {
+      "flag": "vulto_decidiu"
+     },
+     {
+      "flag": "moedas_falsas_passadas"
+     },
+     {
+      "moeda": "coroas",
+      "qtd": 30
+     },
+     {
+      "honra": -10
+     }
+    ],
+    "ir": "vulto_aceito"
+   }
+  ]
+ },
+ "vulto_recusa": {
+  "linhas": [
+   {
+    "s": "Vulto, o Cambista",
+    "t": "Herói... Tsc. Então finja que não ouviu nada."
+   }
+  ]
+ },
+ "vulto_aceito": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Você espalha as moedas falsas pelas barracas da cidadela. Ninguém percebe... ainda."
+   },
+   {
+    "s": "Vulto, o Cambista",
+    "t": "Prazer fazer negócio, parceiro."
+   }
+  ]
+ },
+ "oto_falsas": {
+  "linhas": [
+   {
+    "s": "Sargento Oto, o Intendente",
+    "t": "Alguém anda passando Coroas falsas na tropa. Se eu descubro quem foi..."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Comprar ou vender",
+    "acoes": [
+     {
+      "loja": "mercado_cidadela"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "_taxa": 0.1,
+ "brasas": {
+  "nome": "Brasas",
+  "valor": 1,
+  "sprite": "res://assets/brasa.png"
+ },
+ "perolas": {
+  "nome": "Pérolas",
+  "valor": 3,
+  "sprite": "res://assets/perola.png"
+ },
+ "coroas": {
+  "nome": "Coroas",
+  "valor": 5,
+  "sprite": "res://assets/coroa.png"
+ }
+}

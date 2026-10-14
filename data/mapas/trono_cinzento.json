@@ -1,0 +1,185 @@
+{
+ "nome": "Trono Cinzento",
+ "moeda": "coroas",
+ "spawns": {
+  "entrada": [
+   21,
+   41
+  ]
+ },
+ "npcs": [
+  {
+   "id": "kadir_preso",
+   "pos": [
+    10,
+    27
+   ],
+   "se": {
+    "sem_flag": "kadir_livre"
+   }
+  },
+  {
+   "id": "lar_x_diario_zahrak",
+   "pos": [
+    34,
+    3
+   ],
+   "se": {
+    "flag": "chefe_zahrak"
+   }
+  }
+ ],
+ "inimigos": [
+  {
+   "tipo": "cavaleiro",
+   "qtd": 3,
+   "area": [
+    20,
+    24,
+    4,
+    12
+   ]
+  },
+  {
+   "tipo": "sombra",
+   "qtd": 4,
+   "area": [
+    24,
+    26,
+    16,
+    8
+   ]
+  },
+  {
+   "tipo": "cavaleiro",
+   "qtd": 2,
+   "area": [
+    4,
+    30,
+    16,
+    4
+   ]
+  }
+ ],
+ "chefe": {
+  "tipo": "zahrak",
+  "pos": [
+   21,
+   6
+  ],
+  "flag": "chefe_zahrak",
+  "se": {
+   "flag": "zahrak_desperto"
+  },
+  "cutscene": "zahrak_derrotado"
+ },
+ "gatilhos": [
+  {
+   "id": "trono",
+   "area": [
+    20,
+    19,
+    4,
+    1
+   ],
+   "cutscene": "zahrak_aparece",
+   "se": {
+    "sem_flag": "chefe_zahrak",
+    "flag": "kadir_livre"
+   },
+   "uma_vez": false
+  },
+  {
+   "id": "sem_kadir",
+   "area": [
+    20,
+    21,
+    4,
+    1
+   ],
+   "dialogo": "trono_sem_kadir",
+   "se": {
+    "sem_flag": "kadir_livre"
+   },
+   "uma_vez": false
+  }
+ ],
+ "baus": [
+  {
+   "pos": [
+    38,
+    32
+   ],
+   "itens": {
+    "elixir": 2
+   },
+   "moedas": {
+    "coroas": 100
+   }
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    21,
+    43,
+    2,
+    1
+   ],
+   "mapa": "ponte_cinzas",
+   "spawn": "leste",
+   "nivel": 57
+  }
+ ],
+ "renascer": [
+  "trono_cinzento",
+  "entrada"
+ ],
+ "layout": [
+  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXcccccccccccccccXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXccccccccccccccccccXXXccccXXXXXXXX",
+  "XXXXXXcccccccccccccPPPPPPccccccccccccXXXXXXX",
+  "XXXXXXcccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXXXccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXXXccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXXcccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXXcccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXXcccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXXcccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXXcccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXccccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXccccccccccccccPPPPPPcccccccccccccXXXXXX",
+  "XXXXXccccccccccccccPPPPPPccccccccccccccXXXXX",
+  "XXXXXccccccccccccccccccccccccccccccccccXXXXX",
+  "XXXXXccccccccccccccccccccccccccccccccccXXXXX",
+  "XXXXXXccccccccccccccccccccccccccXXcccXXXXXXX",
+  "XXXXXXXXXccccccccccXccccXccXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXccXXXXccccXccXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXXccccXXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXXccccXXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXXccccXXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXXccccXXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXccccccXXXXXXXXXXXXXXXXXXX",
+  "XXXccccXXXXXXXXXXXcccccccccccccXXXXccccccXXX",
+  "XXXcccccccccXXXXXcccccccccccccccccccccccccXX",
+  "XXXcccccccccccccccccccccccccccccccccccccccXX",
+  "XXXXccccccccccccccccccccccccccccccccccccccXX",
+  "XXXX######c#########ccccccccccccccccccccccXX",
+  "XXXXccccccccccccccccccccccccccccccccccccccXX",
+  "XXXXcccccccccccccccccccccccccccccccccccccXXX",
+  "XXXXcccccccccccccccccccccccccccccccccccccXXX",
+  "XXXXXXXXccccccXXXcccccccccccccXXXXXcccccXXXX",
+  "XXXXXXXXXXXXXXXXXXXcccccccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXccccccXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXcccccccXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXccccccccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXccccccccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXcccccccccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXcccccccccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXccccccccXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXcccccccXXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXXXccXXXXXXXXXXXXXXXXXXXXX"
+ ],
+ "organico": true
+}

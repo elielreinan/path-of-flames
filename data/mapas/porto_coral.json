@@ -1,0 +1,337 @@
+{
+ "nome": "Porto Coral",
+ "moeda": "perolas",
+ "spawns": {
+  "oeste": [
+   1,
+   14
+  ],
+  "norte": [
+   24,
+   1
+  ],
+  "cais": [
+   37,
+   36
+  ],
+  "vila": [
+   48,
+   14
+  ],
+  "lar_1": [
+   7,
+   6
+  ],
+  "lar_2": [
+   17,
+   6
+  ],
+  "lar_3": [
+   33,
+   6
+  ],
+  "lar_4": [
+   43,
+   6
+  ],
+  "lar_5": [
+   6,
+   21
+  ],
+  "lar_6": [
+   40,
+   21
+  ]
+ },
+ "npcs": [
+  {
+   "id": "murad",
+   "pos": [
+    7,
+    7
+   ]
+  },
+  {
+   "id": "bako",
+   "pos": [
+    33,
+    7
+   ],
+   "se": {
+    "sem_flag": "bako_aliado"
+   }
+  },
+  {
+   "id": "chama_coral",
+   "pos": [
+    20,
+    15
+   ]
+  },
+  {
+   "id": "ferreiro_coral",
+   "pos": [
+    14,
+    21
+   ]
+  },
+  {
+   "id": "mercador_coral",
+   "pos": [
+    19,
+    21
+   ]
+  },
+  {
+   "id": "cambista_coral",
+   "pos": [
+    29,
+    21
+   ]
+  },
+  {
+   "id": "estalagem_coral",
+   "pos": [
+    40,
+    22
+   ]
+  },
+  {
+   "id": "velho_zeca",
+   "pos": [
+    11,
+    27
+   ]
+  },
+  {
+   "id": "taverneiro",
+   "pos": [
+    36,
+    8
+   ]
+  },
+  {
+   "id": "faroleiro",
+   "pos": [
+    46,
+    24
+   ]
+  },
+  {
+   "id": "marina",
+   "pos": [
+    42,
+    27
+   ],
+   "se": {
+    "quest": "s3_farol",
+    "estado": "ativa"
+   }
+  },
+  {
+   "id": "marujo",
+   "pos": [
+    20,
+    12
+   ],
+   "vagar": true
+  },
+  {
+   "id": "lar_x_nadador_coral",
+   "nada": true,
+   "pos": [
+    20,
+    30
+   ],
+   "vagar": true
+  }
+ ],
+ "placas": [
+  {
+   "pos": [
+    2,
+    12
+   ],
+   "texto": "Porto Coral. Aqui só se aceitam Pérolas!"
+  },
+  {
+   "pos": [
+    26,
+    1
+   ],
+   "texto": "Norte: Trilha dos Penhascos e Vale dos Ventos."
+  },
+  {
+   "pos": [
+    46,
+    13
+   ],
+   "texto": "Leste: Vila dos Pescadores."
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    0,
+    14,
+    1,
+    2
+   ],
+   "mapa": "desfiladeiro_sal",
+   "spawn": "leste",
+   "nivel": 25
+  },
+  {
+   "area": [
+    40,
+    36,
+    1,
+    2
+   ],
+   "mapa": "navio_pirata",
+   "spawn": "entrada",
+   "se": {
+    "flag": "bako_aliado"
+   },
+   "bloqueado": {
+    "s": "Ifrit",
+    "t": "O navio pirata está ancorado ali... Preciso de ajuda para invadir."
+   }
+  },
+  {
+   "area": [
+    24,
+    0,
+    2,
+    1
+   ],
+   "mapa": "trilha_penhascos",
+   "spawn": "sul",
+   "se": {
+    "flag": "portao_coral"
+   },
+   "bloqueado": {
+    "s": "Guarda",
+    "t": "A trilha está fechada até os piratas irem embora."
+   },
+   "nivel": 33
+  },
+  {
+   "area": [
+    49,
+    14,
+    1,
+    2
+   ],
+   "mapa": "vila_pescadores",
+   "spawn": "oeste"
+  },
+  {
+   "area": [
+    7,
+    5,
+    1,
+    1
+   ],
+   "mapa": "lar_porto_coral_1",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    17,
+    5,
+    1,
+    1
+   ],
+   "mapa": "lar_porto_coral_2",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    33,
+    5,
+    1,
+    1
+   ],
+   "mapa": "lar_porto_coral_3",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    43,
+    5,
+    1,
+    1
+   ],
+   "mapa": "lar_porto_coral_4",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    6,
+    20,
+    1,
+    1
+   ],
+   "mapa": "lar_porto_coral_5",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    40,
+    20,
+    1,
+    1
+   ],
+   "mapa": "lar_porto_coral_6",
+   "spawn": "porta"
+  }
+ ],
+ "renascer": [
+  "porto_coral",
+  "oeste"
+ ],
+ "layout": [
+  "########################::########################",
+  "#.......................::.......................#",
+  "#.......................::.......................#",
+  "#..RRRRRRRR...RRRRRRR...::...RRRRRRRRR..RRRRRRR..#",
+  "#..RRRRRRRR...RRRRRRR.T.::.T.RRRRRRRRR..RRRRRRR..#",
+  "#..HJHHDHJH...HJHDHJH...::...HJHHDHHJH..HJHDHJH..#",
+  "#.....*:*.......*:::::::::......*:*.......*:*....#",
+  "#......:................::.......:.........:.....#",
+  "#....T.:.T..........T.T.::.T...T.:.......T.:.T...#",
+  "#......:................::.......:.........:.....#",
+  "#......:................::.......:.........:.....#",
+  "#......:................::.......:.........:.....#",
+  "#...TT.:TT..T...T.....T.::.TT..TT:.TT...TT.:T....#",
+  "#......:................::.......:.........:.....#",
+  "::::::::::::::::::::::::::::::::::::::::::::::::::",
+  "::::::::::::::::::::::::::::::::::::::::::::::::::",
+  "#.....................T.::.T.....................#",
+  "#...........T...T...T...::..T...T................#",
+  "#..RRRRRRR..............::..........RRRRRRRR.....#",
+  "#..RRRRRRR..............::..........RRRRRRRR.....#",
+  "#..HJHDHJH............T.::.T........HJHHDHJH.....#",
+  "#....*:*................::.............*:*.......#",
+  "#.....:......SSS..SSS...::..SSS.........:........#",
+  "#.....:.................::.............::........#",
+  "#.....:K....T...T.K.T.T.::.TT...T.K.TT.:KK.K.....#",
+  "#...K.:...K...K.........::.............:.........#",
+  "#.....:::::::::::::::::::::::::::::::::::::......#",
+  "#.WWW...:::::::::::::::::::::::::::::::::::.rrrr.#",
+  "WWWWWWWWWW==WWWWWWWWWWWWWWWWWW==WWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWW==WWWWWWWWWWWWWWWWWW==WWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWW==WWWWWWWWWWWWWWWWWW==WWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWW==WWWWWWWWWWWWWWWWWW==WWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWW==WWWWWWWWWWWWWWWWWW==WWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWW==WWWWWWWWWWWWWWWWWW==WWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWW==WWWWWWWWWWWWWWWWWW==WWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW==WWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW===========WWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW===========WWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+ ],
+ "organico": true
+}

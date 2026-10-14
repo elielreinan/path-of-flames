@@ -1,0 +1,301 @@
+{
+ "nome": "Oásis de Miraj",
+ "moeda": "brasas",
+ "spawns": {
+  "sul": [
+   24,
+   41
+  ],
+  "oeste": [
+   2,
+   20
+  ],
+  "leste": [
+   47,
+   21
+  ],
+  "palacio": [
+   25,
+   9
+  ],
+  "lar_1": [
+   6,
+   6
+  ],
+  "lar_2": [
+   43,
+   6
+  ],
+  "lar_3": [
+   6,
+   28
+  ],
+  "lar_4": [
+   43,
+   28
+  ]
+ },
+ "npcs": [
+  {
+   "id": "nadia",
+   "pos": [
+    27,
+    12
+   ],
+   "se": {
+    "sem_flag": "nadia_aliada"
+   }
+  },
+  {
+   "id": "chama_miraj",
+   "pos": [
+    22,
+    12
+   ]
+  },
+  {
+   "id": "ferreiro_miraj",
+   "pos": [
+    29,
+    32
+   ]
+  },
+  {
+   "id": "mercador_miraj",
+   "pos": [
+    34,
+    32
+   ]
+  },
+  {
+   "id": "cambista_miraj",
+   "pos": [
+    39,
+    32
+   ]
+  },
+  {
+   "id": "estalagem_miraj",
+   "pos": [
+    6,
+    29
+   ]
+  },
+  {
+   "id": "rashid",
+   "pos": [
+    15,
+    32
+   ]
+  },
+  {
+   "id": "kamal",
+   "pos": [
+    36,
+    23
+   ],
+   "vagar": true
+  },
+  {
+   "id": "cameleiro",
+   "pos": [
+    10,
+    37
+   ]
+  },
+  {
+   "id": "crianca_miraj",
+   "pos": [
+    20,
+    38
+   ],
+   "vagar": true
+  },
+  {
+   "id": "lar_x_banhista_miraj",
+   "nada": true,
+   "pos": [
+    19,
+    18
+   ],
+   "vagar": true
+  }
+ ],
+ "placas": [
+  {
+   "pos": [
+    22,
+    41
+   ],
+   "texto": "Oásis de Miraj, a joia do deserto."
+  },
+  {
+   "pos": [
+    3,
+    18
+   ],
+   "texto": "Oeste: Nascente de Miraj."
+  },
+  {
+   "pos": [
+    46,
+    18
+   ],
+   "texto": "Leste: Desfiladeiro do Sal e Porto Coral."
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    24,
+    43,
+    2,
+    1
+   ],
+   "mapa": "estrada_caravanas",
+   "spawn": "norte",
+   "nivel": 15
+  },
+  {
+   "area": [
+    25,
+    7,
+    1,
+    1
+   ],
+   "mapa": "palacio_miraj",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    0,
+    20,
+    1,
+    2
+   ],
+   "mapa": "nascente_miraj",
+   "spawn": "entrada",
+   "se": {
+    "quest": "q2_antidoto",
+    "estado": [
+     "ativa",
+     "pronta",
+     "concluida"
+    ]
+   },
+   "bloqueado": {
+    "s": "Guarda",
+    "t": "A nascente está interditada. Ordens da rainha."
+   }
+  },
+  {
+   "area": [
+    49,
+    20,
+    1,
+    2
+   ],
+   "mapa": "desfiladeiro_sal",
+   "spawn": "oeste",
+   "se": {
+    "flag": "portao_miraj"
+   },
+   "bloqueado": {
+    "s": "Guarda",
+    "t": "Ninguém sai da cidade enquanto a rainha estiver doente."
+   },
+   "nivel": 25
+  },
+  {
+   "area": [
+    6,
+    5,
+    1,
+    1
+   ],
+   "mapa": "lar_oasis_miraj_1",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    43,
+    5,
+    1,
+    1
+   ],
+   "mapa": "lar_oasis_miraj_2",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    6,
+    27,
+    1,
+    1
+   ],
+   "mapa": "lar_oasis_miraj_3",
+   "spawn": "porta"
+  },
+  {
+   "area": [
+    43,
+    27,
+    1,
+    1
+   ],
+   "mapa": "lar_oasis_miraj_4",
+   "spawn": "porta"
+  }
+ ],
+ "renascer": [
+  "oasis_miraj",
+  "sul"
+ ],
+ "layout": [
+  "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT",
+  "T,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,,,,,RRRRRRRRRRRRRRRRRR,,,,,,,,,,,,,,,T",
+  "T,*RRRRRRR,,,,,,RRRRRRRRRRRRRRRRRR,,,,,,RRRRRRR,,T",
+  "T,,RRRRRRR,,,,,,RRRRRRRRRRRRRRRRRR,,,*,,RRRRRRR,,T",
+  "T,,HJHDHJH,,,,,,RRRRRRRRRRRRRRRRRR,,,,,,HJHDHJH,,T",
+  "T,,,,*:*,,,,T,,,RRRRRRRRRRRRRRRRRR,,T*,,,,*:*,,,,T",
+  "T,,,,,:,,,,,,,,,HHHJHHJHHDHHJHHJHH,,,,,,,,,:*,,,,T",
+  "T,,,,,::::::::::::::::::::::::::::::::::::::,,,,,T",
+  "T,,,,,,,,,,,,,,,,,,,,,,,::,,,,,,,,,,,,,,,,,,,,,,,T",
+  "T,,*,,,,T,,,T,,,T*,,T,,,::,*T,,,T,,,T,,,T,,,,,*,,T",
+  "T,,,,,,,,,,,,,,,,,,,,,,*::,,,,,,,,,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,,,,,,,,,,,,,::,,,,,,,,,*,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,,,,,,,,,,,,,::,*,,WW,,,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,,,,,WWWW,,,,::,,WWWWW,,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,,,,,WWWWW,,,::,WWWWWWW,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,,,,,WWWWWWWW==WWWWWWWW,,,,,,,,,,,,,,,T",
+  "T,,,,,,,,,,,,,,,WWWWWWWW==WWWWWWW,,,,,,,,,,,,,,,,T",
+  "T,,,,,,,T,,,T,,,WWWWWWWW==WWWWWWW,,,T,,,T,,,T,,,,T",
+  "T,,,,,,,,,,,,,,,WWWWWWWW==WWWWWWWW,,,,,,,,,,,,,,,T",
+  "::::::::::::::::==================::::::::::::::::",
+  "::::::::::::::::==================::::::::::::::::",
+  "T,,,,,,,,,:,,,,,WWWWWWWW==WWWWWWWW,,,,,,,,,,,,,:,T",
+  "T,,,T,,,T,:,T,,,,,,,WWWW==WWWWWWWW,,,,,,T,,,T,,:,T",
+  "T,,,,,,,,,:,T,,,,,,,,WWW==WWWWWWWWW,,,,,,,,,,,,:,T",
+  "T,,RRRRRRR:,,,,,,,,,,WWW==WWWWWWWWW,,,,,RRRRRRR:,T",
+  "T,,RRRRRRR:,,,,,,,,,,,W,::,WWWWWWW,,,,,,RRRRRRR:,T",
+  "T,,HJHDHJH:,,,,,,,,,,,W,::,,,,,,,,,,,,,,HJHDHJH:,T",
+  "T,,,,*:::::,,,,,,,,,,,T,::,T,,,,,,,,,,,,,,*:::::,T",
+  "T,,,,,,,,,,,,,,,,,,,,,..::,,,,,,,,,,,,,,,,,,,....T",
+  "T.,,,...T,,,,,,,,,,,....::........,,,,,,....T....T",
+  "T..........,,...........::..........,,...........T",
+  "T.....................T.::.......................T",
+  "T.............SSS.......::..SSS..SSS..SSS........T",
+  "T.......................::.......................T",
+  "T.......................::.......................T",
+  "T........h............T.::.T.....................T",
+  "T.......................::.......................T",
+  "T.......................::.......................T",
+  "T.......................::.......................T",
+  "T.......................::.T.....................T",
+  "T.......................::.......................T",
+  "T.......................::.......................T",
+  "TTTTTTTTTTTTTTTTTTTTTTTT::TTTTTTTTTTTTTTTTTTTTTTTT"
+ ],
+ "organico": true
+}

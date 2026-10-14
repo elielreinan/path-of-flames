@@ -1,0 +1,156 @@
+{
+ "nome": "Covil do Escorpião",
+ "moeda": "brasas",
+ "spawns": {
+  "entrada": [
+   19,
+   31
+  ]
+ },
+ "inimigos": [
+  {
+   "tipo": "escorpiao_negro",
+   "qtd": 3,
+   "area": [
+    18,
+    12,
+    4,
+    14
+   ]
+  },
+  {
+   "tipo": "morcego",
+   "qtd": 4,
+   "area": [
+    4,
+    18,
+    11,
+    8
+   ]
+  },
+  {
+   "tipo": "escorpiao_negro",
+   "qtd": 3,
+   "area": [
+    25,
+    19,
+    11,
+    9
+   ]
+  },
+  {
+   "tipo": "morcego",
+   "qtd": 2,
+   "area": [
+    25,
+    19,
+    11,
+    9
+   ]
+  }
+ ],
+ "chefe": {
+  "tipo": "rainha_escorpiao",
+  "pos": [
+   20,
+   5
+  ],
+  "flag": "chefe_rainha",
+  "se": {
+   "flag": "rainha_desperta"
+  },
+  "cutscene": "rainha_derrotada"
+ },
+ "gatilhos": [
+  {
+   "id": "arena",
+   "area": [
+    18,
+    9,
+    4,
+    1
+   ],
+   "cutscene": "rainha_aparece",
+   "se": {
+    "sem_flag": "chefe_rainha"
+   },
+   "uma_vez": false
+  }
+ ],
+ "baus": [
+  {
+   "pos": [
+    5,
+    19
+   ],
+   "itens": {
+    "pocao_media": 1
+   },
+   "moedas": {
+    "brasas": 30
+   }
+  },
+  {
+   "pos": [
+    34,
+    26
+   ],
+   "itens": {
+    "pocao_pequena": 2
+   }
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    19,
+    33,
+    2,
+    1
+   ],
+   "mapa": "dunas_rubras",
+   "spawn": "caverna"
+  }
+ ],
+ "renascer": [
+  "dunas_rubras",
+  "caverna"
+ ],
+ "layout": [
+  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXccccccccXXXXXXXXXXXXX",
+  "XXXXXXXXcccccccccccccccccccccXXXXXXXXXXX",
+  "XXXXXXXXccccccccccccccccccrcrcccXXXXXXXX",
+  "XXXXXXXXccccccccccccccccccccrcccXXXXXXXX",
+  "XXXXXXXXccccccccccccccccccccccccXXXXXXXX",
+  "XXXXXXXXccccccccccccccccccccccccXXXXXXXX",
+  "XXXXXXXXccccccccccccccccccccccccXXXXXXXX",
+  "XXXXXXXXXXXXccccrcccccccccccccccXXXXXXXX",
+  "XXXXXXXXXXXXXXccXXccccXXXccXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXcccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXcccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXcccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXccccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXccccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXccccXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXcccccXXXXXXXXXXXXXXXXX",
+  "XXXXccrcccccccXXXccccccXXXXXXXXXXXXXXXXX",
+  "XXXcccrcccccccXXcccccccXXrXXXXXXXXXXXXXX",
+  "XXXcccrcccccccXXcccccccXXXcccccccccXXXXX",
+  "XXXXccccccccrccccccccccXXXccccccccccXXXX",
+  "XXXXXcccccccccccccccccccccrcccccccccXXXX",
+  "XXXXXccccccccccccccccccccccrcccccccccXXX",
+  "XXXXXrccccccccccccccccccccrccccccrcccXXX",
+  "XXXXrccccccccccccXcccccccccccccccccccXXX",
+  "XXXXXXccccccccccccccccccccccrccccccccXXX",
+  "XXXXXXXXXXXXXXXXccccccccccXXXXXXXcccXXXX",
+  "XXXXXXXXXXXXXXXXccccccccccXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXcccccccccXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXcccccccccXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXcccccccccXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXcccccccccXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXccXXXXXXXXXXXXXXXXXXX"
+ ],
+ "organico": true
+}

@@ -1,0 +1,214 @@
+{
+ "intro": [
+  {
+   "cmd": "titulo",
+   "t": "Capítulo 1",
+   "sub": "A Areia Rubra"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Areia Rubra. Uma pequena vila no sul do reino de Zahra, protegida há séculos por uma Chama Sagrada."
+  },
+  {
+   "cmd": "mover",
+   "quem": "samira",
+   "para": [
+    10,
+    4
+   ]
+  },
+  {
+   "cmd": "mover",
+   "quem": "samira",
+   "para": [
+    11,
+    3
+   ]
+  },
+  {
+   "cmd": "virar",
+   "quem": "jogador",
+   "para": "samira"
+  },
+  {
+   "cmd": "dialogo",
+   "id": "intro_samira"
+  },
+  {
+   "cmd": "mover",
+   "quem": "samira",
+   "para": [
+    4,
+    4
+   ]
+  }
+ ],
+ "despedida": [
+  {
+   "cmd": "mover",
+   "quem": "jogador",
+   "para": [
+    5,
+    5
+   ],
+   "esperar": false
+  },
+  {
+   "cmd": "esperar",
+   "t": 0.4
+  },
+  {
+   "cmd": "virar",
+   "quem": "samira",
+   "para": "jogador"
+  },
+  {
+   "cmd": "dialogo",
+   "id": "samira_despedida_2"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "despedida_vista"
+    }
+   ]
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "O portão norte de Areia Rubra está aberto. Siga para o Oásis de Miraj."
+  },
+  {
+   "cmd": "titulo",
+   "t": "Capítulo 2",
+   "sub": "O Oásis de Miraj"
+  }
+ ],
+ "rainha_aparece": [
+  {
+   "cmd": "camera",
+   "para": [
+    20,
+    5
+   ],
+   "t": 1.0
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "Rainha Escorpião",
+   "t": "Sssss... Um filhote de humano no meu ninho?"
+  },
+  {
+   "cmd": "fala",
+   "s": "Rainha Escorpião",
+   "t": "Você cheira a chama... Cheira igual ao guerreiro que passou por aqui. Ele não voltou. Nem você vai!"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "rainha_desperta"
+    },
+    {
+     "invocar_chefe": true
+    }
+   ]
+  },
+  {
+   "cmd": "camera",
+   "para": [
+    20,
+    9
+   ],
+   "t": 0.5
+  }
+ ],
+ "rainha_derrotada": [
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "A Rainha Escorpião se desfaz em areia. No lugar dela, algo brilha."
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "dar_item": "fragmento_chama"
+    },
+    {
+     "dar_item": "carta_kadir"
+    }
+   ]
+  },
+  {
+   "cmd": "dialogo",
+   "id": "carta_kadir_leitura"
+  },
+  {
+   "cmd": "dialogo",
+   "id": "rainha_bolsa"
+  }
+ ],
+ "revelacao_zahrak": [
+  {
+   "cmd": "mover",
+   "quem": "harun",
+   "para": [
+    21,
+    14
+   ]
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Ifrit devolve o fragmento à Chama Sagrada. Ela explode em luz!"
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "chama_areia_restaurada"
+    }
+   ]
+  },
+  {
+   "cmd": "virar",
+   "quem": "harun",
+   "para": "jogador"
+  },
+  {
+   "cmd": "dialogo",
+   "id": "harun_revelacao"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "quest_concluir": "q1_rainha"
+    },
+    {
+     "quest_iniciar": "q1_despedida"
+    }
+   ]
+  },
+  {
+   "cmd": "mover",
+   "quem": "harun",
+   "para": [
+    22,
+    8
+   ]
+  }
+ ]
+}

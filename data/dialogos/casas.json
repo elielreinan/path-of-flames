@@ -1,0 +1,1878 @@
+{
+ "lar_farida_pede": {
+  "linhas": [
+   {
+    "s": "Farida",
+    "t": "Ifrit! Que bom que entrou. Estes tapetes vão para a caravana e minhas costas não aguentam mais."
+   },
+   {
+    "s": "Farida",
+    "t": "Pode me ajudar a enrolar os maiores?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Claro, eu ajudo.",
+    "acoes": [
+     {
+      "flag": "lar_farida_ajudou"
+     },
+     {
+      "honra": 3
+     },
+     {
+      "dar_item": "tamara",
+      "qtd": 2
+     }
+    ],
+    "ir": "lar_farida_feito"
+   },
+   {
+    "t": "Agora não posso."
+   }
+  ]
+ },
+ "lar_farida_feito": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Você enrola os tapetes pesados, um por um."
+   },
+   {
+    "s": "Farida",
+    "t": "Abençoado seja! Leve estas tâmaras, foram colhidas hoje."
+   }
+  ]
+ },
+ "lar_farida_obrigada": {
+  "linhas": [
+   {
+    "s": "Farida",
+    "t": "Os tapetes chegaram inteiros ao Oásis. Você tem mãos boas, Ifrit."
+   }
+  ]
+ },
+ "lar_descansou": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Você descansa e recupera as forças."
+   }
+  ]
+ },
+ "lar_rania_padrao": {
+  "linhas": [
+   {
+    "s": "Rania",
+    "t": "Meu avô Harun vive dizendo que você é cabeça dura. Ele gosta de você."
+   },
+   {
+    "s": "Rania",
+    "t": "Se estiver cansado, a esteira ali está limpa."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Descansar um pouco.",
+    "acoes": [
+     {
+      "curar": true
+     }
+    ],
+    "ir": "lar_descansou"
+   },
+   {
+    "t": "Estou bem, obrigado."
+   }
+  ]
+ },
+ "lar_rania_depois": {
+  "linhas": [
+   {
+    "s": "Rania",
+    "t": "Você venceu a Rainha Escorpião! A cidade inteira está falando nisso."
+   },
+   {
+    "s": "Rania",
+    "t": "Descanse um pouco antes de partir."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Descansar um pouco.",
+    "acoes": [
+     {
+      "curar": true
+     }
+    ],
+    "ir": "lar_descansou"
+   },
+   {
+    "t": "Estou bem, obrigado."
+   }
+  ]
+ },
+ "lar_basim_pede": {
+  "linhas": [
+   {
+    "s": "Basim",
+    "t": "Meu filho Jamil pegou a febre do deserto. O remédio custa 5 brasas e meus potes não vendem."
+   },
+   {
+    "s": "Basim",
+    "t": "Não tenho coragem de pedir, mas..."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Tome 5 brasas.",
+    "acoes": [
+     {
+      "pagar": "brasas",
+      "qtd": 5
+     },
+     {
+      "flag": "lar_basim_ajudou"
+     },
+     {
+      "honra": 4
+     }
+    ],
+    "ir": "lar_basim_feito",
+    "se": {
+     "moeda": {
+      "brasas": 5
+     }
+    }
+   },
+   {
+    "t": "Não tenho como ajudar agora."
+   }
+  ]
+ },
+ "lar_basim_feito": {
+  "linhas": [
+   {
+    "s": "Basim",
+    "t": "Que a Chama te proteja, rapaz. Nunca vou esquecer."
+   }
+  ]
+ },
+ "lar_basim_obrigado": {
+  "linhas": [
+   {
+    "s": "Basim",
+    "t": "Jamil já está de pé! Ele agora quer ser guardião como você."
+   }
+  ]
+ },
+ "lar_jamil": {
+  "linhas": [
+   {
+    "s": "Jamil",
+    "t": "*cof cof* Quando eu crescer vou ter uma espada de fogo igual a sua!"
+   }
+  ]
+ },
+ "lar_hana": {
+  "linhas": [
+   {
+    "s": "Hana",
+    "t": "Tamir trabalha dobrado desde que a estrada fechou. Tudo está caro."
+   }
+  ]
+ },
+ "lar_tamir": {
+  "linhas": [
+   {
+    "s": "Tamir",
+    "t": "Ifrit, o guardião! Fique à vontade, a casa é simples mas é sua."
+   }
+  ]
+ },
+ "lar_dina_cofre": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Dina saiu correndo para brincar e deixou o cofrinho de barro aberto em cima da mesa."
+   },
+   {
+    "s": "",
+    "t": "Dentro dele brilham algumas brasas, as economias de uma criança."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Pegar as moedas.",
+    "acoes": [
+     {
+      "moeda": "brasas",
+      "qtd": 3
+     },
+     {
+      "honra": -6
+     },
+     {
+      "flag": "lar_dina_cofre_pego"
+     },
+     {
+      "flag": "lar_dina_cofre_visto"
+     }
+    ]
+   },
+   {
+    "t": "Fechar o cofrinho e deixar.",
+    "acoes": [
+     {
+      "honra": 2
+     },
+     {
+      "flag": "lar_dina_cofre_visto"
+     }
+    ]
+   }
+  ]
+ },
+ "lar_dina": {
+  "linhas": [
+   {
+    "s": "Dina",
+    "t": "Estou juntando brasas para comprar um camelo! Já tenho quase três."
+   }
+  ]
+ },
+ "lar_dina_triste": {
+  "linhas": [
+   {
+    "s": "Dina",
+    "t": "Alguém pegou as brasas do meu cofrinho... *snif*"
+   }
+  ]
+ },
+ "lar_jafar": {
+  "linhas": [
+   {
+    "s": "Jafar",
+    "t": "Sabe por que a cidade se chama Areia Rubra? Dizem que a primeira Chama caiu do céu aqui e tingiu as dunas."
+   },
+   {
+    "s": "Jafar",
+    "t": "Bobagem, eu acho. A areia é vermelha por causa do ferro. Mas a história é mais bonita."
+   },
+   {
+    "s": "Jafar",
+    "t": "Tome uma tâmara. Velho não precisa de muita."
+   }
+  ],
+  "acoes": [
+   {
+    "dar_item": "tamara"
+   },
+   {
+    "flag": "lar_jafar_tamara"
+   }
+  ]
+ },
+ "lar_jafar_depois": {
+  "linhas": [
+   {
+    "s": "Jafar",
+    "t": "Seu pai Kadir também vinha ouvir minhas histórias. Sentava aí mesmo onde você está."
+   }
+  ]
+ },
+ "lar_zaira_cedo": {
+  "linhas": [
+   {
+    "s": "Zaira",
+    "t": "Esta é a Casa das Três Ordens: Guerreiros, Feiticeiros e Clérigos."
+   },
+   {
+    "s": "Zaira",
+    "t": "Cada guardião só pode seguir uma ordem, e a escolha é para sempre."
+   },
+   {
+    "s": "Zaira",
+    "t": "Você ainda é muito verde. Volte quando chegar ao nível 5."
+   }
+  ]
+ },
+ "lar_zaira_escolha": {
+  "linhas": [
+   {
+    "s": "Zaira",
+    "t": "Você cresceu, Ifrit. Já pode escolher sua ordem."
+   },
+   {
+    "s": "Zaira",
+    "t": "GUERREIRO: golpes 30% mais fortes, mais vida e dash que recarrega rápido."
+   },
+   {
+    "s": "Zaira",
+    "t": "FEITICEIRO: bola de fogo 50% mais forte e com metade da recarga."
+   },
+   {
+    "s": "Zaira",
+    "t": "CLÉRIGO: recupera vida sozinho, cura mais com poções e é imune a veneno."
+   },
+   {
+    "s": "Zaira",
+    "t": "Pense bem. Não há volta."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Guerreiro",
+    "acoes": [
+     {
+      "classe": "guerreiro"
+     }
+    ],
+    "ir": "lar_zaira_guerreiro"
+   },
+   {
+    "t": "Feiticeiro",
+    "acoes": [
+     {
+      "classe": "feiticeiro"
+     }
+    ],
+    "ir": "lar_zaira_feiticeiro"
+   },
+   {
+    "t": "Clérigo",
+    "acoes": [
+     {
+      "classe": "clerigo"
+     }
+    ],
+    "ir": "lar_zaira_clerigo"
+   },
+   {
+    "t": "Ainda vou pensar."
+   }
+  ]
+ },
+ "lar_zaira_guerreiro": {
+  "linhas": [
+   {
+    "s": "Zaira",
+    "t": "Um Guerreiro protege com o próprio corpo. Que sua lâmina nunca hesite."
+   }
+  ]
+ },
+ "lar_zaira_feiticeiro": {
+  "linhas": [
+   {
+    "s": "Zaira",
+    "t": "Um Feiticeiro carrega a Chama dentro de si. Não deixe que ela te consuma."
+   }
+  ]
+ },
+ "lar_zaira_clerigo": {
+  "linhas": [
+   {
+    "s": "Zaira",
+    "t": "Um Clérigo cura antes de ferir. É a ordem mais difícil de todas."
+   }
+  ]
+ },
+ "lar_selma": {
+  "linhas": [
+   {
+    "s": "Selma",
+    "t": "Sente-se. Vou passar um unguento de lótus nessas feridas."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Aceitar o tratamento.",
+    "acoes": [
+     {
+      "curar": true
+     }
+    ],
+    "ir": "lar_descansou"
+   },
+   {
+    "t": "Não precisa."
+   }
+  ]
+ },
+ "lar_idris_suborno": {
+  "linhas": [
+   {
+    "s": "Idris",
+    "t": "Guardião... Dizem que você tem a confiança do Sheik."
+   },
+   {
+    "s": "Idris",
+    "t": "Se disser a ele que minhas taxas da água estão em dia, essas 20 brasas são suas. Ninguém precisa saber."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Aceitar as brasas.",
+    "acoes": [
+     {
+      "moeda": "brasas",
+      "qtd": 20
+     },
+     {
+      "honra": -8
+     },
+     {
+      "flag": "lar_idris_decidiu"
+     }
+    ],
+    "ir": "lar_idris_aceitou"
+   },
+   {
+    "t": "Recusar. A água é de todos.",
+    "acoes": [
+     {
+      "honra": 4
+     },
+     {
+      "flag": "lar_idris_decidiu"
+     }
+    ],
+    "ir": "lar_idris_recusou"
+   }
+  ]
+ },
+ "lar_idris_aceitou": {
+  "linhas": [
+   {
+    "s": "Idris",
+    "t": "Homem esperto! Vamos nos dar muito bem."
+   }
+  ]
+ },
+ "lar_idris_recusou": {
+  "linhas": [
+   {
+    "s": "Idris",
+    "t": "Hunf. Honra não enche barriga, rapaz."
+   }
+  ]
+ },
+ "lar_idris_depois": {
+  "linhas": [
+   {
+    "s": "Idris",
+    "t": "Negócios são negócios, guardião."
+   }
+  ]
+ },
+ "lar_amal": {
+  "linhas": [
+   {
+    "s": "Amal",
+    "t": "O oásis está secando e todos dizem que é a serpente das águas. Tenho medo de buscar água à noite."
+   }
+  ]
+ },
+ "lar_amal_depois": {
+  "linhas": [
+   {
+    "s": "Amal",
+    "t": "A água voltou a correr! Obrigada, Ifrit. Meus filhos podem brincar no lago de novo."
+   }
+  ],
+  "acoes": [
+   {
+    "flag": "lar_amal_agradeceu"
+   }
+  ]
+ },
+ "lar_rafi": {
+  "linhas": [
+   {
+    "s": "Rafi",
+    "t": "Desde que o Kraal apareceu, nenhum barco volta cheio. Minhas redes estão secando na parede."
+   }
+  ]
+ },
+ "lar_rafi_presente": {
+  "linhas": [
+   {
+    "s": "Rafi",
+    "t": "Voltei do mar com a rede cheia! Isso é graças a você. Leve uns peixes."
+   }
+  ],
+  "acoes": [
+   {
+    "dar_item": "peixe",
+    "qtd": 3
+   },
+   {
+    "flag": "lar_rafi_peixe"
+   }
+  ]
+ },
+ "lar_rafi_depois": {
+  "linhas": [
+   {
+    "s": "Rafi",
+    "t": "O mar está calmo. Até as gaivotas parecem mais felizes."
+   }
+  ]
+ },
+ "lar_mara": {
+  "linhas": [
+   {
+    "s": "Mara",
+    "t": "Meu marido saiu para pescar no dia em que a névoa chegou. Ainda acendo uma vela na janela."
+   }
+  ]
+ },
+ "lar_mara_depois": {
+  "linhas": [
+   {
+    "s": "Mara",
+    "t": "Disseram que você derrotou a fera do mar. Hoje apaguei a vela. Acho que ele descansa agora."
+   }
+  ]
+ },
+ "lar_nuno": {
+  "linhas": [
+   {
+    "s": "Nuno",
+    "t": "Nas noites de lua cheia dá para ver luzes no fundo do mar. São as cidades antigas que afundaram."
+   },
+   {
+    "s": "Nuno",
+    "t": "Os de Qadim construíram tudo isso. Gente sábia, mas orgulhosa demais."
+   }
+  ]
+ },
+ "lar_iara": {
+  "linhas": [
+   {
+    "s": "Iara",
+    "t": "Velas de barco, roupas, redes... Se rasga, eu costuro."
+   },
+   {
+    "s": "Iara",
+    "t": "Só não me peça para costurar coração partido. Esse não tem jeito."
+   }
+  ]
+ },
+ "lar_tito": {
+  "linhas": [
+   {
+    "s": "Tito",
+    "t": "A gente tá brincando de pirata! Ser pirata é legal, né? Eles têm tesouro e ninguém manda neles!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Pirata rouba os outros. Não é legal.",
+    "acoes": [
+     {
+      "honra": 2
+     },
+     {
+      "flag": "lar_tito_respondeu"
+     }
+    ],
+    "ir": "lar_tito_bom"
+   },
+   {
+    "t": "Pirata é o máximo!",
+    "acoes": [
+     {
+      "honra": -2
+     },
+     {
+      "flag": "lar_tito_respondeu"
+     }
+    ],
+    "ir": "lar_tito_mau"
+   }
+  ]
+ },
+ "lar_tito_bom": {
+  "linhas": [
+   {
+    "s": "Tito",
+    "t": "Hmm... então eu vou ser guardião igual você!"
+   }
+  ]
+ },
+ "lar_tito_mau": {
+  "linhas": [
+   {
+    "s": "Tito",
+    "t": "EBA! Lia, vou roubar seu doce!"
+   },
+   {
+    "s": "Lia",
+    "t": "MÃÃÃE!"
+   }
+  ]
+ },
+ "lar_tito_depois": {
+  "linhas": [
+   {
+    "s": "Tito",
+    "t": "Lia, você é o monstro do mar e eu sou o herói!"
+   }
+  ]
+ },
+ "lar_lia": {
+  "linhas": [
+   {
+    "s": "Lia",
+    "t": "O Tito sempre quer ser o herói. Um dia eu vou ser a heroína."
+   }
+  ]
+ },
+ "lar_gaspar": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Você nota caixotes com o selo da Cidadela de Sal escondidos sob uma lona. Contrabando."
+   },
+   {
+    "s": "Gaspar",
+    "t": "Viu nada, guardião. Toma três pérolas e esquece essa casa."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Aceitar e fingir que não viu.",
+    "acoes": [
+     {
+      "moeda": "perolas",
+      "qtd": 3
+     },
+     {
+      "honra": -3
+     },
+     {
+      "flag": "lar_gaspar_decidiu"
+     }
+    ],
+    "ir": "lar_gaspar_aceitou"
+   },
+   {
+    "t": "Avisar a guarda do porto.",
+    "acoes": [
+     {
+      "honra": 5
+     },
+     {
+      "flag": "lar_gaspar_decidiu"
+     },
+     {
+      "flag": "lar_gaspar_preso"
+     }
+    ],
+    "ir": "lar_gaspar_denunciou"
+   }
+  ]
+ },
+ "lar_gaspar_aceitou": {
+  "linhas": [
+   {
+    "s": "Gaspar",
+    "t": "Assim que eu gosto. Gente prática."
+   }
+  ]
+ },
+ "lar_gaspar_denunciou": {
+  "linhas": [
+   {
+    "s": "Gaspar",
+    "t": "Você vai se arrepender, moleque!"
+   },
+   {
+    "s": "",
+    "t": "A guarda leva Gaspar e os caixotes."
+   }
+  ]
+ },
+ "lar_gaspar_depois": {
+  "linhas": [
+   {
+    "s": "Gaspar",
+    "t": "Some daqui."
+   }
+  ]
+ },
+ "lar_gaspar_vazio": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A casa de Gaspar está vazia. Só restou uma lona velha no chão."
+   }
+  ]
+ },
+ "lar_edite": {
+  "linhas": [
+   {
+    "s": "Edite",
+    "t": "As cabras sentem o vento mudar antes de qualquer um. Descanse, o leite está quente."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Descansar.",
+    "acoes": [
+     {
+      "curar": true
+     }
+    ],
+    "ir": "lar_descansou"
+   },
+   {
+    "t": "Obrigado, sigo viagem."
+   }
+  ]
+ },
+ "lar_bruno": {
+  "linhas": [
+   {
+    "s": "Bruno",
+    "t": "Estou aprendendo a fazer sinos de vento. Os grifos odeiam o barulho... ou adoram, ninguém sabe."
+   }
+  ]
+ },
+ "lar_bruno_depois": {
+  "linhas": [
+   {
+    "s": "Bruno",
+    "t": "Fiz um sino em sua homenagem. Ele toca uma nota grave, igual a um rugido de grifo."
+   }
+  ]
+ },
+ "lar_celeste": {
+  "linhas": [
+   {
+    "s": "Celeste",
+    "t": "Meu neto foi para a cidade e a lenha acabou. O frio aqui em cima é cruel."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Eu busco a lenha.",
+    "acoes": [
+     {
+      "honra": 3
+     },
+     {
+      "flag": "lar_celeste_lenha"
+     },
+     {
+      "dar_item": "pao",
+      "qtd": 2
+     }
+    ],
+    "ir": "lar_celeste_feito"
+   },
+   {
+    "t": "Agora não posso."
+   }
+  ]
+ },
+ "lar_celeste_feito": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Você carrega várias braçadas de lenha até a lareira."
+   },
+   {
+    "s": "Celeste",
+    "t": "Que menino bom! Leve pão, assei hoje cedo."
+   }
+  ]
+ },
+ "lar_celeste_depois": {
+  "linhas": [
+   {
+    "s": "Celeste",
+    "t": "A lareira não apagou desde aquele dia. Volte para comer pão quando quiser."
+   }
+  ]
+ },
+ "lar_silas": {
+  "linhas": [
+   {
+    "s": "Silas",
+    "t": "Vim para o vale fugir das pessoas, e as pessoas vêm até mim. Que ironia."
+   },
+   {
+    "s": "Silas",
+    "t": "Já que veio: quem busca a Chama com raiva acaba queimado. Lembre disso."
+   }
+  ]
+ },
+ "lar_ana": {
+  "linhas": [
+   {
+    "s": "Ana",
+    "t": "Shhh! O bebê finalmente dormiu. O vento uivou a noite toda."
+   }
+  ]
+ },
+ "lar_yara": {
+  "linhas": [
+   {
+    "s": "Yara",
+    "t": "Estes símbolos falam de um povo que domava o fogo como se fosse água."
+   },
+   {
+    "s": "Yara",
+    "t": "Se o que estou lendo for verdade, a Chama não é uma arma. É uma promessa."
+   }
+  ]
+ },
+ "lar_malik": {
+  "linhas": [
+   {
+    "s": "Malik",
+    "t": "Tenho que copiar estas tábuas antes que a areia apague tudo. Pode segurar a lamparina?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Seguro, sim.",
+    "acoes": [
+     {
+      "honra": 3
+     },
+     {
+      "flag": "lar_malik_ajudou"
+     },
+     {
+      "xp": 40
+     }
+    ],
+    "ir": "lar_malik_feito"
+   },
+   {
+    "t": "Não tenho tempo."
+   }
+  ]
+ },
+ "lar_malik_feito": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Horas passam enquanto Malik copia símbolos antigos. Você aprende um pouco sobre eles."
+   },
+   {
+    "s": "Malik",
+    "t": "Obrigado. Você tem paciência de escriba."
+   }
+  ]
+ },
+ "lar_malik_depois": {
+  "linhas": [
+   {
+    "s": "Malik",
+    "t": "Já copiei metade. A outra metade fala de um tal Zahrak."
+   }
+  ]
+ },
+ "lar_caio": {
+  "linhas": [
+   {
+    "s": "Caio",
+    "t": "Fui ferido na muralha e o capitão me mandou para casa. Sem poção, a perna não fecha."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Dar uma Poção Pequena.",
+    "acoes": [
+     {
+      "remover_item": "pocao_pequena"
+     },
+     {
+      "honra": 6
+     },
+     {
+      "flag": "lar_caio_ajudado"
+     }
+    ],
+    "ir": "lar_caio_feito",
+    "se": {
+     "item": "pocao_pequena"
+    }
+   },
+   {
+    "t": "Não tenho como ajudar."
+   }
+  ]
+ },
+ "lar_caio_feito": {
+  "linhas": [
+   {
+    "s": "Caio",
+    "t": "Já sinto a perna! Se precisar de um escudo ao seu lado, me chame."
+   }
+  ]
+ },
+ "lar_caio_depois": {
+  "linhas": [
+   {
+    "s": "Caio",
+    "t": "Voltei a treinar. Ainda manco, mas manco com orgulho."
+   }
+  ]
+ },
+ "lar_lucia": {
+  "linhas": [
+   {
+    "s": "Lúcia",
+    "t": "Por favor, guardião... Meu marido Davi fugiu do exército de Varek. Ele não queria lutar contra o próprio povo."
+   },
+   {
+    "s": "Lúcia",
+    "t": "Há uma recompensa de 5 coroas por ele. Você vai entregá-lo?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Entregar Davi aos guardas.",
+    "acoes": [
+     {
+      "moeda": "coroas",
+      "qtd": 5
+     },
+     {
+      "honra": -6
+     },
+     {
+      "flag": "lar_desertor_decidiu"
+     },
+     {
+      "flag": "lar_davi_entregue"
+     },
+     {
+      "sumir_npc": "lar_davi"
+     }
+    ],
+    "ir": "lar_lucia_entregou"
+   },
+   {
+    "t": "Ninguém vai saber por mim.",
+    "acoes": [
+     {
+      "honra": 5
+     },
+     {
+      "flag": "lar_desertor_decidiu"
+     }
+    ],
+    "ir": "lar_lucia_poupou"
+   }
+  ]
+ },
+ "lar_lucia_entregou": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Os guardas levam Davi. Lúcia não diz mais nada."
+   }
+  ]
+ },
+ "lar_lucia_poupou": {
+  "linhas": [
+   {
+    "s": "Lúcia",
+    "t": "Obrigada... obrigada! Você é diferente dos soldados de Varek."
+   }
+  ]
+ },
+ "lar_lucia_depois": {
+  "linhas": [
+   {
+    "s": "Lúcia",
+    "t": "Faça o que achar certo, guardião. Eu também fiz."
+   }
+  ]
+ },
+ "lar_davi": {
+  "linhas": [
+   {
+    "s": "Davi",
+    "t": "Recusei atirar em gente do porto. Se isso é traição, sou traidor com orgulho."
+   }
+  ]
+ },
+ "lar_davi_preso": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A cama de Davi está vazia."
+   }
+  ]
+ },
+ "lar_vera": {
+  "linhas": [
+   {
+    "s": "Vera",
+    "t": "Varek é meu filho. Era um menino gentil antes da sombra entrar no coração dele."
+   }
+  ]
+ },
+ "lar_vera_depois": {
+  "linhas": [
+   {
+    "s": "Vera",
+    "t": "Soube o que aconteceu com Varek. Não te culpo, Ifrit."
+   },
+   {
+    "s": "Vera",
+    "t": "Antes do fim, ele mandou um recado: pediu perdão. Eu já perdoei. Você também deveria se perdoar."
+   }
+  ]
+ },
+ "lar_otto": {
+  "linhas": [
+   {
+    "s": "Otto",
+    "t": "Cozinho para a guarnição inteira. Ouço tudo: dizem que o Varek não dorme há semanas."
+   },
+   {
+    "s": "Otto",
+    "t": "Toma, pão do quartel. Duro, mas sustenta."
+   }
+  ],
+  "acoes": [
+   {
+    "dar_item": "pao",
+    "qtd": 2
+   },
+   {
+    "flag": "lar_otto_pao"
+   }
+  ]
+ },
+ "lar_otto_comeu": {
+  "linhas": [
+   {
+    "s": "Otto",
+    "t": "Os soldados andam nervosos. Dizem que alguma coisa se mexe nas Ruínas de Qadim."
+   }
+  ]
+ },
+ "lar_x_sadiq_oi": {
+  "linhas": [
+   {
+    "s": "Mestre Sadiq",
+    "t": "Então você é o filho de Samira. Tem os ombros do pai, mas a teimosia é dela."
+   },
+   {
+    "s": "Mestre Sadiq",
+    "t": "Antes de enfrentar o deserto, quebre três bonecos. Quero ver esse braço."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Pode deixar, mestre.",
+    "acoes": [
+     {
+      "quest_iniciar": "x_treino"
+     }
+    ]
+   },
+   {
+    "t": "Depois."
+   }
+  ]
+ },
+ "lar_x_sadiq_fim": {
+  "linhas": [
+   {
+    "s": "Mestre Sadiq",
+    "t": "Bom golpe! Lembre: quem acerta enche a Fúria. Quem enche a Fúria vira fogo."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "x_treino"
+   }
+  ]
+ },
+ "lar_x_sadiq_menu": {
+  "linhas": [
+   {
+    "s": "Mestre Sadiq",
+    "t": "O que vai ser, aprendiz?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Quero o desafio da arena.",
+    "acoes": [
+     {
+      "quest_iniciar": "x_arena"
+     },
+     {
+      "arena": 1
+     }
+    ],
+    "ir": "lar_x_sadiq_arena"
+   },
+   {
+    "t": "Me dê uma dica.",
+    "ir": "lar_x_sadiq_dica"
+   },
+   {
+    "t": "Até mais."
+   }
+  ]
+ },
+ "lar_x_sadiq_arena": {
+  "linhas": [
+   {
+    "s": "Mestre Sadiq",
+    "t": "Entre no cercado da arena! Três ondas. Se cair, ninguém vai rir... muito."
+   }
+  ]
+ },
+ "lar_x_sadiq_dica": {
+  "linhas": [
+   {
+    "s": "Mestre Sadiq",
+    "t": "Empurre um inimigo contra a parede e ele fica tonto. Empurre contra outro e os dois rolam."
+   },
+   {
+    "s": "Mestre Sadiq",
+    "t": "E dizem que nas Dunas Rubras há uma pedra que nenhum homem move. Bobagem... ou não."
+   }
+  ]
+ },
+ "lar_x_aprendiz": {
+  "linhas": [
+   {
+    "s": "Nina",
+    "t": "Eu já quebrei quarenta bonecos hoje! O mestre diz que não conta se eu chutar."
+   }
+  ]
+ },
+ "lar_x_salma_pede": {
+  "linhas": [
+   {
+    "s": "Salma",
+    "t": "Hienas! Toda noite elas descem no pomar e levam as tâmaras."
+   },
+   {
+    "s": "Salma",
+    "t": "Pode espantar umas quatro? A aldeia inteira agradece."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Deixa comigo.",
+    "acoes": [
+     {
+      "quest_iniciar": "x_hienas"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "lar_x_salma_lembra": {
+  "linhas": [
+   {
+    "s": "Salma",
+    "t": "Elas ficam no pomar, depois do canal. Cuidado com o bote delas!"
+   }
+  ]
+ },
+ "lar_x_salma_fim": {
+  "linhas": [
+   {
+    "s": "Salma",
+    "t": "O pomar está em paz! Leve carne seca: dizem que uma hiena cansada aceita até virar montaria."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "x_hienas"
+   }
+  ]
+ },
+ "lar_x_salma_padrao": {
+  "linhas": [
+   {
+    "s": "Salma",
+    "t": "As tâmaras deste ano estão doces como mel."
+   }
+  ]
+ },
+ "lar_x_badu": {
+  "linhas": [
+   {
+    "s": "Tio Badu",
+    "t": "Tâmaras, pão e carne seca! Tudo da aldeia."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Comprar ou vender",
+    "acoes": [
+     {
+      "loja": "mercado_tamareiras"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "lar_x_zuleica": {
+  "linhas": [
+   {
+    "s": "Vó Zuleica",
+    "t": "Já ouviu falar de Zazu? O eremita das Dunas Rubras."
+   },
+   {
+    "s": "Vó Zuleica",
+    "t": "Dizem que ele mora atrás de uma pedra que nenhum homem move. Mas pedra não é homem... pedra rola."
+   },
+   {
+    "s": "Vó Zuleica",
+    "t": "Procure onde três palmeiras se curvam diante de um paredão."
+   }
+  ]
+ },
+ "lar_x_safira": {
+  "linhas": [
+   {
+    "s": "Dona Safira",
+    "t": "Casa de hóspedes da aldeia! Uma noite custa 6 Brasas."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Dormir (6 Brasas)",
+    "acoes": [
+     {
+      "pagar": "brasas",
+      "qtd": 6
+     },
+     {
+      "dormir": true
+     },
+     {
+      "salvar": true
+     }
+    ],
+    "se": {
+     "moeda": {
+      "brasas": 6
+     }
+    }
+   },
+   {
+    "t": "Não, obrigado"
+   }
+  ]
+ },
+ "lar_x_tico": {
+  "linhas": [
+   {
+    "s": "Tico",
+    "t": "Eu nado no canal todo dia! Meu irmão diz que tem peixe-gato lá. Mentira dele."
+   }
+  ]
+ },
+ "lar_x_nadador_canal": {
+  "linhas": [
+   {
+    "s": "Rafi",
+    "t": "*glub* A água tá fresquinha! Pula aqui, guardião!"
+   }
+  ]
+ },
+ "lar_x_tome_pede": {
+  "linhas": [
+   {
+    "s": "Seu Tomé",
+    "t": "Os caranguejos da praia cortaram minhas redes de novo! Quarenta anos de mar e nunca vi tanto."
+   },
+   {
+    "s": "Seu Tomé",
+    "t": "Dá uma limpada na praia pra mim? Uns cinco já resolvem."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Vou lá.",
+    "acoes": [
+     {
+      "quest_iniciar": "x_redes"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "lar_x_tome_lembra": {
+  "linhas": [
+   {
+    "s": "Seu Tomé",
+    "t": "Na beira da água, perto do píer. Eles beliscam forte!"
+   }
+  ]
+ },
+ "lar_x_tome_fim": {
+  "linhas": [
+   {
+    "s": "Seu Tomé",
+    "t": "Praia limpa! Toma, as pérolas que as redes me deram este mês."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "x_redes"
+   }
+  ]
+ },
+ "lar_x_tome_padrao": {
+  "linhas": [
+   {
+    "s": "Seu Tomé",
+    "t": "O mar dá e o mar toma. Hoje deu."
+   }
+  ]
+ },
+ "lar_x_iara": {
+  "linhas": [
+   {
+    "s": "Iara",
+    "t": "Peixe fresco, poções e carne seca pra viagem!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Comprar ou vender",
+    "acoes": [
+     {
+      "loja": "mercado_pescadores"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "lar_x_marina": {
+  "linhas": [
+   {
+    "s": "Marina",
+    "t": "A Pousada da Maré tem rede de dormir e barulho de onda. Uma noite: 3 Pérolas."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Dormir (3 Pérolas)",
+    "acoes": [
+     {
+      "pagar": "perolas",
+      "qtd": 3
+     },
+     {
+      "dormir": true
+     },
+     {
+      "salvar": true
+     }
+    ],
+    "se": {
+     "moeda": {
+      "perolas": 3
+     }
+    }
+   },
+   {
+    "t": "Não, obrigado"
+   }
+  ]
+ },
+ "lar_x_lino": {
+  "linhas": [
+   {
+    "s": "Velho Lino",
+    "t": "Quando eu era moço, conheci um eremita chamado Zazu. Fazia perguntas que ninguém sabia responder."
+   },
+   {
+    "s": "Velho Lino",
+    "t": "Ele vivia nas Dunas Rubras, numa caverna tapada por uma pedra redonda. Basta empurrar de lado, ele dizia."
+   }
+  ]
+ },
+ "lar_x_menino_nadador": {
+  "linhas": [
+   {
+    "s": "Caio",
+    "t": "Aposto que eu nado até o píer antes de você!"
+   }
+  ]
+ },
+ "lar_x_menina_nadadora": {
+  "linhas": [
+   {
+    "s": "Lia",
+    "t": "Minha mãe disse que no fundo do mar mora uma cidade de vidro. Um dia eu acho."
+   }
+  ]
+ },
+ "lar_x_banhista_miraj": {
+  "linhas": [
+   {
+    "s": "Zara",
+    "t": "A água do lago voltou a ser limpa! Ninguém me tira daqui hoje."
+   }
+  ]
+ },
+ "lar_x_nadador_coral": {
+  "linhas": [
+   {
+    "s": "Duda Júnior",
+    "t": "Meu pai é ferreiro, mas eu vou ser mergulhador de pérolas!"
+   }
+  ]
+ },
+ "lar_x_zazu_oi": {
+  "linhas": [
+   {
+    "s": "Ancião Zazu",
+    "t": "Hm. Faz trinta anos que ninguém rola aquela pedra. Você tem braço... e paciência."
+   },
+   {
+    "s": "Ancião Zazu",
+    "t": "Eu sou Zazu. Respondo quem me responde. Três perguntas e uma quarta."
+   },
+   {
+    "s": "Ancião Zazu",
+    "t": "Primeira. O que é que, quanto mais se tira, maior fica?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "A sombra.",
+    "ir": "lar_x_zazu_erro"
+   },
+   {
+    "t": "Um buraco.",
+    "ir": "lar_x_zazu_2"
+   },
+   {
+    "t": "O deserto.",
+    "ir": "lar_x_zazu_erro"
+   }
+  ]
+ },
+ "lar_x_zazu_2": {
+  "linhas": [
+   {
+    "s": "Ancião Zazu",
+    "t": "Hm-hm. Segunda. Tenho cidades sem casas, rios sem água e desertos sem areia. O que sou?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Um sonho.",
+    "ir": "lar_x_zazu_erro"
+   },
+   {
+    "t": "Uma lenda.",
+    "ir": "lar_x_zazu_erro"
+   },
+   {
+    "t": "Um mapa.",
+    "ir": "lar_x_zazu_3"
+   }
+  ]
+ },
+ "lar_x_zazu_3": {
+  "linhas": [
+   {
+    "s": "Ancião Zazu",
+    "t": "Terceira. Corro sem pernas, uivo sem boca, todos me ouvem e ninguém me vê."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "O vento.",
+    "ir": "lar_x_zazu_4"
+   },
+   {
+    "t": "Um fantasma.",
+    "ir": "lar_x_zazu_erro"
+   },
+   {
+    "t": "O eco.",
+    "ir": "lar_x_zazu_erro"
+   }
+  ]
+ },
+ "lar_x_zazu_4": {
+  "linhas": [
+   {
+    "s": "Ancião Zazu",
+    "t": "Agora a quarta, a única que importa. Quem é você?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Ifrit, filho de Samira.",
+    "ir": "lar_x_zazu_fim"
+   },
+   {
+    "t": "Um guardião da Chama.",
+    "ir": "lar_x_zazu_fim"
+   },
+   {
+    "t": "Ainda estou descobrindo.",
+    "acoes": [
+     {
+      "honra": 5
+     }
+    ],
+    "ir": "lar_x_zazu_sabio"
+   }
+  ]
+ },
+ "lar_x_zazu_erro": {
+  "linhas": [
+   {
+    "s": "Ancião Zazu",
+    "t": "Não. Volte quando a resposta morar em você, não na sua boca."
+   }
+  ]
+ },
+ "lar_x_zazu_fim": {
+  "linhas": [
+   {
+    "s": "Ancião Zazu",
+    "t": "É o que dizem de você. Mas não foi isso que perguntei."
+   },
+   {
+    "s": "Ancião Zazu",
+    "t": "Leia a parede quando sair. E leve isto: um olho que vê o fogo antes de ele nascer."
+   }
+  ],
+  "acoes": [
+   {
+    "flag": "zazu_sabio"
+   },
+   {
+    "dar_item": "olho_zazu",
+    "qtd": 1
+   },
+   {
+    "segredo": "zazu"
+   }
+  ]
+ },
+ "lar_x_zazu_sabio": {
+  "linhas": [
+   {
+    "s": "Ancião Zazu",
+    "t": "...Ha! Finalmente alguém honesto. \"Conheça a ti mesmo\", diziam os antigos no templo deles."
+   },
+   {
+    "s": "Ancião Zazu",
+    "t": "Leve isto: um olho que vê o fogo antes de ele nascer. Sua Fúria vai acender mais rápido."
+   }
+  ],
+  "acoes": [
+   {
+    "flag": "zazu_sabio"
+   },
+   {
+    "dar_item": "olho_zazu",
+    "qtd": 1
+   },
+   {
+    "segredo": "zazu"
+   }
+  ]
+ },
+ "lar_x_zazu_depois": {
+  "linhas": [
+   {
+    "s": "Ancião Zazu",
+    "t": "Sete chamas, Ifrit. Todos contam sete."
+   },
+   {
+    "s": "Ancião Zazu",
+    "t": "Mas quem acendeu a primeira? Um dia, pergunte à sua mãe sobre o oitavo fogo."
+   }
+  ]
+ },
+ "lar_x_zazu_oitavo": {
+  "linhas": [
+   {
+    "s": "Ancião Zazu",
+    "t": "Ele acordou. Eu avisei sobre o oitavo fogo."
+   },
+   {
+    "s": "Ancião Zazu",
+    "t": "Agora você entende por que eu moro atrás de uma pedra."
+   }
+  ]
+ },
+ "lar_x_velho_canion": {
+  "linhas": [
+   {
+    "s": "Velho da Gruta",
+    "t": "É perigoso ir sozinho! Leve isto."
+   }
+  ],
+  "acoes": [
+   {
+    "dar_item": "pocao_media",
+    "qtd": 2
+   },
+   {
+    "flag": "velho_canion_presente"
+   },
+   {
+    "segredo": "sozinho"
+   }
+  ]
+ },
+ "lar_x_velho_canion_depois": {
+  "linhas": [
+   {
+    "s": "Velho da Gruta",
+    "t": "Já te dei tudo o que eu tinha. Dizem que antigamente eu dava espadas."
+   },
+   {
+    "s": "Velho da Gruta",
+    "t": "Bons tempos. Agora vá, e não conte a ninguém sobre este canto."
+   }
+  ]
+ },
+ "lar_x_placa_bolo": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Uma placa enferrujada, pregada entre as engrenagens:"
+   },
+   {
+    "s": "",
+    "t": "\"PARABÉNS, OPERÁRIO. AO FIM DO TURNO HAVERÁ BOLO PARA TODOS.\""
+   },
+   {
+    "s": "",
+    "t": "Embaixo, alguém riscou com a ponta de uma faca: \"O bolo é uma mentira.\""
+   }
+  ],
+  "acoes": [
+   {
+    "segredo": "bolo"
+   }
+  ]
+ },
+ "lar_x_sabio_qadim": {
+  "linhas": [
+   {
+    "s": "Sábio Pensador",
+    "t": "Passei sete milhões e meio de... bem, muitos anos pensando na Grande Pergunta."
+   },
+   {
+    "s": "Sábio Pensador",
+    "t": "A resposta para a vida, o universo e tudo mais é... quarenta e dois."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Quarenta e dois? E qual é a pergunta?"
+   },
+   {
+    "s": "Sábio Pensador",
+    "t": "Isso eu ainda estou calculando. Mas não entre em pânico."
+   }
+  ],
+  "acoes": [
+   {
+    "segredo": "quarenta_e_dois"
+   }
+  ]
+ },
+ "lar_x_cavaleiro_sol": {
+  "linhas": [
+   {
+    "s": "Cavaleiro do Sol",
+    "t": "Ah, um viajante! Já viu o sol daqui de cima? Glorioso!"
+   },
+   {
+    "s": "Cavaleiro do Sol",
+    "t": "Se um dia a sua chama vacilar, faça como eu. Braços para o alto e... LOUVADO SEJA O SOL!"
+   },
+   {
+    "s": "",
+    "t": "Ele ergue os braços em V, imóvel e radiante. Você sente uma vontade estranha de fazer o mesmo."
+   }
+  ],
+  "acoes": [
+   {
+    "segredo": "sol"
+   }
+  ]
+ },
+ "lar_x_prisioneiro": {
+  "linhas": [
+   {
+    "s": "Prisioneiro",
+    "t": "O General caiu? Estou livre!"
+   },
+   {
+    "s": "Prisioneiro",
+    "t": "Obrigado, Ifrit! Mas sua princesa está em outro castelo."
+   },
+   {
+    "s": "Ifrit",
+    "t": "...Que princesa?"
+   }
+  ],
+  "acoes": [
+   {
+    "segredo": "castelo"
+   }
+  ]
+ },
+ "lar_x_placa_calango": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Alguém rabiscou na placa, com letra de criança:"
+   },
+   {
+    "s": "",
+    "t": "\"Um CALANGO selvagem apareceu!\""
+   },
+   {
+    "s": "",
+    "t": "Embaixo, o desenho de um menino diante de um calango e quatro quadradinhos com as palavras LUTAR, BOLSA, TROCAR e FUGIR."
+   }
+  ],
+  "acoes": [
+   {
+    "segredo": "calango"
+   }
+  ]
+ },
+ "lar_x_pescador_velho": {
+  "linhas": [
+   {
+    "s": "Vô Arnaldo",
+    "t": "Ah, menino... no meu tempo o mundo era clássico."
+   },
+   {
+    "s": "Vô Arnaldo",
+    "t": "Todo mundo cortava arbustos atrás de moedinhas e jogava bombas em parede rachada procurando passagem secreta. E ninguém achava estranho!"
+   },
+   {
+    "s": "Vô Arnaldo",
+    "t": "Hoje vocês empurram pedras. Hmpf. Bom... também vale."
+   }
+  ],
+  "acoes": [
+   {
+    "segredo": "classico"
+   }
+  ]
+ },
+ "lar_x_hasna": {
+  "linhas": [
+   {
+    "s": "Hasna",
+    "t": "Colhemos tâmaras desde antes do nascer do sol. Quer uma? Pegue duas!"
+   }
+  ],
+  "acoes": [
+   {
+    "dar_item": "tamara",
+    "qtd": 1
+   }
+  ]
+ },
+ "lar_x_jabir": {
+  "linhas": [
+   {
+    "s": "Jabir",
+    "t": "O canal foi ideia do meu avô. Antes dele, a aldeia era só areia e saudade."
+   }
+  ]
+ },
+ "lar_x_kenza": {
+  "linhas": [
+   {
+    "s": "Kenza",
+    "t": "Você é o guardião? Mostra a bola de fogo! Só uma!"
+   }
+  ]
+ },
+ "lar_x_quito": {
+  "linhas": [
+   {
+    "s": "Quito",
+    "t": "Remendo redes desde menino. Os caranguejos sabem disso e me dão serviço."
+   }
+  ]
+ },
+ "lar_x_celeste": {
+  "linhas": [
+   {
+    "s": "Celeste",
+    "t": "Meu marido saiu no barco do Kraal e nunca voltou. Obrigada por afundar aquele navio."
+   }
+  ]
+ },
+ "lar_x_bento": {
+  "linhas": [
+   {
+    "s": "Bento",
+    "t": "Já viu as conchas que brilham à noite? Minha filha jura que falam."
+   }
+  ]
+ },
+ "lar_x_vovo_ana": {
+  "linhas": [
+   {
+    "s": "Vó Ana",
+    "t": "Senta, menino. Toma um chá de alga. Faz bem pro juízo."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Aceitar o chá.",
+    "acoes": [
+     {
+      "curar": true
+     }
+    ],
+    "ir": "lar_x_vovo_cha"
+   },
+   {
+    "t": "Fica pra próxima, vó."
+   }
+  ]
+ },
+ "lar_x_vovo_cha": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "O chá é estranho, mas você se sente bem melhor."
+   }
+  ]
+ }
+}

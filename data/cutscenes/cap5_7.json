@@ -1,0 +1,548 @@
+{
+ "golem_aparece": [
+  {
+   "cmd": "camera",
+   "para": [
+    20,
+    5
+   ],
+   "t": 1.0
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "Omar, o Mago",
+   "t": "O guardião da biblioteca... Feito de vidro e fúria."
+  },
+  {
+   "cmd": "fala",
+   "s": "Omar, o Mago",
+   "t": "Cuidado! Ele cospe estilhaços!"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "golem_desperto"
+    },
+    {
+     "invocar_chefe": true
+    }
+   ]
+  }
+ ],
+ "golem_derrotado": [
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "O Golem de Vidro se estilhaça. Atrás dele, um livro flutua envolto em chamas."
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "dar_item": "livro_chamas"
+    }
+   ]
+  },
+  {
+   "cmd": "fala",
+   "s": "Omar, o Mago",
+   "t": "O Livro das Chamas! Deixe-me ver... Aqui diz que o sangue do guardião pode reacender qualquer chama."
+  },
+  {
+   "cmd": "fala",
+   "s": "Omar, o Mago",
+   "t": "Zahrak precisa de Kadir vivo para controlar as chamas. Por isso não o matou."
+  },
+  {
+   "cmd": "fala",
+   "s": "Nadia",
+   "t": "Então ainda dá tempo. Para o norte!"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Ao voltar às ruínas, a Chama Sagrada de Qadim já brilha de novo, despertada pelo livro."
+  },
+  {
+   "cmd": "titulo",
+   "t": "Capítulo 6",
+   "sub": "Cidadela de Sal"
+  }
+ ],
+ "emboscada": [
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Flechas atravessam a janela do quartel-general!"
+  },
+  {
+   "cmd": "fala",
+   "s": "Nadia",
+   "t": "Cuidado, Ifrit!"
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Nadia empurra Ifrit e é atingida no braço."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ifrit",
+   "t": "NADIA!"
+  },
+  {
+   "cmd": "fala",
+   "s": "Capitã Rana",
+   "t": "Arqueiros de Varek! Levem-na para a enfermaria, rápido!"
+  },
+  {
+   "cmd": "fala",
+   "s": "Nadia",
+   "t": "Eu estou bem... Vá. Acabe com Varek por mim."
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "remover_aliado": "nadia"
+    },
+    {
+     "flag": "nadia_ferida"
+    },
+    {
+     "quest_concluir": "q6_soldados"
+    },
+    {
+     "quest_iniciar": "q6_varek"
+    }
+   ]
+  },
+  {
+   "cmd": "fala",
+   "s": "Capitã Rana",
+   "t": "O portão do quartel está aberto. Ao norte, Ifrit. Termine isso."
+  }
+ ],
+ "varek_aparece": [
+  {
+   "cmd": "camera",
+   "para": [
+    20,
+    5
+   ],
+   "t": 1.0
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "General Varek",
+   "t": "O filho de Kadir... Você tem o mesmo olhar teimoso do seu pai."
+  },
+  {
+   "cmd": "fala",
+   "s": "General Varek",
+   "t": "Eu lutei ao lado dele. Mas Zahrak é forte demais. Quem não se curva, queima."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ifrit",
+   "t": "Meu pai nunca se curvou!"
+  },
+  {
+   "cmd": "fala",
+   "s": "General Varek",
+   "t": "Então você vai queimar com ele!"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "varek_desperto"
+    },
+    {
+     "invocar_chefe": true
+    }
+   ]
+  }
+ ],
+ "varek_derrotado": [
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "General Varek",
+   "t": "...Chega. Você venceu, garoto."
+  },
+  {
+   "cmd": "fala",
+   "s": "General Varek",
+   "t": "Kadir disse uma vez que a coragem acende mais que qualquer chama. Eu esqueci disso."
+  },
+  {
+   "cmd": "fala",
+   "s": "General Varek",
+   "t": "Vou abrir a Ponte das Cinzas. Salve seu pai. E me perdoe, se puder."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ifrit",
+   "t": "Vamos contar à Capitã Rana."
+  },
+  {
+   "cmd": "dialogo",
+   "id": "varek_suborno"
+  }
+ ],
+ "cidadela_vitoria": [
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Ifrit acende a Chama Sagrada da Cidadela de Sal. Os soldados batem as lanças no chão em saudação."
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "chama_cidadela_restaurada"
+    }
+   ]
+  },
+  {
+   "cmd": "dialogo",
+   "id": "rana_cidadela_fala"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "quest_concluir": "q6_varek"
+    }
+   ]
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Nadia está se recuperando na enfermaria. Talvez ela queira vir junto."
+  },
+  {
+   "cmd": "titulo",
+   "t": "Capítulo 7",
+   "sub": "O Trono Cinzento"
+  }
+ ],
+ "reencontro": [
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Ifrit força a fechadura enferrujada da cela."
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "virar",
+   "quem": "kadir_preso",
+   "para": "jogador"
+  },
+  {
+   "cmd": "dialogo",
+   "id": "kadir_reencontro"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "dar_item": "chama_de_kadir"
+    },
+    {
+     "flag": "kadir_livre"
+    },
+    {
+     "sumir_npc": "kadir_preso"
+    },
+    {
+     "aliado": "kadir"
+    },
+    {
+     "quest_iniciar": "q7_zahrak"
+    }
+   ]
+  }
+ ],
+ "zahrak_aparece": [
+  {
+   "cmd": "camera",
+   "para": [
+    21,
+    6
+   ],
+   "t": 1.2
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "dialogo",
+   "id": "zahrak_final"
+  },
+  {
+   "cmd": "dialogo",
+   "id": "zahrak_proposta"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "zahrak_desperto"
+    },
+    {
+     "invocar_chefe": true
+    }
+   ]
+  }
+ ],
+ "zahrak_derrotado": [
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "Zahrak",
+   "t": "Não... Eu era... a chama... mais forte..."
+  },
+  {
+   "cmd": "fala",
+   "s": "Zahrak",
+   "t": "Vocês... não entendem... Eu não apagava as chamas por ódio..."
+  },
+  {
+   "cmd": "fala",
+   "s": "Zahrak",
+   "t": "As sete... acesas juntas... Ele vai acordar... Ele vai..."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ifrit",
+   "t": "Quem vai acordar? Zahrak! Responda!"
+  },
+  {
+   "cmd": "fala",
+   "s": "Kadir",
+   "t": "Ninguém é mais forte que sete chamas juntas, velho amigo."
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Zahrak se desfaz em cinzas. Pela janela do salão, uma luz dourada nasce no horizonte."
+  },
+  {
+   "cmd": "fala",
+   "s": "Omar, o Mago",
+   "t": "A sétima chama... era a chama do próprio trono. Vejam, ela está acendendo!"
+  },
+  {
+   "cmd": "fala",
+   "s": "Bako",
+   "t": "Então acabou? Podemos ir para casa? Eu quero o mar!"
+  },
+  {
+   "cmd": "fala",
+   "s": "Kadir",
+   "t": "Vamos para casa, Ifrit. Sua mãe está esperando há tempo demais."
+  },
+  {
+   "cmd": "escurecer",
+   "t": 1.0
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "remover_aliado": "kadir"
+    },
+    {
+     "flag": "chama_trono_restaurada"
+    }
+   ]
+  },
+  {
+   "cmd": "mapa",
+   "mapa": "casa_mae",
+   "spawn": "porta"
+  }
+ ],
+ "epilogo": [
+  {
+   "cmd": "titulo",
+   "t": "Epílogo",
+   "sub": "De volta a Areia Rubra"
+  },
+  {
+   "cmd": "virar",
+   "quem": "samira",
+   "para": "jogador"
+  },
+  {
+   "cmd": "dialogo",
+   "id": "epilogo_fala_v2"
+  },
+  {
+   "cmd": "esperar",
+   "t": 0.6
+  },
+  {
+   "cmd": "titulo",
+   "t": "Destinos",
+   "sub": "O que cada chama deixou para trás"
+  },
+  {
+   "cmd": "tela",
+   "script": "res://scripts/ui/ending_slides.gd"
+  },
+  {
+   "cmd": "tela",
+   "script": "res://scripts/ui/end_poem.gd"
+  },
+  {
+   "cmd": "tela",
+   "script": "res://scripts/ui/credits_roll.gd"
+  },
+  {
+   "cmd": "mapa",
+   "mapa": "areia_rubra",
+   "spawn": "estrada"
+  },
+  {
+   "cmd": "escurecer",
+   "t": 0.3
+  },
+  {
+   "cmd": "surgir",
+   "npc": "harun",
+   "pos": [
+    21,
+    17
+   ]
+  },
+  {
+   "cmd": "camera",
+   "para": [
+    21,
+    15
+   ],
+   "t": 0.1
+  },
+  {
+   "cmd": "virar",
+   "quem": "harun",
+   "para": [
+    0,
+    -1
+   ]
+  },
+  {
+   "cmd": "clarear",
+   "t": 1.2
+  },
+  {
+   "cmd": "esperar",
+   "t": 0.8
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Naquela noite, enquanto Areia Rubra dormia, alguém caminhava sozinho até a praça."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ancião Harun",
+   "t": "Sete chamas acesas ao mesmo tempo. Quantos séculos eu esperei para ver isto..."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ancião Harun",
+   "t": "Proteção. Foi o que todos acreditaram. Mas as chamas nunca protegeram Zahra. Elas são fechaduras. E chaves."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ancião Harun",
+   "t": "Ardendo juntas, abrem o caminho até o Oitavo Fogo, que dorme debaixo das areias de Zahra."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ancião Harun",
+   "t": "Zahrak, o primeiro guardião, entendeu isso. Pobre tolo. Passou a vida apagando chamas para nos manter do lado de fora."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ancião Harun",
+   "t": "Eu só precisava do sangue do guardião para reacendê-las. Uma carta na letra de Kadir bastou para mandar o filho dele pelo caminho."
+  },
+  {
+   "cmd": "fala",
+   "s": "Ancião Harun",
+   "t": "Obrigado, filho de Kadir."
+  },
+  {
+   "cmd": "sumir",
+   "npc": "harun"
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "tremer"
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Muito abaixo da areia, onde nenhuma luz jamais chegou, uma chama negra se acende."
+  },
+  {
+   "cmd": "titulo",
+   "t": "Continua...",
+   "sub": "O Oitavo Fogo desperta"
+  },
+  {
+   "cmd": "acoes",
+   "acoes": [
+    {
+     "flag": "oitavo_fogo"
+    },
+    {
+     "flag": "epilogo_visto"
+    },
+    {
+     "salvar": true
+    }
+   ]
+  },
+  {
+   "cmd": "fala",
+   "s": "",
+   "t": "Você pode continuar explorando Zahra e terminar as missões secundárias. Talvez alguém em Areia Rubra tenha deixado pistas..."
+  }
+ ]
+}

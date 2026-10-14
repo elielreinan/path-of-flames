@@ -1,0 +1,153 @@
+{
+ "ferreiro_areia": {
+  "nome": "Forja de Tariq",
+  "moeda": "brasas",
+  "itens": [
+   "espada_bronze",
+   "espada_ferro",
+   "tunica_couro"
+  ]
+ },
+ "mercado_areia": {
+  "nome": "Barraca de Zaida",
+  "moeda": "brasas",
+  "itens": [
+   "tamara",
+   "pao",
+   "carne_seca",
+   "pocao_pequena",
+   "pocao_media",
+   "antidoto",
+   "bolsa_couro"
+  ]
+ },
+ "ferreiro_miraj": {
+  "nome": "Forja de Halim",
+  "moeda": "brasas",
+  "itens": [
+   "espada_ferro",
+   "cimitarra",
+   "tunica_couro",
+   "cota_malha"
+  ]
+ },
+ "mercado_miraj": {
+  "nome": "Barraca de Fátima",
+  "moeda": "brasas",
+  "itens": [
+   "tamara",
+   "cantil",
+   "carne_seca",
+   "pocao_pequena",
+   "pocao_media",
+   "antidoto",
+   "bolsa_couro",
+   "apito_camelo"
+  ]
+ },
+ "ferreiro_coral": {
+  "nome": "Forja de Duda",
+  "moeda": "perolas",
+  "itens": [
+   "cimitarra",
+   "lamina_coral",
+   "cota_malha",
+   "armadura_coral"
+  ]
+ },
+ "mercado_coral": {
+  "nome": "Barraca de Seu Tonho",
+  "moeda": "perolas",
+  "itens": [
+   "peixe",
+   "pocao_pequena",
+   "pocao_media",
+   "pocao_grande",
+   "antidoto",
+   "bolsa_viajante"
+  ]
+ },
+ "ferreiro_vale": {
+  "nome": "Forja de Gunnar",
+  "moeda": "perolas",
+  "itens": [
+   "lamina_coral",
+   "espada_vento",
+   "armadura_coral",
+   "armadura_vento"
+  ]
+ },
+ "mercado_vale": {
+  "nome": "Barraca de Lia",
+  "moeda": "perolas",
+  "itens": [
+   "pao",
+   "pocao_media",
+   "pocao_grande",
+   "antidoto",
+   "bolsa_viajante"
+  ]
+ },
+ "ferreiro_qadim": {
+  "nome": "Forja de Idris",
+  "moeda": "coroas",
+  "itens": [
+   "espada_vento",
+   "lamina_qadim",
+   "armadura_vento"
+  ]
+ },
+ "mercado_qadim": {
+  "nome": "Barraca de Nur",
+  "moeda": "coroas",
+  "itens": [
+   "pocao_media",
+   "pocao_grande",
+   "elixir",
+   "antidoto"
+  ]
+ },
+ "ferreiro_cidadela": {
+  "nome": "Forja de Bruna",
+  "moeda": "coroas",
+  "itens": [
+   "lamina_qadim",
+   "espada_sal",
+   "armadura_vento",
+   "armadura_sal"
+  ]
+ },
+ "mercado_cidadela": {
+  "nome": "Barraca de Sargento Oto",
+  "moeda": "coroas",
+  "itens": [
+   "pocao_media",
+   "pocao_grande",
+   "elixir",
+   "antidoto"
+  ]
+ },
+ "mercado_tamareiras": {
+  "nome": "Barraca do Tio Badu",
+  "moeda": "brasas",
+  "itens": [
+   "tamara",
+   "carne_seca",
+   "pao",
+   "pocao_pequena",
+   "pocao_media",
+   "antidoto"
+  ]
+ },
+ "mercado_pescadores": {
+  "nome": "Barraca da Iara",
+  "moeda": "perolas",
+  "itens": [
+   "peixe",
+   "carne_seca",
+   "pocao_media",
+   "pocao_grande",
+   "antidoto"
+  ]
+ }
+}

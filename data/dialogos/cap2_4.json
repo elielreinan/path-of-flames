@@ -1,0 +1,1594 @@
+{
+ "chama_miraj_fraca": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Miraj está quase apagada. Uma fumaça cinzenta sobe dela."
+   }
+  ]
+ },
+ "chama_miraj_forte": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Miraj arde forte. Você se sente renovado."
+   }
+  ],
+  "acoes": [
+   {
+    "curar": true
+   }
+  ]
+ },
+ "ferreiro_miraj_loja": {
+  "linhas": [
+   {
+    "s": "Halim, o Ferreiro",
+    "t": "Aço do deserto, temperado na água do oásis!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Ver armas",
+    "acoes": [
+     {
+      "loja": "ferreiro_miraj"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "mercador_miraj_loja": {
+  "linhas": [
+   {
+    "s": "Fátima, a Boticária",
+    "t": "Poções, cantis e ervas! Com a água envenenada, os cantis estão saindo rápido."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Comprar ou vender",
+    "acoes": [
+     {
+      "loja": "mercado_miraj"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "cambista_miraj_cambio": {
+  "linhas": [
+   {
+    "s": "Yusuf, o Cambista",
+    "t": "Viajantes vêm de longe para negociar em Miraj."
+   },
+   {
+    "s": "Yusuf, o Cambista",
+    "t": "Aqui a moeda é Brasas. Precisa trocar?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Trocar moedas",
+    "acoes": [
+     {
+      "cambio": true
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "estalagem_miraj_quarto": {
+  "linhas": [
+   {
+    "s": "Zainab, da Estalagem",
+    "t": "Bem-vindo à Estalagem da Palmeira!"
+   },
+   {
+    "s": "Zainab, da Estalagem",
+    "t": "Um quarto custa 10 Brasas. Você acorda novinho em folha!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Descansar (10 Brasas)",
+    "se": {
+     "moeda": {
+      "brasas": 10
+     }
+    },
+    "acoes": [
+     {
+      "pagar": "brasas",
+      "qtd": 10
+     },
+     {
+      "dormir": true
+     },
+     {
+      "salvar": true
+     }
+    ]
+   },
+   {
+    "t": "Não, obrigado"
+   }
+  ]
+ },
+ "nadia_encontro": {
+  "linhas": [
+   {
+    "s": "Nadia",
+    "t": "Pare aí. Quem é você e por que está me olhando assim?"
+   },
+   {
+    "s": "Ifrit",
+    "t": "Meu nome é Ifrit. Sou filho de Kadir. Ele deixou uma carta dizendo para procurar você."
+   },
+   {
+    "s": "Nadia",
+    "t": "...Filho do Kadir? Você tem os olhos dele."
+   },
+   {
+    "s": "Nadia",
+    "t": "Kadir me treinou no arco quando eu era criança. Há três anos ele passou por aqui e seguiu para o norte. Nunca mais voltou."
+   },
+   {
+    "s": "Nadia",
+    "t": "Agora o oásis está morrendo. A água foi envenenada e a Rainha Yasmin está de cama."
+   },
+   {
+    "s": "Nadia",
+    "t": "Se você é mesmo filho dele, vá falar com a rainha no palácio. Ela vai querer conhecer você."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_iniciar": "q2_yasmin"
+   }
+  ]
+ },
+ "nadia_vai_yasmin": {
+  "linhas": [
+   {
+    "s": "Nadia",
+    "t": "O palácio fica logo atrás de mim. Entre pela porta grande."
+   }
+  ]
+ },
+ "nadia_antidoto": {
+  "linhas": [
+   {
+    "s": "Nadia",
+    "t": "A nascente fica a oeste da cidade, depois da ponte. Cuidado com os sapos, o veneno deles arde."
+   }
+  ]
+ },
+ "nadia_serpente": {
+  "linhas": [
+   {
+    "s": "Nadia",
+    "t": "Uma serpente gigante? Isso tem cheiro de Zahrak. Acabe com ela e eu vou com você para onde for."
+   }
+  ]
+ },
+ "nadia_padrao": {
+  "linhas": [
+   {
+    "s": "Nadia",
+    "t": "Miraj está salva graças a você."
+   }
+  ]
+ },
+ "yasmin_doente": {
+  "linhas": [
+   {
+    "s": "Rainha Yasmin",
+    "t": "*cof* *cof* ...Desculpe, viajante. Não estou em condições de receber ninguém."
+   }
+  ]
+ },
+ "yasmin_pedido": {
+  "linhas": [
+   {
+    "s": "Rainha Yasmin",
+    "t": "*cof* Então você é o filho de Kadir... Ele salvou esta cidade uma vez."
+   },
+   {
+    "s": "Rainha Yasmin",
+    "t": "Desde que a chama começou a se apagar, a água da nascente ficou verde e amarga. Metade da cidade está doente, eu também."
+   },
+   {
+    "s": "Rainha Yasmin",
+    "t": "Salma, minha curandeira, sabe fazer um antídoto com flores de lótus. Elas só crescem na nascente."
+   },
+   {
+    "s": "Rainha Yasmin",
+    "t": "Ordenei que liberassem a entrada da nascente para você. Por favor, Ifrit."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_iniciar": "q2_antidoto"
+   }
+  ]
+ },
+ "salma_padrao": {
+  "linhas": [
+   {
+    "s": "Salma, a Curandeira",
+    "t": "A rainha precisa descansar. Fale baixo, por favor."
+   }
+  ]
+ },
+ "salma_lembrete": {
+  "linhas": [
+   {
+    "s": "Salma, a Curandeira",
+    "t": "Três flores de lótus. Elas boiam nos laguinhos dentro da nascente."
+   }
+  ]
+ },
+ "salma_antidoto": {
+  "linhas": [
+   {
+    "s": "Salma, a Curandeira",
+    "t": "Lótus perfeitas! Deixe comigo."
+   },
+   {
+    "s": "",
+    "t": "Salma mistura as flores com água quente. Um perfume doce enche o palácio."
+   },
+   {
+    "s": "Rainha Yasmin",
+    "t": "...Já me sinto melhor. Mas enquanto a nascente estiver envenenada, o povo vai continuar adoecendo."
+   },
+   {
+    "s": "Salma, a Curandeira",
+    "t": "Majestade, este veneno não é natural. Encontrei escamas de serpente nas flores."
+   },
+   {
+    "s": "Rainha Yasmin",
+    "t": "Uma serpente no fundo da nascente... Ifrit, eu lhe peço mais uma vez. Acabe com ela."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "q2_antidoto"
+   },
+   {
+    "quest_iniciar": "q2_serpente"
+   }
+  ]
+ },
+ "yasmin_vitoria": {
+  "linhas": [
+   {
+    "s": "Rainha Yasmin",
+    "t": "A água voltou a ser cristalina! Venha, Ifrit, vamos até a chama."
+   }
+  ],
+  "acoes": [
+   {
+    "cutscene": "miraj_vitoria"
+   }
+  ]
+ },
+ "yasmin_miraj_fala": {
+  "linhas": [
+   {
+    "s": "Rainha Yasmin",
+    "t": "Miraj tem uma dívida eterna com você, filho de Kadir."
+   },
+   {
+    "s": "Rainha Yasmin",
+    "t": "O portão leste está aberto. Siga pelo Desfiladeiro do Sal até Porto Coral. Dizem que piratas tomaram o porto."
+   },
+   {
+    "s": "Nadia",
+    "t": "Eu vou junto. Kadir me ensinou tudo que sei. Está na hora de retribuir."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Bem-vinda ao grupo, Nadia."
+   }
+  ]
+ },
+ "yasmin_padrao": {
+  "linhas": [
+   {
+    "s": "Rainha Yasmin",
+    "t": "Que a chama de Miraj ilumine seu caminho, Ifrit."
+   }
+  ]
+ },
+ "jabir_perdido": {
+  "linhas": [
+   {
+    "s": "Jabir, o Mercador",
+    "t": "Graças à chama! Uma pessoa! Bandidos atacaram minha carroça e eu me escondi aqui."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Rashid está procurando você em Miraj."
+   },
+   {
+    "s": "Jabir, o Mercador",
+    "t": "O velho Rashid! Diga a ele que estou vivo. Vou esperar a estrada ficar segura e sigo atrás de você."
+   }
+  ]
+ },
+ "viajante_dica": {
+  "linhas": [
+   {
+    "s": "Viajante",
+    "t": "Dizem que os bandidos desta estrada trabalham para um tal de Rei Cinzento. Cuidado, garoto."
+   }
+  ]
+ },
+ "rashid_pedido": {
+  "linhas": [
+   {
+    "s": "Rashid, o Caravaneiro",
+    "t": "Você veio pela Estrada das Caravanas? Viu meu sócio Jabir? Baixinho, turbante azul, fala sem parar?"
+   },
+   {
+    "s": "Rashid, o Caravaneiro",
+    "t": "Ele saiu de Areia Rubra e nunca chegou. Se encontrar, me avise!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Vou procurar.",
+    "acoes": [
+     {
+      "quest_iniciar": "s2_caravana"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "rashid_lembrete": {
+  "linhas": [
+   {
+    "s": "Rashid, o Caravaneiro",
+    "t": "Jabir deve estar em algum ponto da estrada. Por favor, procure com atenção."
+   }
+  ]
+ },
+ "rashid_fim": {
+  "linhas": [
+   {
+    "s": "Rashid, o Caravaneiro",
+    "t": "Vivo?! Aquele teimoso! Tome, é o mínimo que posso dar."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s2_caravana"
+   }
+  ]
+ },
+ "rashid_padrao": {
+  "linhas": [
+   {
+    "s": "Rashid, o Caravaneiro",
+    "t": "As caravanas voltaram a circular. Os negócios vão bem!"
+   }
+  ]
+ },
+ "kamal_pedido": {
+  "linhas": [
+   {
+    "s": "Kamal, o Poeta",
+    "t": "Ah, viajante! \"Seus olhos são dois oásis num deserto de saudade...\" Bonito, não?"
+   },
+   {
+    "s": "Kamal, o Poeta",
+    "t": "Quero dar duas flores de lótus para Zainab, da estalagem. Mas a nascente é perigosa demais para um poeta."
+   },
+   {
+    "s": "Kamal, o Poeta",
+    "t": "Você traria duas para mim?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Pelo amor, eu trago.",
+    "acoes": [
+     {
+      "quest_iniciar": "s2_poeta"
+     }
+    ]
+   },
+   {
+    "t": "Talvez depois."
+   }
+  ]
+ },
+ "kamal_lembrete": {
+  "linhas": [
+   {
+    "s": "Kamal, o Poeta",
+    "t": "Duas flores de lótus, meu herói. Duas!"
+   }
+  ]
+ },
+ "kamal_fim": {
+  "linhas": [
+   {
+    "s": "Kamal, o Poeta",
+    "t": "As flores de lótus! Perfeitas! Diga, meu herói... quanto lhe devo pelo perigo?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Só o combinado.",
+    "ir": "kamal_fim_honesto"
+   },
+   {
+    "t": "Mentir: \"As flores custaram caro. Quero 40 Brasas a mais.\"",
+    "ir": "kamal_fim_mentira"
+   }
+  ]
+ },
+ "kamal_padrao": {
+  "linhas": [
+   {
+    "s": "Kamal, o Poeta",
+    "t": "Zainab aceitou passear comigo! A poesia vence tudo."
+   }
+  ]
+ },
+ "omid_pedido": {
+  "linhas": [
+   {
+    "s": "Omid, o Cameleiro",
+    "t": "Meus camelos não bebem há dois dias. A água do lago está envenenada."
+   },
+   {
+    "s": "Omid, o Cameleiro",
+    "t": "Fátima vende cantis de água limpa no bazar. Se trouxer três, eu pago bem."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Pode deixar.",
+    "acoes": [
+     {
+      "quest_iniciar": "s2_camelos"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "omid_lembrete": {
+  "linhas": [
+   {
+    "s": "Omid, o Cameleiro",
+    "t": "Três cantis, por favor. A barraca da Fátima fica no bazar, ao sul do lago."
+   }
+  ]
+ },
+ "omid_fim": {
+  "linhas": [
+   {
+    "s": "Omid, o Cameleiro",
+    "t": "Olha como eles bebem! Obrigado, amigo. Aqui está seu pagamento."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s2_camelos"
+   }
+  ]
+ },
+ "omid_padrao": {
+  "linhas": [
+   {
+    "s": "Omid, o Cameleiro",
+    "t": "Camelo feliz, cameleiro feliz."
+   }
+  ]
+ },
+ "crianca_miraj": {
+  "linhas": [
+   {
+    "s": "Menina do Oásis",
+    "t": "Minha mãe diz que antigamente dava para ver peixinhos no lago. Você consegue trazer eles de volta?"
+   }
+  ]
+ },
+ "chama_coral_fraca": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Porto Coral está quase apagada. Uma fumaça cinzenta sobe dela."
+   }
+  ]
+ },
+ "chama_coral_forte": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Porto Coral arde forte. Você se sente renovado."
+   }
+  ],
+  "acoes": [
+   {
+    "curar": true
+   }
+  ]
+ },
+ "ferreiro_coral_loja": {
+  "linhas": [
+   {
+    "s": "Duda, a Ferreira",
+    "t": "Lâminas que não enferrujam nem com a maresia!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Ver armas",
+    "acoes": [
+     {
+      "loja": "ferreiro_coral"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "mercador_coral_loja": {
+  "linhas": [
+   {
+    "s": "Seu Tonho, o Peixeiro",
+    "t": "Peixe fresco e poções! O peixe cura mais que você imagina."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Comprar ou vender",
+    "acoes": [
+     {
+      "loja": "mercado_coral"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "cambista_coral_cambio": {
+  "linhas": [
+   {
+    "s": "Dona Pérola, a Cambista",
+    "t": "Pérolas, querido! Aqui na costa ninguém aceita Brasas."
+   },
+   {
+    "s": "Dona Pérola, a Cambista",
+    "t": "Aqui a moeda é Pérolas. Precisa trocar?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Trocar moedas",
+    "acoes": [
+     {
+      "cambio": true
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "estalagem_coral_quarto": {
+  "linhas": [
+   {
+    "s": "Gaspar, da Estalagem",
+    "t": "A Estalagem da Âncora tem as camas mais macias do porto."
+   },
+   {
+    "s": "Gaspar, da Estalagem",
+    "t": "Um quarto custa 4 Pérolas. Você acorda novinho em folha!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Descansar (4 Pérolas)",
+    "se": {
+     "moeda": {
+      "perolas": 4
+     }
+    },
+    "acoes": [
+     {
+      "pagar": "perolas",
+      "qtd": 4
+     },
+     {
+      "dormir": true
+     },
+     {
+      "salvar": true
+     }
+    ]
+   },
+   {
+    "t": "Não, obrigado"
+   }
+  ]
+ },
+ "murad_lembrete": {
+  "linhas": [
+   {
+    "s": "Capitão Murad",
+    "t": "Bem-vindo a Porto Coral, se é que dá pra chamar isso de boas-vindas."
+   }
+  ]
+ },
+ "murad_bloqueio": {
+  "linhas": [
+   {
+    "s": "Capitão Murad",
+    "t": "Você é o tal herói de Miraj? As notícias correm rápido no mar."
+   },
+   {
+    "s": "Capitão Murad",
+    "t": "O Capitão Kraal e seus piratas bloquearam o porto. Nenhum navio entra ou sai, e a chama da cidade está se apagando."
+   },
+   {
+    "s": "Capitão Murad",
+    "t": "Meus guardas não conseguem chegar ao navio. Mas Bako, o marujo mais forte daqui, já serviu com Kraal. Procure por ele na taverna."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_iniciar": "q3_bako"
+   }
+  ]
+ },
+ "murad_vitoria": {
+  "linhas": [
+   {
+    "s": "Capitão Murad",
+    "t": "O navio de Kraal está afundando! O porto está livre!"
+   }
+  ],
+  "acoes": [
+   {
+    "cutscene": "coral_vitoria"
+   }
+  ]
+ },
+ "murad_coral_fala": {
+  "linhas": [
+   {
+    "s": "Capitão Murad",
+    "t": "Antes de morrer, Kraal confessou: Zahrak pagava os piratas em Coroas, a moeda do norte."
+   },
+   {
+    "s": "Bako",
+    "t": "Coroas... Então o Rei Cinzento está no norte, além do Vale dos Ventos."
+   },
+   {
+    "s": "Capitão Murad",
+    "t": "Abri a trilha norte para vocês. Que os ventos estejam a seu favor."
+   }
+  ]
+ },
+ "murad_padrao": {
+  "linhas": [
+   {
+    "s": "Capitão Murad",
+    "t": "Os navios voltaram a zarpar. Porto Coral está viva de novo!"
+   }
+  ]
+ },
+ "bako_padrao": {
+  "linhas": [
+   {
+    "s": "Bako",
+    "t": "Hmpf. Quem é você?"
+   }
+  ]
+ },
+ "bako_junta": {
+  "linhas": [
+   {
+    "s": "Bako",
+    "t": "Então você quer subir no navio do Kraal? HAHAHA!"
+   },
+   {
+    "s": "Bako",
+    "t": "Eu servi naquele navio. Kraal jogou meu irmão ao mar por causa de uma dívida de três pérolas."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Me ajude a acabar com ele."
+   },
+   {
+    "s": "Bako",
+    "t": "Ajudar? Eu vou na frente! Mas aviso: eu bato primeiro e pergunto depois."
+   },
+   {
+    "s": "",
+    "t": "Bako entrou no grupo! A passagem para o navio fica no fim do cais, ao sul."
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "bako"
+   },
+   {
+    "flag": "bako_aliado"
+   },
+   {
+    "aliado": "bako"
+   },
+   {
+    "quest_iniciar": "q3_kraal"
+   }
+  ]
+ },
+ "zeca_pedido": {
+  "linhas": [
+   {
+    "s": "Velho Zeca",
+    "t": "Psiu! Garoto! Quer ficar rico?"
+   },
+   {
+    "s": "Velho Zeca",
+    "t": "Escondi meu mapa do tesouro num baú no meio do Desfiladeiro do Sal, perto da parede sul. Minhas pernas não aguentam mais a viagem."
+   },
+   {
+    "s": "Velho Zeca",
+    "t": "Traga o mapa e dividimos o tesouro!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Combinado!",
+    "acoes": [
+     {
+      "quest_iniciar": "s3_tesouro"
+     }
+    ]
+   },
+   {
+    "t": "Isso parece golpe."
+   }
+  ]
+ },
+ "zeca_lembrete": {
+  "linhas": [
+   {
+    "s": "Velho Zeca",
+    "t": "O baú fica no meio do desfiladeiro, junto à parede de baixo. Vai logo!"
+   }
+  ]
+ },
+ "zeca_fim": {
+  "linhas": [
+   {
+    "s": "Velho Zeca",
+    "t": "Achou! Achou meu mapa! Me dá aqui, me dá aqui!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Entregar o mapa ao Zeca.",
+    "ir": "zeca_fim_honesto"
+   },
+   {
+    "t": "Ler o mapa antes e ficar com o tesouro todo.",
+    "ir": "zeca_fim_trapaca"
+   }
+  ]
+ },
+ "zeca_padrao": {
+  "linhas": [
+   {
+    "s": "Velho Zeca",
+    "t": "Nunca confie num pirata. Menos em mim, claro."
+   }
+  ]
+ },
+ "rosa_pedido": {
+  "linhas": [
+   {
+    "s": "Rosa, a Taverneira",
+    "t": "Desde o bloqueio não chega peixe fresco. Minha famosa peixada está parada!"
+   },
+   {
+    "s": "Rosa, a Taverneira",
+    "t": "Os caranguejos do desfiladeiro roubam peixe dos pescadores. Me traga quatro e eu pago em pérolas."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Vou caçar caranguejos.",
+    "acoes": [
+     {
+      "quest_iniciar": "s3_peixe"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "rosa_lembrete": {
+  "linhas": [
+   {
+    "s": "Rosa, a Taverneira",
+    "t": "Quatro peixes, meu bem. Os caranguejos ficam no fim do Desfiladeiro do Sal e no navio."
+   }
+  ]
+ },
+ "rosa_fim": {
+  "linhas": [
+   {
+    "s": "Rosa, a Taverneira",
+    "t": "Que cheiro de mar! Hoje tem peixada! Toma, e volte para comer."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s3_peixe"
+   }
+  ]
+ },
+ "rosa_padrao": {
+  "linhas": [
+   {
+    "s": "Rosa, a Taverneira",
+    "t": "A Taverna do Polvo Bêbado está sempre aberta!"
+   }
+  ]
+ },
+ "tomas_pedido": {
+  "linhas": [
+   {
+    "s": "Tomás, o Faroleiro",
+    "t": "Toda noite ouço uma canção vindo das pedras perto do farol. Os marujos dizem que é uma sereia."
+   },
+   {
+    "s": "Tomás, o Faroleiro",
+    "t": "Eu tenho medo de ir lá. Você poderia descobrir quem é?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Eu vou ver.",
+    "acoes": [
+     {
+      "quest_iniciar": "s3_farol"
+     }
+    ]
+   },
+   {
+    "t": "Sereias não existem."
+   }
+  ]
+ },
+ "tomas_lembrete": {
+  "linhas": [
+   {
+    "s": "Tomás, o Faroleiro",
+    "t": "As pedras ficam logo abaixo do farol, na beira da água."
+   }
+  ]
+ },
+ "tomas_fim": {
+  "linhas": [
+   {
+    "s": "Tomás, o Faroleiro",
+    "t": "Uma sereia de verdade?! E ela gosta do meu farol? Vou acender a luz mais forte hoje!"
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s3_farol"
+   }
+  ]
+ },
+ "tomas_padrao": {
+  "linhas": [
+   {
+    "s": "Tomás, o Faroleiro",
+    "t": "Daqui de cima dá para ver o mar inteiro."
+   }
+  ]
+ },
+ "marina_fala": {
+  "linhas": [
+   {
+    "s": "Marina, a Sereia",
+    "t": "Oh! Um humano que não fugiu correndo?"
+   },
+   {
+    "s": "Marina, a Sereia",
+    "t": "Eu canto para agradecer a luz do farol. Ela guia os peixes para casa à noite."
+   },
+   {
+    "s": "Marina, a Sereia",
+    "t": "Diga ao faroleiro que ele não precisa ter medo de mim."
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "marina"
+   }
+  ]
+ },
+ "marujo_fala": {
+  "linhas": [
+   {
+    "s": "Marujo",
+    "t": "Dizem que o Capitão Kraal tem uma lâmina de coral no baú da cabine. Valeria uma fortuna!"
+   }
+  ]
+ },
+ "eremita_fala": {
+  "linhas": [
+   {
+    "s": "Eremita do Sal",
+    "t": "O sal guarda memórias. Ele me contou que um guerreiro com um amuleto igual ao seu passou por aqui."
+   },
+   {
+    "s": "Eremita do Sal",
+    "t": "Ele seguia para o norte. Sempre para o norte."
+   }
+  ]
+ },
+ "chama_vale_fraca": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Vale dos Ventos está quase apagada. Uma fumaça cinzenta sobe dela."
+   }
+  ]
+ },
+ "chama_vale_forte": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "A Chama Sagrada de Vale dos Ventos arde forte. Você se sente renovado."
+   }
+  ],
+  "acoes": [
+   {
+    "curar": true
+   }
+  ]
+ },
+ "ferreiro_vale_loja": {
+  "linhas": [
+   {
+    "s": "Gunnar, o Ferreiro",
+    "t": "O vento daqui alimenta a melhor forja do reino."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Ver armas",
+    "acoes": [
+     {
+      "loja": "ferreiro_vale"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "mercador_vale_loja": {
+  "linhas": [
+   {
+    "s": "Lia, a Queijeira",
+    "t": "Queijo de ovelha, pão e poções! Tudo feito aqui no vale."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Comprar ou vender",
+    "acoes": [
+     {
+      "loja": "mercado_vale"
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "cambista_vale_cambio": {
+  "linhas": [
+   {
+    "s": "Bruno, o Cambista",
+    "t": "Pérolas da costa, Coroas do norte, eu troco tudo."
+   },
+   {
+    "s": "Bruno, o Cambista",
+    "t": "Aqui a moeda é Pérolas. Precisa trocar?"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Trocar moedas",
+    "acoes": [
+     {
+      "cambio": true
+     }
+    ]
+   },
+   {
+    "t": "Até mais"
+   }
+  ]
+ },
+ "estalagem_vale_quarto": {
+  "linhas": [
+   {
+    "s": "Mila, da Estalagem",
+    "t": "A Estalagem do Moinho tem vista para o vale inteiro!"
+   },
+   {
+    "s": "Mila, da Estalagem",
+    "t": "Um quarto custa 5 Pérolas. Você acorda novinho em folha!"
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Descansar (5 Pérolas)",
+    "se": {
+     "moeda": {
+      "perolas": 5
+     }
+    },
+    "acoes": [
+     {
+      "pagar": "perolas",
+      "qtd": 5
+     },
+     {
+      "dormir": true
+     },
+     {
+      "salvar": true
+     }
+    ]
+   },
+   {
+    "t": "Não, obrigado"
+   }
+  ]
+ },
+ "ovelha_1": {
+  "linhas": [
+   {
+    "s": "Ovelha",
+    "t": "Béééé!"
+   },
+   {
+    "s": "",
+    "t": "A ovelha volta correndo para o pasto."
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "ovelha_1"
+   }
+  ]
+ },
+ "ovelha_2": {
+  "linhas": [
+   {
+    "s": "Ovelha",
+    "t": "Béééé!"
+   },
+   {
+    "s": "",
+    "t": "A ovelha volta correndo para o pasto."
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "ovelha_2"
+   }
+  ]
+ },
+ "ovelha_3": {
+  "linhas": [
+   {
+    "s": "Ovelha",
+    "t": "Béééé!"
+   },
+   {
+    "s": "",
+    "t": "A ovelha volta correndo para o pasto."
+   }
+  ],
+  "acoes": [
+   {
+    "sumir_npc": "ovelha_3"
+   }
+  ]
+ },
+ "ovelha_pasto": {
+  "linhas": [
+   {
+    "s": "Ovelha",
+    "t": "Bééé?"
+   }
+  ]
+ },
+ "sora_padrao": {
+  "linhas": [
+   {
+    "s": "Anciã Sora",
+    "t": "O vento sopra a favor de quem tem coragem."
+   }
+  ]
+ },
+ "sora_lobos": {
+  "linhas": [
+   {
+    "s": "Anciã Sora",
+    "t": "Sinto o cheiro do mar em vocês. Vieram de longe."
+   },
+   {
+    "s": "Ifrit",
+    "t": "Viemos ajudar, Anciã. Sabemos que Zahrak está apagando as chamas."
+   },
+   {
+    "s": "Anciã Sora",
+    "t": "Zahrak... Então foi ele que mandou os lobos de metal. Eles atacam nossas ovelhas toda noite."
+   },
+   {
+    "s": "Anciã Sora",
+    "t": "Destruam seis desses monstros na Trilha dos Penhascos e eu acreditarei que podem nos salvar."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_iniciar": "q4_lobos"
+   }
+  ]
+ },
+ "sora_lobos_lembrete": {
+  "linhas": [
+   {
+    "s": "Anciã Sora",
+    "t": "Os lobos rondam a Trilha dos Penhascos, ao sul."
+   }
+  ]
+ },
+ "sora_fabrica": {
+  "linhas": [
+   {
+    "s": "Anciã Sora",
+    "t": "Vocês voltaram inteiros. E essa graxa nas roupas?"
+   },
+   {
+    "s": "Bako",
+    "t": "Os lobos sangram óleo. Segui as manchas: elas vão para o leste do vale, atrás de uma cerca de ferro."
+   },
+   {
+    "s": "Anciã Sora",
+    "t": "O leste... ninguém vai lá há anos. Abri a cerca. Descubram o que Zahrak esconde ali."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "q4_lobos"
+   },
+   {
+    "quest_iniciar": "q4_fabrica"
+   }
+  ]
+ },
+ "sora_fabrica_lembrete": {
+  "linhas": [
+   {
+    "s": "Anciã Sora",
+    "t": "A fábrica fica a leste. Tenham cuidado."
+   }
+  ]
+ },
+ "sora_vitoria": {
+  "linhas": [
+   {
+    "s": "Anciã Sora",
+    "t": "O vento voltou a cantar! Venham, vamos à chama."
+   }
+  ],
+  "acoes": [
+   {
+    "cutscene": "vale_vitoria"
+   }
+  ]
+ },
+ "sora_vale_fala": {
+  "linhas": [
+   {
+    "s": "Anciã Sora",
+    "t": "O Vale dos Ventos não esquecerá vocês."
+   },
+   {
+    "s": "Anciã Sora",
+    "t": "Ao norte fica o Mar de Areia, e depois as Ruínas de Qadim. Lá vive um velho mago chamado Omar. Ele sabe mais sobre as chamas do que qualquer um."
+   },
+   {
+    "s": "Bako",
+    "t": "Mais deserto? Eu sou um homem do mar..."
+   }
+  ]
+ },
+ "tobi_pedido": {
+  "linhas": [
+   {
+    "s": "Tobi, o Inventor",
+    "t": "Você viu os lobos de metal? Que engenharia incrível! Assustadora, mas incrível!"
+   },
+   {
+    "s": "Tobi, o Inventor",
+    "t": "Se me trouxer cinco engrenagens deles, posso descobrir como funcionam e proteger o vale."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Trago as engrenagens.",
+    "acoes": [
+     {
+      "quest_iniciar": "s4_engrenagens"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "tobi_lembrete": {
+  "linhas": [
+   {
+    "s": "Tobi, o Inventor",
+    "t": "Cinco engrenagens! Os lobos de metal deixam cair quando são destruídos."
+   }
+  ]
+ },
+ "tobi_fim": {
+  "linhas": [
+   {
+    "s": "Tobi, o Inventor",
+    "t": "Fascinante! Elas giram ao contrário! Tome, um elixir que eu inventei. Quase não explode."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s4_engrenagens"
+   }
+  ]
+ },
+ "tobi_padrao": {
+  "linhas": [
+   {
+    "s": "Tobi, o Inventor",
+    "t": "Um dia vou construir um moinho que voa!"
+   }
+  ]
+ },
+ "pedro_pedido": {
+  "linhas": [
+   {
+    "s": "Pedro, o Pastor",
+    "t": "Três ovelhas fugiram de medo dos lobos! Uma foi pro sudoeste, outra pro nordeste e a última pro sudeste do vale."
+   },
+   {
+    "s": "Pedro, o Pastor",
+    "t": "Se você chamar, elas voltam. Elas gostam de gente gentil."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Vou buscar.",
+    "acoes": [
+     {
+      "quest_iniciar": "s4_ovelhas"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "pedro_lembrete": {
+  "linhas": [
+   {
+    "s": "Pedro, o Pastor",
+    "t": "Procure nos cantos do vale. Elas adoram se esconder."
+   }
+  ]
+ },
+ "pedro_fim": {
+  "linhas": [
+   {
+    "s": "Pedro, o Pastor",
+    "t": "Todas de volta! Uma, duas, três! Obrigado, Ifrit!"
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s4_ovelhas"
+   }
+  ]
+ },
+ "pedro_padrao": {
+  "linhas": [
+   {
+    "s": "Pedro, o Pastor",
+    "t": "As ovelhas estão calmas agora que os lobos sumiram."
+   }
+  ]
+ },
+ "mila_pedido": {
+  "linhas": [
+   {
+    "s": "Mila, da Estalagem",
+    "t": "Ah, que tristeza... Os sinos do vento da estalagem caíram na tempestade."
+   },
+   {
+    "s": "Mila, da Estalagem",
+    "t": "Eles rolaram pela Trilha dos Penhascos. Sem eles, os hóspedes não dormem bem."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Vou procurar os sinos.",
+    "acoes": [
+     {
+      "quest_iniciar": "s4_sinos"
+     }
+    ]
+   },
+   {
+    "t": "Agora não."
+   }
+  ]
+ },
+ "mila_fim": {
+  "linhas": [
+   {
+    "s": "Mila, da Estalagem",
+    "t": "Ouça! Tlim, tlim... Agora sim, o vale tem som de casa."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s4_sinos"
+   }
+  ]
+ },
+ "kamal_fim_honesto": {
+  "linhas": [
+   {
+    "s": "Kamal, o Poeta",
+    "t": "Vou compor um poema para você também: \"Ifrit, de espada e coragem...\" Ainda estou trabalhando nele."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s2_poeta"
+   }
+  ]
+ },
+ "kamal_fim_mentira": {
+  "linhas": [
+   {
+    "s": "Kamal, o Poeta",
+    "t": "Quarenta? É... é tudo o que eu guardava para o jantar com Zainab."
+   },
+   {
+    "s": "Kamal, o Poeta",
+    "t": "Mas o amor não pechincha. Tome."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s2_poeta"
+   },
+   {
+    "moeda": "brasas",
+    "qtd": 40
+   },
+   {
+    "honra": -12
+   },
+   {
+    "flag": "kamal_enganado"
+   }
+  ]
+ },
+ "kamal_triste": {
+  "linhas": [
+   {
+    "s": "Kamal, o Poeta",
+    "t": "Zainab aceitou passear comigo... mas o jantar foi só pão e água. As flores saíram caras demais."
+   }
+  ]
+ },
+ "zeca_fim_honesto": {
+  "linhas": [
+   {
+    "s": "Velho Zeca",
+    "t": "Meu mapa! Hmm... o X fica... embaixo deste cais! Eu estava sentado em cima do tesouro esse tempo todo!"
+   },
+   {
+    "s": "Velho Zeca",
+    "t": "Aqui, sua parte. Palavra de pirata aposentado!"
+   }
+  ],
+  "acoes": [
+   {
+    "quest_concluir": "s3_tesouro"
+   }
+  ]
+ },
+ "zeca_fim_trapaca": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Você desenrola o mapa antes de entregar. O X fica... embaixo deste mesmo cais!"
+   },
+   {
+    "s": "",
+    "t": "Enquanto Zeca procura os óculos, você desce pelas tábuas e desenterra o baú sozinho."
+   },
+   {
+    "s": "Velho Zeca",
+    "t": "Ei! Cadê o meu... Você?! Nunca confie num pirata, eu dizia. Esqueci de dizer: nem num herói."
+   }
+  ],
+  "acoes": [
+   {
+    "quest_falhar": "s3_tesouro",
+    "motivo": "Você ficou com o tesouro do Zeca."
+   },
+   {
+    "remover_item": "mapa_tesouro"
+   },
+   {
+    "moeda": "perolas",
+    "qtd": 120
+   },
+   {
+    "dar_item": "pocao_grande",
+    "qtd": 2
+   }
+  ]
+ },
+ "zeca_roubado": {
+  "linhas": [
+   {
+    "s": "Velho Zeca",
+    "t": "Saia da frente do meu cais, ladrão. Pirata eu sou, mas pelo menos eu aviso."
+   }
+  ]
+ },
+ "grifo_bau": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Entre as máquinas paradas há um baú de ferro com o brasão de Zahrak."
+   },
+   {
+    "s": "",
+    "t": "Está cheio de Coroas: o pagamento de quem construía os lobos que mataram as ovelhas do vale."
+   },
+   {
+    "s": "Bako",
+    "t": "Olha só! Com isso eu compro um barco novo. Dois!"
+   },
+   {
+    "s": "Nadia",
+    "t": "Esse dinheiro devia ir para os pastores que perderam os rebanhos."
+   }
+  ],
+  "escolhas": [
+   {
+    "t": "Levar o baú para a Anciã Sora.",
+    "acoes": [
+     {
+      "flag": "coroas_vale_doadas"
+     },
+     {
+      "honra": 4
+     }
+    ],
+    "ir": "grifo_bau_doado"
+   },
+   {
+    "t": "Ficar com as Coroas.",
+    "acoes": [
+     {
+      "flag": "coroas_vale_roubadas"
+     },
+     {
+      "moeda": "coroas",
+      "qtd": 40
+     },
+     {
+      "honra": -10
+     }
+    ],
+    "ir": "grifo_bau_roubado"
+   }
+  ]
+ },
+ "grifo_bau_doado": {
+  "linhas": [
+   {
+    "s": "Nadia",
+    "t": "Kadir teria feito o mesmo."
+   },
+   {
+    "s": "Bako",
+    "t": "...Tá bom, tá bom. O barco pode esperar."
+   }
+  ]
+ },
+ "grifo_bau_roubado": {
+  "linhas": [
+   {
+    "s": "",
+    "t": "Você enche a bolsa de Coroas até a costura reclamar."
+   },
+   {
+    "s": "Nadia",
+    "t": "...Não foi isso que Kadir me ensinou. Nem a você."
+   },
+   {
+    "s": "Bako",
+    "t": "Eu não vou contar a ninguém. Mas também não vou esquecer."
+   }
+  ]
+ },
+ "pedro_coroas": {
+  "linhas": [
+   {
+    "s": "Pedro, o Pastor",
+    "t": "A Anciã Sora dividiu as Coroas daquele baú entre os pastores. Comprei três ovelhas novas!"
+   },
+   {
+    "s": "Pedro, o Pastor",
+    "t": "Obrigado, Ifrit. O vale não esquece."
+   }
+  ]
+ }
+}

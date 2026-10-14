@@ -1,0 +1,37 @@
+{
+ "epilogo_fala_v2": {
+  "linhas": [
+   {"s": "Samira", "t": "Ifrit! Kadir! Vocês... voltaram. Os dois!"},
+   {"s": "Kadir", "t": "Samira. Desculpe ter demorado tanto."},
+   {"s": "Samira", "t": "Três anos, Kadir! Três anos! ...Venha aqui."},
+   {"s": "", "t": "Samira abraça Kadir e Ifrit ao mesmo tempo."},
+   {"s": "Samira", "t": "Ifrit, a vila inteira está falando de você. Amir já compôs onze canções."},
+   {"s": "Ifrit", "t": "Eu só segui o caminho que o pai começou."},
+   {"s": "Kadir", "t": "Não, filho. Você fez um caminho seu. As Sete Chamas brilham por sua causa."},
+   {"s": "Samira", "t": "E pensar que tudo começou com aquela carta. Eu guardei cada palavra, Kadir. \"Diga a Samira que eu a amo.\""},
+   {"s": "Ifrit", "t": "Foi a sua carta que me mandou para Miraj, pai. Sem ela eu nunca teria saído da vila."},
+   {"s": "Kadir", "t": "...Carta?"},
+   {"s": "Kadir", "t": "Eu nunca escrevi carta nenhuma. Zahrak me pegou na Ponte das Cinzas antes que eu pudesse mandar qualquer recado."},
+   {"s": "Samira", "t": "Mas era a sua letra. Eu conheço a sua letra melhor que a minha."},
+   {"s": "Ifrit", "t": "Então quem... Quem mais conhecia a letra do pai?"},
+   {"s": "Kadir", "t": "Só uma pessoa. Harun copiava minhas cartas para o conselho da vila. Durante vinte anos."},
+   {"s": "", "t": "Um silêncio pesado enche a casa. Lá fora, a Chama Sagrada estala mais alto que de costume."},
+   {"s": "Samira", "t": "Hoje não. Hoje vocês estão em casa. Amanhã a gente pensa nisso... O jantar está pronto."}
+  ]
+ },
+ "harun_pos_jogo": {
+  "linhas": [
+   {"s": "", "t": "A casa do Ancião Harun está vazia. As velas ainda estão mornas."},
+   {"s": "", "t": "Sobre a mesa, um bilhete escrito com uma letra idêntica à de Kadir:"},
+   {"s": "", "t": "\"O fogo antigo chama. Não me procure. — H.\""}
+  ]
+ },
+ "diario_zahrak": {
+  "linhas": [
+   {"s": "", "t": "Um diário de capa queimada, aberto na última página. A letra é firme, mas cansada."},
+   {"s": "Zahrak", "t": "\"Ninguém quis me ouvir. Se as sete chamas arderem juntas, a porta se abre e Ele acorda.\""},
+   {"s": "Zahrak", "t": "\"Que me odeiem. Que me chamem de Rei Cinzento. Um rei odiado ainda é melhor que um mundo devorado.\""},
+   {"s": "Zahrak", "t": "\"Vou apagar todas elas, uma por uma. Mesmo que eu tenha que apagar os guardiões junto.\""}
+  ]
+ }
+}

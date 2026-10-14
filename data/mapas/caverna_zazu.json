@@ -1,0 +1,62 @@
+{
+ "nome": "Caverna do Eremita",
+ "moeda": "brasas",
+ "sem_montaria": true,
+ "spawns": {
+  "entrada": [
+   9,
+   11
+  ]
+ },
+ "npcs": [
+  {
+   "id": "lar_x_zazu",
+   "pos": [
+    10,
+    5
+   ]
+  }
+ ],
+ "placas": [
+  {
+   "pos": [
+    12,
+    2
+   ],
+   "texto": "Gravado na pedra, em letras antigas: \"CONHEÇA A TI MESMO.\""
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    9,
+    13,
+    2,
+    1
+   ],
+   "mapa": "dunas_rubras",
+   "spawn": "zazu"
+  }
+ ],
+ "renascer": [
+  "dunas_rubras",
+  "zazu"
+ ],
+ "layout": [
+  "XXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXX",
+  "XXXcEEcccccccccEcXXX",
+  "XXcccccccccccccccXXX",
+  "XXcccccPPPPPPcccXXXX",
+  "XXcccccPPPPPPcccXXXX",
+  "XXcccccPPPPPPcccXXXX",
+  "XXccccccccccccccXXXX",
+  "XXcccccccccccccccXXX",
+  "XXXccccccccccccmcXXX",
+  "XXXchccccccccccccXXX",
+  "XXXcccXXccccccccXXXX",
+  "XXXXXXXXXccXXccXXXXX",
+  "XXXXXXXXXccXXXXXXXXX"
+ ],
+ "organico": true
+}

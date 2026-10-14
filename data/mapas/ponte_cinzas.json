@@ -1,0 +1,117 @@
+{
+ "nome": "Ponte das Cinzas",
+ "moeda": "coroas",
+ "spawns": {
+  "oeste": [
+   1,
+   10
+  ],
+  "leste": [
+   85,
+   1
+  ]
+ },
+ "inimigos": [
+  {
+   "tipo": "sombra",
+   "qtd": 4,
+   "area": [
+    24,
+    6,
+    26,
+    10
+   ]
+  },
+  {
+   "tipo": "cavaleiro",
+   "qtd": 2,
+   "area": [
+    44,
+    6,
+    6,
+    10
+   ]
+  },
+  {
+   "tipo": "sombra",
+   "qtd": 3,
+   "area": [
+    64,
+    6,
+    6,
+    10
+   ]
+  }
+ ],
+ "baus": [
+  {
+   "pos": [
+    27,
+    7
+   ],
+   "itens": {
+    "elixir": 1
+   }
+  },
+  {
+   "pos": [
+    67,
+    14
+   ],
+   "itens": {
+    "pocao_grande": 3
+   }
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    0,
+    10,
+    1,
+    2
+   ],
+   "mapa": "cidadela_sal",
+   "spawn": "leste"
+  },
+  {
+   "area": [
+    85,
+    0,
+    2,
+    1
+   ],
+   "mapa": "trono_cinzento",
+   "spawn": "entrada"
+  }
+ ],
+ "renascer": [
+  "cidadela_sal",
+  "leste"
+ ],
+ "layout": [
+  "                                                                                     cc   ",
+  "                                                                                     cc   ",
+  "                                                                                     cc   ",
+  "                                                                                     c    ",
+  "                                                                                     c    ",
+  "                                                                                    cc    ",
+  "                          ccc                  ccc              ccccc               cc    ",
+  "                         cccc              ccccccc             cccccc               ccccc ",
+  "                         ccccc             ccccccc             cccccc               cccccc",
+  "cccccc                  cccccc              cccccc              cccccc              cccccc",
+  "cccccc==================cccccc==============cccccc==============cccccc==============cccccc",
+  "cccccc==================cccccc==============cccccc==============cccccc==============cccccc",
+  "cccccc                  cccccc              cccccc              cccccc              cccccc",
+  "cc                       ccc                 ccccc              ccccc                ccccc",
+  "                         ccc                 ccccc              ccccc                 cccc",
+  "                         ccc                ccccc                 ccc                     ",
+  "                                            cccc                                          ",
+  "                                                                                          ",
+  "                                                                                          ",
+  "                                                                                          ",
+  "                                                                                          ",
+  "                                                                                          "
+ ],
+ "organico": true
+}

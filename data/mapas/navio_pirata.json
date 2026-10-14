@@ -1,0 +1,128 @@
+{
+ "nome": "Navio Pirata",
+ "moeda": "perolas",
+ "spawns": {
+  "entrada": [
+   1,
+   12
+  ]
+ },
+ "inimigos": [
+  {
+   "tipo": "pirata",
+   "qtd": 6,
+   "area": [
+    10,
+    5,
+    13,
+    16
+   ]
+  },
+  {
+   "tipo": "caranguejo",
+   "qtd": 2,
+   "area": [
+    7,
+    14,
+    10,
+    6
+   ]
+  }
+ ],
+ "chefe": {
+  "tipo": "kraal",
+  "pos": [
+   28,
+   7
+  ],
+  "flag": "chefe_kraal",
+  "se": {
+   "flag": "kraal_desperto"
+  },
+  "cutscene": "kraal_derrotado"
+ },
+ "gatilhos": [
+  {
+   "id": "cabine",
+   "area": [
+    26,
+    11,
+    6,
+    2
+   ],
+   "cutscene": "kraal_aparece",
+   "se": {
+    "sem_flag": "chefe_kraal"
+   },
+   "uma_vez": false
+  }
+ ],
+ "baus": [
+  {
+   "pos": [
+    31,
+    6
+   ],
+   "itens": {
+    "lamina_coral": 1
+   },
+   "moedas": {
+    "perolas": 60
+   }
+  },
+  {
+   "pos": [
+    8,
+    19
+   ],
+   "itens": {
+    "pocao_grande": 1
+   }
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    0,
+    12,
+    1,
+    2
+   ],
+   "mapa": "porto_coral",
+   "spawn": "cais"
+  }
+ ],
+ "renascer": [
+  "porto_coral",
+  "cais"
+ ],
+ "layout": [
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwwwWWWWWW",
+  "WWWWWWwfffffffffffffffffwwwwwwwwwwWWWWWW",
+  "WWWWWWwfffffffffffffffffwffffffffwWWWWWW",
+  "WWWWWWwffffKffffffffffffwffffffffwWWWWWW",
+  "WWWWWWwfffffffffmfffffffwffffffffwWWWWWW",
+  "WWWWWWwfffffffffffffffffwffffffffwWWWWWW",
+  "WWWWWWwKffffffffffffffffwwwwffwwwwWWWWWW",
+  "WWWWWWwffffffffffffffffffffffffffwWWWWWW",
+  "=======ffffffffffffffffffffffffffwWWWWWW",
+  "=======ffffffffffffffffffffffffffwWWWWWW",
+  "WWWWWWwffffffKKffffffffffffffffffwWWWWWW",
+  "WWWWWWwKffffKffffffffKfffffffffffwWWWWWW",
+  "WWWWWWwfffffffffmffffffffffffffffwWWWWWW",
+  "WWWWWWwfffffKffffffffffffffffffffwWWWWWW",
+  "WWWWWWwffffffffffffffffffffffffffwWWWWWW",
+  "WWWWWWwffffKffKffffffffffffffffffwWWWWWW",
+  "WWWWWWwffffffffffffKfffffffffffffwWWWWWW",
+  "WWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwwwWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+  "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+ ],
+ "organico": true
+}

@@ -1,0 +1,283 @@
+{
+ "regioes": {
+  "areia_rubra": {
+   "nome": "Areia Rubra",
+   "rect": [
+    6.8,
+    27.2,
+    3,
+    2
+   ],
+   "ordem": 1,
+   "tipo": "cidade"
+  },
+  "dunas_rubras": {
+   "nome": "Dunas Rubras",
+   "rect": [
+    13.6,
+    27.2,
+    3,
+    2
+   ],
+   "ordem": 1,
+   "tipo": "deserto"
+  },
+  "covil_escorpiao": {
+   "nome": "Covil do Escorpião",
+   "rect": [
+    19.72,
+    24.82,
+    1.8,
+    1.4
+   ],
+   "ordem": 1,
+   "tipo": "caverna"
+  },
+  "estrada_caravanas": {
+   "nome": "Estrada das Caravanas",
+   "rect": [
+    8.16,
+    19.72,
+    1.4,
+    3.6
+   ],
+   "ordem": 2,
+   "tipo": "deserto"
+  },
+  "oasis_miraj": {
+   "nome": "Oásis de Miraj",
+   "rect": [
+    6.8,
+    14.45,
+    3,
+    2.5
+   ],
+   "ordem": 2,
+   "tipo": "cidade"
+  },
+  "nascente_miraj": {
+   "nome": "Nascente",
+   "rect": [
+    1.02,
+    15.13,
+    2.4,
+    1.6
+   ],
+   "ordem": 2,
+   "tipo": "agua"
+  },
+  "desfiladeiro_sal": {
+   "nome": "Desfiladeiro de Sal",
+   "rect": [
+    13.6,
+    15.47,
+    6,
+    1.4
+   ],
+   "ordem": 3,
+   "tipo": "rocha"
+  },
+  "porto_coral": {
+   "nome": "Porto Coral",
+   "rect": [
+    25.5,
+    14.45,
+    3,
+    2.5
+   ],
+   "ordem": 3,
+   "tipo": "cidade"
+  },
+  "navio_pirata": {
+   "nome": "Navio Pirata",
+   "rect": [
+    32.3,
+    15.3,
+    2.2,
+    1.5
+   ],
+   "ordem": 3,
+   "tipo": "agua"
+  },
+  "trilha_penhascos": {
+   "nome": "Trilha dos Penhascos",
+   "rect": [
+    26.86,
+    7.82,
+    1.4,
+    3.2
+   ],
+   "ordem": 4,
+   "tipo": "rocha"
+  },
+  "vale_ventos": {
+   "nome": "Vale dos Ventos",
+   "rect": [
+    25.5,
+    2.72,
+    3,
+    2.4
+   ],
+   "ordem": 4,
+   "tipo": "cidade"
+  },
+  "fabrica_grifo": {
+   "nome": "Fábrica do Grifo",
+   "rect": [
+    32.3,
+    3.23,
+    2.2,
+    1.6
+   ],
+   "ordem": 4,
+   "tipo": "caverna"
+  },
+  "mar_de_areia": {
+   "nome": "Mar de Areia",
+   "rect": [
+    25.5,
+    -2.72,
+    7,
+    1.4
+   ],
+   "ordem": 5,
+   "tipo": "deserto"
+  },
+  "ruinas_qadim": {
+   "nome": "Ruínas de Qadim",
+   "rect": [
+    39.1,
+    -3.74,
+    3,
+    2.5
+   ],
+   "ordem": 5,
+   "tipo": "cidade"
+  },
+  "biblioteca_qadim": {
+   "nome": "Biblioteca",
+   "rect": [
+    39.78,
+    -7.48,
+    2.2,
+    1.4
+   ],
+   "ordem": 5,
+   "tipo": "caverna"
+  },
+  "estrada_norte": {
+   "nome": "Estrada do Norte",
+   "rect": [
+    45.9,
+    -2.72,
+    5,
+    1.4
+   ],
+   "ordem": 6,
+   "tipo": "neve"
+  },
+  "cidadela_sal": {
+   "nome": "Cidadela de Sal",
+   "rect": [
+    55.42,
+    -7.82,
+    3,
+    2.5
+   ],
+   "ordem": 6,
+   "tipo": "cidade"
+  },
+  "quartel_varek": {
+   "nome": "Quartel de Varek",
+   "rect": [
+    56.1,
+    -11.56,
+    2.2,
+    1.4
+   ],
+   "ordem": 6,
+   "tipo": "caverna"
+  },
+  "ponte_cinzas": {
+   "nome": "Ponte das Cinzas",
+   "rect": [
+    62.22,
+    -6.8,
+    4,
+    1.3
+   ],
+   "ordem": 7,
+   "tipo": "cinzas"
+  },
+  "trono_cinzento": {
+   "nome": "Trono Cinzento",
+   "rect": [
+    70.72,
+    -7.82,
+    2.6,
+    2.5
+   ],
+   "ordem": 7,
+   "tipo": "cinzas"
+  },
+  "campo_treino": {
+   "nome": "Campo de Treino",
+   "rect": [
+    1.6,
+    27.4,
+    2.6,
+    1.6
+   ],
+   "ordem": 1,
+   "tipo": "deserto"
+  },
+  "caverna_zazu": {
+   "nome": "???",
+   "rect": [
+    14.2,
+    30.4,
+    1.6,
+    1.2
+   ],
+   "ordem": 1,
+   "tipo": "caverna"
+  },
+  "aldeia_tamareiras": {
+   "nome": "Aldeia das Tamareiras",
+   "rect": [
+    11.4,
+    20.6,
+    2.8,
+    2.0
+   ],
+   "ordem": 2,
+   "tipo": "cidade"
+  },
+  "canion_feras": {
+   "nome": "Cânion das Feras",
+   "rect": [
+    15.4,
+    18.0,
+    3.4,
+    1.6
+   ],
+   "ordem": 3,
+   "tipo": "rocha"
+  },
+  "vila_pescadores": {
+   "nome": "Vila dos Pescadores",
+   "rect": [
+    30.0,
+    11.4,
+    2.8,
+    2.2
+   ],
+   "ordem": 3,
+   "tipo": "cidade"
+  }
+ },
+ "pais": {
+  "casa_mae": "areia_rubra",
+  "palacio_miraj": "oasis_miraj"
+ }
+}

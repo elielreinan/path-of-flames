@@ -1,0 +1,171 @@
+{
+ "nome": "Campo de Treino",
+ "moeda": "brasas",
+ "sem_montaria": false,
+ "spawns": {
+  "leste": [
+   34,
+   11
+  ]
+ },
+ "npcs": [
+  {
+   "id": "lar_x_sadiq",
+   "pos": [
+    19,
+    10
+   ]
+  },
+  {
+   "id": "lar_x_aprendiz",
+   "pos": [
+    22,
+    14
+   ],
+   "vagar": true
+  }
+ ],
+ "placas": [
+  {
+   "pos": [
+    17,
+    6
+   ],
+   "texto": "GOLPE ESPECIAL: acerte inimigos para encher a Fúria. Cheia, toque em ESPECIAL e o Ifrit gira em chamas, invencível por um instante."
+  },
+  {
+   "pos": [
+    21,
+    6
+   ],
+   "texto": "BOTE: quando um inimigo fica vermelho e treme, ele vai pular em você. Saia da frente!"
+  },
+  {
+   "pos": [
+    17,
+    17
+   ],
+   "texto": "ONDA DE CHOQUE: o anel dos chefes tem brechas marcadas em verde. Fique numa brecha."
+  },
+  {
+   "pos": [
+    21,
+    17
+   ],
+   "texto": "MONTARIA: compre um camelo em Miraj ou dome uma fera cansada com a isca certa (FALAR perto dela)."
+  },
+  {
+   "pos": [
+    33,
+    9
+   ],
+   "texto": "Campo de Treino. Leste: Areia Rubra."
+  }
+ ],
+ "inimigos": [
+  {
+   "tipo": "boneco_treino",
+   "qtd": 1,
+   "area": [
+    5,
+    5,
+    1,
+    1
+   ],
+   "renascer": 4
+  },
+  {
+   "tipo": "boneco_treino",
+   "qtd": 1,
+   "area": [
+    8,
+    5,
+    1,
+    1
+   ],
+   "renascer": 4
+  },
+  {
+   "tipo": "boneco_treino",
+   "qtd": 1,
+   "area": [
+    11,
+    5,
+    1,
+    1
+   ],
+   "renascer": 4
+  },
+  {
+   "tipo": "boneco_treino",
+   "qtd": 1,
+   "area": [
+    6,
+    7,
+    1,
+    1
+   ],
+   "renascer": 4
+  },
+  {
+   "tipo": "boneco_treino",
+   "qtd": 1,
+   "area": [
+    10,
+    7,
+    1,
+    1
+   ],
+   "renascer": 4
+  }
+ ],
+ "arena": [
+  4,
+  13,
+  10,
+  7
+ ],
+ "saidas": [
+  {
+   "area": [
+    35,
+    11,
+    1,
+    2
+   ],
+   "mapa": "areia_rubra",
+   "spawn": "treino"
+  }
+ ],
+ "renascer": [
+  "areia_rubra",
+  "treino"
+ ],
+ "layout": [
+  "####################################",
+  "#..................................#",
+  "#..................................#",
+  "#..KKKKKKKKKKKKK...................#",
+  "#..K,,,,,,,,,,,K....T...T...T...T..#",
+  "#..K,,,,,,,,,,,K...................#",
+  "#..K,,,,,,,,,,,::..................#",
+  "#..K,,,,,,,,,,,K...................#",
+  "#..K,,,,,,,,,,,K::::::.............#",
+  "#..KKKKKKKKKKKKK::::::...h.........#",
+  "#...............::::::.............#",
+  "#...............::::::::::::::::::::",
+  "#.KKKKKKKKKKKKKK::::::::::::::::::::",
+  "#.K::::::::::::K::::::.............#",
+  "#.K::::::::::::K::::::.............#",
+  "#.K::::::::::::K::::::.............#",
+  "#.K::::::::::::::..................#",
+  "#.K::::::::::::::..................#",
+  "#.K::::::::::::K...................#",
+  "#.K::::::::::::K....T...T...T...T..#",
+  "#.K::::::::::::K...................#",
+  "#.KKKKKKKKKKKKKK...................#",
+  "#..................................#",
+  "####################################"
+ ],
+ "organico": true
+}

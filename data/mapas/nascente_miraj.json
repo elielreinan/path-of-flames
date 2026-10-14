@@ -1,0 +1,187 @@
+{
+ "nome": "Nascente de Miraj",
+ "moeda": "brasas",
+ "spawns": {
+  "entrada": [
+   38,
+   30
+  ]
+ },
+ "inimigos": [
+  {
+   "tipo": "sapo",
+   "qtd": 4,
+   "area": [
+    4,
+    16,
+    14,
+    10
+   ]
+  },
+  {
+   "tipo": "serpentinha",
+   "qtd": 4,
+   "area": [
+    23,
+    16,
+    13,
+    10
+   ]
+  },
+  {
+   "tipo": "sapo",
+   "qtd": 3,
+   "area": [
+    16,
+    26,
+    10,
+    8
+   ]
+  }
+ ],
+ "chefe": {
+  "tipo": "serpente_oasis",
+  "pos": [
+   20,
+   6
+  ],
+  "flag": "chefe_serpente",
+  "se": {
+   "flag": "serpente_desperta"
+  },
+  "cutscene": "serpente_derrotada"
+ },
+ "gatilhos": [
+  {
+   "id": "arena",
+   "area": [
+    18,
+    12,
+    5,
+    1
+   ],
+   "cutscene": "serpente_aparece",
+   "se": {
+    "sem_flag": "chefe_serpente",
+    "quest": "q2_serpente",
+    "estado": "ativa"
+   },
+   "uma_vez": false
+  }
+ ],
+ "coletaveis": [
+  {
+   "item": "flor_lotus",
+   "pos": [
+    6,
+    17
+   ]
+  },
+  {
+   "item": "flor_lotus",
+   "pos": [
+    15,
+    24
+   ]
+  },
+  {
+   "item": "flor_lotus",
+   "pos": [
+    33,
+    17
+   ]
+  },
+  {
+   "item": "flor_lotus",
+   "pos": [
+    25,
+    24
+   ]
+  },
+  {
+   "item": "flor_lotus",
+   "pos": [
+    20,
+    20
+   ]
+  }
+ ],
+ "baus": [
+  {
+   "pos": [
+    5,
+    24
+   ],
+   "itens": {
+    "pocao_media": 2
+   },
+   "moedas": {
+    "brasas": 60
+   }
+  },
+  {
+   "pos": [
+    34,
+    24
+   ],
+   "itens": {
+    "cimitarra": 1
+   }
+  }
+ ],
+ "saidas": [
+  {
+   "area": [
+    39,
+    30,
+    1,
+    2
+   ],
+   "mapa": "oasis_miraj",
+   "spawn": "oeste"
+  }
+ ],
+ "renascer": [
+  "oasis_miraj",
+  "oeste"
+ ],
+ "layout": [
+  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXXXXXXXccXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXXcXXXccccccccccXXXXXX",
+  "XXXXXXccccccccccccccccccccccWWWcccXXXXXX",
+  "XXXXXXccccWWWWWWWccccccccWWWWWWcccXXXXXX",
+  "XXXXXXccccccWWWWWccccccccWWWWWccccXXXXXX",
+  "XXXXXXccccccccccccccccccccWWWWccccXXXXXX",
+  "XXXXXXccccccccccccccccccccccccccccXXXXXX",
+  "XXXXXXcccccccccccccccccccccccccccXXXXXXX",
+  "XXXXXccccccccccccccccccccccccccccXXXXXXX",
+  "XXXXXccccccccccccccccccccccccccccXXXXXXX",
+  "XXXXXXcccccccccccccccccccccccccccXXXXXXX",
+  "XXXXXXXcccccXXXXXccccccccccccccXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXcccccXXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXccccccXXXXXXXXXXXXXXXXX",
+  "XXXXXccXXXXXXXcccccccccccccXXcccccXXXXXX",
+  "XXXXXccccXXXXccccccccccccccccccccccXXXXX",
+  "XXXXXcccccccccccccccccccccccccccccccXXXX",
+  "XXXXXcccWWWWWWccccccccccccccccccccccXXXX",
+  "XXXXXccWWWWWWWWccccccccccccccWWcccccXXXX",
+  "XXXXXccWWWWWWWWcccccccccccWWWWWWccccXXXX",
+  "XXXXXccWWWWWWWccccccccccccWWWWccccccXXXX",
+  "XXXXXccWWWWWWcccccccccccccccccccccccXXXX",
+  "XXXXccccccccccccccccccccccccccccccccXXXX",
+  "XXXXccccccccccccccccccccccccccccccccXXXX",
+  "XXXXccccccccccccccccccccccccccccccccXXXX",
+  "XXXXXXXXccXXXXXXXcccccccXXXXXcccXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXcccccccXXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXccccccccXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXccccccccccXccccXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXcccccccccccccccccccccccc",
+  "XXXXXXXXXXXXXXXXcccccccccccccXXccccccccc",
+  "XXXXXXXXXXXXXXXXccccccccccccXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXcccccccccXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXccXXXXXccXXXXXXXXXXXXXXX",
+  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+ ],
+ "organico": true
+}

@@ -1,0 +1,3493 @@
+{
+ "samira": {
+  "nome": "Samira",
+  "aparencia": {
+   "cabelo": "veu",
+   "corpo": "manto",
+   "cores": {
+    "y": "#2a7a7a",
+    "b": "#2a7a7a",
+    "a": "#e0c060"
+   }
+  },
+  "falas": [
+   {
+    "se": {
+     "quest": "q1_despedida",
+     "estado": "ativa"
+    },
+    "dialogo": "samira_despedida",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q1_rainha",
+     "estado": "ativa",
+     "sem_flag": "samira_pocoes"
+    },
+    "dialogo": "samira_pocoes",
+    "importante": true
+   },
+   {
+    "se": {
+     "flag": "despedida_vista"
+    },
+    "dialogo": "samira_volta"
+   },
+   {
+    "se": {
+     "quest": "q1_harun",
+     "estado": "ativa"
+    },
+    "dialogo": "samira_vai_harun"
+   },
+   {
+    "dialogo": "samira_padrao"
+   }
+  ]
+ },
+ "harun": {
+  "nome": "Ancião Harun",
+  "aparencia": {
+   "cabelo": "careca",
+   "barba": true,
+   "corpo": "manto",
+   "cores": {
+    "b": "#e8e0d0",
+    "a": "#8a5a2a",
+    "h": "#d0d0d0",
+    "B": "#eeeeee"
+   }
+  },
+  "falas": [
+   {
+    "se": {
+     "quest": "q1_prova",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "harun_prova",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q1_prova",
+     "estado": "ativa"
+    },
+    "dialogo": "harun_prova_lembrete"
+   },
+   {
+    "se": {
+     "quest": "q1_prova",
+     "estado": "pronta"
+    },
+    "dialogo": "harun_prova_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q1_rainha",
+     "estado": "ativa"
+    },
+    "dialogo": "harun_rainha_lembrete"
+   },
+   {
+    "se": {
+     "quest": "q1_rainha",
+     "estado": "pronta"
+    },
+    "dialogo": "harun_rainha_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q1_despedida",
+     "estado": "ativa"
+    },
+    "dialogo": "harun_despedida_lembrete"
+   },
+   {
+    "dialogo": "harun_padrao"
+   }
+  ]
+ },
+ "chama_areia": {
+  "nome": "Chama Sagrada",
+  "sprite": "res://assets/chama_fraca.png",
+  "sprite_alt": {
+   "se": {
+    "flag": "chama_areia_restaurada"
+   },
+   "sprite": "res://assets/chama_sagrada.png"
+  },
+  "falas": [
+   {
+    "se": {
+     "flag": "chama_areia_restaurada"
+    },
+    "dialogo": "chama_areia_forte"
+   },
+   {
+    "dialogo": "chama_areia_fraca"
+   }
+  ]
+ },
+ "tariq": {
+  "nome": "Tariq, o Ferreiro",
+  "aparencia": {
+   "cabelo": "careca",
+   "barba": true,
+   "corpo": "tunica",
+   "cores": {
+    "b": "#6a4a3a",
+    "a": "#2a2a2a",
+    "h": "#2a1a10",
+    "B": "#2a1a10",
+    "s": "#c88a5a"
+   }
+  },
+  "falas": [
+   {
+    "se": {
+     "quest": "s3_carapacas",
+     "estado": "pronta"
+    },
+    "dialogo": "tariq_carapacas_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s3_carapacas",
+     "estado": "nao_iniciada",
+     "nivel": 6
+    },
+    "dialogo": "tariq_carapacas_pedido",
+    "importante": true
+   },
+   {
+    "dialogo": "tariq_loja"
+   }
+  ]
+ },
+ "zaida": {
+  "nome": "Zaida, a Mercadora",
+  "aparencia": {
+   "cabelo": "veu",
+   "corpo": "manto",
+   "cores": {
+    "y": "#a03060",
+    "b": "#d07040",
+    "a": "#f0d060"
+   }
+  },
+  "falas": [
+   {
+    "dialogo": "zaida_loja"
+   }
+  ]
+ },
+ "faruk": {
+  "nome": "Faruk, o Cambista",
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "manto",
+   "cores": {
+    "y": "#e8e0d0",
+    "a": "#c03030",
+    "b": "#4a3a8a",
+    "h": "#1a1a1a"
+   }
+  },
+  "falas": [
+   {
+    "dialogo": "faruk_cambio"
+   }
+  ]
+ },
+ "kiko": {
+  "nome": "Kiko",
+  "aparencia": {
+   "crianca": true,
+   "cabelo": "curto",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#c06030",
+    "a": "#c06030"
+   }
+  },
+  "falas": [
+   {
+    "se": {
+     "quest": "s1_gato",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "kiko_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s1_gato",
+     "estado": "ativa"
+    },
+    "dialogo": "kiko_lembrete"
+   },
+   {
+    "se": {
+     "quest": "s1_gato",
+     "estado": "pronta"
+    },
+    "dialogo": "kiko_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "honra_max": 30
+    },
+    "dialogo": "kiko_desconfiado"
+   },
+   {
+    "dialogo": "kiko_feliz"
+   }
+  ]
+ },
+ "mimi": {
+  "nome": "Mimi",
+  "sprite": "res://assets/gato.png",
+  "falas": [
+   {
+    "dialogo": "mimi_encontrada"
+   }
+  ]
+ },
+ "mimi_casa": {
+  "nome": "Mimi",
+  "sprite": "res://assets/gato.png",
+  "falas": [
+   {
+    "dialogo": "mimi_casa"
+   }
+  ]
+ },
+ "noor": {
+  "nome": "Vó Noor",
+  "aparencia": {
+   "cabelo": "veu",
+   "corpo": "manto",
+   "cores": {
+    "y": "#7a7a7a",
+    "b": "#5a4a6a",
+    "a": "#9a8a6a",
+    "s": "#d09a70"
+   }
+  },
+  "falas": [
+   {
+    "se": {
+     "quest": "s2_ervas",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "noor_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s2_ervas",
+     "estado": "ativa"
+    },
+    "dialogo": "noor_lembrete"
+   },
+   {
+    "se": {
+     "quest": "s2_ervas",
+     "estado": "pronta"
+    },
+    "dialogo": "noor_fim",
+    "importante": true
+   },
+   {
+    "dialogo": "noor_padrao"
+   }
+  ]
+ },
+ "selim": {
+  "nome": "Guarda Selim",
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "armadura",
+   "cores": {
+    "y": "#c0c0c0",
+    "b": "#8a2a2a",
+    "a": "#c0c0c0",
+    "h": "#1a1a1a"
+   }
+  },
+  "falas": [
+   {
+    "se": {
+     "flag": "portao_norte_aberto",
+     "quest": "s4_bandidos",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "selim_bandidos_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s4_bandidos",
+     "estado": "pronta"
+    },
+    "dialogo": "selim_bandidos_fim",
+    "importante": true
+   },
+   {
+    "se": [
+     {
+      "flag": "bolsa_caravana_devolvida"
+     },
+     {
+      "sem_flag": "selim_bolsa_ok"
+     }
+    ],
+    "dialogo": "selim_bolsa",
+    "importante": true
+   },
+   {
+    "se": {
+     "flag": "portao_norte_aberto",
+     "honra_max": 30
+    },
+    "dialogo": "selim_desonra"
+   },
+   {
+    "se": {
+     "flag": "portao_norte_aberto"
+    },
+    "dialogo": "selim_aberto"
+   },
+   {
+    "dialogo": "selim_fechado"
+   }
+  ]
+ },
+ "amir": {
+  "nome": "Amir, o Bardo",
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#5a3a1a",
+    "y": "#5a3a1a",
+    "b": "#3a8a5a",
+    "a": "#e0c060"
+   }
+  },
+  "falas": [
+   {
+    "se": {
+     "flag": "chama_areia_restaurada"
+    },
+    "dialogo": "amir_depois"
+   },
+   {
+    "dialogo": "amir_lenda"
+   }
+  ]
+ },
+ "hassan": {
+  "nome": "Hassan",
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#1a1a1a",
+    "b": "#4a6a9a",
+    "a": "#2a2a2a"
+   }
+  },
+  "falas": [
+   {
+    "se": {
+     "quest": "s5_carta",
+     "estado": "ativa",
+     "item": "carta_layla"
+    },
+    "dialogo": "hassan_carta",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s5_carta",
+     "estado": [
+      "pronta",
+      "concluida"
+     ]
+    },
+    "dialogo": "hassan_feliz"
+   },
+   {
+    "dialogo": "hassan_padrao"
+   }
+  ]
+ },
+ "layla": {
+  "nome": "Layla",
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "manto",
+   "cores": {
+    "h": "#3a1a10",
+    "y": "#e05070",
+    "b": "#e05070",
+    "a": "#f0e0a0"
+   }
+  },
+  "falas": [
+   {
+    "se": {
+     "quest": "s5_carta",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "layla_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s5_carta",
+     "estado": "ativa"
+    },
+    "dialogo": "layla_lembrete"
+   },
+   {
+    "se": {
+     "quest": "s5_carta",
+     "estado": "pronta"
+    },
+    "dialogo": "layla_fim",
+    "importante": true
+   },
+   {
+    "dialogo": "layla_padrao"
+   }
+  ]
+ },
+ "chama_miraj": {
+  "nome": "Chama Sagrada",
+  "falas": [
+   {
+    "se": {
+     "flag": "chama_miraj_restaurada"
+    },
+    "dialogo": "chama_miraj_forte"
+   },
+   {
+    "dialogo": "chama_miraj_fraca"
+   }
+  ],
+  "sprite": "res://assets/chama_fraca.png",
+  "sprite_alt": {
+   "se": {
+    "flag": "chama_miraj_restaurada"
+   },
+   "sprite": "res://assets/chama_sagrada.png"
+  }
+ },
+ "ferreiro_miraj": {
+  "nome": "Halim, o Ferreiro",
+  "falas": [
+   {
+    "dialogo": "ferreiro_miraj_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "tunica",
+   "cores": {
+    "y": "#2a2a2a",
+    "b": "#7a4a2a",
+    "a": "#2a2a2a"
+   }
+  }
+ },
+ "mercador_miraj": {
+  "nome": "Fátima, a Boticária",
+  "falas": [
+   {
+    "dialogo": "mercador_miraj_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "veu",
+   "corpo": "manto",
+   "cores": {
+    "y": "#3a6a3a",
+    "b": "#3a6a3a",
+    "a": "#e0c060"
+   }
+  }
+ },
+ "cambista_miraj": {
+  "nome": "Yusuf, o Cambista",
+  "falas": [
+   {
+    "dialogo": "cambista_miraj_cambio"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "manto",
+   "cores": {
+    "y": "#e0e0e0",
+    "b": "#5a2a6a",
+    "a": "#e0c060"
+   }
+  }
+ },
+ "estalagem_miraj": {
+  "nome": "Zainab, da Estalagem",
+  "falas": [
+   {
+    "dialogo": "estalagem_miraj_quarto"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "veu",
+   "corpo": "manto",
+   "cores": {
+    "y": "#a05030",
+    "b": "#c08050"
+   }
+  }
+ },
+ "nadia": {
+  "nome": "Nadia",
+  "falas": [
+   {
+    "se": [
+     {
+      "quest": "q2_nadia",
+      "estado": "concluida"
+     },
+     {
+      "quest": "q2_yasmin",
+      "estado": "nao_iniciada"
+     }
+    ],
+    "dialogo": "nadia_encontro",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q2_yasmin",
+     "estado": "ativa"
+    },
+    "dialogo": "nadia_vai_yasmin"
+   },
+   {
+    "se": {
+     "quest": "q2_antidoto",
+     "estado": [
+      "ativa",
+      "pronta"
+     ]
+    },
+    "dialogo": "nadia_antidoto"
+   },
+   {
+    "se": {
+     "quest": "q2_serpente",
+     "estado": [
+      "ativa",
+      "pronta"
+     ]
+    },
+    "dialogo": "nadia_serpente"
+   },
+   {
+    "dialogo": "nadia_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#1a1a1a",
+    "y": "#c03030",
+    "b": "#3a5a3a",
+    "a": "#8a5a2a",
+    "d": "#3a2a1a"
+   }
+  },
+  "aliado": {
+   "tipo": "distancia",
+   "dano": 3,
+   "recarga": 0.8,
+   "alcance": 90
+  }
+ },
+ "yasmin": {
+  "nome": "Rainha Yasmin",
+  "falas": [
+   {
+    "se": [
+     {
+      "quest": "q2_yasmin",
+      "estado": "concluida"
+     },
+     {
+      "quest": "q2_antidoto",
+      "estado": "nao_iniciada"
+     }
+    ],
+    "dialogo": "yasmin_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q2_serpente",
+     "estado": "pronta"
+    },
+    "dialogo": "yasmin_vitoria",
+    "importante": true
+   },
+   {
+    "se": {
+     "flag": "chama_miraj_restaurada"
+    },
+    "dialogo": "yasmin_padrao"
+   },
+   {
+    "dialogo": "yasmin_doente"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "manto",
+   "cores": {
+    "h": "#3a1a10",
+    "y": "#e0c040",
+    "b": "#7a2a8a",
+    "a": "#e0c040"
+   }
+  }
+ },
+ "curandeira": {
+  "nome": "Salma, a Curandeira",
+  "falas": [
+   {
+    "se": {
+     "quest": "q2_antidoto",
+     "estado": "pronta"
+    },
+    "dialogo": "salma_antidoto",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q2_antidoto",
+     "estado": "ativa"
+    },
+    "dialogo": "salma_lembrete"
+   },
+   {
+    "dialogo": "salma_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "veu",
+   "corpo": "manto",
+   "cores": {
+    "y": "#e0e0e0",
+    "b": "#e0e0e0",
+    "a": "#3a8a8a"
+   }
+  }
+ },
+ "jabir": {
+  "nome": "Jabir, o Mercador",
+  "falas": [
+   {
+    "dialogo": "jabir_perdido"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "manto",
+   "cores": {
+    "y": "#3a6aa0",
+    "b": "#c0a060"
+   }
+  }
+ },
+ "viajante_estrada": {
+  "nome": "Viajante",
+  "falas": [
+   {
+    "dialogo": "viajante_dica"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "capuz",
+   "corpo": "manto",
+   "cores": {
+    "b": "#7a6a5a",
+    "k": "#2a1a10",
+    "y": "#f0d040"
+   }
+  }
+ },
+ "rashid": {
+  "nome": "Rashid, o Caravaneiro",
+  "falas": [
+   {
+    "se": {
+     "quest": "s2_caravana",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "rashid_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s2_caravana",
+     "estado": "ativa"
+    },
+    "dialogo": "rashid_lembrete"
+   },
+   {
+    "se": {
+     "quest": "s2_caravana",
+     "estado": "pronta"
+    },
+    "dialogo": "rashid_fim",
+    "importante": true
+   },
+   {
+    "dialogo": "rashid_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "manto",
+   "cores": {
+    "y": "#c03030",
+    "b": "#c0a060",
+    "a": "#7a3a1a"
+   }
+  }
+ },
+ "kamal": {
+  "nome": "Kamal, o Poeta",
+  "falas": [
+   {
+    "se": {
+     "quest": "s2_poeta",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "kamal_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s2_poeta",
+     "estado": "pronta"
+    },
+    "dialogo": "kamal_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s2_poeta",
+     "estado": "ativa"
+    },
+    "dialogo": "kamal_lembrete"
+   },
+   {
+    "se": {
+     "flag": "kamal_enganado"
+    },
+    "dialogo": "kamal_triste"
+   },
+   {
+    "dialogo": "kamal_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#5a2a1a",
+    "y": "#5a2a1a",
+    "b": "#a03a5a",
+    "a": "#e0c060"
+   }
+  }
+ },
+ "cameleiro": {
+  "nome": "Omid, o Cameleiro",
+  "falas": [
+   {
+    "se": {
+     "quest": "s2_camelos",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "omid_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s2_camelos",
+     "estado": "pronta"
+    },
+    "dialogo": "omid_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s2_camelos",
+     "estado": "ativa"
+    },
+    "dialogo": "omid_lembrete"
+   },
+   {
+    "dialogo": "omid_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "tunica",
+   "cores": {
+    "y": "#a08060",
+    "b": "#6a5a3a"
+   }
+  }
+ },
+ "crianca_miraj": {
+  "nome": "Menina do Oásis",
+  "falas": [
+   {
+    "dialogo": "crianca_miraj"
+   }
+  ],
+  "aparencia": {
+   "crianca": true,
+   "cabelo": "longo",
+   "cores": {
+    "h": "#2a1a10",
+    "y": "#2a1a10",
+    "b": "#3a9a9a"
+   }
+  }
+ },
+ "chama_coral": {
+  "nome": "Chama Sagrada",
+  "falas": [
+   {
+    "se": {
+     "flag": "chama_coral_restaurada"
+    },
+    "dialogo": "chama_coral_forte"
+   },
+   {
+    "dialogo": "chama_coral_fraca"
+   }
+  ],
+  "sprite": "res://assets/chama_fraca.png",
+  "sprite_alt": {
+   "se": {
+    "flag": "chama_coral_restaurada"
+   },
+   "sprite": "res://assets/chama_sagrada.png"
+  }
+ },
+ "ferreiro_coral": {
+  "nome": "Duda, a Ferreira",
+  "falas": [
+   {
+    "dialogo": "ferreiro_coral_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#c06020",
+    "y": "#3a3a3a",
+    "b": "#5a4a3a",
+    "a": "#2a2a2a"
+   }
+  }
+ },
+ "mercador_coral": {
+  "nome": "Seu Tonho, o Peixeiro",
+  "falas": [
+   {
+    "dialogo": "mercador_coral_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "careca",
+   "corpo": "tunica",
+   "cores": {
+    "b": "#3a6a9a",
+    "a": "#e0e0e0"
+   }
+  }
+ },
+ "cambista_coral": {
+  "nome": "Dona Pérola, a Cambista",
+  "falas": [
+   {
+    "dialogo": "cambista_coral_cambio"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "manto",
+   "cores": {
+    "h": "#e0e0e0",
+    "y": "#e0e0e0",
+    "b": "#2a4a7a",
+    "a": "#f0f0ff"
+   }
+  }
+ },
+ "estalagem_coral": {
+  "nome": "Gaspar, da Estalagem",
+  "falas": [
+   {
+    "dialogo": "estalagem_coral_quarto"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#7a5a3a",
+    "b": "#7a3a2a"
+   }
+  }
+ },
+ "murad": {
+  "nome": "Capitão Murad",
+  "falas": [
+   {
+    "se": [
+     {
+      "quest": "q3_murad",
+      "estado": "concluida"
+     },
+     {
+      "quest": "q3_bako",
+      "estado": "nao_iniciada"
+     }
+    ],
+    "dialogo": "murad_bloqueio",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q3_kraal",
+     "estado": "pronta"
+    },
+    "dialogo": "murad_vitoria",
+    "importante": true
+   },
+   {
+    "se": {
+     "flag": "chama_coral_restaurada"
+    },
+    "dialogo": "murad_padrao"
+   },
+   {
+    "dialogo": "murad_lembrete"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "armadura",
+   "cores": {
+    "h": "#5a5a5a",
+    "b": "#2a3a6a",
+    "a": "#e0c040"
+   }
+  }
+ },
+ "bako": {
+  "nome": "Bako",
+  "falas": [
+   {
+    "se": {
+     "quest": "q3_bako",
+     "estado": "concluida"
+    },
+    "dialogo": "bako_junta",
+    "importante": true
+   },
+   {
+    "dialogo": "bako_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "careca",
+   "corpo": "tunica",
+   "cores": {
+    "s": "#8a5a3a",
+    "b": "#e0e0e0",
+    "a": "#3a3a8a",
+    "d": "#3a3a8a"
+   }
+  },
+  "aliado": {
+   "tipo": "corpo",
+   "dano": 6,
+   "recarga": 0.7,
+   "alcance": 18
+  }
+ },
+ "velho_zeca": {
+  "nome": "Velho Zeca",
+  "falas": [
+   {
+    "se": {
+     "quest": "s3_tesouro",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "zeca_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s3_tesouro",
+     "estado": "pronta"
+    },
+    "dialogo": "zeca_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s3_tesouro",
+     "estado": "ativa"
+    },
+    "dialogo": "zeca_lembrete"
+   },
+   {
+    "se": {
+     "quest": "s3_tesouro",
+     "estado": "falhou"
+    },
+    "dialogo": "zeca_roubado"
+   },
+   {
+    "dialogo": "zeca_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "careca",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#c0c0c0",
+    "B": "#e0e0e0",
+    "b": "#5a7a9a"
+   },
+   "barba": true
+  }
+ },
+ "taverneiro": {
+  "nome": "Rosa, a Taverneira",
+  "falas": [
+   {
+    "se": {
+     "quest": "s3_peixe",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "rosa_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s3_peixe",
+     "estado": "pronta"
+    },
+    "dialogo": "rosa_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s3_peixe",
+     "estado": "ativa"
+    },
+    "dialogo": "rosa_lembrete"
+   },
+   {
+    "dialogo": "rosa_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "manto",
+   "cores": {
+    "h": "#a02020",
+    "y": "#a02020",
+    "b": "#5a3a2a",
+    "a": "#e0e0e0"
+   }
+  }
+ },
+ "faroleiro": {
+  "nome": "Tomás, o Faroleiro",
+  "falas": [
+   {
+    "se": {
+     "quest": "s3_farol",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "tomas_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s3_farol",
+     "estado": "pronta"
+    },
+    "dialogo": "tomas_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s3_farol",
+     "estado": "ativa"
+    },
+    "dialogo": "tomas_lembrete"
+   },
+   {
+    "dialogo": "tomas_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#3a3a3a",
+    "b": "#e0e0e0",
+    "a": "#c02020"
+   }
+  }
+ },
+ "marina": {
+  "nome": "Marina, a Sereia",
+  "falas": [
+   {
+    "dialogo": "marina_fala"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "manto",
+   "cores": {
+    "h": "#3ac0a0",
+    "y": "#3ac0a0",
+    "s": "#a0d0e0",
+    "b": "#2a8aaa",
+    "a": "#f0f0ff"
+   }
+  }
+ },
+ "marujo": {
+  "nome": "Marujo",
+  "falas": [
+   {
+    "dialogo": "marujo_fala"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "tunica",
+   "cores": {
+    "y": "#2a4a9a",
+    "b": "#e0e0e0",
+    "a": "#2a4a9a"
+   }
+  }
+ },
+ "eremita_sal": {
+  "nome": "Eremita do Sal",
+  "falas": [
+   {
+    "dialogo": "eremita_fala"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "capuz",
+   "corpo": "manto",
+   "cores": {
+    "b": "#e0e0d0",
+    "k": "#3a2a1a",
+    "y": "#a0a0ff"
+   }
+  }
+ },
+ "chama_vale": {
+  "nome": "Chama Sagrada",
+  "falas": [
+   {
+    "se": {
+     "flag": "chama_vale_restaurada"
+    },
+    "dialogo": "chama_vale_forte"
+   },
+   {
+    "dialogo": "chama_vale_fraca"
+   }
+  ],
+  "sprite": "res://assets/chama_fraca.png",
+  "sprite_alt": {
+   "se": {
+    "flag": "chama_vale_restaurada"
+   },
+   "sprite": "res://assets/chama_sagrada.png"
+  }
+ },
+ "ferreiro_vale": {
+  "nome": "Gunnar, o Ferreiro",
+  "falas": [
+   {
+    "dialogo": "ferreiro_vale_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#e0c060",
+    "y": "#e0c060",
+    "B": "#e0c060",
+    "b": "#6a3a2a"
+   },
+   "barba": true
+  }
+ },
+ "mercador_vale": {
+  "nome": "Lia, a Queijeira",
+  "falas": [
+   {
+    "dialogo": "mercador_vale_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "manto",
+   "cores": {
+    "h": "#a06030",
+    "y": "#a06030",
+    "b": "#8aa040",
+    "a": "#f0f0f0"
+   }
+  }
+ },
+ "cambista_vale": {
+  "nome": "Bruno, o Cambista",
+  "falas": [
+   {
+    "dialogo": "cambista_vale_cambio"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "manto",
+   "cores": {
+    "h": "#3a2a1a",
+    "b": "#3a5a3a",
+    "a": "#e0c060"
+   }
+  }
+ },
+ "estalagem_vale": {
+  "nome": "Mila, da Estalagem",
+  "falas": [
+   {
+    "se": {
+     "quest": "s4_sinos",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "mila_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s4_sinos",
+     "estado": "pronta"
+    },
+    "dialogo": "mila_fim",
+    "importante": true
+   },
+   {
+    "dialogo": "estalagem_vale_quarto"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "manto",
+   "cores": {
+    "h": "#e0e0a0",
+    "y": "#e0e0a0",
+    "b": "#c06080"
+   }
+  }
+ },
+ "sora": {
+  "nome": "Anciã Sora",
+  "falas": [
+   {
+    "se": [
+     {
+      "quest": "q4_sora",
+      "estado": "concluida"
+     },
+     {
+      "quest": "q4_lobos",
+      "estado": "nao_iniciada"
+     }
+    ],
+    "dialogo": "sora_lobos",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q4_lobos",
+     "estado": "pronta"
+    },
+    "dialogo": "sora_fabrica",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q4_fabrica",
+     "estado": "pronta"
+    },
+    "dialogo": "sora_vitoria",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q4_lobos",
+     "estado": "ativa"
+    },
+    "dialogo": "sora_lobos_lembrete"
+   },
+   {
+    "se": {
+     "quest": "q4_fabrica",
+     "estado": "ativa"
+    },
+    "dialogo": "sora_fabrica_lembrete"
+   },
+   {
+    "dialogo": "sora_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "manto",
+   "cores": {
+    "h": "#e0e0e0",
+    "y": "#e0e0e0",
+    "b": "#4a6a8a",
+    "a": "#e0e0e0"
+   }
+  }
+ },
+ "tobi": {
+  "nome": "Tobi, o Inventor",
+  "falas": [
+   {
+    "se": {
+     "quest": "s4_engrenagens",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "tobi_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s4_engrenagens",
+     "estado": "pronta"
+    },
+    "dialogo": "tobi_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s4_engrenagens",
+     "estado": "ativa"
+    },
+    "dialogo": "tobi_lembrete"
+   },
+   {
+    "dialogo": "tobi_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#e06020",
+    "y": "#3a3a3a",
+    "b": "#8a6a3a",
+    "a": "#3a3a3a"
+   }
+  }
+ },
+ "pastor": {
+  "nome": "Pedro, o Pastor",
+  "falas": [
+   {
+    "se": {
+     "quest": "s4_ovelhas",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "pedro_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s4_ovelhas",
+     "estado": "pronta"
+    },
+    "dialogo": "pedro_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s4_ovelhas",
+     "estado": "ativa"
+    },
+    "dialogo": "pedro_lembrete"
+   },
+   {
+    "se": {
+     "flag": "coroas_vale_doadas"
+    },
+    "dialogo": "pedro_coroas"
+   },
+   {
+    "dialogo": "pedro_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#7a5a3a",
+    "b": "#a0a080",
+    "a": "#5a3a1a"
+   }
+  }
+ },
+ "ovelha_1": {
+  "nome": "Ovelha",
+  "falas": [
+   {
+    "dialogo": "ovelha_1"
+   }
+  ],
+  "sprite": "res://assets/ovelha.png"
+ },
+ "ovelha_2": {
+  "nome": "Ovelha",
+  "falas": [
+   {
+    "dialogo": "ovelha_2"
+   }
+  ],
+  "sprite": "res://assets/ovelha.png"
+ },
+ "ovelha_3": {
+  "nome": "Ovelha",
+  "falas": [
+   {
+    "dialogo": "ovelha_3"
+   }
+  ],
+  "sprite": "res://assets/ovelha.png"
+ },
+ "ovelha_pasto": {
+  "nome": "Ovelha",
+  "falas": [
+   {
+    "dialogo": "ovelha_pasto"
+   }
+  ],
+  "sprite": "res://assets/ovelha.png"
+ },
+ "ovelha_pasto2": {
+  "nome": "Ovelha",
+  "falas": [
+   {
+    "dialogo": "ovelha_pasto"
+   }
+  ],
+  "sprite": "res://assets/ovelha.png"
+ },
+ "chama_qadim": {
+  "nome": "Chama Sagrada",
+  "falas": [
+   {
+    "se": {
+     "flag": "chama_qadim_restaurada"
+    },
+    "dialogo": "chama_qadim_forte"
+   },
+   {
+    "dialogo": "chama_qadim_fraca"
+   }
+  ],
+  "sprite": "res://assets/chama_fraca.png",
+  "sprite_alt": {
+   "se": {
+    "flag": "chama_qadim_restaurada"
+   },
+   "sprite": "res://assets/chama_sagrada.png"
+  }
+ },
+ "ferreiro_qadim": {
+  "nome": "Idris, o Ferreiro",
+  "falas": [
+   {
+    "dialogo": "ferreiro_qadim_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "tunica",
+   "cores": {
+    "y": "#3a3a6a",
+    "b": "#5a4a3a"
+   }
+  }
+ },
+ "mercador_qadim": {
+  "nome": "Nur, a Alquimista",
+  "falas": [
+   {
+    "dialogo": "mercador_qadim_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "veu",
+   "corpo": "manto",
+   "cores": {
+    "y": "#6a2a8a",
+    "b": "#6a2a8a",
+    "a": "#e0c060"
+   }
+  }
+ },
+ "cambista_qadim": {
+  "nome": "Sahir, o Cambista",
+  "falas": [
+   {
+    "dialogo": "cambista_qadim_cambio"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "manto",
+   "cores": {
+    "y": "#e0c060",
+    "b": "#2a2a5a"
+   }
+  }
+ },
+ "estalagem_qadim": {
+  "nome": "Hamid, da Estalagem",
+  "falas": [
+   {
+    "dialogo": "estalagem_qadim_quarto"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "careca",
+   "corpo": "tunica",
+   "cores": {
+    "B": "#5a3a1a",
+    "b": "#8a6a4a"
+   },
+   "barba": true
+  }
+ },
+ "omar": {
+  "nome": "Omar, o Mago",
+  "falas": [
+   {
+    "se": {
+     "quest": "q5_omar",
+     "estado": "concluida"
+    },
+    "dialogo": "omar_encontro",
+    "importante": true
+   },
+   {
+    "dialogo": "omar_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "careca",
+   "corpo": "manto",
+   "cores": {
+    "h": "#e0e0e0",
+    "B": "#f0f0f0",
+    "b": "#2a3a8a",
+    "a": "#e0c060"
+   },
+   "barba": true
+  },
+  "aliado": {
+   "tipo": "distancia",
+   "dano": 8,
+   "recarga": 1.0,
+   "alcance": 100,
+   "projetil": "res://assets/bola_de_fogo.png"
+  }
+ },
+ "arqueologa": {
+  "nome": "Dra. Hana, a Arqueóloga",
+  "falas": [
+   {
+    "se": {
+     "quest": "s5_estatuas",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "hana_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s5_estatuas",
+     "estado": "pronta"
+    },
+    "dialogo": "hana_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s5_estatuas",
+     "estado": "ativa"
+    },
+    "dialogo": "hana_lembrete"
+   },
+   {
+    "dialogo": "hana_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#3a2a1a",
+    "y": "#c0a060",
+    "b": "#a08050",
+    "a": "#5a3a1a"
+   }
+  }
+ },
+ "estatua_1": {
+  "nome": "Estátua antiga",
+  "falas": [
+   {
+    "dialogo": "estatua_1"
+   }
+  ],
+  "sprite": "res://assets/estatua.png"
+ },
+ "estatua_2": {
+  "nome": "Estátua antiga",
+  "falas": [
+   {
+    "dialogo": "estatua_2"
+   }
+  ],
+  "sprite": "res://assets/estatua.png"
+ },
+ "estatua_3": {
+  "nome": "Estátua antiga",
+  "falas": [
+   {
+    "dialogo": "estatua_3"
+   }
+  ],
+  "sprite": "res://assets/estatua.png"
+ },
+ "bibliotecario": {
+  "nome": "Espírito do Bibliotecário",
+  "falas": [
+   {
+    "se": {
+     "quest": "s5_livros",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "fantasma_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s5_livros",
+     "estado": "pronta"
+    },
+    "dialogo": "fantasma_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s5_livros",
+     "estado": "ativa"
+    },
+    "dialogo": "fantasma_lembrete"
+   },
+   {
+    "se": {
+     "quest": "s5_livros",
+     "estado": "falhou"
+    },
+    "dialogo": "fantasma_inquieto"
+   },
+   {
+    "dialogo": "fantasma_padrao"
+   }
+  ],
+  "sprite": "res://assets/fantasma.png"
+ },
+ "caravana_perdida": {
+  "nome": "Mercadora Perdida",
+  "falas": [
+   {
+    "dialogo": "perdida_fala"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "veu",
+   "corpo": "manto",
+   "cores": {
+    "y": "#c08030",
+    "b": "#c08030"
+   }
+  }
+ },
+ "chama_cidadela": {
+  "nome": "Chama Sagrada",
+  "falas": [
+   {
+    "se": {
+     "flag": "chama_cidadela_restaurada"
+    },
+    "dialogo": "chama_cidadela_forte"
+   },
+   {
+    "dialogo": "chama_cidadela_fraca"
+   }
+  ],
+  "sprite": "res://assets/chama_fraca.png",
+  "sprite_alt": {
+   "se": {
+    "flag": "chama_cidadela_restaurada"
+   },
+   "sprite": "res://assets/chama_sagrada.png"
+  }
+ },
+ "ferreiro_cidadela": {
+  "nome": "Bruna, a Armeira",
+  "falas": [
+   {
+    "dialogo": "ferreiro_cidadela_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "armadura",
+   "cores": {
+    "h": "#a03020",
+    "b": "#5a5a6a",
+    "a": "#c0c0c0"
+   }
+  }
+ },
+ "mercador_cidadela": {
+  "nome": "Sargento Oto, o Intendente",
+  "falas": [
+   {
+    "se": {
+     "flag": "moedas_falsas_passadas"
+    },
+    "dialogo": "oto_falsas"
+   },
+   {
+    "dialogo": "mercador_cidadela_loja"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "armadura",
+   "cores": {
+    "y": "#5a5a5a",
+    "b": "#4a5a3a"
+   }
+  }
+ },
+ "cambista_negro": {
+  "nome": "Vulto, o Cambista",
+  "falas": [
+   {
+    "dialogo": "cambista_negro_cambio"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "capuz",
+   "corpo": "manto",
+   "cores": {
+    "b": "#2a2a2a",
+    "k": "#0a0a0a",
+    "y": "#e0e0e0"
+   }
+  }
+ },
+ "estalagem_cidadela": {
+  "nome": "Dona Clara, da Estalagem",
+  "falas": [
+   {
+    "dialogo": "estalagem_cidadela_quarto"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "veu",
+   "corpo": "manto",
+   "cores": {
+    "y": "#7a7a9a",
+    "b": "#7a7a9a"
+   }
+  }
+ },
+ "rana": {
+  "nome": "Capitã Rana",
+  "falas": [
+   {
+    "se": [
+     {
+      "quest": "q6_rana",
+      "estado": "concluida"
+     },
+     {
+      "quest": "q6_soldados",
+      "estado": "nao_iniciada"
+     }
+    ],
+    "dialogo": "rana_soldados",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q6_soldados",
+     "estado": "pronta"
+    },
+    "dialogo": "rana_emboscada",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q6_varek",
+     "estado": "pronta"
+    },
+    "dialogo": "rana_vitoria",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "q6_soldados",
+     "estado": "ativa"
+    },
+    "dialogo": "rana_soldados_lembrete"
+   },
+   {
+    "se": {
+     "quest": "q6_varek",
+     "estado": "ativa"
+    },
+    "dialogo": "rana_varek_lembrete"
+   },
+   {
+    "dialogo": "rana_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "armadura",
+   "cores": {
+    "h": "#1a1a1a",
+    "y": "#c02020",
+    "b": "#3a3a5a",
+    "a": "#e0c040"
+   }
+  }
+ },
+ "nadia_ferida": {
+  "nome": "Nadia",
+  "falas": [
+   {
+    "se": {
+     "quest": "q6_varek",
+     "estado": "concluida"
+    },
+    "dialogo": "nadia_volta",
+    "importante": true
+   },
+   {
+    "dialogo": "nadia_ferida"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "longo",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#1a1a1a",
+    "y": "#c03030",
+    "b": "#3a5a3a",
+    "a": "#8a5a2a",
+    "d": "#3a2a1a"
+   }
+  }
+ },
+ "armeiro": {
+  "nome": "Ferro Velho, o Armeiro",
+  "falas": [
+   {
+    "se": {
+     "quest": "s6_armadura",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "armeiro_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s6_armadura",
+     "estado": "pronta"
+    },
+    "dialogo": "armeiro_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s6_armadura",
+     "estado": "ativa"
+    },
+    "dialogo": "armeiro_lembrete"
+   },
+   {
+    "dialogo": "armeiro_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "careca",
+   "corpo": "tunica",
+   "cores": {
+    "B": "#7a7a7a",
+    "b": "#5a3a2a"
+   },
+   "barba": true
+  }
+ },
+ "soldada_ana": {
+  "nome": "Soldada Ana",
+  "falas": [
+   {
+    "se": {
+     "quest": "s6_desertores",
+     "estado": "nao_iniciada"
+    },
+    "dialogo": "ana_pedido",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s6_desertores",
+     "estado": "pronta"
+    },
+    "dialogo": "ana_fim",
+    "importante": true
+   },
+   {
+    "se": {
+     "quest": "s6_desertores",
+     "estado": "ativa"
+    },
+    "dialogo": "ana_lembrete"
+   },
+   {
+    "dialogo": "ana_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "armadura",
+   "cores": {
+    "h": "#a06020",
+    "b": "#4a5a7a",
+    "a": "#c0c0c0"
+   }
+  }
+ },
+ "desertor_1": {
+  "nome": "Soldado Desertor",
+  "falas": [
+   {
+    "dialogo": "desertor_1"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "armadura",
+   "cores": {
+    "y": "#6a6a6a",
+    "b": "#5a5a5a",
+    "a": "#8a8a8a"
+   }
+  }
+ },
+ "desertor_2": {
+  "nome": "Soldado Desertor",
+  "falas": [
+   {
+    "dialogo": "desertor_2"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "turbante",
+   "corpo": "armadura",
+   "cores": {
+    "y": "#6a6a6a",
+    "b": "#5a5a5a",
+    "a": "#8a8a8a"
+   }
+  }
+ },
+ "kadir_preso": {
+  "nome": "Kadir",
+  "falas": [
+   {
+    "dialogo": "kadir_preso"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#8a2010",
+    "y": "#f0be3c",
+    "B": "#8a2010",
+    "b": "#5a5a5a",
+    "a": "#3a3a3a"
+   },
+   "barba": true
+  }
+ },
+ "kadir": {
+  "nome": "Kadir",
+  "falas": [
+   {
+    "dialogo": "kadir_padrao"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "armadura",
+   "cores": {
+    "h": "#8a2010",
+    "y": "#f0be3c",
+    "B": "#8a2010",
+    "b": "#285aaa",
+    "a": "#f0be3c"
+   },
+   "barba": true
+  },
+  "aliado": {
+   "tipo": "corpo",
+   "dano": 14,
+   "recarga": 0.5,
+   "alcance": 18
+  }
+ },
+ "kadir_casa": {
+  "nome": "Kadir",
+  "falas": [
+   {
+    "dialogo": "kadir_casa"
+   }
+  ],
+  "aparencia": {
+   "cabelo": "curto",
+   "corpo": "tunica",
+   "cores": {
+    "h": "#8a2010",
+    "y": "#f0be3c",
+    "B": "#8a2010",
+    "b": "#285aaa",
+    "a": "#f0be3c"
+   },
+   "barba": true
+  }
+ },
+ "lar_farida": {
+  "nome": "Farida, a tecelã",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#a03a3a",
+    "a": "#e0b040"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_farida_obrigada",
+    "se": {
+     "flag": "lar_farida_ajudou"
+    }
+   },
+   {
+    "dialogo": "lar_farida_pede",
+    "importante": true
+   }
+  ]
+ },
+ "lar_rania": {
+  "nome": "Rania",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#3a2010",
+    "b": "#4a7a5a",
+    "a": "#c0a060"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_rania_depois",
+    "se": {
+     "flag": "chefe_rainha"
+    }
+   },
+   {
+    "dialogo": "lar_rania_padrao"
+   }
+  ]
+ },
+ "lar_basim": {
+  "nome": "Basim, o oleiro",
+  "aparencia": {
+   "cabelo": "turbante",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#8a6a4a",
+    "a": "#5a3a2a",
+    "B": "#2a1a10"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_basim_obrigado",
+    "se": {
+     "flag": "lar_basim_ajudou"
+    }
+   },
+   {
+    "dialogo": "lar_basim_pede",
+    "importante": true
+   }
+  ]
+ },
+ "lar_jamil": {
+  "nome": "Jamil",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#c0a070",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_jamil"
+   }
+  ]
+ },
+ "lar_hana": {
+  "nome": "Hana",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#5a4a8a",
+    "a": "#d0c0a0"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_hana"
+   }
+  ]
+ },
+ "lar_tamir": {
+  "nome": "Tamir",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#6a5a3a",
+    "a": "#c0a060",
+    "B": "#2a1a10"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_tamir"
+   }
+  ]
+ },
+ "lar_dina": {
+  "nome": "Dina",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#5a2a10",
+    "b": "#d07050",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_dina_triste",
+    "se": {
+     "flag": "lar_dina_cofre_pego"
+    }
+   },
+   {
+    "dialogo": "lar_dina_cofre",
+    "se": {
+     "sem_flag": "lar_dina_cofre_visto"
+    },
+    "importante": true
+   },
+   {
+    "dialogo": "lar_dina"
+   }
+  ]
+ },
+ "lar_jafar": {
+  "nome": "Velho Jafar",
+  "aparencia": {
+   "cabelo": "careca",
+   "cores": {
+    "h": "#d0d0d0",
+    "b": "#e0d8c0",
+    "a": "#8a5a2a",
+    "B": "#d0d0d0"
+   },
+   "corpo": "manto",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_jafar_depois",
+    "se": {
+     "flag": "lar_jafar_tamara"
+    }
+   },
+   {
+    "dialogo": "lar_jafar"
+   }
+  ]
+ },
+ "lar_zaira": {
+  "nome": "Mestra Zaira",
+  "aparencia": {
+   "cabelo": "capuz",
+   "cores": {
+    "h": "#e0e0e0",
+    "b": "#3a2a5a",
+    "a": "#e0a020"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_zaira_guerreiro",
+    "se": {
+     "classe": "guerreiro"
+    }
+   },
+   {
+    "dialogo": "lar_zaira_feiticeiro",
+    "se": {
+     "classe": "feiticeiro"
+    }
+   },
+   {
+    "dialogo": "lar_zaira_clerigo",
+    "se": {
+     "classe": "clerigo"
+    }
+   },
+   {
+    "dialogo": "lar_zaira_escolha",
+    "se": {
+     "nivel": 10
+    },
+    "importante": true
+   },
+   {
+    "dialogo": "lar_zaira_cedo"
+   }
+  ]
+ },
+ "lar_selma": {
+  "nome": "Selma, a curandeira",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#e0e0d0",
+    "a": "#3a8a5a"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_selma"
+   }
+  ]
+ },
+ "lar_idris": {
+  "nome": "Idris, o mercador",
+  "aparencia": {
+   "cabelo": "turbante",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#2a5a8a",
+    "a": "#e0c040",
+    "B": "#2a1a10"
+   },
+   "corpo": "manto",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_idris_depois",
+    "se": {
+     "flag": "lar_idris_decidiu"
+    }
+   },
+   {
+    "dialogo": "lar_idris_suborno",
+    "importante": true
+   }
+  ]
+ },
+ "lar_amal": {
+  "nome": "Amal",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#1a1010",
+    "b": "#c08030",
+    "a": "#c0a060"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_amal_depois",
+    "se": {
+     "flag": "chefe_serpente"
+    }
+   },
+   {
+    "dialogo": "lar_amal"
+   }
+  ]
+ },
+ "lar_rafi": {
+  "nome": "Rafi, o pescador",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#3a2a1a",
+    "b": "#3a6a8a",
+    "a": "#c0a060",
+    "B": "#3a2a1a"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_rafi_presente",
+    "se": {
+     "flag": "chefe_kraal",
+     "sem_flag": "lar_rafi_peixe"
+    },
+    "importante": true
+   },
+   {
+    "dialogo": "lar_rafi_depois",
+    "se": {
+     "flag": "chefe_kraal"
+    }
+   },
+   {
+    "dialogo": "lar_rafi"
+   }
+  ]
+ },
+ "lar_mara": {
+  "nome": "Viúva Mara",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#2a2a3a",
+    "a": "#6a6a7a"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_mara_depois",
+    "se": {
+     "flag": "chefe_kraal"
+    }
+   },
+   {
+    "dialogo": "lar_mara"
+   }
+  ]
+ },
+ "lar_nuno": {
+  "nome": "Velho Nuno",
+  "aparencia": {
+   "cabelo": "careca",
+   "cores": {
+    "h": "#e0e0e0",
+    "b": "#5a7a6a",
+    "a": "#c0a060",
+    "B": "#e0e0e0"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_nuno"
+   }
+  ]
+ },
+ "lar_iara": {
+  "nome": "Iara, a costureira",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#6a2a1a",
+    "b": "#d08090",
+    "a": "#c0a060"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_iara"
+   }
+  ]
+ },
+ "lar_tito": {
+  "nome": "Tito",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#1a1a1a",
+    "b": "#3a8ac0",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_tito_depois",
+    "se": {
+     "flag": "lar_tito_respondeu"
+    }
+   },
+   {
+    "dialogo": "lar_tito",
+    "importante": true
+   }
+  ]
+ },
+ "lar_lia": {
+  "nome": "Lia",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#8a4a1a",
+    "b": "#e0a040",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_lia"
+   }
+  ]
+ },
+ "lar_gaspar": {
+  "nome": "Gaspar",
+  "aparencia": {
+   "cabelo": "capuz",
+   "cores": {
+    "h": "#2a2a2a",
+    "b": "#3a3a2a",
+    "a": "#c0a060",
+    "B": "#2a2a2a"
+   },
+   "corpo": "manto",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_gaspar_vazio",
+    "se": {
+     "flag": "lar_gaspar_preso"
+    }
+   },
+   {
+    "dialogo": "lar_gaspar_depois",
+    "se": {
+     "flag": "lar_gaspar_decidiu"
+    }
+   },
+   {
+    "dialogo": "lar_gaspar",
+    "importante": true
+   }
+  ]
+ },
+ "lar_edite": {
+  "nome": "Pastora Edite",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#8a7a5a",
+    "a": "#e0e0d0"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_edite"
+   }
+  ]
+ },
+ "lar_bruno": {
+  "nome": "Bruno, o aprendiz",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#a07030",
+    "b": "#6a8a3a",
+    "a": "#c0a060"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_bruno_depois",
+    "se": {
+     "flag": "chefe_grifo"
+    }
+   },
+   {
+    "dialogo": "lar_bruno"
+   }
+  ]
+ },
+ "lar_celeste": {
+  "nome": "Vovó Celeste",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#e0e0e0",
+    "b": "#8a5a8a",
+    "a": "#e0d0b0"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_celeste_depois",
+    "se": {
+     "flag": "lar_celeste_lenha"
+    }
+   },
+   {
+    "dialogo": "lar_celeste",
+    "importante": true
+   }
+  ]
+ },
+ "lar_silas": {
+  "nome": "Eremita Silas",
+  "aparencia": {
+   "cabelo": "capuz",
+   "cores": {
+    "h": "#6a6a6a",
+    "b": "#4a4a3a",
+    "a": "#c0a060",
+    "B": "#6a6a6a"
+   },
+   "corpo": "manto",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_silas"
+   }
+  ]
+ },
+ "lar_ana": {
+  "nome": "Ana",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#3a2010",
+    "b": "#c0c0e0",
+    "a": "#c0a060"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_ana"
+   }
+  ]
+ },
+ "lar_yara": {
+  "nome": "Yara, a arqueóloga",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#6a3a1a",
+    "b": "#b09060",
+    "a": "#5a3a1a"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_yara"
+   }
+  ]
+ },
+ "lar_malik": {
+  "nome": "Malik, o escriba",
+  "aparencia": {
+   "cabelo": "turbante",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#3a5a3a",
+    "a": "#d0b060",
+    "B": "#2a1a10"
+   },
+   "corpo": "manto",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_malik_depois",
+    "se": {
+     "flag": "lar_malik_ajudou"
+    }
+   },
+   {
+    "dialogo": "lar_malik",
+    "importante": true
+   }
+  ]
+ },
+ "lar_caio": {
+  "nome": "Caio, soldado ferido",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#3a2a1a",
+    "b": "#8a8a9a",
+    "a": "#c0a060"
+   },
+   "corpo": "armadura"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_caio_depois",
+    "se": {
+     "flag": "lar_caio_ajudado"
+    }
+   },
+   {
+    "dialogo": "lar_caio",
+    "importante": true
+   }
+  ]
+ },
+ "lar_lucia": {
+  "nome": "Lúcia",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#6a5a5a",
+    "a": "#c0a060"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_lucia_depois",
+    "se": {
+     "flag": "lar_desertor_decidiu"
+    }
+   },
+   {
+    "dialogo": "lar_lucia",
+    "importante": true
+   }
+  ]
+ },
+ "lar_davi": {
+  "nome": "Davi, o desertor",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#5a5a4a",
+    "a": "#c0a060",
+    "B": "#2a1a10"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_davi_preso",
+    "se": {
+     "flag": "lar_davi_entregue"
+    }
+   },
+   {
+    "dialogo": "lar_davi"
+   }
+  ]
+ },
+ "lar_vera": {
+  "nome": "Vera",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#c0c0c0",
+    "b": "#4a3a5a",
+    "a": "#c0a060"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_vera_depois",
+    "se": {
+     "flag": "chefe_varek"
+    }
+   },
+   {
+    "dialogo": "lar_vera"
+   }
+  ]
+ },
+ "lar_otto": {
+  "nome": "Otto, o cozinheiro",
+  "aparencia": {
+   "cabelo": "careca",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#e0e0e0",
+    "a": "#c05030",
+    "B": "#2a1a10"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_otto_comeu",
+    "se": {
+     "flag": "lar_otto_pao"
+    }
+   },
+   {
+    "dialogo": "lar_otto"
+   }
+  ]
+ },
+ "lar_x_sadiq": {
+  "nome": "Mestre Sadiq",
+  "aparencia": {
+   "cabelo": "turbante",
+   "cores": {
+    "h": "#d0d0d0",
+    "b": "#7a3a2a",
+    "a": "#e0b040",
+    "B": "#d0d0d0"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_sadiq_fim",
+    "se": {
+     "quest": "x_treino",
+     "estado": "pronta"
+    },
+    "importante": true
+   },
+   {
+    "dialogo": "lar_x_sadiq_oi",
+    "se": {
+     "quest": "x_treino",
+     "estado": "nao_iniciada"
+    },
+    "importante": true
+   },
+   {
+    "dialogo": "lar_x_sadiq_menu"
+   }
+  ]
+ },
+ "lar_x_aprendiz": {
+  "nome": "Nina, aprendiz",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#3a1a10",
+    "b": "#5a7a3a",
+    "a": "#c0a060"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_aprendiz"
+   }
+  ]
+ },
+ "lar_x_salma": {
+  "nome": "Salma, a fazendeira",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#6a8a3a",
+    "a": "#e0c060"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_salma_fim",
+    "se": {
+     "quest": "x_hienas",
+     "estado": "pronta"
+    },
+    "importante": true
+   },
+   {
+    "dialogo": "lar_x_salma_pede",
+    "se": {
+     "quest": "x_hienas",
+     "estado": "nao_iniciada"
+    },
+    "importante": true
+   },
+   {
+    "dialogo": "lar_x_salma_lembra",
+    "se": {
+     "quest": "x_hienas",
+     "estado": "ativa"
+    }
+   },
+   {
+    "dialogo": "lar_x_salma_padrao"
+   }
+  ]
+ },
+ "lar_x_badu": {
+  "nome": "Tio Badu",
+  "aparencia": {
+   "cabelo": "turbante",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#a06a3a",
+    "a": "#5a3a2a",
+    "B": "#2a1a10"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_badu"
+   }
+  ]
+ },
+ "lar_x_zuleica": {
+  "nome": "Vó Zuleica",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#e0e0e0",
+    "b": "#4a3a6a",
+    "a": "#c0a0e0"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_zuleica"
+   }
+  ]
+ },
+ "lar_x_safira": {
+  "nome": "Dona Safira",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#8a3a5a",
+    "a": "#c0a060"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_safira"
+   }
+  ]
+ },
+ "lar_x_tico": {
+  "nome": "Tico",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#d0a040",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_tico"
+   }
+  ]
+ },
+ "lar_x_nadador_canal": {
+  "nome": "Rafi",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#1a1008",
+    "b": "#3a7aa0",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_nadador_canal"
+   }
+  ]
+ },
+ "lar_x_tome": {
+  "nome": "Seu Tomé",
+  "aparencia": {
+   "cabelo": "turbante",
+   "cores": {
+    "h": "#c0c0c0",
+    "b": "#3a5a8a",
+    "a": "#e0d0a0",
+    "B": "#c0c0c0"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_tome_fim",
+    "se": {
+     "quest": "x_redes",
+     "estado": "pronta"
+    },
+    "importante": true
+   },
+   {
+    "dialogo": "lar_x_tome_pede",
+    "se": {
+     "quest": "x_redes",
+     "estado": "nao_iniciada"
+    },
+    "importante": true
+   },
+   {
+    "dialogo": "lar_x_tome_lembra",
+    "se": {
+     "quest": "x_redes",
+     "estado": "ativa"
+    }
+   },
+   {
+    "dialogo": "lar_x_tome_padrao"
+   }
+  ]
+ },
+ "lar_x_iara": {
+  "nome": "Iara",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#1a0a05",
+    "b": "#2a8a8a",
+    "a": "#c0a060"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_iara"
+   }
+  ]
+ },
+ "lar_x_marina": {
+  "nome": "Marina, da pousada",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#3a6aa0",
+    "a": "#e0e0e0"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_marina"
+   }
+  ]
+ },
+ "lar_x_lino": {
+  "nome": "Velho Lino",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#d0d0d0",
+    "b": "#6a5a4a",
+    "a": "#c0a060",
+    "B": "#d0d0d0"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_lino"
+   }
+  ]
+ },
+ "lar_x_menino_nadador": {
+  "nome": "Caio",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#3a2010",
+    "b": "#e0a040",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_menino_nadador"
+   }
+  ]
+ },
+ "lar_x_menina_nadadora": {
+  "nome": "Lia",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#5a2a10",
+    "b": "#e06080",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_menina_nadadora"
+   }
+  ]
+ },
+ "lar_x_banhista_miraj": {
+  "nome": "Zara, a banhista",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#2a1008",
+    "b": "#a04060",
+    "a": "#c0a060"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_banhista_miraj"
+   }
+  ]
+ },
+ "lar_x_nadador_coral": {
+  "nome": "Duda Júnior",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#1a0a05",
+    "b": "#40a0c0",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_nadador_coral"
+   }
+  ]
+ },
+ "lar_x_zazu": {
+  "nome": "Ancião Zazu",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#f0f0f0",
+    "b": "#5a3a9a",
+    "a": "#e0c060",
+    "B": "#f0f0f0"
+   },
+   "corpo": "manto",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_zazu_oitavo",
+    "se": [
+     {
+      "flag": "oitavo_fogo"
+     },
+     {
+      "flag": "zazu_sabio"
+     }
+    ],
+    "importante": true
+   },
+   {
+    "dialogo": "lar_x_zazu_depois",
+    "se": {
+     "flag": "zazu_sabio"
+    }
+   },
+   {
+    "dialogo": "lar_x_zazu_oi",
+    "importante": true
+   }
+  ]
+ },
+ "lar_x_velho_canion": {
+  "nome": "Velho da Gruta",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#f0f0f0",
+    "b": "#7a2a2a",
+    "a": "#d0a040",
+    "B": "#f0f0f0"
+   },
+   "corpo": "manto",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_velho_canion_depois",
+    "se": {
+     "flag": "velho_canion_presente"
+    }
+   },
+   {
+    "dialogo": "lar_x_velho_canion"
+   }
+  ]
+ },
+ "lar_x_placa_bolo": {
+  "nome": "Placa enferrujada",
+  "sprite": "res://assets/placa.png",
+  "falas": [
+   {
+    "dialogo": "lar_x_placa_bolo"
+   }
+  ]
+ },
+ "lar_x_sabio_qadim": {
+  "nome": "Sábio Pensador",
+  "aparencia": {
+   "cabelo": "careca",
+   "cores": {
+    "h": "#e0e0e0",
+    "b": "#3a5a8a",
+    "a": "#e0c060",
+    "B": "#e0e0e0"
+   },
+   "corpo": "manto",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_sabio_qadim"
+   }
+  ]
+ },
+ "lar_x_cavaleiro_sol": {
+  "nome": "Cavaleiro do Sol",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#c08040",
+    "b": "#d0a020",
+    "a": "#e0e0e0"
+   },
+   "corpo": "armadura"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_cavaleiro_sol"
+   }
+  ]
+ },
+ "lar_x_prisioneiro": {
+  "nome": "Prisioneiro",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#5a4a3a",
+    "b": "#6a6a6a",
+    "a": "#c0a060",
+    "B": "#5a4a3a"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_prisioneiro"
+   }
+  ]
+ },
+ "lar_x_placa_calango": {
+  "nome": "Placa torta",
+  "sprite": "res://assets/placa.png",
+  "falas": [
+   {
+    "dialogo": "lar_x_placa_calango"
+   }
+  ]
+ },
+ "lar_x_pescador_velho": {
+  "nome": "Vô Arnaldo",
+  "aparencia": {
+   "cabelo": "turbante",
+   "cores": {
+    "h": "#e0e0e0",
+    "b": "#3a6a5a",
+    "a": "#d0c090",
+    "B": "#e0e0e0"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_pescador_velho"
+   }
+  ]
+ },
+ "lar_x_bilhete_harun": {
+  "nome": "Bilhete de Harun",
+  "sprite": "res://assets/itens/carta.png",
+  "falas": [
+   {
+    "dialogo": "harun_pos_jogo",
+    "importante": true
+   }
+  ]
+ },
+ "lar_x_diario_zahrak": {
+  "nome": "Diário de Zahrak",
+  "sprite": "res://assets/livro.png",
+  "falas": [
+   {
+    "dialogo": "diario_zahrak"
+   }
+  ]
+ },
+ "lar_x_hasna": {
+  "nome": "Hasna",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#8a6a3a",
+    "a": "#e0c060"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_hasna"
+   }
+  ]
+ },
+ "lar_x_jabir": {
+  "nome": "Jabir",
+  "aparencia": {
+   "cabelo": "turbante",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#5a4a2a",
+    "a": "#c0a060",
+    "B": "#2a1a10"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_jabir"
+   }
+  ]
+ },
+ "lar_x_kenza": {
+  "nome": "Kenza",
+  "aparencia": {
+   "cabelo": "longo",
+   "cores": {
+    "h": "#2a1008",
+    "b": "#c06040",
+    "a": "#c0a060"
+   },
+   "crianca": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_kenza"
+   }
+  ]
+ },
+ "lar_x_quito": {
+  "nome": "Quito",
+  "aparencia": {
+   "cabelo": "curto",
+   "cores": {
+    "h": "#1a1008",
+    "b": "#2a5a8a",
+    "a": "#c0a060",
+    "B": "#1a1008"
+   },
+   "corpo": "tunica",
+   "barba": true
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_quito"
+   }
+  ]
+ },
+ "lar_x_celeste": {
+  "nome": "Celeste",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#3a8aa0",
+    "a": "#f0f0f0"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_celeste"
+   }
+  ]
+ },
+ "lar_x_bento": {
+  "nome": "Bento",
+  "aparencia": {
+   "cabelo": "turbante",
+   "cores": {
+    "h": "#2a1a10",
+    "b": "#6a4a3a",
+    "a": "#d0b080"
+   },
+   "corpo": "tunica"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_bento"
+   }
+  ]
+ },
+ "lar_x_vovo_ana": {
+  "nome": "Vó Ana",
+  "aparencia": {
+   "cabelo": "veu",
+   "cores": {
+    "h": "#e0e0e0",
+    "b": "#7a5a8a",
+    "a": "#c0a060"
+   },
+   "corpo": "manto"
+  },
+  "falas": [
+   {
+    "dialogo": "lar_x_vovo_ana"
+   }
+  ]
+ }
+}
