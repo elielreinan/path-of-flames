@@ -1,7 +1,28 @@
+# Gerados pelo Godot e builds
 .godot/
 build/
 *.apk
 *.aab
+*.idsig
+_t.gd
+
+# Assinatura e credenciais (nunca subir)
 *.keystore
 *.jks
-_t.gd
+*.p12
+*.pem
+export_credentials.cfg
+.env
+
+# Saves e dados do jogador
+*.save
+save.json
+user/
+
+# Python
+__pycache__/
+*.pyc
+
+# Arquivos de referência de terceiros (nunca subir)
+jogo base*/
+*graal*.zip
