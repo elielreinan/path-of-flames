@@ -12,6 +12,7 @@ from PIL import Image
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from interior_render import Interior
+import cenario_extra as cx
 
 T = 16
 TILE_CHARS = ".,:fc#HRTWrmbDXCS JPKwghE=*"
@@ -167,6 +168,8 @@ class Assador:
             self.tex[nome] = (np.stack(tiles), pesos / pesos.sum())
         self.atlas = Image.open(os.path.join(cenario_dir, "tiles_sunny.png")).convert("RGBA")
         self.obj = Image.open(os.path.join(cenario_dir, "objetos_sunny.png")).convert("RGBA")
+        # Mapas que são cavernas (preenchido por main(); serve para desenhar a boca nas saídas).
+        self.cavernas = set()
 
     # ------------------------------------------------------------------ classes
     def classes(self, rows, map_id):
@@ -477,6 +480,10 @@ class Assador:
                 if ch == "r":
                     base.alpha_composite(pedra(tema, seed_of(map_id, x, y) % 9), (x * T, y * T))
                     continue
+                if ch == "h":
+                    p = cx.poco("verde" if tema == "cinza" else "deserto")
+                    base.alpha_composite(p, (x * T + T // 2 - p.width // 2, (y + 1) * T + 2 - p.height))
+                    continue
                 if ch in OBJETOS and ch != "T":
                     oi = OBJETOS.index(ch)
                     o = self.obj.crop((oi * T, 0, oi * T + T, T))
@@ -496,7 +503,41 @@ class Assador:
         flat = "".join(rows)
         deserto = flat.count(".") > flat.count(",")
         img = Image.fromarray(self.pintar(px, map_id, caverna, deserto)).convert("RGBA")
-        return self.estruturas(img, g, estrut, map_id)
+        img = self.estruturas(img, g, estrut, map_id)
+        tema = "caverna" if caverna else ("deserto" if deserto else "verde")
+        return self.entradas(img, g, data, map_id, tema)
+
+    # ------------------------------------------------------------------ bocas de caverna
+    def entradas(self, img, g, data, map_id, tema):
+        """Desenha a boca de caverna nas saídas que levam a um mapa de caverna."""
+        h, w = len(g), len(g[0])
+        duro = set("X# r")
+        for s in data.get("saidas", []):
+            if s.get("mapa") not in self.cavernas:
+                continue
+            x, y, aw, ah = s["area"]
+            cols = range(x, x + aw)
+            cel = lambda xx, yy: g[yy][xx] if 0 <= xx < w and 0 <= yy < h else "X"
+            # Corredor de caverna dentro da rocha, aberto para o sul.
+            if all(cel(c, y) == "c" for c in cols) and cel(x - 1, y) in duro and cel(x + aw, y) in duro:
+                yb = y + ah - 1
+                while all(cel(c, yb + 1) == "c" for c in cols) and cel(x - 1, yb + 1) in duro and cel(x + aw, yb + 1) in duro:
+                    yb += 1
+                prof = (yb - y + 1) * T + 4
+                spr, m = cx.boca_caverna(aw * T, prof, tema, cx._h(map_id, x, y))
+                img.alpha_composite(spr, (x * T - m, (yb + 1) * T - spr.height))
+                chao = (yb + 1) * T + 3
+                cx.pedrinhas(img, x * T - 8, chao, tema, cx._h(map_id, "p", x), 2)
+                cx.pedrinhas(img, (x + aw) * T + 8, chao, tema, cx._h(map_id, "q", x), 2)
+            elif x == 0 or x + aw >= w:
+                lado = "oeste" if x == 0 else "leste"
+                spr, top = cx.boca_lateral(ah * T, tema, cx._h(map_id, x, y), lado)
+                ox = 0 if lado == "oeste" else w * T - spr.width
+                img.alpha_composite(spr, (ox, y * T - top))
+            else:
+                spr, m = cx.boca_caverna(aw * T, ah * T + 4, tema, cx._h(map_id, x, y))
+                img.alpha_composite(spr, (x * T - m, (y + ah) * T - spr.height))
+        return img
 
 
 def main():
@@ -509,6 +550,12 @@ def main():
     mapas, cen, out = args[:3]
     nomes = args[3:]
     a = Assador(cen, tileset)
+    for f in os.listdir(mapas):
+        if f.endswith(".json"):
+            with open(os.path.join(mapas, f), encoding="utf-8") as fh:
+                flat = "".join(json.load(fh).get("layout", []))
+            if flat.count("c") > flat.count(".") + flat.count(","):
+                a.cavernas.add(f[:-5])
     os.makedirs(out, exist_ok=True)
     for f in sorted(os.listdir(mapas)):
         if not f.endswith(".json") or (nomes and f[:-5] not in nomes):

@@ -137,6 +137,7 @@ func _draw() -> void:
 
 
 func _attack(enemy: Node2D, to_enemy: Vector2) -> void:
+	Som.sfx("soltar" if data.aliado.tipo == "distancia" else "espada", -12.0, 0.15)
 	if _skin:
 		_skin.set_direction(to_enemy)
 		_skin.play("golpe", true)

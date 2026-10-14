@@ -5,6 +5,7 @@ extends Control
 signal pressed
 
 var kind := ""
+static var _art := {}
 var _down := false
 
 
@@ -32,11 +33,21 @@ func _gui_input(event: InputEvent) -> void:
 
 
 func _draw() -> void:
-	var rect := Rect2(Vector2.ZERO, size)
-	var style := UiKit.panel_style(Color(0.45, 0.27, 0.12, 0.95) if _down else Color(0.12, 0.08, 0.06, 0.8))
-	style.set_content_margin_all(0)
+	var path := "res://assets/ui/botoes/quad_%s_%s.png" % [kind, "pressionado" if _down else "normal"]
+	if not _art.has(path):
+		# Guarda a textura: carregada só dentro do _draw ela é liberada e sai branca.
+		_art[path] = load(path) if ResourceLoader.exists(path) else null
+	if _art[path]:
+		draw_texture_rect(_art[path], Rect2(Vector2.ZERO, size), false)
+		return
+	var rect := Rect2(Vector2.ZERO, size - Vector2(0, 2))
+	var style := UiKit.button_style(Color(0.3, 0.17, 0.08, 0.95) if _down else Color(0.2, 0.12, 0.07, 0.88), _down)
+	if _down:
+		rect.position.y += 2
 	draw_style_box(style, rect)
-	var c := size / 2.0
+	# Brilho na parte de cima.
+	draw_rect(Rect2(rect.position + Vector2(3, 3), Vector2(rect.size.x - 6, 1)), Color(1, 0.85, 0.55, 0.25))
+	var c := rect.get_center()
 	var s := size.x / 24.0
 	var ink := UiKit.TEXT
 	match kind:

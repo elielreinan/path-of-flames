@@ -16,6 +16,18 @@ var _marker: Label
 var _name_label: Label
 var _time := 0.0
 
+## Sprites antigos que viraram objetos desenhados (assets/criaturas/obj_*): arquivo -> criatura.
+const OBJECTS := {"gato.png": "obj_gato", "ovelha.png": "obj_ovelha", "chama_fraca.png": "obj_chama_fraca",
+	"chama_sagrada.png": "obj_chama_sagrada", "fantasma.png": "obj_fantasma", "estatua.png": "obj_estatua",
+	"placa.png": "obj_placa", "livro.png": "obj_livro", "carta.png": "obj_carta"}
+## Coluna da variante por NPC (estátuas diferentes, placa velha).
+const VARIANTS := {"estatua_1": 0, "estatua_2": 1, "estatua_3": 2, "lar_x_placa_bolo": 1}
+
+
+static func object_for(sprite_path: String) -> String:
+	var id: String = OBJECTS.get(sprite_path.get_file(), "")
+	return id if id != "" and CreatureSprite.has(id) else ""
+
 
 func _ready() -> void:
 	add_to_group("npcs")
@@ -27,6 +39,11 @@ func _ready() -> void:
 	if sheet:
 		_skin = SkinSprite.create(sheet)
 		_sprite = _skin
+	elif object_for(data.get("sprite", "")) != "":
+		var creature := CreatureSprite.create(object_for(data.sprite))
+		creature.column = VARIANTS.get(npc_id, 0)
+		creature.play("parado", true)
+		_sprite = creature
 	else:
 		_sprite = Sprite2D.new()
 		if data.has("sprite"):
@@ -75,12 +92,19 @@ func refresh_marker() -> void:
 	_marker.visible = current_dialog().get("importante", false)
 	# Sprite alternativo quando uma condição vale (ex.: chama restaurada).
 	if data.has("sprite_alt") and GameState.check(data.sprite_alt.se):
-		_sprite.texture = load(data.sprite_alt.sprite)
+		var alt := object_for(data.sprite_alt.sprite)
+		if _sprite is CreatureSprite and alt != "":
+			if (_sprite as CreatureSprite).info != Data.creatures[alt]:
+				(_sprite as CreatureSprite).swap(alt)
+		else:
+			_sprite.texture = load(data.sprite_alt.sprite)
 
 
 func face(direction: Vector2) -> void:
 	if _skin:
 		_skin.set_direction(direction)
+	elif _sprite is CreatureSprite:
+		(_sprite as CreatureSprite).face(direction)
 	elif absf(direction.x) > 0.5:
 		_sprite.flip_h = direction.x < 0
 
@@ -109,7 +133,7 @@ func _physics_process(delta: float) -> void:
 		_wander_dir = Vector2.ZERO if global_position.distance_to(_home) < 4.0 else (_home - global_position).normalized()
 	velocity = _wander_dir * (14.0 if _swimming else 20.0)
 	move_and_slide()
-	if not _swimming and not _skin:
+	if not _swimming and not _skin and not _sprite is CreatureSprite:
 		_sprite.position.y = -absf(sin(_time * 10.0)) if velocity.length() > 1.0 else 0.0
 
 
@@ -133,12 +157,14 @@ func _update_swim() -> void:
 			_skin.swimming = now
 			queue_redraw()
 			return
+		if _sprite is CreatureSprite:
+			return
 		_sprite.region_enabled = now
 		_sprite.region_rect = Rect2(0, 0, _sprite.texture.get_width(), 9)
 		_sprite.offset = Vector2(0, -5.5) if now else Vector2(0, -6)
 		queue_redraw()
 	if _swimming:
-		if not _skin:
+		if not _skin and not _sprite is CreatureSprite:
 			_sprite.position.y = sin(_time * 4.0 + _home.x) * 0.8
 		queue_redraw()
 

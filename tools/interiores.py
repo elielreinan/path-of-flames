@@ -13,7 +13,7 @@ ENTRADA = (7, 9)
 
 # letra -> (sprite, sólido)
 MOVEIS = {
-    "b": ("cama", True), "d": ("cama", True),
+    "1": ("cama", True), "2": ("cama", True), "3": ("cama", True), "4": ("cama", True),
     "e": ("estante_livros", True), "o": ("estante_livros", True),
     "g": ("gaveteiro", True), "a": ("armario", True), "c": ("comoda", True),
     "p": ("bacia", True), "m": ("mesa", True), "M": ("mesa_grande", True),
@@ -22,93 +22,101 @@ MOVEIS = {
     "k": ("caixote", True), "K": ("caixotes", True),
     "V": ("vaso_girassol", True), "v": ("jarro", True), "u": ("jarro_azul", True), "t": ("vaso_flor", True),
     "R": ("tapete_grande", False), "r": ("tapete", False), "s": ("tapete_redondo", False),
-    "x": ("espelho", True), "z": ("balcao", True),
+    "x": ("espelho", True), "z": ("balcao", True), "Y": ("trono", True),
 }
+CAMAS = "1234"
 
-# Plantas: '.' chão, 'w' parede. Cada bloco de letras iguais vizinhas é um móvel.
+# Plantas: '.' chão, 'w' parede, 'D' porta. Cada bloco de letras iguais vizinhas é um móvel.
+# Cômodos: quarto (camas '1'..'4', uma por morador; as que sobram viram chão), cozinha (fogão, bacia,
+# barris e mesa juntos) e sala (tapete, mesa, plantas). Corredor da porta (7,8)-(7,9) sempre livre.
 # "parede": decoração na face da parede de trás (linha 1): (sprite, x).
 MODELOS = {
     "familia": {
         "planta": [
             "wwwwwwwwwwwwww",
             "wwwwwwwwwwwwww",
-            "wb.dwe.g...cFw",
-            "wb.dw.......Fw",
-            "w...w.......pw",
-            "ww.ww..MM...Lw",
-            "w......MM..q.w",
-            "wt...........w",
-            "w...rr.....k.w",
-            "wV..rr......vw",
+            "w1.2.3w.FpBLkw",
+            "w1.2.3w......w",
+            "wg...cw..MM..w",
+            "www.www.qMMq.w",
+            "w............w",
+            "wt..RRRR....aw",
+            "wV..RRRR....kw",
+            "wv..........uw",
             "wwwwwwwDwwwwww",
         ],
-        "parede": [("janela", 2), ("quadro", 6), ("janela", 9)],
+        "parede": [("janela", 2), ("quadro", 4), ("janela", 9), ("quadro", 11)],
     },
     "pescador": {
         "planta": [
             "wwwwwwwwwwwwww",
             "wwwwwwwwwwwwww",
-            "wBL.k..ow.b..w",
-            "w..........d.w",
-            "w..........d.w",
-            "wq.m.....www.w",
-            "w..q.........w",
+            "wFpLB.w1.2.3aw",
+            "w.....w1.2.3.w",
+            "wq.mm.wg.....w",
+            "w..q..www.wwww",
+            "w............w",
             "wk...RRR.....w",
-            "wK...RRR....Bw",
+            "wkk..RRR....Bw",
             "wu..........Vw",
             "wwwwwwwDwwwwww",
         ],
-        "parede": [("rede", 3), ("janela", 6), ("quadro", 11)],
+        "parede": [("janela", 3), ("rede", 5), ("janela", 9), ("quadro", 11)],
     },
     "mercador": {
         "planta": [
             "wwwwwwwwwwwwww",
             "wwwwwwwwwwwwww",
-            "wae.......o.aw",
+            "wFpLBkw1.2.3aw",
+            "w.....w1.2.3.w",
+            "w.MM..wg.....w",
+            "wqMMq.www.wwww",
             "w............w",
-            "wzz...MM...b.w",
-            "w..q..MM.q.b.w",
-            "w............w",
-            "wv..RRRR...c.w",
-            "wkk.RRRR....Vw",
-            "wt..........uw",
+            "wzz...RRRR..cw",
+            "wkk...RRRR..Vw",
+            "wv..........uw",
             "wwwwwwwDwwwwww",
         ],
-        "parede": [("janela", 4), ("quadro", 7), ("janela", 9)],
+        "parede": [("janela", 3), ("janela", 9), ("quadro", 11)],
     },
     "estudioso": {
         "planta": [
             "wwwwwwwwwwwwww",
             "wwwwwwwwwwwwww",
-            "weo.e.o.eow.bw",
-            "w.........w.bw",
-            "w..m.......q.w",
-            "w..q..ss...www",
-            "w.....ss.....w",
-            "wo.......MM..w",
-            "we.......MM..w",
-            "wV..........tw",
+            "weeeeew1.2.3aw",
+            "w.....w1.2.3.w",
+            "w.qm..wg.....w",
+            "w.....www.wwww",
+            "w.....ss....ow",
+            "wFp...ss....ow",
+            "wB.qMMq......w",
+            "wL..MM......Vw",
             "wwwwwwwDwwwwww",
         ],
-        "parede": [("janela", 3), ("janela", 8)],
+        "parede": [("janela", 9), ("quadro", 11)],
     },
     "simples": {
         "planta": [
             "wwwwwwwwwwwwww",
             "wwwwwwwwwwwwww",
-            "wF.p..g..b.d.w",
-            "wF.......b.d.w",
+            "wFpLB.w.1.2.aw",
+            "w.....w.1.2..w",
+            "w.mm..w.....gw",
+            "wq..q.ww.wwwww",
             "w............w",
-            "w..mm........w",
-            "w.q..q.....c.w",
-            "w.........ww.w",
-            "wL...ss......w",
-            "wk...ss.....vw",
+            "wt...ss.....cw",
+            "wk...ss.....Vw",
+            "wv..........uw",
             "wwwwwwwDwwwwww",
         ],
-        "parede": [("janela", 4), ("quadro", 8)],
+        "parede": [("janela", 3), ("quadro", 9)],
     },
 }
+
+
+def vagas(planta):
+    return len({ch for row in planta for ch in row if ch in CAMAS})
+
 
 # Ordem dos modelos por cidade (cada casa pega o próximo), para não repetir vizinhas.
 POR_CIDADE = {
@@ -147,45 +155,52 @@ def _blocos(planta):
 # Casas com eventos (spawns, gatilhos e cutscenes em posições fixas): planta própria do mesmo tamanho.
 ESPECIAIS = {
     "casa_mae": {
+        # Ifrit acorda em (12,3), ao lado da cama dele (1); Samira (2) e Kadir (3). Linha 4 livre: Samira anda por ela na intro.
         "planta": [
             "wwwwwwwwwwwwwwww",
             "wwwwwwwwwwwwwwww",
-            "wFeg.o.......b.w",
-            "wF...........b.w",
-            "w.....MM.....c.w",
-            "wq....MM.q.....w",
-            "wV..rrrrrr.....w",
-            "wL..rrrrrr.....w",
-            "wv..........k.Vw",
+            "wFpLBa.w.2...13w",
+            "w......w.2...13w",
+            "w..............w",
+            "wqMMq..........w",
+            "w.MM.rrrrrr..g.w",
+            "wV...rrrrrr..k.w",
+            "wt..........uc.w",
             "wwwwwwwDwwwwwwww",
         ],
-        "parede": [("janela", 4), ("quadro", 8), ("janela", 11), ("espelho", 14)],
+        "parede": [("janela", 3), ("quadro", 5), ("janela", 10), ("espelho", 12)],
         "tema": "areia_rubra",
+        "camas": 3,
     },
     "palacio_miraj": {
+        # Sala do trono no centro, canto da curandeira à esquerda, quarto da rainha à direita.
         "planta": [
             "wwwwwwwwwwwwwwwwwwww",
             "wwwwwwwwwwwwwwwwwwww",
-            "weoe..VRRRRRRV.a.b.w",
-            "w......RRRRRR....b.w",
-            "w.MM...RRRRRR.....cw",
-            "wqMM...RRRRRR......w",
-            "w......RRRRRR......w",
-            "wV.....RRRRRR.....Vw",
-            "wu.....RRRRRR......w",
-            "wt....VRRRRRRV....tw",
-            "w..................w",
+            "weeee.V..Y..V.wa1.gw",
+            "w.......RRR...w.1..w",
+            "w.MM....RRR...w...cw",
+            "wqMM....RRR........w",
+            "wp......RRR........w",
+            "wV.....tRRRt......Vw",
+            "wu......RRR.......uw",
+            "wt.....VRRRV......tw",
+            "w.......RRR........w",
             "wwwwwwwwwDwwwwwwwwww",
         ],
-        "parede": [("janela", 3), ("quadro", 6), ("janela", 9), ("quadro", 13), ("janela", 16)],
+        "parede": [("janela", 2), ("quadro", 7), ("quadro", 11), ("janela", 16)],
         "tema": "oasis_miraj",
+        "camas": 1,
     },
 }
 
 
-def montar(nome, modelo=None):
+def montar(nome, modelo=None, camas=None):
     modelo = modelo or MODELOS[nome]
     planta = modelo["planta"]
+    # Uma cama por morador (mínimo 1); as vagas que sobram viram chão.
+    n = max(1, camas if camas is not None else modelo.get("camas", vagas(planta)))
+    planta = ["".join("." if ch in CAMAS and int(ch) > n else ch for ch in row) for row in planta]
     if modelo is MODELOS.get(nome):
         assert len(planta) == H and all(len(r) == W for r in planta), nome
     assert all(len(r) == len(planta[0]) for r in planta), nome
@@ -254,10 +269,27 @@ def _lugares(layout, deco, n, seed):
     return escolhidos
 
 
-def validar(layout):
-    alc = _alcance(layout, ENTRADA)
-    chao = {(x, y) for y in range(H) for x in range(W) if _anda(layout, x, y)}
+def validar(layout, entrada=ENTRADA, porta=PORTA):
+    hh, ww = len(layout), len(layout[0])
+    alc = _alcance_em(layout, entrada)
+    chao = {(x, y) for y in range(hh) for x in range(ww) if layout[y][x] in "fP"}
     assert chao == alc, f"chão isolado: {sorted(chao - alc)}"
+    # Nada na frente da porta: a entrada e o tile acima dela ficam livres.
+    px, py = porta
+    assert layout[py - 1][px] in "fP" and layout[py - 2][px] in "fP", "porta bloqueada"
+
+
+def _alcance_em(layout, start):
+    hh, ww = len(layout), len(layout[0])
+    vis = {tuple(start)}
+    q = deque([tuple(start)])
+    while q:
+        x, y = q.popleft()
+        for nx, ny in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
+            if 0 <= nx < ww and 0 <= ny < hh and (nx, ny) not in vis and layout[ny][nx] in "fP":
+                vis.add((nx, ny))
+                q.append((nx, ny))
+    return vis
 
 
 def especiais(MAPS, extras=()):
@@ -286,6 +318,8 @@ def especiais(MAPS, extras=()):
                     fila.append((nx, ny))
         for x, y in pts:
             assert (x, y) in vis, f"{mid}: ponto {x},{y} sem acesso"
+        porta = next((x, y) for y, row in enumerate(layout) for x, ch in enumerate(row) if ch == "D")
+        validar(layout, start, porta)
         data["layout"] = layout
         data["decoracao"] = deco
         data["tema"] = modelo["tema"]
@@ -302,7 +336,11 @@ def build(MAPS, extras=()):
         n = int(mid.rsplit("_", 1)[1])
         ordem = POR_CIDADE.get(city, list(MODELOS))
         nome = ordem[(n - 1) % len(ordem)]
-        layout, deco = montar(nome)
+        fixos = [e for e in data.get("npcs", []) if e["id"].startswith("lar_x_")]
+        moradores = [e for e in data.get("npcs", []) if not e["id"].startswith("lar_x_")]
+        if vagas(MODELOS[nome]["planta"]) < len(moradores):
+            nome = next(k for k in ordem + list(MODELOS) if vagas(MODELOS[k]["planta"]) >= len(moradores))
+        layout, deco = montar(nome, camas=len(moradores))
         validar(layout)
         data["layout"] = layout
         data["decoracao"] = deco
@@ -310,8 +348,6 @@ def build(MAPS, extras=()):
         data["spawns"] = {"porta": list(ENTRADA)}
         for s in data.get("saidas", []):
             s["area"] = [PORTA[0], PORTA[1], 1, 1]
-        fixos = [e for e in data.get("npcs", []) if e["id"].startswith("lar_x_")]
-        moradores = [e for e in data.get("npcs", []) if not e["id"].startswith("lar_x_")]
         for e, p in zip(moradores, _lugares(layout, deco, len(moradores), mid)):
             e["pos"] = list(p)
         # Bilhetes e itens soltos: ao lado de uma mesa.

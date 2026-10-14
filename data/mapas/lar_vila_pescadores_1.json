@@ -12,8 +12,8 @@
   {
    "id": "lar_x_quito",
    "pos": [
-    4,
-    5
+    5,
+    4
    ]
   }
  ],
@@ -36,21 +36,30 @@
  "layout": [
   "wwwwwwwwwwwwww",
   "wwwwwwwwwwwwww",
-  "wmmfmffmwfmffw",
-  "wffffffffffmfw",
-  "wffffffffffmfw",
-  "wffmfffffwwwfw",
+  "wmmmmfwmffffmw",
+  "wfffffwmfffffw",
+  "wffmmfwmfffffw",
+  "wfffffwwwfwwww",
   "wffffffffffffw",
   "wmfffffffffffw",
-  "wmffffffffffmw",
+  "wmmfffffffffmw",
   "wmffffffffffmw",
   "wwwwwwwDwwwwww"
  ],
  "decoracao": [
   {
-   "s": "barril",
+   "s": "fogao",
    "area": [
     1,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "bacia",
+   "area": [
+    2,
     2,
     1,
     1
@@ -59,14 +68,14 @@
   {
    "s": "barril_agua",
    "area": [
-    2,
+    3,
     2,
     1,
     1
    ]
   },
   {
-   "s": "caixote",
+   "s": "barril",
    "area": [
     4,
     2,
@@ -75,37 +84,28 @@
    ]
   },
   {
-   "s": "estante_livros",
+   "s": "cama",
    "area": [
     7,
     2,
     1,
-    1
+    2
    ]
   },
   {
-   "s": "cama",
+   "s": "armario",
    "area": [
-    10,
+    12,
     2,
     1,
     1
-   ]
-  },
-  {
-   "s": "cama",
-   "area": [
-    11,
-    3,
-    1,
-    2
    ]
   },
   {
    "s": "banquinho",
    "area": [
     1,
-    5,
+    4,
     1,
     1
    ]
@@ -114,7 +114,16 @@
    "s": "mesa",
    "area": [
     3,
-    5,
+    4,
+    2,
+    1
+   ]
+  },
+  {
+   "s": "gaveteiro",
+   "area": [
+    7,
+    4,
     1,
     1
    ]
@@ -123,7 +132,7 @@
    "s": "banquinho",
    "area": [
     3,
-    6,
+    5,
     1,
     1
    ]
@@ -133,8 +142,8 @@
    "area": [
     1,
     7,
-    1,
-    1
+    2,
+    2
    ]
   },
   {
@@ -144,15 +153,6 @@
     7,
     3,
     2
-   ]
-  },
-  {
-   "s": "caixotes",
-   "area": [
-    1,
-    8,
-    1,
-    1
    ]
   },
   {
@@ -183,7 +183,7 @@
    ]
   },
   {
-   "s": "rede",
+   "s": "janela",
    "area": [
     3,
     1,
@@ -193,9 +193,19 @@
    "parede": true
   },
   {
+   "s": "rede",
+   "area": [
+    5,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
    "s": "janela",
    "area": [
-    6,
+    9,
     1,
     1,
     1

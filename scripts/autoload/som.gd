@@ -155,9 +155,9 @@ func sfx(sound: String, volume_db := 0.0, pitch_var := 0.06, min_gap := 0.04) ->
 ## Sons de interface (Kenney): toque, abrir, fechar, confirmar, erro.
 func ui(sound: String, volume_db := -4.0) -> void:
 	var now := Time.get_ticks_msec() / 1000.0
-	if now - float(_last.get("ui", -1.0)) < 0.05:
+	if now - float(_last.get("ui_" + sound, -1.0)) < 0.05:
 		return
-	_last["ui"] = now
+	_last["ui_" + sound] = now
 	_play(_load(UI_DIR + sound + ".ogg"), volume_db, 0.0)
 
 

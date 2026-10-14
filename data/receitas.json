@@ -30,6 +30,11 @@
    "a": "pele_cobra",
    "b": "carapaca_escorpiao",
    "r": "tunica_couro"
+  },
+  {
+   "a": "couro_hiena",
+   "b": "carapaca_escorpiao",
+   "r": "tunica_couro"
   }
  ]
 }

@@ -19,8 +19,8 @@
   {
    "id": "lar_davi",
    "pos": [
-    10,
-    2
+    12,
+    3
    ]
   }
  ],
@@ -43,13 +43,13 @@
  "layout": [
   "wwwwwwwwwwwwww",
   "wwwwwwwwwwwwww",
-  "wmfmwmfmfffmmw",
-  "wmfmwfffffffmw",
-  "wfffwfffffffmw",
-  "wwfwwffmmfffmw",
-  "wffffffmmffffw",
-  "wmfffffffffffw",
-  "wffffffffffmfw",
+  "wmfmffwfmmmmmw",
+  "wmfmffwffffffw",
+  "wmfffmwffmmffw",
+  "wwwfwwwffmmffw",
+  "wffffffffffffw",
+  "wmffffffffffmw",
+  "wmffffffffffmw",
   "wmffffffffffmw",
   "wwwwwwwDwwwwww"
  ],
@@ -73,25 +73,34 @@
    ]
   },
   {
-   "s": "estante_livros",
+   "s": "fogao",
    "area": [
-    5,
+    8,
     2,
     1,
     1
    ]
   },
   {
-   "s": "gaveteiro",
+   "s": "bacia",
    "area": [
-    7,
+    9,
     2,
     1,
     1
    ]
   },
   {
-   "s": "comoda",
+   "s": "barril",
+   "area": [
+    10,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "barril_agua",
    "area": [
     11,
     2,
@@ -100,18 +109,27 @@
    ]
   },
   {
-   "s": "fogao",
+   "s": "caixote",
    "area": [
     12,
     2,
     1,
-    2
+    1
    ]
   },
   {
-   "s": "bacia",
+   "s": "gaveteiro",
    "area": [
-    12,
+    1,
+    4,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "comoda",
+   "area": [
+    5,
     4,
     1,
     1
@@ -120,16 +138,16 @@
   {
    "s": "mesa_grande",
    "area": [
-    7,
-    5,
+    9,
+    4,
     2,
     2
    ]
   },
   {
-   "s": "barril_agua",
+   "s": "banquinho",
    "area": [
-    12,
+    8,
     5,
     1,
     1
@@ -139,7 +157,7 @@
    "s": "banquinho",
    "area": [
     11,
-    6,
+    5,
     1,
     1
    ]
@@ -154,19 +172,19 @@
    ]
   },
   {
-   "s": "tapete",
+   "s": "tapete_grande",
    "area": [
     4,
-    8,
-    2,
+    7,
+    4,
     2
    ]
   },
   {
-   "s": "caixote",
+   "s": "armario",
    "area": [
-    11,
-    8,
+    12,
+    7,
     1,
     1
    ]
@@ -175,13 +193,31 @@
    "s": "vaso_girassol",
    "area": [
     1,
-    9,
+    8,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "caixote",
+   "area": [
+    12,
+    8,
     1,
     1
    ]
   },
   {
    "s": "jarro",
+   "area": [
+    1,
+    9,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "jarro_azul",
    "area": [
     12,
     9,
@@ -202,7 +238,7 @@
   {
    "s": "quadro",
    "area": [
-    6,
+    4,
     1,
     1,
     1
@@ -213,6 +249,16 @@
    "s": "janela",
    "area": [
     9,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "quadro",
+   "area": [
+    11,
     1,
     1,
     1

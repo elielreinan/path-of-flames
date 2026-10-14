@@ -69,10 +69,9 @@ func _show(id: String) -> void:
 	for key in _tab_buttons:
 		var b: Button = _tab_buttons[key]
 		if key == id:
-			var on := UiKit.panel_style(Color(0.85, 0.5, 0.15))
-			on.set_content_margin_all(3)
+			var on := UiKit.selected_style()
 			b.add_theme_stylebox_override("normal", on)
 			b.add_theme_stylebox_override("hover", on)
 		else:
-			b.remove_theme_stylebox_override("normal")
-			b.remove_theme_stylebox_override("hover")
+			b.add_theme_stylebox_override("normal", UiKit.button_box())
+			b.add_theme_stylebox_override("hover", UiKit.button_box())

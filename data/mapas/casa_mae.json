@@ -92,13 +92,13 @@
  "layout": [
   "wwwwwwwwwwwwwwww",
   "wwwwwwwwwwwwwwww",
-  "wmmmfmfffffffmfw",
+  "wmmmmmfwfmfffmmw",
+  "wffffffwfmfffmmw",
+  "wffffffffffffffw",
+  "wfmmfffffffffffw",
+  "wfmmfffffffffmfw",
   "wmfffffffffffmfw",
-  "wfffffmmfffffmfw",
-  "wfffffmmfffffffw",
-  "wmfffffffffffffw",
-  "wmfffffffffffffw",
-  "wmffffffffffmfmw",
+  "wmffffffffffmmfw",
   "wwwwwwwDwwwwwwww"
  ],
  "organico": true,
@@ -109,11 +109,11 @@
     1,
     2,
     1,
-    2
+    1
    ]
   },
   {
-   "s": "estante_livros",
+   "s": "bacia",
    "area": [
     2,
     2,
@@ -122,7 +122,7 @@
    ]
   },
   {
-   "s": "gaveteiro",
+   "s": "barril_agua",
    "area": [
     3,
     2,
@@ -131,12 +131,30 @@
    ]
   },
   {
-   "s": "estante_livros",
+   "s": "barril",
+   "area": [
+    4,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "armario",
    "area": [
     5,
     2,
     1,
     1
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    9,
+    2,
+    1,
+    2
    ]
   },
   {
@@ -149,46 +167,37 @@
    ]
   },
   {
+   "s": "cama",
+   "area": [
+    14,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    1,
+    5,
+    1,
+    1
+   ]
+  },
+  {
    "s": "mesa_grande",
    "area": [
-    6,
-    4,
+    2,
+    5,
     2,
     2
    ]
   },
   {
-   "s": "comoda",
+   "s": "banquinho",
    "area": [
-    13,
     4,
-    1,
-    1
-   ]
-  },
-  {
-   "s": "banquinho",
-   "area": [
-    1,
     5,
-    1,
-    1
-   ]
-  },
-  {
-   "s": "banquinho",
-   "area": [
-    9,
-    5,
-    1,
-    1
-   ]
-  },
-  {
-   "s": "vaso_girassol",
-   "area": [
-    1,
-    6,
     1,
     1
    ]
@@ -196,14 +205,23 @@
   {
    "s": "tapete",
    "area": [
-    4,
+    5,
     6,
     6,
     2
    ]
   },
   {
-   "s": "barril_agua",
+   "s": "gaveteiro",
+   "area": [
+    13,
+    6,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_girassol",
    "area": [
     1,
     7,
@@ -212,7 +230,16 @@
    ]
   },
   {
-   "s": "jarro",
+   "s": "caixote",
+   "area": [
+    13,
+    7,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_flor",
    "area": [
     1,
     8,
@@ -221,7 +248,7 @@
    ]
   },
   {
-   "s": "caixote",
+   "s": "jarro_azul",
    "area": [
     12,
     8,
@@ -230,9 +257,9 @@
    ]
   },
   {
-   "s": "vaso_girassol",
+   "s": "comoda",
    "area": [
-    14,
+    13,
     8,
     1,
     1
@@ -241,7 +268,7 @@
   {
    "s": "janela",
    "area": [
-    4,
+    3,
     1,
     1,
     1
@@ -251,7 +278,7 @@
   {
    "s": "quadro",
    "area": [
-    8,
+    5,
     1,
     1,
     1
@@ -261,7 +288,7 @@
   {
    "s": "janela",
    "area": [
-    11,
+    10,
     1,
     1,
     1
@@ -271,7 +298,7 @@
   {
    "s": "espelho",
    "area": [
-    14,
+    12,
     1,
     1,
     1

@@ -100,8 +100,20 @@ func tall_sprites() -> Array[Sprite2D]:
 			s.centered = false
 			s.position = Vector2(x * TILE + TILE / 2.0, (y + 1) * TILE)
 			s.offset = Vector2(-floorf(tex.get_width() / 2.0), 2 - tex.get_height())
+			s.material = _sway_material()
 			out.append(s)
 	return out
+
+
+static var _sway: ShaderMaterial
+
+
+## Vento nas árvores: um material só para todas.
+static func _sway_material() -> ShaderMaterial:
+	if _sway == null:
+		_sway = ShaderMaterial.new()
+		_sway.shader = preload("res://shaders/balanco.gdshader")
+	return _sway
 
 
 func is_solid(cell: Vector2i) -> bool:
@@ -121,6 +133,11 @@ func terrain_at(pos: Vector2) -> String:
 func _ready() -> void:
 	z_index = -10
 	add_to_group("terreno")
+	# Ondas: só em mapas com água (o shader mexe nos pixels azulados do chão).
+	if "".join(PackedStringArray(rows)).contains(WATER):
+		var water := ShaderMaterial.new()
+		water.shader = preload("res://shaders/agua.gdshader")
+		material = water
 	_build_collision()
 
 

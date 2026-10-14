@@ -57,7 +57,7 @@ class SlotView extends Control:
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	var w := UiKit.window("Bolsa", Vector2(464, 258))
+	var w := UiKit.window("Bolsa", Vector2(464, 258), "bolsa")
 	add_child(w.root)
 	w.close.pressed.connect(func(): closed.emit())
 
@@ -153,13 +153,12 @@ func _show(tab: String) -> void:
 	for key in _tabs:
 		var b: Button = _tabs[key]
 		if key == tab:
-			var on := UiKit.panel_style(Color(0.85, 0.5, 0.15))
-			on.set_content_margin_all(3)
+			var on := UiKit.selected_style()
 			b.add_theme_stylebox_override("normal", on)
 			b.add_theme_stylebox_override("hover", on)
 		else:
-			b.remove_theme_stylebox_override("normal")
-			b.remove_theme_stylebox_override("hover")
+			b.add_theme_stylebox_override("normal", UiKit.button_box())
+			b.add_theme_stylebox_override("hover", UiKit.button_box())
 	_refresh()
 
 
@@ -185,9 +184,8 @@ func _refresh() -> void:
 	for currency in GameState.wallet:
 		money.append("%s %d" % [Data.currency_name(currency), GameState.money(currency)])
 	_money.text = "   ".join(money)
-	var class_text: String = GameState.CLASSES[GameState.classe].nome if GameState.classe != "" else "Sem classe"
-	_stats.text = "Nv %d  %s\nVida %d/%d\nAtaque %d  Defesa %d\nMagia %d\nHonra %d\n%s\n%s" % [
-		GameState.level, class_text, GameState.hp, GameState.max_hp(), GameState.attack_power(), GameState.defense(),
+	_stats.text = "Nv %d\nVida %d/%d\nAtaque %d  Defesa %d\nMagia %d\nHonra %d\n%s\n%s" % [
+		GameState.level, GameState.hp, GameState.max_hp(), GameState.attack_power(), GameState.defense(),
 		GameState.magic_power(), GameState.honra, GameState.honor_title(), GameState.rank()]
 
 	if _tab != "bolsa":

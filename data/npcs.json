@@ -2327,29 +2327,10 @@
   },
   "falas": [
    {
-    "dialogo": "lar_zaira_guerreiro",
-    "se": {
-     "classe": "guerreiro"
-    }
-   },
-   {
-    "dialogo": "lar_zaira_feiticeiro",
-    "se": {
-     "classe": "feiticeiro"
-    }
-   },
-   {
-    "dialogo": "lar_zaira_clerigo",
-    "se": {
-     "classe": "clerigo"
-    }
-   },
-   {
-    "dialogo": "lar_zaira_escolha",
+    "dialogo": "lar_zaira_conselho",
     "se": {
      "nivel": 10
-    },
-    "importante": true
+    }
    },
    {
     "dialogo": "lar_zaira_cedo"

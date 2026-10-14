@@ -23,7 +23,7 @@
   "cura": 24,
   "preco": 10,
   "descricao": "Um gole amargo que fecha feridas leves.",
-  "sprite": "res://assets/pocao.png",
+  "sprite": "res://assets/itens/pocao_pequena.png",
   "pilha": 5
  },
  "pocao_media": {
@@ -32,7 +32,7 @@
   "cura": 60,
   "preco": 30,
   "descricao": "Preparada pelos alquimistas de Miraj.",
-  "sprite": "res://assets/pocao.png",
+  "sprite": "res://assets/itens/pocao_media.png",
   "pilha": 5
  },
  "pocao_grande": {
@@ -41,7 +41,7 @@
   "cura": 135,
   "preco": 80,
   "descricao": "Brilha em vermelho vivo.",
-  "sprite": "res://assets/pocao.png",
+  "sprite": "res://assets/itens/pocao_grande.png",
   "raro": true,
   "pilha": 5
  },
@@ -51,7 +51,7 @@
   "cura": 999,
   "preco": 250,
   "descricao": "Restaura toda a vida.",
-  "sprite": "res://assets/pocao.png",
+  "sprite": "res://assets/itens/elixir.png",
   "raro": true,
   "cura_status": true,
   "pilha": 5
@@ -66,7 +66,8 @@
   "tam": [
    1,
    3
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/espada_madeira.png"
  },
  "espada_bronze": {
   "nome": "Espada de Bronze",
@@ -78,7 +79,8 @@
   "tam": [
    1,
    3
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/espada_bronze.png"
  },
  "espada_ferro": {
   "nome": "Espada de Ferro",
@@ -90,7 +92,8 @@
   "tam": [
    1,
    3
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/espada_ferro.png"
  },
  "cimitarra": {
   "nome": "Cimitarra de Miraj",
@@ -102,7 +105,8 @@
   "tam": [
    1,
    3
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/cimitarra.png"
  },
  "lamina_coral": {
   "nome": "Lâmina de Coral",
@@ -114,7 +118,8 @@
   "tam": [
    1,
    3
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/lamina_coral.png"
  },
  "espada_vento": {
   "nome": "Espada do Vento",
@@ -126,7 +131,8 @@
   "tam": [
    1,
    3
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/espada_vento.png"
  },
  "lamina_qadim": {
   "nome": "Lâmina de Qadim",
@@ -138,7 +144,8 @@
   "tam": [
    1,
    3
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/lamina_qadim.png"
  },
  "espada_sal": {
   "nome": "Espada da Cidadela",
@@ -150,7 +157,8 @@
   "tam": [
    1,
    3
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/espada_sal.png"
  },
  "chama_de_kadir": {
   "nome": "Chama de Kadir",
@@ -163,14 +171,15 @@
   "tam": [
    1,
    3
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/chama_de_kadir.png"
  },
  "carapaca_escorpiao": {
   "nome": "Carapaça de Escorpião",
   "tipo": "material",
   "preco": 6,
   "descricao": "Dura como couro curtido.",
-  "sprite": "res://assets/carapaca.png",
+  "sprite": "res://assets/itens/carapaca_escorpiao.png",
   "pilha": 10
  },
  "pele_cobra": {
@@ -194,7 +203,7 @@
   "tipo": "material",
   "preco": 4,
   "descricao": "Flor roxa que nasce entre as pedras.",
-  "sprite": "res://assets/erva.png",
+  "sprite": "res://assets/itens/erva_do_deserto.png",
   "pilha": 10
  },
  "lenco_bandido": {
@@ -210,42 +219,42 @@
   "tipo": "missao",
   "preco": 0,
   "descricao": "Um pedaço da Chama Sagrada de Areia Rubra, ainda quente.",
-  "sprite": "res://assets/fragmento.png"
+  "sprite": "res://assets/itens/fragmento_chama.png"
  },
  "carta_kadir": {
   "nome": "Carta de Kadir",
   "tipo": "missao",
   "preco": 0,
   "descricao": "\"Zahrak está vindo. Procure Nadia em Miraj.\" - K.",
-  "sprite": "res://assets/itens/carta.png"
+  "sprite": "res://assets/itens/carta_kadir.png"
  },
  "carta_layla": {
   "nome": "Carta de Layla",
   "tipo": "missao",
   "preco": 0,
   "descricao": "Perfumada com água de rosas. Para Hassan.",
-  "sprite": "res://assets/itens/carta.png"
+  "sprite": "res://assets/itens/carta_layla.png"
  },
  "pergaminho_chama": {
   "nome": "Pergaminho da Chama",
   "tipo": "chave",
   "preco": 0,
   "descricao": "Ensina a lançar bolas de fogo (botão FOGO).",
-  "sprite": "res://assets/itens/pergaminho.png"
+  "sprite": "res://assets/itens/pergaminho_chama.png"
  },
  "amuleto_kadir": {
   "nome": "Amuleto de Kadir",
   "tipo": "chave",
   "preco": 0,
   "descricao": "Presente de Samira. Era do seu pai.",
-  "sprite": "res://assets/itens/amuleto.png"
+  "sprite": "res://assets/itens/amuleto_kadir.png"
  },
  "flor_lotus": {
   "nome": "Flor de Lótus",
   "tipo": "missao",
   "preco": 0,
   "descricao": "Cresce só na água pura da nascente.",
-  "sprite": "res://assets/lotus.png"
+  "sprite": "res://assets/itens/flor_lotus.png"
  },
  "cantil": {
   "nome": "Cantil de Água",
@@ -258,14 +267,15 @@
    1,
    2
   ],
-  "pilha": 5
+  "pilha": 5,
+  "sprite_grade": "res://assets/itens/grade/cantil.png"
  },
  "mapa_tesouro": {
   "nome": "Mapa do Tesouro",
   "tipo": "missao",
   "preco": 0,
   "descricao": "Um X vermelho marca um ponto perto do Porto Coral.",
-  "sprite": "res://assets/itens/mapa.png"
+  "sprite": "res://assets/itens/mapa_tesouro.png"
  },
  "peixe": {
   "nome": "Peixe Fresco",
@@ -273,7 +283,7 @@
   "cura": 18,
   "preco": 6,
   "descricao": "Ainda está se mexendo.",
-  "sprite": "res://assets/peixe.png",
+  "sprite": "res://assets/itens/peixe.png",
   "pilha": 5
  },
  "sino_vento": {
@@ -281,14 +291,14 @@
   "tipo": "missao",
   "preco": 0,
   "descricao": "Toca sozinho quando o vento passa.",
-  "sprite": "res://assets/sino.png"
+  "sprite": "res://assets/itens/sino_vento.png"
  },
  "engrenagem": {
   "nome": "Engrenagem",
   "tipo": "material",
   "preco": 15,
   "descricao": "Peça de máquina com a marca de Zahrak.",
-  "sprite": "res://assets/engrenagem.png",
+  "sprite": "res://assets/itens/engrenagem.png",
   "pilha": 10
  },
  "livro_perdido": {
@@ -296,14 +306,14 @@
   "tipo": "missao",
   "preco": 0,
   "descricao": "Um volume antigo da Grande Biblioteca.",
-  "sprite": "res://assets/livro.png"
+  "sprite": "res://assets/itens/livro_perdido.png"
  },
  "livro_chamas": {
   "nome": "Livro das Chamas",
   "tipo": "missao",
   "preco": 0,
   "descricao": "Conta como as Sete Chamas foram acesas e como podem ser salvas.",
-  "sprite": "res://assets/livro.png"
+  "sprite": "res://assets/itens/livro_chamas.png"
  },
  "placa_aco": {
   "nome": "Placa de Aço",
@@ -318,7 +328,7 @@
   "tipo": "material",
   "preco": 18,
   "descricao": "Leve e resistente. Os mercadores pagam bem.",
-  "sprite": "res://assets/pena.png",
+  "sprite": "res://assets/itens/pena_aguia.png",
   "pilha": 10
  },
  "essencia_sombria": {
@@ -327,7 +337,7 @@
   "preco": 40,
   "raro": true,
   "descricao": "Um resto frio da magia de Zahrak.",
-  "sprite": "res://assets/essencia.png",
+  "sprite": "res://assets/itens/essencia_sombria.png",
   "pilha": 10
  },
  "fragmento_cristal": {
@@ -336,7 +346,7 @@
   "preco": 30,
   "raro": true,
   "descricao": "Brilha mesmo no escuro.",
-  "sprite": "res://assets/cristal.png",
+  "sprite": "res://assets/itens/fragmento_cristal.png",
   "pilha": 10
  },
  "antidoto": {
@@ -345,7 +355,7 @@
   "preco": 8,
   "cura_status": true,
   "descricao": "Tira veneno, queimadura e lentidão.",
-  "sprite": "res://assets/antidoto.png",
+  "sprite": "res://assets/itens/antidoto.png",
   "pilha": 5
  },
  "tunica_couro": {
@@ -358,7 +368,8 @@
   "tam": [
    2,
    2
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/tunica_couro.png"
  },
  "cota_malha": {
   "nome": "Cota de Malha",
@@ -370,7 +381,8 @@
   "tam": [
    2,
    2
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/cota_malha.png"
  },
  "armadura_coral": {
   "nome": "Armadura de Coral",
@@ -382,7 +394,8 @@
   "tam": [
    2,
    2
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/armadura_coral.png"
  },
  "armadura_vento": {
   "nome": "Armadura do Vento",
@@ -394,7 +407,8 @@
   "tam": [
    2,
    2
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/armadura_vento.png"
  },
  "armadura_sal": {
   "nome": "Armadura de Sal",
@@ -406,14 +420,15 @@
   "tam": [
    2,
    2
-  ]
+  ],
+  "sprite_grade": "res://assets/itens/grade/armadura_sal.png"
  },
  "bolsa_couro": {
   "nome": "Bolsa de Couro",
   "tipo": "bolsa",
   "nivel": 1,
   "preco": 60,
-  "sprite": "res://assets/itens/bolsa.png",
+  "sprite": "res://assets/itens/bolsa_couro.png",
   "descricao": "Mais espaço na bolsa: 7 x 4.",
   "vendavel": false
  },
@@ -422,7 +437,7 @@
   "tipo": "bolsa",
   "nivel": 2,
   "preco": 400,
-  "sprite": "res://assets/itens/bolsa.png",
+  "sprite": "res://assets/itens/bolsa_viajante.png",
   "descricao": "Muito mais espaço na bolsa: 8 x 5.",
   "vendavel": false
  },
@@ -456,6 +471,38 @@
   "tipo": "material",
   "preco": 900,
   "descricao": "Um volume de capa de ouro da Grande Biblioteca de Qadim. Um colecionador pagaria uma fortuna por ele.",
-  "sprite": "res://assets/livro.png"
+  "sprite": "res://assets/itens/livro_raro.png"
+ },
+ "couro_hiena": {
+  "nome": "Couro de Hiena",
+  "tipo": "material",
+  "preco": 9,
+  "descricao": "Grosso e malhado. Os curtidores de Miraj compram.",
+  "sprite": "res://assets/itens/couro_hiena.png",
+  "pilha": 10
+ },
+ "escama_calango": {
+  "nome": "Escama de Calango",
+  "tipo": "material",
+  "preco": 7,
+  "descricao": "Dourada como o sol das dunas.",
+  "sprite": "res://assets/itens/escama_calango.png",
+  "pilha": 10
+ },
+ "pele_sapo": {
+  "nome": "Pele de Sapo",
+  "tipo": "material",
+  "preco": 5,
+  "descricao": "Úmida e meio grudenta. Dizem que serve para unguentos.",
+  "sprite": "res://assets/itens/pele_sapo.png",
+  "pilha": 10
+ },
+ "garra_caranguejo": {
+  "nome": "Garra de Caranguejo",
+  "tipo": "material",
+  "preco": 6,
+  "descricao": "Dura como pedra. Ainda belisca, se bobear.",
+  "sprite": "res://assets/itens/garra_caranguejo.png",
+  "pilha": 10
  }
 }

@@ -110,6 +110,7 @@ func _use_pattern(pattern: String, to_target: Vector2) -> void:
 			_spiral_timer = 0.0
 			_spiral_angle = to_target.angle()
 		"onda":
+			Som.sfx("chefe_impacto", -3.0, 0.05)
 			var wave := Shockwave.new()
 			wave.target = target
 			wave.damage = damage

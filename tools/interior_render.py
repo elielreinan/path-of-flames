@@ -4,6 +4,8 @@ import hashlib
 import numpy as np
 from PIL import Image, ImageDraw
 
+import cenario_extra as extra
+
 T = 16
 OL = (23, 20, 36)
 
@@ -178,10 +180,26 @@ class Interior:
             c = [(230, 120, 60), (120, 190, 90), (240, 210, 90), (200, 80, 80)][i % 4]
             d.ellipse([xx, y0 - 2, xx + 4, y0 + 2], fill=c, outline=OL)
 
+    def sombra(self, img, cx_, by, larg):
+        sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(sh).ellipse([cx_ - larg // 2, by - 4, cx_ + larg // 2, by], fill=(30, 16, 30, 60))
+        img.alpha_composite(sh)
+
     def movel(self, img, nome, area, ocup):
         x, y, w, h = area
         if nome == "balcao":
             return self.balcao(img, area)
+        if nome == "estante_livros":
+            # Estante contínua do tamanho do bloco, um pouco mais alta que o tile (encosta na parede).
+            s = extra.estante(w * T, _h(x, y, w), alt=h * T + 8)
+            self.sombra(img, x * T + w * T // 2, (y + h) * T, w * T)
+            img.alpha_composite(s, (x * T, (y + h) * T - s.height))
+            return
+        if nome == "trono":
+            s = extra.trono()
+            self.sombra(img, x * T + w * T // 2, (y + h) * T, s.width)
+            img.alpha_composite(s, (x * T + (w * T - s.width) // 2, (y + h) * T - s.height + 1))
+            return
         if nome in ("tapete", "tapete_grande") or nome not in SPR:
             return
         s = self.spr(nome)
@@ -206,6 +224,21 @@ class Interior:
                     self.porta(img, x, y, tema, map_id)
                 elif ch in "fmPEbKh":
                     self.piso(img, x, y, tema, map_id)
+        # Biblioteca: as paredes de trás viram estantes embutidas.
+        if "biblioteca" in map_id:
+            for y in range(h - 1):
+                x = 0
+                while x < w:
+                    face = lambda xx: g[y][xx] == "w" and g[y + 1][xx] not in "wD" and (y == 0 or g[y - 1][xx] in "wD")
+                    if face(x):
+                        x1 = x
+                        while x1 + 1 < w and face(x1 + 1):
+                            x1 += 1
+                        s = extra.estante((x1 - x + 1) * T, _h(map_id, x, y), alt=T - 1, cheia=0.9)
+                        img.alpha_composite(s, (x * T, y * T))
+                        x = x1 + 1
+                    else:
+                        x += 1
         # Carpete 'P' do layout: vira tapete contínuo.
         vis = set()
         for y in range(h):
@@ -241,11 +274,16 @@ class Interior:
                         continue
                     alto = 2 if y + 1 < h and g[y + 1][x] == "b" else 1
                     deco.append({"s": "cama", "area": [x, y, 1, alto]})
+                elif ch == "E":
+                    # Fileira de 'E' vira uma estante comprida só.
+                    if x > 0 and g[y][x - 1] == "E" and (x - 1, y) not in cobertos:
+                        continue
+                    x1 = x
+                    while x1 + 1 < w and g[y][x1 + 1] == "E":
+                        x1 += 1
+                    deco.append({"s": "estante_livros", "area": [x, y, x1 - x + 1, 1]})
                 elif ch in antigos:
-                    nome = antigos[ch]
-                    if ch == "E" and (x + y) % 2:
-                        nome = "estante_cores"
-                    deco.append({"s": nome, "area": [x, y, 1, 1]})
+                    deco.append({"s": antigos[ch], "area": [x, y, 1, 1]})
         # Luz das janelas no chão, depois tapetes, depois móveis de trás para frente.
         for dd in deco:
             if dd.get("parede") and dd["s"] == "janela":

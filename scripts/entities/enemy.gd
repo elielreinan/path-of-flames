@@ -255,6 +255,7 @@ func _lunge(delta: float, to_target: Vector2, speed: float) -> Vector2:
 			_lunge_dir = to_target.normalized()
 		if _state_timer <= 0.0:
 			_attack_state = "bote"
+			Som.sfx("espada_2" if _skin else "inimigo_dano", -12.0, 0.15)
 			_state_timer = 0.22
 		return Vector2.ZERO
 	if _state_timer <= 0.0:
@@ -350,7 +351,7 @@ func _hurt(amount: int) -> void:
 	_flash_timer = 0.1
 	_show_bar_timer = 2.0
 	if hp > 0:
-		Som.sfx("acerto", -4.0, 0.1)
+		Som.sfx("acerto_metal" if data.get("aparencia", {}).get("corpo", "") == "armadura" else "acerto", -4.0, 0.1)
 		if _creature:
 			_creature.play("dano", true)
 	else:

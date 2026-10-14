@@ -34,8 +34,17 @@ func _gui_input(event: InputEvent) -> void:
 		accept_event()
 
 
-static func texture_for(id: String) -> Texture2D:
-	var path: String = Data.item(id).get("sprite", "")
+## grid = desenho grande da bolsa (itens com "tam"), quando existe.
+static func _slot(name: String) -> Texture2D:
+	var path := "res://assets/ui/paineis/%s.png" % name
+	if not _textures.has(path):
+		_textures[path] = load(path) if ResourceLoader.exists(path) else null
+	return _textures[path]
+
+
+static func texture_for(id: String, grid := false) -> Texture2D:
+	var item: Dictionary = Data.item(id)
+	var path: String = item.get("sprite_grade", item.get("sprite", "")) if grid else item.get("sprite", "")
 	if path == "":
 		return null
 	if not _textures.has(path):
@@ -45,7 +54,7 @@ static func texture_for(id: String) -> Texture2D:
 
 ## Desenha o ícone de um item dentro de um retângulo, girando 90° quando preciso.
 static func draw_item(canvas: CanvasItem, id: String, rect: Rect2, rotated := false) -> void:
-	var tex := texture_for(id)
+	var tex := texture_for(id, true)
 	var inner := rect.grow(-2)
 	if tex == null:
 		canvas.draw_rect(inner, Color(0.45, 0.35, 0.25))
@@ -69,12 +78,18 @@ func _draw() -> void:
 		for x in size_cells.x:
 			var r := Rect2(Vector2(x, y) * CELL, Vector2(CELL, CELL))
 			var color := Color(0.2, 0.15, 0.12)
+			var slot := "slot_normal"
 			if mode == "mover" and not selected.is_empty() and GameState.fits(selected.id, Vector2i(x, y), move_rotated, selected):
 				color = Color(0.2, 0.4, 0.2)
-			draw_rect(r.grow(-1), color)
+				slot = "slot_mover"
+			var tex := _slot(slot)
+			if tex:
+				draw_texture_rect(tex, r, false)
+			else:
+				draw_rect(r.grow(-1), color)
 	for entry in GameState.grid:
 		var rect := Rect2(Vector2(GameState.entry_rect(entry).position) * CELL, Vector2(GameState.entry_rect(entry).size) * CELL)
-		var bg := Color(0.38, 0.28, 0.2) if not Data.item(entry.id).get("raro", false) else Color(0.42, 0.3, 0.48)
+		var bg := Color(0.38, 0.28, 0.2, 0.6) if not Data.item(entry.id).get("raro", false) else Color(0.42, 0.3, 0.48, 0.7)
 		draw_rect(rect.grow(-1), bg)
 		BagGrid.draw_item(self, entry.id, rect, entry.get("r", false))
 		if int(entry.n) > 1:

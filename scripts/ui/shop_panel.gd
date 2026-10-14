@@ -102,7 +102,9 @@ func _refresh() -> void:
 
 
 func _buy(id: String) -> void:
-	if GameState.spend(_shop.moeda, _price(id)):
+	if not GameState.spend(_shop.moeda, _price(id)):
+		Som.ui("erro")
+	else:
 		Som.sfx("comprar", -4.0)
 		var data := Data.item(id)
 		if data.get("tipo") == "montaria":

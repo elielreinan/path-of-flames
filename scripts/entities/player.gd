@@ -141,7 +141,10 @@ func _physics_process(delta: float) -> void:
 			# A folha da montaria já anima o passo; o Ifrit senta na sela e acompanha.
 			var ride := _mount_sprite as CreatureSprite
 			ride.move_anim = "correr" if velocity.length() > SPEED * 1.25 else "andar"
-			ride.flip_h = facing.x < -0.1 or (absf(facing.x) <= 0.1 and ride.flip_h)
+			if ride.directional():
+				ride.face(facing)
+			else:
+				ride.flip_h = facing.x < -0.1 or (absf(facing.x) <= 0.1 and ride.flip_h)
 			var seat := ride.saddle()
 			_sprite.position = Vector2(seat.x, seat.y + 6.0 + (1.0 if ride.anim != "parado" and ride.anim_frame % 2 == 1 else 0.0))
 		else:
@@ -180,7 +183,9 @@ func _update_animation() -> void:
 func face(direction: Vector2) -> void:
 	facing = direction.normalized()
 	_sprite.set_direction(facing)
-	if absf(facing.x) > 0.1:
+	if _mount_sprite is CreatureSprite and (_mount_sprite as CreatureSprite).directional():
+		(_mount_sprite as CreatureSprite).face(facing)
+	elif absf(facing.x) > 0.1:
 		if _mount_sprite is CreatureSprite:
 			_mount_sprite.flip_h = facing.x < 0
 		else:
@@ -280,7 +285,11 @@ func set_mounted(value: bool, announce := true) -> void:
 		var info := Data.mount(GameState.mount)
 		_set_mount_node(CreatureSprite.create(info.criatura) if CreatureSprite.has(info.get("criatura", "")) else Sprite2D.new())
 		if _mount_sprite is CreatureSprite:
-			_mount_sprite.flip_h = facing.x < 0
+			var ride := _mount_sprite as CreatureSprite
+			if ride.directional():
+				ride.face(facing)
+			else:
+				ride.flip_h = facing.x < 0
 		else:
 			_mount_sprite.texture = load(info.sprite)
 			_mount_sprite.offset = Vector2(0, -_mount_sprite.texture.get_height() / 2.0 + 3)
@@ -291,15 +300,23 @@ func set_mounted(value: bool, announce := true) -> void:
 		_sprite.position = Vector2.ZERO
 	if not value:
 		_mount_sprite.position.y = 0.0
+		if _mount_sprite is CreatureSprite and (_mount_sprite as CreatureSprite).front:
+			(_mount_sprite as CreatureSprite).front.visible = false
 
 
 ## Troca o nó da montaria (folha animada nova ou sprite antigo), mantendo-o atrás do Ifrit.
 func _set_mount_node(node: Sprite2D) -> void:
 	var index := _mount_sprite.get_index()
+	if _mount_sprite is CreatureSprite and (_mount_sprite as CreatureSprite).front:
+		(_mount_sprite as CreatureSprite).front.queue_free()
 	_mount_sprite.queue_free()
 	_mount_sprite = node
 	add_child(node)
 	move_child(node, index)
+	# Cabeça da montaria de frente fica por cima do Ifrit.
+	if node is CreatureSprite and (node as CreatureSprite).front:
+		add_child((node as CreatureSprite).front)
+		move_child((node as CreatureSprite).front, _sprite.get_index() + 1)
 
 
 func _spawn_ghost() -> void:
@@ -349,6 +366,7 @@ func shoot_fireball() -> void:
 	fireball.damage = GameState.magic_power()
 	fireball.spin = true
 	fireball.effect = "queimadura"
+	fireball.fiery = true
 	Som.sfx("fogo", -3.0)
 	fireball.global_position = global_position + facing * 8.0 + Vector2(0, -4)
 	get_parent().add_child(fireball)

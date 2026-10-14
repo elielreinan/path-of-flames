@@ -11,6 +11,7 @@ var cell := Vector2i.ZERO
 var _push := 0.0
 var _push_dir := Vector2i.ZERO
 var _moving := false
+var _stone: Texture2D = load("res://assets/pedra_empurravel.png") if ResourceLoader.exists("res://assets/pedra_empurravel.png") else null
 
 
 func _ready() -> void:
@@ -72,7 +73,10 @@ func _try_move(dir: Vector2i) -> void:
 
 
 func _draw() -> void:
-	# Pedra redonda com sombra e rachaduras.
+	# Pedra desenhada (fio de Artes), pé em (8,14); se faltar, a redonda em código.
+	if _stone:
+		draw_texture(_stone, Vector2(-8, -14 + 6))
+		return
 	draw_circle(Vector2(0, 4), 7.5, Color(0, 0, 0, 0.3))
 	draw_circle(Vector2(0, 0), 7.5, Color(0.45, 0.38, 0.32))
 	draw_circle(Vector2(-2, -2), 5.0, Color(0.58, 0.5, 0.42))

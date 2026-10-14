@@ -10,15 +10,8 @@ signal leveled_up(level: int)
 signal status_cured
 signal rank_changed(rank_name: String)
 
-## Classes: só dá para escolher uma, e é para sempre.
-const CLASSES := {
-	"guerreiro": {"nome": "Guerreiro", "descricao": "Golpe 30% mais forte, +12 de vida e Fúria que enche mais rápido.",
-		"ataque": 1.3, "vida": 12, "furia": 1.35},
-	"feiticeiro": {"nome": "Feiticeiro", "descricao": "Magia 50% mais forte e bola de fogo que recarga quase na metade do tempo.",
-		"magia": 1.5, "fogo": 0.55},
-	"clerigo": {"nome": "Clérigo", "descricao": "Recupera vida aos poucos, poções curam 50% a mais e não é envenenado.",
-		"regen": 4.0, "cura": 1.5, "imune": "veneno"},
-}
+## Classes foram retiradas na 0.9.9 (pedido do Eliel); fica vazio para os bônus valerem 1.
+const CLASSES := {}
 ## Hierarquia por feitos: [pontos mínimos, título].
 const RANKS := [[0, "Aprendiz"], [25, "Andarilho"], [70, "Guardião"], [130, "Campeão"], [200, "Lenda das Chamas"]]
 ## Honra: [mínimo, título].
@@ -174,6 +167,7 @@ func find_secret(id: String) -> void:
 	if has_flag(flag):
 		return
 	set_flag(flag)
+	Som.ui("confirmar", -2.0)
 	toast.emit("Segredo encontrado! (%d/%d)" % [secrets_found(), Data.secrets.size()])
 
 
@@ -925,7 +919,8 @@ func load_game() -> bool:
 	spawn_id = data.spawn_id
 	quick_item = data.get("quick_item", "pocao_pequena")
 	honra = int(data.get("honra", 50))
-	classe = data.get("classe", "")
+	# Sem classes desde a 0.9.9: saves antigos perdem a ordem escolhida.
+	classe = ""
 	visited = data.get("visitados", {})
 	if not data.has("visitados"):
 		_guess_visited()

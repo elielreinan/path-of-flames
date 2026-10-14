@@ -53,8 +53,7 @@ func _choice_row(text: String, key: String) -> void:
 	for i in options.size():
 		var b := UiKit.button(options[i], 9)
 		if i == Settings.get_value(key):
-			var on := UiKit.panel_style(Color(0.85, 0.5, 0.15))
-			on.set_content_margin_all(3)
+			var on := UiKit.selected_style()
 			b.add_theme_stylebox_override("normal", on)
 			b.add_theme_stylebox_override("hover", on)
 		var index := i

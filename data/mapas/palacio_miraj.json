@@ -42,14 +42,14 @@
  "layout": [
   "wwwwwwwwwwwwwwwwwwww",
   "wwwwwwwwwwwwwwwwwwww",
-  "wmmmffmffffffmfmfmfw",
-  "wffffffffffffffffmfw",
-  "wfmmffffffffffffffmw",
+  "wmmmmfmffmffmfwmmfmw",
+  "wfffffffffffffwfmffw",
+  "wfmmffffffffffwfffmw",
   "wfmmfffffffffffffffw",
-  "wffffffffffffffffffw",
-  "wmffffffffffffffffmw",
   "wmfffffffffffffffffw",
-  "wmffffmffffffmffffmw",
+  "wmfffffmfffmffffffmw",
+  "wmffffffffffffffffmw",
+  "wmfffffmfffmffffffmw",
   "wffffffffffffffffffw",
   "wwwwwwwwwDwwwwwwwwww"
  ],
@@ -60,25 +60,7 @@
    "area": [
     1,
     2,
-    1,
-    1
-   ]
-  },
-  {
-   "s": "estante_livros",
-   "area": [
-    2,
-    2,
-    1,
-    1
-   ]
-  },
-  {
-   "s": "estante_livros",
-   "area": [
-    3,
-    2,
-    1,
+    4,
     1
    ]
   },
@@ -92,18 +74,18 @@
    ]
   },
   {
-   "s": "tapete_grande",
+   "s": "trono",
    "area": [
-    7,
+    9,
     2,
-    6,
-    8
+    1,
+    1
    ]
   },
   {
    "s": "vaso_girassol",
    "area": [
-    13,
+    12,
     2,
     1,
     1
@@ -121,10 +103,28 @@
   {
    "s": "cama",
    "area": [
-    17,
+    16,
     2,
     1,
     2
+   ]
+  },
+  {
+   "s": "gaveteiro",
+   "area": [
+    18,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "tapete_grande",
+   "area": [
+    8,
+    3,
+    3,
+    8
    ]
   },
   {
@@ -155,9 +155,36 @@
    ]
   },
   {
+   "s": "bacia",
+   "area": [
+    1,
+    6,
+    1,
+    1
+   ]
+  },
+  {
    "s": "vaso_girassol",
    "area": [
     1,
+    7,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_flor",
+   "area": [
+    7,
+    7,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "vaso_flor",
+   "area": [
+    11,
     7,
     1,
     1
@@ -182,6 +209,15 @@
    ]
   },
   {
+   "s": "jarro_azul",
+   "area": [
+    18,
+    8,
+    1,
+    1
+   ]
+  },
+  {
    "s": "vaso_flor",
    "area": [
     1,
@@ -193,7 +229,7 @@
   {
    "s": "vaso_girassol",
    "area": [
-    6,
+    7,
     9,
     1,
     1
@@ -202,7 +238,7 @@
   {
    "s": "vaso_girassol",
    "area": [
-    13,
+    11,
     9,
     1,
     1
@@ -220,7 +256,7 @@
   {
    "s": "janela",
    "area": [
-    3,
+    2,
     1,
     1,
     1
@@ -230,17 +266,7 @@
   {
    "s": "quadro",
    "area": [
-    6,
-    1,
-    1,
-    1
-   ],
-   "parede": true
-  },
-  {
-   "s": "janela",
-   "area": [
-    9,
+    7,
     1,
     1,
     1
@@ -250,7 +276,7 @@
   {
    "s": "quadro",
    "area": [
-    13,
+    11,
     1,
     1,
     1

@@ -86,7 +86,7 @@
   "recuo": 0.6,
   "raio_aggro": 90,
   "drops": {
-   "tamara": 0.2
+   "escama_calango": 0.35
   },
   "nivel": 6,
   "ia": "cacador",
@@ -187,8 +187,8 @@
   "sprite": "res://assets/hiena.png",
   "raio_aggro": 100,
   "drops": {
-   "tamara": 0.2,
-   "pele_cobra": 0.15
+   "couro_hiena": 0.35,
+   "carne_seca": 0.1
   },
   "nivel": 18,
   "ia": "matilha",
@@ -208,6 +208,7 @@
   ],
   "sprite": "res://assets/sapo.png",
   "drops": {
+   "pele_sapo": 0.35,
    "pocao_pequena": 0.1
   },
   "nivel": 20,
@@ -288,7 +289,8 @@
   ],
   "sprite": "res://assets/caranguejo.png",
   "drops": {
-   "peixe": 0.4
+   "peixe": 0.4,
+   "garra_caranguejo": 0.2
   },
   "nivel": 25,
   "ia": "tanque",

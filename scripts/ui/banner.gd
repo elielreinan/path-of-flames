@@ -19,6 +19,8 @@ var headline := ""    # nome grande
 var details: Array = []  # linhas pequenas embaixo
 var chapter := 0      # para acender as chamas do progresso
 var hold := 2.6
+## Chefe grande que entra pela esquerda como sombra e se revela com um clarão (só BOSS_INTRO).
+var figure: Node2D
 
 var _bars := 0.0       # 0..1 faixas de cinema
 var _glow := 0.0       # brilho dos raios / ornamentos
@@ -28,6 +30,9 @@ var _labels: Array[Label] = []
 var _tween: Tween
 var _done := false
 var _motes: Array = []
+## Texto desviado para a direita quando há figura do chefe.
+var _shift := 0.0
+var _figure_base := Vector2.ZERO
 
 
 func _ready() -> void:
@@ -36,6 +41,11 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	var accent := _accent()
 	var mid := _mid()
+	if figure and kind == Kind.BOSS_INTRO:
+		_setup_figure(mid)
+	elif figure:
+		figure.queue_free()
+		figure = null
 	_labels.append(_label(kicker, 10, accent, mid - 36.0, 4))
 	_labels.append(_label(headline, 26 if kind == Kind.CHAPTER else 22, Color(1, 0.96, 0.88), mid - 24.0, 6))
 	var dy := mid + 27.0
@@ -57,8 +67,42 @@ func _ready() -> void:
 		_tween.parallel().tween_property(l, "modulate:a", 1.0, 0.5).set_delay(0.15 * i)
 		_tween.parallel().tween_property(l, "position:x", l.position.x + 12.0, 0.6).from(l.position.x).set_delay(0.15 * i) \
 			.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
+	if figure:
+		hold += 0.8
 	_tween.tween_interval(hold)
 	_tween.tween_callback(_close)
+
+
+func _setup_figure(mid: float) -> void:
+	var w := get_viewport_rect().size.x
+	_shift = minf(w * 0.14, 75.0)
+	var height := 18.0
+	if figure is CreatureSprite:
+		height = (figure as CreatureSprite).visible_height()
+	elif figure is SkinSprite:
+		height = SkinSprite.HEIGHT + 8.0
+	elif figure is Sprite2D and (figure as Sprite2D).texture:
+		height = (figure as Sprite2D).texture.get_height()
+	figure.scale = Vector2.ONE * clampf(round(105.0 / height), 1.0, 6.0)
+	_figure_base = Vector2(w / 2.0 - _shift - 95.0, mid + 52.0)
+	figure.position = _figure_base - Vector2(70, 0)
+	figure.modulate = Color(0, 0, 0, 0)
+	add_child(figure)
+	# Entra como sombra, para, clarão e revela; então ruge (golpe especial).
+	var t := create_tween()
+	t.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	t.tween_property(figure, "modulate:a", 1.0, 0.3)
+	t.parallel().tween_property(figure, "position", _figure_base, 0.7).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_OUT)
+	t.tween_interval(0.25)
+	t.tween_callback(func():
+		_flash = 0.8
+		Som.sfx("chefe_impacto", -4.0)
+		if figure is CreatureSprite:
+			figure.play("especial" if figure.has_anim("especial") else "ataque", true)
+		elif figure is SkinSprite:
+			figure.play("golpe", true))
+	t.tween_property(figure, "modulate", Color.WHITE, 0.35)
+	t.parallel().tween_property(self, "_flash", 0.0, 0.5)
 
 
 func _accent() -> Color:
@@ -85,7 +129,7 @@ func _label(text: String, size: int, color: Color, y: float, outline: int) -> La
 	l.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.9))
 	l.add_theme_constant_override("outline_size", outline)
 	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	l.position = Vector2(-12, y)
+	l.position = Vector2(-12 + _shift, y)
 	# Largura real da tela: em celulares 20:9 a visão fica mais larga que 480.
 	l.size = Vector2(get_viewport_rect().size.x, size + 8)
 	l.modulate.a = 0.0
@@ -96,6 +140,11 @@ func _label(text: String, size: int, color: Color, y: float, outline: int) -> La
 
 func _process(delta: float) -> void:
 	_time += delta
+	# Depois do golpe, a figura volta a respirar parada.
+	if figure is CreatureSprite and figure.done:
+		figure.play("parado")
+	elif figure is SkinSprite and figure.done:
+		figure.play("parado")
 	queue_redraw()
 
 
@@ -113,7 +162,7 @@ func _close() -> void:
 		_tween.kill()
 	# Pulou no meio da animação: alinha tudo no centro antes de sumir.
 	for l in _labels:
-		l.position.x = 0.0
+		l.position.x = _shift
 		l.modulate.a = 1.0
 	var out := create_tween()
 	out.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
@@ -130,7 +179,7 @@ func _draw() -> void:
 	# Escurece o jogo e põe faixas de cinema.
 	draw_rect(Rect2(0, 0, w, h), Color(0, 0, 0, 0.72 * _bars))
 	var accent := _accent()
-	var c := Vector2(w / 2.0, mid)
+	var c := Vector2(w / 2.0 + _shift, mid)
 	if kind == Kind.BOSS_DEFEATED:
 		# Raios dourados girando atrás do nome.
 		for i in 16:
@@ -158,7 +207,7 @@ func _draw() -> void:
 	if _glow < 0.05:
 		return
 	# Linhas ornamentais com losango no meio, acima e abaixo do texto.
-	var span := 150.0 * _glow
+	var span := (150.0 - _shift * 0.6) * _glow
 	for y in [mid - 40.0, mid + 22.0]:
 		draw_line(Vector2(c.x - span, y), Vector2(c.x - 8, y), Color(accent, 0.9), 1.0)
 		draw_line(Vector2(c.x + 8, y), Vector2(c.x + span, y), Color(accent, 0.9), 1.0)
@@ -182,6 +231,16 @@ func _draw() -> void:
 		var pulse := 0.25 + 0.2 * sin(_time * 6.0)
 		draw_rect(Rect2(0, bar_h, w, 3), Color(EMBER, pulse * _bars))
 		draw_rect(Rect2(0, h - bar_h - 3, w, 3), Color(EMBER, pulse * _bars))
+		if figure:
+			# Brasa atrás do chefe e sombra no chão.
+			var glow_at := figure.position + Vector2(0, -38)
+			for i in 6:
+				draw_circle(glow_at, 70.0 - i * 10.0, Color(EMBER, 0.05 * _bars))
+			if not (figure is CreatureSprite or figure is SkinSprite):
+				return
+			draw_set_transform(figure.position, 0.0, Vector2(1.0, 0.3))
+			draw_circle(Vector2.ZERO, 34.0, Color(0, 0, 0, 0.45 * figure.modulate.a))
+			draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 
 
 ## Selo acima do texto: visto (concluída), selo partido com X (falhou) ou estrela (recompensa).

@@ -151,26 +151,14 @@ def areia_rubra():
 def oasis_miraj():
     chefe = "chefe_serpente"
     yield [(morador("lar_zaira", "Mestra Zaira", ap("capuz", "manto", h="#e0e0e0", b="#3a2a5a", a="#e0a020"), [
-        f("lar_zaira_guerreiro", {"classe": "guerreiro"}),
-        f("lar_zaira_feiticeiro", {"classe": "feiticeiro"}),
-        f("lar_zaira_clerigo", {"classe": "clerigo"}),
-        f("lar_zaira_escolha", {"nivel": 10}, importante=True),
+        f("lar_zaira_conselho", {"nivel": 10}),
         f("lar_zaira_cedo")]), (6, 3))]
-    d("lar_zaira_cedo", "Zaira: Esta é a Casa das Três Ordens: Guerreiros, Feiticeiros e Clérigos.",
-      "Zaira: Cada guardião só pode seguir uma ordem, e a escolha é para sempre.",
-      "Zaira: Você ainda é muito verde. Volte quando chegar ao nível 5.")
-    d("lar_zaira_escolha", "Zaira: Você cresceu, Ifrit. Já pode escolher sua ordem.",
-      "Zaira: GUERREIRO: golpes 30% mais fortes, mais vida e dash que recarrega rápido.",
-      "Zaira: FEITICEIRO: bola de fogo 50% mais forte e com metade da recarga.",
-      "Zaira: CLÉRIGO: recupera vida sozinho, cura mais com poções e é imune a veneno.",
-      "Zaira: Pense bem. Não há volta.",
-      escolhas=[esc("Guerreiro", [{"classe": "guerreiro"}], "lar_zaira_guerreiro"),
-                esc("Feiticeiro", [{"classe": "feiticeiro"}], "lar_zaira_feiticeiro"),
-                esc("Clérigo", [{"classe": "clerigo"}], "lar_zaira_clerigo"),
-                esc("Ainda vou pensar.")])
-    d("lar_zaira_guerreiro", "Zaira: Um Guerreiro protege com o próprio corpo. Que sua lâmina nunca hesite.")
-    d("lar_zaira_feiticeiro", "Zaira: Um Feiticeiro carrega a Chama dentro de si. Não deixe que ela te consuma.")
-    d("lar_zaira_clerigo", "Zaira: Um Clérigo cura antes de ferir. É a ordem mais difícil de todas.")
+    d("lar_zaira_cedo", "Zaira: Esta casa já foi a Casa das Três Ordens. Hoje é só a casa de uma velha mestra.",
+      "Zaira: As ordens acabaram. Cada guardião aprende com a própria estrada.",
+      "Zaira: Treine no campo de treino e não tenha vergonha de recuar quando o inimigo for mais forte.")
+    d("lar_zaira_conselho", "Zaira: Você cresceu, Ifrit. Dá para ver nos seus ombros.",
+      "Zaira: Um conselho de quem já lutou muito: não brigue com quem tem nível bem acima do seu.",
+      "Zaira: Eles batem mais forte e sentem menos os seus golpes. Volte mais forte, e eles caem.")
 
     yield [(morador("lar_selma", "Selma, a curandeira", ap("veu", "manto", b="#e0e0d0", a="#3a8a5a"), [
         f("lar_selma")]), (3, 3))]

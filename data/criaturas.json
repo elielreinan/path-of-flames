@@ -757,19 +757,70 @@
    48,
    48
   ],
+  "dirs": [
+   "baixo",
+   "esquerda",
+   "cima",
+   "direita"
+  ],
   "anims": {
-   "parado": [
+   "parado_baixo": [
     0,
     4,
     6
    ],
-   "andar": [
+   "parado_esquerda": [
     1,
+    4,
+    6
+   ],
+   "parado_cima": [
+    2,
+    4,
+    6
+   ],
+   "parado_direita": [
+    3,
+    4,
+    6
+   ],
+   "andar_baixo": [
+    4,
     6,
     10
    ],
-   "correr": [
-    2,
+   "andar_esquerda": [
+    5,
+    6,
+    10
+   ],
+   "andar_cima": [
+    6,
+    6,
+    10
+   ],
+   "andar_direita": [
+    7,
+    6,
+    10
+   ],
+   "correr_baixo": [
+    8,
+    6,
+    14
+   ],
+   "correr_esquerda": [
+    9,
+    6,
+    14
+   ],
+   "correr_cima": [
+    10,
+    6,
+    14
+   ],
+   "correr_direita": [
+    11,
     6,
     14
    ]
@@ -778,10 +829,49 @@
    23,
    43
   ],
-  "sela": [
-   19,
-   12
-  ]
+  "pe_dir": {
+   "baixo": [
+    23,
+    43
+   ],
+   "esquerda": [
+    25,
+    43
+   ],
+   "cima": [
+    23,
+    43
+   ],
+   "direita": [
+    23,
+    43
+   ]
+  },
+  "sela": {
+   "baixo": [
+    23,
+    12
+   ],
+   "esquerda": [
+    29,
+    12
+   ],
+   "cima": [
+    23,
+    13
+   ],
+   "direita": [
+    19,
+    12
+   ]
+  },
+  "frente_do_cavaleiro": {
+   "baixo": true,
+   "esquerda": false,
+   "cima": false,
+   "direita": false
+  },
+  "camada_frente": "montaria_camelo_frente.png"
  },
  "montaria_hiena": {
   "arquivo": "montaria_hiena.png",
@@ -790,19 +880,70 @@
    48,
    48
   ],
+  "dirs": [
+   "baixo",
+   "esquerda",
+   "cima",
+   "direita"
+  ],
   "anims": {
-   "parado": [
+   "parado_baixo": [
     0,
     4,
     6
    ],
-   "andar": [
+   "parado_esquerda": [
     1,
+    4,
+    6
+   ],
+   "parado_cima": [
+    2,
+    4,
+    6
+   ],
+   "parado_direita": [
+    3,
+    4,
+    6
+   ],
+   "andar_baixo": [
+    4,
     6,
     10
    ],
-   "correr": [
-    2,
+   "andar_esquerda": [
+    5,
+    6,
+    10
+   ],
+   "andar_cima": [
+    6,
+    6,
+    10
+   ],
+   "andar_direita": [
+    7,
+    6,
+    10
+   ],
+   "correr_baixo": [
+    8,
+    6,
+    14
+   ],
+   "correr_esquerda": [
+    9,
+    6,
+    14
+   ],
+   "correr_cima": [
+    10,
+    6,
+    14
+   ],
+   "correr_direita": [
+    11,
     6,
     14
    ]
@@ -811,10 +952,49 @@
    21,
    42
   ],
-  "sela": [
-   20,
-   23
-  ]
+  "pe_dir": {
+   "baixo": [
+    21,
+    42
+   ],
+   "esquerda": [
+    27,
+    42
+   ],
+   "cima": [
+    21,
+    42
+   ],
+   "direita": [
+    21,
+    42
+   ]
+  },
+  "sela": {
+   "baixo": [
+    21,
+    19
+   ],
+   "esquerda": [
+    28,
+    23
+   ],
+   "cima": [
+    21,
+    21
+   ],
+   "direita": [
+    20,
+    23
+   ]
+  },
+  "frente_do_cavaleiro": {
+   "baixo": true,
+   "esquerda": false,
+   "cima": false,
+   "direita": false
+  },
+  "camada_frente": "montaria_hiena_frente.png"
  },
  "montaria_lobo_metal": {
   "arquivo": "montaria_lobo_metal.png",
@@ -823,19 +1003,70 @@
    48,
    48
   ],
+  "dirs": [
+   "baixo",
+   "esquerda",
+   "cima",
+   "direita"
+  ],
   "anims": {
-   "parado": [
+   "parado_baixo": [
     0,
     4,
     6
    ],
-   "andar": [
+   "parado_esquerda": [
     1,
+    4,
+    6
+   ],
+   "parado_cima": [
+    2,
+    4,
+    6
+   ],
+   "parado_direita": [
+    3,
+    4,
+    6
+   ],
+   "andar_baixo": [
+    4,
     6,
     10
    ],
-   "correr": [
-    2,
+   "andar_esquerda": [
+    5,
+    6,
+    10
+   ],
+   "andar_cima": [
+    6,
+    6,
+    10
+   ],
+   "andar_direita": [
+    7,
+    6,
+    10
+   ],
+   "correr_baixo": [
+    8,
+    6,
+    14
+   ],
+   "correr_esquerda": [
+    9,
+    6,
+    14
+   ],
+   "correr_cima": [
+    10,
+    6,
+    14
+   ],
+   "correr_direita": [
+    11,
     6,
     14
    ]
@@ -844,9 +1075,388 @@
    21,
    43
   ],
-  "sela": [
-   18,
-   22
-  ]
+  "pe_dir": {
+   "baixo": [
+    21,
+    43
+   ],
+   "esquerda": [
+    27,
+    43
+   ],
+   "cima": [
+    21,
+    43
+   ],
+   "direita": [
+    21,
+    43
+   ]
+  },
+  "sela": {
+   "baixo": [
+    21,
+    17
+   ],
+   "esquerda": [
+    30,
+    22
+   ],
+   "cima": [
+    21,
+    18
+   ],
+   "direita": [
+    18,
+    22
+   ]
+  },
+  "frente_do_cavaleiro": {
+   "baixo": true,
+   "esquerda": false,
+   "cima": false,
+   "direita": false
+  },
+  "camada_frente": "montaria_lobo_metal_frente.png"
+ },
+ "obj_gato": {
+  "arquivo": "obj_gato.png",
+  "tipo": "objeto",
+  "frame": [
+   32,
+   32
+  ],
+  "pe": [
+   16,
+   27
+  ],
+  "anims": {
+   "parado_baixo": [
+    0,
+    4,
+    4
+   ],
+   "parado_esquerda": [
+    1,
+    4,
+    4
+   ],
+   "parado_cima": [
+    2,
+    4,
+    4
+   ],
+   "parado_direita": [
+    3,
+    4,
+    4
+   ],
+   "andar_baixo": [
+    4,
+    6,
+    10
+   ],
+   "andar_esquerda": [
+    5,
+    6,
+    10
+   ],
+   "andar_cima": [
+    6,
+    6,
+    10
+   ],
+   "andar_direita": [
+    7,
+    6,
+    10
+   ]
+  },
+  "dirs": [
+   "baixo",
+   "esquerda",
+   "cima",
+   "direita"
+  ],
+  "pe_dir": {
+   "baixo": [
+    16,
+    27
+   ],
+   "esquerda": [
+    16,
+    27
+   ],
+   "cima": [
+    16,
+    27
+   ],
+   "direita": [
+    16,
+    27
+   ]
+  }
+ },
+ "obj_ovelha": {
+  "arquivo": "obj_ovelha.png",
+  "tipo": "objeto",
+  "frame": [
+   32,
+   32
+  ],
+  "pe": [
+   16,
+   27
+  ],
+  "anims": {
+   "parado_baixo": [
+    0,
+    4,
+    3
+   ],
+   "parado_esquerda": [
+    1,
+    4,
+    3
+   ],
+   "parado_cima": [
+    2,
+    4,
+    3
+   ],
+   "parado_direita": [
+    3,
+    4,
+    3
+   ],
+   "andar_baixo": [
+    4,
+    6,
+    8
+   ],
+   "andar_esquerda": [
+    5,
+    6,
+    8
+   ],
+   "andar_cima": [
+    6,
+    6,
+    8
+   ],
+   "andar_direita": [
+    7,
+    6,
+    8
+   ]
+  },
+  "dirs": [
+   "baixo",
+   "esquerda",
+   "cima",
+   "direita"
+  ],
+  "pe_dir": {
+   "baixo": [
+    16,
+    27
+   ],
+   "esquerda": [
+    16,
+    27
+   ],
+   "cima": [
+    16,
+    27
+   ],
+   "direita": [
+    16,
+    27
+   ]
+  }
+ },
+ "obj_chama_fraca": {
+  "arquivo": "obj_chama_fraca.png",
+  "tipo": "objeto",
+  "frame": [
+   32,
+   32
+  ],
+  "pe": [
+   16,
+   30
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    6
+   ]
+  }
+ },
+ "obj_chama_sagrada": {
+  "arquivo": "obj_chama_sagrada.png",
+  "tipo": "objeto",
+  "frame": [
+   32,
+   32
+  ],
+  "pe": [
+   16,
+   30
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    8
+   ]
+  }
+ },
+ "obj_fantasma": {
+  "arquivo": "obj_fantasma.png",
+  "tipo": "objeto",
+  "frame": [
+   32,
+   32
+  ],
+  "pe": [
+   16,
+   28
+  ],
+  "anims": {
+   "parado": [
+    0,
+    4,
+    5
+   ]
+  }
+ },
+ "obj_estatua": {
+  "arquivo": "obj_estatua.png",
+  "tipo": "objeto",
+  "frame": [
+   32,
+   32
+  ],
+  "pe": [
+   16,
+   30
+  ],
+  "anims": {
+   "parado": [
+    0,
+    1,
+    1
+   ]
+  },
+  "variantes": {
+   "estatua_1": 0,
+   "estatua_2": 1,
+   "estatua_3": 2
+  }
+ },
+ "obj_placa": {
+  "arquivo": "obj_placa.png",
+  "tipo": "objeto",
+  "frame": [
+   16,
+   16
+  ],
+  "pe": [
+   8,
+   15
+  ],
+  "anims": {
+   "parado": [
+    0,
+    1,
+    1
+   ]
+  },
+  "variantes": {
+   "madeira": 0,
+   "velha_enferrujada": 1
+  }
+ },
+ "obj_livro": {
+  "arquivo": "obj_livro.png",
+  "tipo": "objeto",
+  "frame": [
+   16,
+   16
+  ],
+  "pe": [
+   8,
+   14
+  ],
+  "anims": {
+   "parado": [
+    0,
+    1,
+    1
+   ]
+  }
+ },
+ "obj_carta": {
+  "arquivo": "obj_carta.png",
+  "tipo": "objeto",
+  "frame": [
+   16,
+   16
+  ],
+  "pe": [
+   8,
+   13
+  ],
+  "anims": {
+   "parado": [
+    0,
+    1,
+    1
+   ]
+  }
+ },
+ "obj_pedra_empurravel": {
+  "arquivo": "obj_pedra_empurravel.png",
+  "tipo": "objeto",
+  "frame": [
+   16,
+   16
+  ],
+  "pe": [
+   8,
+   14
+  ],
+  "anims": {
+   "parado": [
+    0,
+    1,
+    1
+   ]
+  }
+ },
+ "obj_estante": {
+  "arquivo": "obj_estante.png",
+  "tipo": "objeto",
+  "frame": [
+   16,
+   32
+  ],
+  "pe": [
+   8,
+   31
+  ],
+  "anims": {
+   "parado": [
+    0,
+    1,
+    1
+   ]
+  },
+  "variantes": {
+   "livros": 0,
+   "livros_e_jarros": 1
+  }
  }
 }

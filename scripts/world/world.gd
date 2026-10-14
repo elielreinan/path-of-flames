@@ -9,6 +9,7 @@ var player: Player
 var hud: Hud
 var dialog: DialogBox
 var camera: ShakeCamera
+var _sand: SandWind
 var map_data := {}
 var map_id := ""
 
@@ -221,6 +222,13 @@ func load_map(id: String, spawn: String) -> void:
 	hud.refresh()
 	hud.show_map_name(map_data.nome)
 	Som.music("chefe" if is_instance_valid(_boss) else Som.music_for_map(id, map_data))
+	# Vento de areia nos mapas abertos do deserto.
+	if is_instance_valid(_sand):
+		_sand.queue_free()
+	_sand = null
+	if SandWind.wanted(id, map_data.layout):
+		_sand = SandWind.new()
+		camera.add_child(_sand)
 	GameState.notify("ir", id)
 	GameState.save_game()
 	await get_tree().physics_frame
@@ -251,6 +259,7 @@ func _level_up_effect(new_level: int) -> void:
 	if not is_instance_valid(player):
 		return
 	var fx := LevelUpEffect.new()
+	Som.ui("confirmar", -2.0)
 	player.add_child(fx)
 	popup_text(player.global_position + Vector2(0, -26), "NÍVEL %d!" % new_level, Color(1, 0.85, 0.3), 12)
 
@@ -434,6 +443,30 @@ func spawn_enemy(type_id: String, pos: Vector2, zone := {}) -> Enemy:
 	return enemy
 
 
+## Figura grande do chefe para a tela de apresentação (criatura ou skin), ou null.
+func _boss_figure(boss_id: String) -> Node2D:
+	var info: Dictionary = Data.enemies.get(boss_id, {})
+	# Retrato desenhado do chefe (fio de Artes), com a base na origem.
+	var portrait_path := "res://assets/ui/chefes/%s.png" % boss_id
+	if ResourceLoader.exists(portrait_path):
+		var portrait := Sprite2D.new()
+		portrait.texture = load(portrait_path)
+		portrait.offset = Vector2(0, -portrait.texture.get_height() / 2.0)
+		portrait.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		return portrait
+	if CreatureSprite.has(info.get("criatura", "")):
+		var creature := CreatureSprite.create(info.criatura)
+		creature.auto = false
+		return creature
+	var sheet := SkinSprite.sheet_for("inimigos", boss_id)
+	if sheet:
+		var skin := SkinSprite.create(sheet)
+		skin.auto = false
+		skin.set_direction(Vector2.RIGHT)
+		return skin
+	return null
+
+
 func _spawn_boss(entry: Dictionary) -> void:
 	if GameState.has_flag(entry.flag) or not GameState.check(entry.get("se")):
 		return
@@ -453,6 +486,7 @@ func _spawn_boss(entry: Dictionary) -> void:
 	boss.summon.connect(func(type_id, at): spawn_enemy(type_id, at))
 	_entities.add_child(boss)
 	hud.show_boss(boss.data.nome, boss.hp, boss.max_hp)
+	Som.sfx("chefe_rugido", -2.0, 0.0)
 	Som.music("chefe", 0.6)
 
 
@@ -687,12 +721,15 @@ func _try_tame(probe: Vector2) -> void:
 			hud.toast("Você já domou um(a) %s." % info.nome)
 			return
 		if enemy.hp > enemy.max_hp * Enemy.TAME_HP:
+			Som.ui("erro")
 			hud.toast("A fera ainda está brava. Canse-a em luta antes de domar.")
 			return
 		if GameState.item_count(info.isca) <= 0:
+			Som.ui("erro")
 			hud.toast("Precisa de %s como isca." % Data.item(info.isca).nome)
 			return
 		GameState.remove_item(info.isca)
+		Som.sfx("montar", -2.0)
 		popup_text(enemy.global_position + Vector2(0, -20), "♥", Color(1, 0.4, 0.5), 14)
 		enemy.remove_from_group("inimigos")
 		enemy.queue_free()
@@ -791,7 +828,7 @@ func run_actions(actions: Array) -> void:
 						if is_instance_valid(_boss):
 							var info: Dictionary = _boss.data
 							await hud.show_banner(Banner.Kind.BOSS_INTRO, "CHEFE  ·  NÍVEL %d" % int(info.get("nivel", 1)),
-								info.nome, [info.get("lema", "Fique nas brechas da onda de choque.")])
+								info.nome, [info.get("lema", "Fique nas brechas da onda de choque.")], 0, _boss_figure(map_data.chefe.tipo))
 				"dialogo": await run_dialog(value)
 				"arena": _arena_challenge.call_deferred()
 				"ir_mapa": await change_map(value[0], value[1])

@@ -315,7 +315,7 @@ func show_title(title: String, subtitle: String) -> void:
 
 
 ## Tela de informação grande (capítulo, chefe). Espera terminar ou o jogador tocar.
-func show_banner(kind: Banner.Kind, kicker: String, headline: String, details: Array = [], chapter := 0) -> void:
+func show_banner(kind: Banner.Kind, kicker: String, headline: String, details: Array = [], chapter := 0, figure: Node2D = null) -> void:
 	# A tela grande fica sozinha: sem controles nem nome do mapa por cima.
 	set_controls_visible(false)
 	if _map_tween:
@@ -328,6 +328,7 @@ func show_banner(kind: Banner.Kind, kicker: String, headline: String, details: A
 	banner.headline = headline
 	banner.details = details
 	banner.chapter = chapter
+	banner.figure = figure
 	_banners += 1
 	add_child(banner)
 	await banner.finished

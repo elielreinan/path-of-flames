@@ -12,8 +12,8 @@
   {
    "id": "lar_caio",
    "pos": [
-    5,
-    5
+    4,
+    3
    ]
   }
  ],
@@ -36,19 +36,19 @@
  "layout": [
   "wwwwwwwwwwwwww",
   "wwwwwwwwwwwwww",
-  "wmmfffffffmfmw",
+  "wmmmmmwmffffmw",
+  "wfffffwmfffffw",
+  "wfmmffwmfffffw",
+  "wfmmffwwwfwwww",
   "wffffffffffffw",
-  "wmmfffmmfffmfw",
-  "wfffffmmfffmfw",
-  "wffffffffffffw",
-  "wmfffffffffmfw",
+  "wmmfffffffffmw",
   "wmmfffffffffmw",
   "wmffffffffffmw",
   "wwwwwwwDwwwwww"
  ],
  "decoracao": [
   {
-   "s": "armario",
+   "s": "fogao",
    "area": [
     1,
     2,
@@ -57,7 +57,7 @@
    ]
   },
   {
-   "s": "estante_livros",
+   "s": "bacia",
    "area": [
     2,
     2,
@@ -66,12 +66,39 @@
    ]
   },
   {
-   "s": "estante_livros",
+   "s": "barril_agua",
    "area": [
-    10,
+    3,
     2,
     1,
     1
+   ]
+  },
+  {
+   "s": "barril",
+   "area": [
+    4,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "caixote",
+   "area": [
+    5,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "cama",
+   "area": [
+    7,
+    2,
+    1,
+    2
    ]
   },
   {
@@ -84,63 +111,54 @@
    ]
   },
   {
+   "s": "mesa_grande",
+   "area": [
+    2,
+    4,
+    2,
+    2
+   ]
+  },
+  {
+   "s": "gaveteiro",
+   "area": [
+    7,
+    4,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    1,
+    5,
+    1,
+    1
+   ]
+  },
+  {
+   "s": "banquinho",
+   "area": [
+    4,
+    5,
+    1,
+    1
+   ]
+  },
+  {
    "s": "balcao",
    "area": [
     1,
-    4,
-    2,
-    1
-   ]
-  },
-  {
-   "s": "mesa_grande",
-   "area": [
-    6,
-    4,
-    2,
-    2
-   ]
-  },
-  {
-   "s": "cama",
-   "area": [
-    11,
-    4,
-    1,
-    2
-   ]
-  },
-  {
-   "s": "banquinho",
-   "area": [
-    3,
-    5,
-    1,
-    1
-   ]
-  },
-  {
-   "s": "banquinho",
-   "area": [
-    9,
-    5,
-    1,
-    1
-   ]
-  },
-  {
-   "s": "jarro",
-   "area": [
-    1,
     7,
-    1,
+    2,
     1
    ]
   },
   {
    "s": "tapete_grande",
    "area": [
-    4,
+    6,
     7,
     4,
     2
@@ -149,7 +167,7 @@
   {
    "s": "comoda",
    "area": [
-    11,
+    12,
     7,
     1,
     1
@@ -174,7 +192,7 @@
    ]
   },
   {
-   "s": "vaso_flor",
+   "s": "jarro",
    "area": [
     1,
     9,
@@ -194,17 +212,7 @@
   {
    "s": "janela",
    "area": [
-    4,
-    1,
-    1,
-    1
-   ],
-   "parede": true
-  },
-  {
-   "s": "quadro",
-   "area": [
-    7,
+    3,
     1,
     1,
     1
@@ -215,6 +223,16 @@
    "s": "janela",
    "area": [
     9,
+    1,
+    1,
+    1
+   ],
+   "parede": true
+  },
+  {
+   "s": "quadro",
+   "area": [
+    11,
     1,
     1,
     1

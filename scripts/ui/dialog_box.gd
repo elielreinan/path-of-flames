@@ -23,6 +23,7 @@ var _typing := false
 var _blip := -1
 var _waiting := false
 var _time := 0.0
+var _arrow_tex: Texture2D = load("res://assets/ui/dialogo/seta_avancar.png") if ResourceLoader.exists("res://assets/ui/dialogo/seta_avancar.png") else null
 
 
 ## Estilo Stardew Valley: moldura de madeira, papel claro com letra escura,
@@ -69,6 +70,13 @@ func _ready() -> void:
 	add_child(_panel)
 	var paper := PanelContainer.new()
 	paper.add_theme_stylebox_override("panel", wood_style(PAPER, 2, 7))
+	# Arte do fio de Artes: caixa de papel com madeira numa peça só.
+	var box_art := UiKit.art_box("dialogo/caixa.png", [7, 7, 7, 7], 4.0)
+	if box_art:
+		_panel.add_theme_stylebox_override("panel", box_art)
+		var inner := StyleBoxEmpty.new()
+		inner.set_content_margin_all(5)
+		paper.add_theme_stylebox_override("panel", inner)
 	_panel.add_child(paper)
 	var row := HBoxContainer.new()
 	row.add_theme_constant_override("separation", 8)
@@ -97,6 +105,10 @@ func _ready() -> void:
 	_portrait_frame = PanelContainer.new()
 	var frame_style := wood_style(Color(0.96, 0.78, 0.5), 2, 2)
 	_portrait_frame.add_theme_stylebox_override("panel", frame_style)
+	var frame_art := UiKit.art_box("dialogo/moldura_retrato.png", [5, 5, 5, 5], 4.0)
+	if frame_art:
+		_portrait_frame.add_theme_stylebox_override("panel", frame_art)
+		divider.color = Color(0, 0, 0, 0)
 	_portrait_frame.custom_minimum_size = Vector2(60, 56)
 	column.add_child(_portrait_frame)
 	_portrait = TextureRect.new()
@@ -109,6 +121,13 @@ func _ready() -> void:
 	tab_style.content_margin_left = 4
 	tab_style.content_margin_right = 4
 	_name_tab.add_theme_stylebox_override("panel", tab_style)
+	var tab_art := UiKit.art_box("dialogo/placa_nome.png", [4, 4, 4, 5])
+	if tab_art:
+		tab_art.content_margin_left = 4
+		tab_art.content_margin_right = 4
+		tab_art.content_margin_top = 1
+		tab_art.content_margin_bottom = 3
+		_name_tab.add_theme_stylebox_override("panel", tab_art)
 	column.add_child(_name_tab)
 	_name = UiKit.label("", 8, INK)
 	_name.autowrap_mode = TextServer.AUTOWRAP_OFF
@@ -129,7 +148,8 @@ func _ready() -> void:
 	add_child(_arrow)
 
 	_choices_panel = PanelContainer.new()
-	_choices_panel.add_theme_stylebox_override("panel", wood_style(PAPER, 3, 5))
+	var choices_art := UiKit.art_box("dialogo/caixa.png", [7, 7, 7, 7], 8.0)
+	_choices_panel.add_theme_stylebox_override("panel", choices_art if choices_art else wood_style(PAPER, 3, 5))
 	_choices_panel.anchor_left = 1.0
 	_choices_panel.anchor_right = 1.0
 	_choices_panel.anchor_top = 1.0
@@ -192,6 +212,9 @@ func _draw_arrow() -> void:
 	if not _waiting or _typing or _choices_panel.visible:
 		return
 	var bob := sin(_time * 6.0) * 2.0
+	if _arrow_tex:
+		_arrow.draw_texture_rect(_arrow_tex, Rect2(Vector2(1, 4 + bob), Vector2(18, 12)), false)
+		return
 	var c := Vector2(10, 8 + bob)
 	_arrow.draw_colored_polygon(PackedVector2Array([c + Vector2(-6, -4), c + Vector2(6, -4), c + Vector2(0, 4)]), WOOD)
 	_arrow.draw_colored_polygon(PackedVector2Array([c + Vector2(-3, -3), c + Vector2(3, -3), c + Vector2(0, 1)]), WOOD_LIGHT)

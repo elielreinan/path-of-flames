@@ -63,15 +63,17 @@ def oasis_miraj(Grid, register, area):
     g = Grid(50, 44, ",")
     g.border("T")
     g.rect(1, 30, 48, 13, ".")
-    # Lago central com pontes.
+    # Lago central sem ponte (pedido do Eliel): um caminho dá a volta nele.
     g.rect(16, 16, 18, 10, "W")
-    g.hline(16, 33, 20, "=", 2)
-    g.vline(24, 16, 25, "=", 2)
-    # Caminhos.
-    g.vline(24, 26, 43, ":", 2)
-    g.hline(1, 15, 20, ":", 2)
-    g.hline(34, 48, 20, ":", 2)
-    g.vline(24, 9, 15, ":", 2)
+    g.hline(14, 35, 14, ":", 2)
+    g.hline(14, 35, 26, ":", 2)
+    g.vline(14, 14, 27, ":", 2)
+    g.vline(34, 14, 27, ":", 2)
+    # Caminhos que chegam ao anel do lago.
+    g.vline(24, 28, 43, ":", 2)
+    g.hline(1, 13, 20, ":", 2)
+    g.hline(36, 48, 20, ":", 2)
+    g.vline(24, 9, 13, ":", 2)
     g.put(0, 20, ":"); g.put(0, 21, ":")
     g.put(49, 20, ":"); g.put(49, 21, ":")
     g.put(24, 43, ":"); g.put(25, 43, ":")

@@ -285,95 +285,31 @@
   "linhas": [
    {
     "s": "Zaira",
-    "t": "Esta é a Casa das Três Ordens: Guerreiros, Feiticeiros e Clérigos."
+    "t": "Esta casa já foi a Casa das Três Ordens. Hoje é só a casa de uma velha mestra."
    },
    {
     "s": "Zaira",
-    "t": "Cada guardião só pode seguir uma ordem, e a escolha é para sempre."
+    "t": "As ordens acabaram. Cada guardião aprende com a própria estrada."
    },
    {
     "s": "Zaira",
-    "t": "Você ainda é muito verde. Volte quando chegar ao nível 5."
+    "t": "Treine no campo de treino e não tenha vergonha de recuar quando o inimigo for mais forte."
    }
   ]
  },
- "lar_zaira_escolha": {
+ "lar_zaira_conselho": {
   "linhas": [
    {
     "s": "Zaira",
-    "t": "Você cresceu, Ifrit. Já pode escolher sua ordem."
+    "t": "Você cresceu, Ifrit. Dá para ver nos seus ombros."
    },
    {
     "s": "Zaira",
-    "t": "GUERREIRO: golpes 30% mais fortes, mais vida e dash que recarrega rápido."
+    "t": "Um conselho de quem já lutou muito: não brigue com quem tem nível bem acima do seu."
    },
    {
     "s": "Zaira",
-    "t": "FEITICEIRO: bola de fogo 50% mais forte e com metade da recarga."
-   },
-   {
-    "s": "Zaira",
-    "t": "CLÉRIGO: recupera vida sozinho, cura mais com poções e é imune a veneno."
-   },
-   {
-    "s": "Zaira",
-    "t": "Pense bem. Não há volta."
-   }
-  ],
-  "escolhas": [
-   {
-    "t": "Guerreiro",
-    "acoes": [
-     {
-      "classe": "guerreiro"
-     }
-    ],
-    "ir": "lar_zaira_guerreiro"
-   },
-   {
-    "t": "Feiticeiro",
-    "acoes": [
-     {
-      "classe": "feiticeiro"
-     }
-    ],
-    "ir": "lar_zaira_feiticeiro"
-   },
-   {
-    "t": "Clérigo",
-    "acoes": [
-     {
-      "classe": "clerigo"
-     }
-    ],
-    "ir": "lar_zaira_clerigo"
-   },
-   {
-    "t": "Ainda vou pensar."
-   }
-  ]
- },
- "lar_zaira_guerreiro": {
-  "linhas": [
-   {
-    "s": "Zaira",
-    "t": "Um Guerreiro protege com o próprio corpo. Que sua lâmina nunca hesite."
-   }
-  ]
- },
- "lar_zaira_feiticeiro": {
-  "linhas": [
-   {
-    "s": "Zaira",
-    "t": "Um Feiticeiro carrega a Chama dentro de si. Não deixe que ela te consuma."
-   }
-  ]
- },
- "lar_zaira_clerigo": {
-  "linhas": [
-   {
-    "s": "Zaira",
-    "t": "Um Clérigo cura antes de ferir. É a ordem mais difícil de todas."
+    "t": "Eles batem mais forte e sentem menos os seus golpes. Volte mais forte, e eles caem."
    }
   ]
  },
